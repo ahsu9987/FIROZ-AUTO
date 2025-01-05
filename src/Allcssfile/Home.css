@@ -1,0 +1,45 @@
+
+.carsoulimg{
+    height: 530px;
+    width: 80%;
+}
+.allcol{
+    height: 560px;
+    width: 100%;
+}
+.Htxt{
+    margin-top: 70px;
+}
+.scrollleft{
+    overflow-x: auto;
+    width: 100%;  
+}
+.scrollleft::-webkit-scrollbar{
+    display: none;
+}
+.burgmanwhite{
+    width: 600px;
+}
+.navtxt{
+    font-size: medium;
+}
+
+
+@media only screen and (max-width: 768px){
+    .carsoulimg{
+        height: 300px;
+        width: 100%;
+    }
+    .allcol{
+        height: 280px;
+    }
+    .Htxt{
+        margin-top: 3px;
+    }
+    .burgmanwhite{
+        width: 300px;
+    }
+    .navtxt{
+        font-size: small;
+    }
+}
