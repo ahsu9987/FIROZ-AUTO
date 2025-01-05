@@ -11,7 +11,7 @@ function App() {
   return (
 <>
 <Header/>
-<HomePage/>
+<HomePage />
 <AllCollection/>
 <Footer/>
 </>

@@ -23,7 +23,10 @@
 .navtxt{
     font-size: medium;
 }
-
+.topbrandcard{
+    width: 16rem;
+    height: 2rem;
+}
 
 @media only screen and (max-width: 768px){
     .carsoulimg{
@@ -41,5 +44,9 @@
     }
     .navtxt{
         font-size: small;
+    }
+    .topbrandcard{
+        width: 12rem;
+        height: 2rem;
     }
 }
