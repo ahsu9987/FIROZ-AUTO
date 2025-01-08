@@ -10,22 +10,20 @@
 .Htxt{
     margin-top: 70px;
 }
-.scrollleft{
-    overflow-x: auto;
-    width: 100%;  
-}
-.scrollleft::-webkit-scrollbar{
-    display: none;
-}
 .burgmanwhite{
-    width: 600px;
+    width: 100%;
 }
 .navtxt{
     font-size: medium;
 }
 .topbrandcard{
     width: 16rem;
-    height: 2rem;
+}
+.burgmanbikesection{
+    margin: 70px;
+    padding: 30px;
+    border-radius: 20px;
+    border-style: groove;
 }
 
 @media only screen and (max-width: 768px){
@@ -40,13 +38,17 @@
         margin-top: 3px;
     }
     .burgmanwhite{
-        width: 300px;
+        width: 100%;
     }
     .navtxt{
         font-size: small;
     }
     .topbrandcard{
-        width: 12rem;
-        height: 2rem;
+        width: 10rem;
+    }
+    .burgmanbikesection{
+        margin: 15px;
+        padding: 15px;
+        margin-top: 10px;
     }
 }

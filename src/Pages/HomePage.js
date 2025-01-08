@@ -11,18 +11,43 @@ import burgmanwhite from "../images/white-burgman.png";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Nav from "react-bootstrap/Nav";
+import Carousel2 from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+
 
 function HomePage() {
+
+  const responsive = {
+    superLargeDesktop: {
+      breakpoint: { max: 4000, min: 1024 },
+      items: 5,
+    },
+    desktop: {
+      breakpoint: { max: 1024, min: 768 },
+      items: 1,
+      slidesToSlide: 2 ,
+    },
+    tablet: {
+      breakpoint: { max: 768, min: 464 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 2,
+      // slidesToSlide: 2 ,
+    },
+  };
+
+
   return (
     <>
-      <Carousel className="boxshadow">
+      <Carousel>
         <Carousel.Item interval={3000}>
           <Row className="bg-light">
             <Col xs={12} md={8} lg={7} className="bg-light p-5 allcol">
               <Image
                 src={accesicegreen}
                 className="carsoulimg p-5 "
-                // style={{ width: "90%", height: "500px" }}
               />
             </Col>
             <Col xs={12} md={4} lg={5} className="bg-light p-5 ">
@@ -52,8 +77,6 @@ function HomePage() {
               <Image
                 className="carsoulimg p-5"
                 src={accesmatblack}
-
-                // style={{ width: "90%", height: "500px" }}
               />
             </Col>
             <Col xs={12} md={4} lg={5} className="bg-light p-5">
@@ -83,7 +106,6 @@ function HomePage() {
               <Image
                 className="carsoulimg p-5"
                 src={burgmanmatred}
-                // style={{ width: "80%", height: "520px" }}
               />
             </Col>
             <Col xs={12} md={4} lg={5} className="bg-light p-5">
@@ -113,7 +135,6 @@ function HomePage() {
               <Image
                 className="carsoulimg p-5"
                 src={burgmanmatblue}
-                // style={{ width: "80%", height: "520px" }}
               />
             </Col>
             <Col xs={12} md={4} lg={5} className="bg-light p-5">
@@ -143,7 +164,6 @@ function HomePage() {
               <Image
                 className="carsoulimg p-5"
                 src={burgmanwhite}
-                // style={{ width: "80%", height: "520px" }}
               />
             </Col>
             <Col xs={12} md={4} lg={5} className="bg-light p-5">
@@ -169,7 +189,7 @@ function HomePage() {
       </Carousel>
 
       {/* ABOUT US */}
-      <Row>
+      <Row >
         <Col xs={12} md={8} lg={6} className="bg-light p-5">
           <h1>ABOUT US</h1>
           <h3>WELCOME TO FIROZ AUTORIDES SAFE RIDE</h3>
@@ -190,34 +210,39 @@ function HomePage() {
             ensure you have an unforgettable riding experience.
           </h6>
         </Col>
-        <Col xs={12} md={8} lg={6} className="bg-light ">
+        <Col xs={12} md={8} lg={6} className="bg-light">
           <Image src={burgmanwhite} className="burgmanwhite" />
         </Col>
       </Row>
 
-      {/* ALL BRANDS IMG*/}
-      <section className="bg-light">
-        <h1 className="ms-5 mt-4">Top Bikes in Spotlight</h1>
-
-        <Nav id="nav1" className="  ms-5 my-3 my-lg-0   navtxt" navbarScroll>
-          <Nav.Link href="#cpbg">HOME</Nav.Link>
-          <Nav.Link href="#cfr">NEWBIKES</Nav.Link>
+           {/* Bikes in Spotlight BIKE SECTION*/}
+           <div className="bg-light burgmanbikesection">
+      <h1 className="">BIKE IN SPOTLIGHT</h1>
+        <Nav id="nav1" className="  my-3 my-lg-0   navtxt" navbarScroll>
+          <Nav.Link href="">HOME</Nav.Link>
+          <Nav.Link href="ch2">NEWBIKES</Nav.Link>
           <Nav.Link href="#action1">NEWS</Nav.Link>
           <Nav.Link href="#action2">NEW1</Nav.Link>
         </Nav>
 
-        <Carousel
-          className=" p-2"
-          variant="none"
-          autoPlay={true}
-          interval={60000}
-          controls={false}
-          indicators={true}
+        <Carousel2
+          responsive={responsive}
         >
-          <Carousel.Item className="bg-light p-3" >
-            <div className="scrollleft d-flex " id="cpbg">
               <a href="#">
-                <Card className="ms-1 topbrandcard">
+                <Card className=" topbrandcard">
+                  <Card.Img variant="top" src={accesicegreen} />
+                  <Card.Body>
+                    <Card.Title>Card Title 1</Card.Title>
+                    <Card.Text>
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </Card.Text>
+                    <Button variant="primary">Go somewhere</Button>
+                  </Card.Body>
+                </Card>
+              </a>
+              <a href="#">
+                <Card className="topbrandcard">
                   <Card.Img variant="top" src="holder.js/100px180" />
                   <Card.Body>
                     <Card.Title>Card Title</Card.Title>
@@ -230,7 +255,7 @@ function HomePage() {
                 </Card>
               </a>
               <a href="#">
-                <Card className="ms-2 topbrandcard">
+                <Card className="topbrandcard">
                   <Card.Img variant="top" src="holder.js/100px180" />
                   <Card.Body>
                     <Card.Title>Card Title</Card.Title>
@@ -243,7 +268,7 @@ function HomePage() {
                 </Card>
               </a>
               <a href="#">
-                <Card className="ms-2 topbrandcard">
+                <Card className=" topbrandcard">
                   <Card.Img variant="top" src="holder.js/100px180" />
                   <Card.Body>
                     <Card.Title>Card Title</Card.Title>
@@ -256,20 +281,7 @@ function HomePage() {
                 </Card>
               </a>
               <a href="#">
-                <Card className="ms-2 topbrandcard">
-                  <Card.Img variant="top" src="holder.js/100px180" />
-                  <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                  </Card.Body>
-                </Card>
-              </a>
-              <a href="#">
-                <Card className="ms-2 topbrandcard">
+                <Card className=" topbrandcard">
                   <Card.Img variant="top" src="holder.js/100px180" />
                   <Card.Body>
                     <Card.Title>Card Title</Card.Title>
@@ -283,7 +295,7 @@ function HomePage() {
               </a>
 
               <a href="#">
-                <Card className="ms-2 topbrandcard">
+                <Card className="topbrandcard">
                   <Card.Img variant="top" src="holder.js/100px180" />
                   <Card.Body>
                     <Card.Title>Card Title</Card.Title>
@@ -295,21 +307,308 @@ function HomePage() {
                   </Card.Body>
                 </Card>
               </a>
-            </div>
-          </Carousel.Item>
 
-          <Carousel.Item >
-            <h1>first 2</h1>
-          </Carousel.Item>
+              <a href="#">
+                <Card className="topbrandcard">
+                  <Card.Img variant="top" src="holder.js/100px180" />
+                  <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Text>
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </Card.Text>
+                    <Button variant="primary">Go somewhere</Button>
+                  </Card.Body>
+                </Card>
+              </a>
 
-          <Carousel.Item id="carousel2">
-            <h1>first 3</h1>
-          </Carousel.Item>
-        </Carousel>
-      </section>
+              <a href="#">
+                <Card className=" topbrandcard">
+                  <Card.Img variant="top" src="holder.js/100px180" />
+                  <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Text>
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </Card.Text>
+                    <Button variant="primary">Go somewhere</Button>
+                  </Card.Body>
+                </Card>
+              </a>
+        </Carousel2>
+        <Button
+        className="mt-2"
+       variant="outline-primary">
+      More
+    </Button>
+      </div>
+
+
+      {/* ACCESS BIKE SECTION*/}
+      <div className="bg-light burgmanbikesection">
+      <h1 className="">BRAND NEW ALL ACCESS BIKE</h1>
+        <Nav id="nav1" className="  my-3 my-lg-0   navtxt" navbarScroll>
+          <Nav.Link href="">HOME</Nav.Link>
+          <Nav.Link href="ch2">NEWBIKES</Nav.Link>
+          <Nav.Link href="#action1">NEWS</Nav.Link>
+          <Nav.Link href="#action2">NEW1</Nav.Link>
+        </Nav>
+
+        <Carousel2
+          responsive={responsive}
+        >
+              <a href="#">
+                <Card className="topbrandcard">
+                  <Card.Img variant="top" src={accesicegreen} />
+                  <Card.Body>
+                    <Card.Title>Card Title 1</Card.Title>
+                    <Card.Text>
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </Card.Text>
+                    <Button variant="primary">Go somewhere</Button>
+                  </Card.Body>
+                </Card>
+              </a>
+              <a href="#">
+                <Card className="topbrandcard">
+                  <Card.Img variant="top" src="holder.js/100px180" />
+                  <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Text>
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </Card.Text>
+                    <Button variant="primary">Go somewhere</Button>
+                  </Card.Body>
+                </Card>
+              </a>
+              <a href="#">
+                <Card className="topbrandcard">
+                  <Card.Img variant="top" src="holder.js/100px180" />
+                  <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Text>
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </Card.Text>
+                    <Button variant="primary">Go somewhere</Button>
+                  </Card.Body>
+                </Card>
+              </a>
+              <a href="#">
+                <Card className="topbrandcard">
+                  <Card.Img variant="top" src="holder.js/100px180" />
+                  <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Text>
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </Card.Text>
+                    <Button variant="primary">Go somewhere</Button>
+                  </Card.Body>
+                </Card>
+              </a>
+              <a href="#">
+                <Card className="topbrandcard">
+                  <Card.Img variant="top" src="holder.js/100px180" />
+                  <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Text>
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </Card.Text>
+                    <Button variant="primary">Go somewhere</Button>
+                  </Card.Body>
+                </Card>
+              </a>
+
+              <a href="#">
+                <Card className="topbrandcard">
+                  <Card.Img variant="top" src="holder.js/100px180" />
+                  <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Text>
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </Card.Text>
+                    <Button variant="primary">Go somewhere</Button>
+                  </Card.Body>
+                </Card>
+              </a>
+
+              <a href="#">
+                <Card className="topbrandcard">
+                  <Card.Img variant="top" src="holder.js/100px180" />
+                  <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Text>
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </Card.Text>
+                    <Button variant="primary">Go somewhere</Button>
+                  </Card.Body>
+                </Card>
+              </a>
+
+              <a href="#">
+                <Card className="topbrandcard">
+                  <Card.Img variant="top" src="holder.js/100px180" />
+                  <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Text>
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </Card.Text>
+                    <Button variant="primary">Go somewhere</Button>
+                  </Card.Body>
+                </Card>
+              </a>
+        </Carousel2>
+        <Button
+        className="mt-2"
+       variant="outline-primary">
+      More
+    </Button>
+      </div>
+
+
+      
+      {/* BURGMAN BIKE SECTION*/}
+      <div className="bg-light burgmanbikesection">
+      <h1 className="">BRAND NEW ALL BURGMAN BIKE</h1>
+        <Nav id="nav1" className="  my-3 my-lg-0   navtxt" navbarScroll>
+          <Nav.Link href="">HOME</Nav.Link>
+          <Nav.Link href="ch2">NEWBIKES</Nav.Link>
+          <Nav.Link href="#action1">NEWS</Nav.Link>
+          <Nav.Link href="#action2">NEW1</Nav.Link>
+        </Nav>
+
+        <Carousel2
+          responsive={responsive}
+        >
+              <a href="#">
+                <Card className="topbrandcard">
+                  <Card.Img variant="top" src={accesicegreen} />
+                  <Card.Body>
+                    <Card.Title>Card Title 1</Card.Title>
+                    <Card.Text>
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </Card.Text>
+                    <Button variant="primary">Go somewhere</Button>
+                  </Card.Body>
+                </Card>
+              </a>
+              <a href="#">
+                <Card className="topbrandcard">
+                  <Card.Img variant="top" src="holder.js/100px180" />
+                  <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Text>
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </Card.Text>
+                    <Button variant="primary">Go somewhere</Button>
+                  </Card.Body>
+                </Card>
+              </a>
+              <a href="#">
+                <Card className="topbrandcard">
+                  <Card.Img variant="top" src="holder.js/100px180" />
+                  <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Text>
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </Card.Text>
+                    <Button variant="primary">Go somewhere</Button>
+                  </Card.Body>
+                </Card>
+              </a>
+              <a href="#">
+                <Card className="topbrandcard">
+                  <Card.Img variant="top" src="holder.js/100px180" />
+                  <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Text>
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </Card.Text>
+                    <Button variant="primary">Go somewhere</Button>
+                  </Card.Body>
+                </Card>
+              </a>
+              <a href="#">
+                <Card className="topbrandcard">
+                  <Card.Img variant="top" src="holder.js/100px180" />
+                  <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Text>
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </Card.Text>
+                    <Button variant="primary">Go somewhere</Button>
+                  </Card.Body>
+                </Card>
+              </a>
+
+              <a href="#">
+                <Card className="topbrandcard">
+                  <Card.Img variant="top" src="holder.js/100px180" />
+                  <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Text>
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </Card.Text>
+                    <Button variant="primary">Go somewhere</Button>
+                  </Card.Body>
+                </Card>
+              </a>
+
+              <a href="#">
+                <Card className="topbrandcard">
+                  <Card.Img variant="top" src="holder.js/100px180" />
+                  <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Text>
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </Card.Text>
+                    <Button variant="primary">Go somewhere</Button>
+                  </Card.Body>
+                </Card>
+              </a>
+
+              <a href="#">
+                <Card className="topbrandcard">
+                  <Card.Img variant="top" src="holder.js/100px180" />
+                  <Card.Body>
+                    <Card.Title>Card Title</Card.Title>
+                    <Card.Text>
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </Card.Text>
+                    <Button variant="primary">Go somewhere</Button>
+                  </Card.Body>
+                </Card>
+              </a>
+        </Carousel2>
+        <Button
+        className="mt-2"
+       variant="outline-primary">
+      More
+    </Button>
+      </div>
+       
     </>
+
+
     
   );
+
+  
 
 }
 
