@@ -1,19 +1,30 @@
 import './App.css';
 import '../src/Allcssfile/Home.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router, Switch , Route } from 'react-router-dom/cjs/react-router-dom';
 import Footer from './Components/Footer';
 import Header from './Components/Header';
-import HomePage from './Pages/HomePage';
-import AllCollection from './Pages/AllCollection';
+import Home from "./Pages/HomePage";
+import NewBike from './Pages/NewBikes';
+import AccBTBlue from './Pages/AllCollectionPages/Accesspage/AccessBTVariant/AccessBTMatblue';
+
 
 
 function App() {
   return (
 <>
+<Router>
 <Header/>
-<HomePage />
-<AllCollection/>
+<Switch>
+<Route exact path="/" component={Home}/>
+<Route exact path="/Newbikes" component={NewBike}/>
+<Route exact path="/AccessBTBlue" component={AccBTBlue}/>
+
+</Switch>
+
 <Footer/>
+</Router>
+
 </>
   );
 }

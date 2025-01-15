@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-
+import { NavLink } from "react-router-dom/cjs/react-router-dom";
 function Header() {
   return (
     <>
@@ -19,10 +19,10 @@ function Header() {
               className=" ms-auto my-3 my-lg-0 fw-bold "
               navbarScroll
             >
-              <Nav.Link href="#action2" className="me-3">HOME</Nav.Link>
-              <Nav.Link href="#action1" className="me-3">NEW BIKES</Nav.Link>
-              <Nav.Link href="#action1" className="me-3">NEWS&REVIEW</Nav.Link>
-              <Nav.Link href="#action2" className="me-3">NEW</Nav.Link>
+              <NavLink to="/" className="me-3 topnavlink">HOME</NavLink>
+              <NavLink  to="/Newbikes" className="me-3 topnavlink">NEW BIKES</NavLink>
+              <NavLink  to="" className="me-3 topnavlink">NEWS&REVIEW</NavLink>
+              <NavLink  to="" className="me-3 topnavlink">NEW</NavLink>
               <Form className="d-flex">
             <Form.Control
               type="search"

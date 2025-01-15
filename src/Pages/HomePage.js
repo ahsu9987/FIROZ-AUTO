@@ -13,6 +13,11 @@ import Card from "react-bootstrap/Card";
 import Nav from "react-bootstrap/Nav";
 import Carousel2 from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import AccessBTmatblue from './HomeAllimages/AllAccessimages/AccmatblueBT.png';
+import AccesBTwhite from './HomeAllimages/AllAccessimages/AccwhiteBT.png';
+import ReactPlayer from "react-player";
+import myvideo from "../assets/bannervideo.mp4";
+
 
 
 function HomePage() {
@@ -41,10 +46,13 @@ function HomePage() {
 
   return (
     <>
+    <div className='homevideo'>
+      <ReactPlayer url={myvideo}  playing={true} loop={false} controls={false} muted={true} progressInterval={1000} className='react-player' />
+    </div>
       <Carousel>
         <Carousel.Item interval={3000}>
           <Row className="bg-light">
-            <Col xs={12} md={8} lg={7} className="bg-light p-5 allcol">
+            <Col xs={12} md={8} lg={7} className="bg-light p-3 allcol">
               <Image
                 src={accesicegreen}
                 className="carsoulimg p-5 "
@@ -215,8 +223,9 @@ function HomePage() {
         </Col>
       </Row>
 
+
            {/* Bikes in Spotlight BIKE SECTION*/}
-           <div className="bg-light burgmanbikesection">
+          <div className="bg-light burgmanbikesection">
       <h1 className="">BIKE IN SPOTLIGHT</h1>
         <Nav id="nav1" className="  my-3 my-lg-0   navtxt" navbarScroll>
           <Nav.Link href="">HOME</Nav.Link>
@@ -228,113 +237,83 @@ function HomePage() {
         <Carousel2
           responsive={responsive}
         >
-              <a href="#">
-                <Card className=" topbrandcard">
-                  <Card.Img variant="top" src={accesicegreen} />
-                  <Card.Body>
-                    <Card.Title>Card Title 1</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                  </Card.Body>
-                </Card>
-              </a>
-              <a href="#">
                 <Card className="topbrandcard">
-                  <Card.Img variant="top" src="holder.js/100px180" />
+                  <Card.Img variant="top"  src={AccessBTmatblue}   fluid/>
                   <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    <Card.Title>Access Bleutooth Blue</Card.Title>
+                    <p>
+                     Rs 1,20,000/-
+                    </p>
+                    <Button variant="outline-success"  className="veiwmorebutton" href="/AccessBTBlue">View More</Button>
                   </Card.Body>
                 </Card>
-              </a>
-              <a href="#">
-                <Card className="topbrandcard">
-                  <Card.Img variant="top" src="holder.js/100px180" />
-                  <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                  </Card.Body>
-                </Card>
-              </a>
-              <a href="#">
-                <Card className=" topbrandcard">
-                  <Card.Img variant="top" src="holder.js/100px180" />
-                  <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                  </Card.Body>
-                </Card>
-              </a>
-              <a href="#">
-                <Card className=" topbrandcard">
-                  <Card.Img variant="top" src="holder.js/100px180" />
-                  <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                  </Card.Body>
-                </Card>
-              </a>
 
-              <a href="#">
                 <Card className="topbrandcard">
-                  <Card.Img variant="top" src="holder.js/100px180" />
+                  <Card.Img variant="top" src={AccesBTwhite}/>
                   <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    <Card.Title>Access Bleutooth White</Card.Title>
+                    <p>
+                     Rs 1,20,000/-
+                    </p>
+                    <Button variant="outline-success"  className="veiwmorebutton" href="/NewBike">View More</Button>
                   </Card.Body>
                 </Card>
-              </a>
 
-              <a href="#">
                 <Card className="topbrandcard">
-                  <Card.Img variant="top" src="holder.js/100px180" />
+                  <Card.Img variant="top" src={AccesBTwhite}/>
                   <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    <Card.Title>Access Bleutooth White</Card.Title>
+                    <p>
+                     Rs 1,20,000/-
+                    </p>
+                    <Button variant="outline-success"  className="veiwmorebutton" href="/NewBike">View More</Button>
                   </Card.Body>
                 </Card>
-              </a>
 
-              <a href="#">
-                <Card className=" topbrandcard">
-                  <Card.Img variant="top" src="holder.js/100px180" />
+                <Card className="topbrandcard">
+                  <Card.Img variant="top" src={AccesBTwhite}/>
                   <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    <Card.Title>Access Bleutooth White</Card.Title>
+                    <p>
+                     Rs 1,20,000/-
+                    </p>
+                    <Button variant="outline-success"  className="veiwmorebutton" href="/NewBike">View More</Button>
                   </Card.Body>
                 </Card>
-              </a>
+
+                <Card className="topbrandcard">
+                  <Card.Img variant="top" src={AccesBTwhite}/>
+                  <Card.Body>
+                    <Card.Title>Access Bleutooth White</Card.Title>
+                    <p>
+                     Rs 1,20,000/-
+                    </p>
+                    <Button variant="outline-success"  className="veiwmorebutton" href="/NewBike">View More</Button>
+                  </Card.Body>
+                </Card>
+
+                <Card className="topbrandcard">
+                  <Card.Img variant="top" src={AccesBTwhite}/>
+                  <Card.Body>
+                    <Card.Title>Access Bleutooth White</Card.Title>
+                    <p>
+                     Rs 1,20,000/-
+                    </p>
+                    <Button variant="outline-success"  className="veiwmorebutton" href="/NewBike">View More</Button>
+                  </Card.Body>
+                </Card>
+
+                <Card className="topbrandcard">
+                  <Card.Img variant="top" src={AccesBTwhite}/>
+                  <Card.Body>
+                    <Card.Title>Access Bleutooth White</Card.Title>
+                    <p>
+                     Rs 1,20,000/-
+                    </p>
+                    <Button variant="outline-success"  className="veiwmorebutton" href="/NewBike">View More</Button>
+                  </Card.Body>
+                </Card>
+
         </Carousel2>
         <Button
         className="mt-2"
@@ -357,113 +336,83 @@ function HomePage() {
         <Carousel2
           responsive={responsive}
         >
-              <a href="#">
                 <Card className="topbrandcard">
-                  <Card.Img variant="top" src={accesicegreen} />
+                  <Card.Img variant="top"  src={AccessBTmatblue}   fluid/>
                   <Card.Body>
-                    <Card.Title>Card Title 1</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    <Card.Title>Access Bleutooth Blue</Card.Title>
+                    <p>
+                     Rs 1,20,000/-
+                    </p>
+                    <Button variant="outline-success"  className="veiwmorebutton" href="/NewBike">View More</Button>
                   </Card.Body>
                 </Card>
-              </a>
-              <a href="#">
-                <Card className="topbrandcard">
-                  <Card.Img variant="top" src="holder.js/100px180" />
-                  <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                  </Card.Body>
-                </Card>
-              </a>
-              <a href="#">
-                <Card className="topbrandcard">
-                  <Card.Img variant="top" src="holder.js/100px180" />
-                  <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                  </Card.Body>
-                </Card>
-              </a>
-              <a href="#">
-                <Card className="topbrandcard">
-                  <Card.Img variant="top" src="holder.js/100px180" />
-                  <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                  </Card.Body>
-                </Card>
-              </a>
-              <a href="#">
-                <Card className="topbrandcard">
-                  <Card.Img variant="top" src="holder.js/100px180" />
-                  <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                  </Card.Body>
-                </Card>
-              </a>
 
-              <a href="#">
                 <Card className="topbrandcard">
-                  <Card.Img variant="top" src="holder.js/100px180" />
+                  <Card.Img variant="top" src={AccesBTwhite}/>
                   <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    <Card.Title>Access Bleutooth White</Card.Title>
+                    <p>
+                     Rs 1,20,000/-
+                    </p>
+                    <Button variant="outline-success"  className="veiwmorebutton" href="/NewBike">View More</Button>
                   </Card.Body>
                 </Card>
-              </a>
 
-              <a href="#">
                 <Card className="topbrandcard">
-                  <Card.Img variant="top" src="holder.js/100px180" />
+                  <Card.Img variant="top" src={AccesBTwhite}/>
                   <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    <Card.Title>Access Bleutooth White</Card.Title>
+                    <p>
+                     Rs 1,20,000/-
+                    </p>
+                    <Button variant="outline-success"  className="veiwmorebutton" href="/NewBike">View More</Button>
                   </Card.Body>
                 </Card>
-              </a>
 
-              <a href="#">
                 <Card className="topbrandcard">
-                  <Card.Img variant="top" src="holder.js/100px180" />
+                  <Card.Img variant="top" src={AccesBTwhite}/>
                   <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    <Card.Title>Access Bleutooth White</Card.Title>
+                    <p>
+                     Rs 1,20,000/-
+                    </p>
+                    <Button variant="outline-success"  className="veiwmorebutton" href="/NewBike">View More</Button>
                   </Card.Body>
                 </Card>
-              </a>
+
+                <Card className="topbrandcard">
+                  <Card.Img variant="top" src={AccesBTwhite}/>
+                  <Card.Body>
+                    <Card.Title>Access Bleutooth White</Card.Title>
+                    <p>
+                     Rs 1,20,000/-
+                    </p>
+                    <Button variant="outline-success"  className="veiwmorebutton" href="/NewBike">View More</Button>
+                  </Card.Body>
+                </Card>
+
+                <Card className="topbrandcard">
+                  <Card.Img variant="top" src={AccesBTwhite}/>
+                  <Card.Body>
+                    <Card.Title>Access Bleutooth White</Card.Title>
+                    <p>
+                     Rs 1,20,000/-
+                    </p>
+                    <Button variant="outline-success"  className="veiwmorebutton" href="/NewBike">View More</Button>
+                  </Card.Body>
+                </Card>
+
+                <Card className="topbrandcard">
+                  <Card.Img variant="top" src={AccesBTwhite}/>
+                  <Card.Body>
+                    <Card.Title>Access Bleutooth White</Card.Title>
+                    <p>
+                     Rs 1,20,000/-
+                    </p>
+                    <Button variant="outline-success"  className="veiwmorebutton" href="/NewBike">View More</Button>
+                  </Card.Body>
+                </Card>
+
         </Carousel2>
         <Button
         className="mt-2"
@@ -474,6 +423,7 @@ function HomePage() {
 
 
       
+     
       {/* BURGMAN BIKE SECTION*/}
       <div className="bg-light burgmanbikesection">
       <h1 className="">BRAND NEW ALL BURGMAN BIKE</h1>
@@ -487,121 +437,90 @@ function HomePage() {
         <Carousel2
           responsive={responsive}
         >
-              <a href="#">
                 <Card className="topbrandcard">
-                  <Card.Img variant="top" src={accesicegreen} />
+                  <Card.Img variant="top"  src={AccessBTmatblue}   fluid/>
                   <Card.Body>
-                    <Card.Title>Card Title 1</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    <Card.Title>Access Bleutooth Blue</Card.Title>
+                    <p>
+                     Rs 1,20,000/-
+                    </p>
+                    <Button variant="outline-success"  className="veiwmorebutton" href="/NewBike">View More</Button>
                   </Card.Body>
                 </Card>
-              </a>
-              <a href="#">
-                <Card className="topbrandcard">
-                  <Card.Img variant="top" src="holder.js/100px180" />
-                  <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                  </Card.Body>
-                </Card>
-              </a>
-              <a href="#">
-                <Card className="topbrandcard">
-                  <Card.Img variant="top" src="holder.js/100px180" />
-                  <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                  </Card.Body>
-                </Card>
-              </a>
-              <a href="#">
-                <Card className="topbrandcard">
-                  <Card.Img variant="top" src="holder.js/100px180" />
-                  <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                  </Card.Body>
-                </Card>
-              </a>
-              <a href="#">
-                <Card className="topbrandcard">
-                  <Card.Img variant="top" src="holder.js/100px180" />
-                  <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                  </Card.Body>
-                </Card>
-              </a>
 
-              <a href="#">
                 <Card className="topbrandcard">
-                  <Card.Img variant="top" src="holder.js/100px180" />
+                  <Card.Img variant="top" src={AccesBTwhite}/>
                   <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    <Card.Title>Access Bleutooth White</Card.Title>
+                    <p>
+                     Rs 1,20,000/-
+                    </p>
+                    <Button variant="outline-success"  className="veiwmorebutton" href="/NewBike">View More</Button>
                   </Card.Body>
                 </Card>
-              </a>
 
-              <a href="#">
                 <Card className="topbrandcard">
-                  <Card.Img variant="top" src="holder.js/100px180" />
+                  <Card.Img variant="top" src={AccesBTwhite}/>
                   <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    <Card.Title>Access Bleutooth White</Card.Title>
+                    <p>
+                     Rs 1,20,000/-
+                    </p>
+                    <Button variant="outline-success"  className="veiwmorebutton" href="/NewBike">View More</Button>
                   </Card.Body>
                 </Card>
-              </a>
 
-              <a href="#">
                 <Card className="topbrandcard">
-                  <Card.Img variant="top" src="holder.js/100px180" />
+                  <Card.Img variant="top" src={AccesBTwhite}/>
                   <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    <Card.Title>Access Bleutooth White</Card.Title>
+                    <p>
+                     Rs 1,20,000/-
+                    </p>
+                    <Button variant="outline-success"  className="veiwmorebutton" href="/NewBike">View More</Button>
                   </Card.Body>
                 </Card>
-              </a>
+
+                <Card className="topbrandcard">
+                  <Card.Img variant="top" src={AccesBTwhite}/>
+                  <Card.Body>
+                    <Card.Title>Access Bleutooth White</Card.Title>
+                    <p>
+                     Rs 1,20,000/-
+                    </p>
+                    <Button variant="outline-success"  className="veiwmorebutton" href="/NewBike">View More</Button>
+                  </Card.Body>
+                </Card>
+
+                <Card className="topbrandcard">
+                  <Card.Img variant="top" src={AccesBTwhite}/>
+                  <Card.Body>
+                    <Card.Title>Access Bleutooth White</Card.Title>
+                    <p>
+                     Rs 1,20,000/-
+                    </p>
+                    <Button variant="outline-success"  className="veiwmorebutton" href="/NewBike">View More</Button>
+                  </Card.Body>
+                </Card>
+
+                <Card className="topbrandcard">
+                  <Card.Img variant="top" src={AccesBTwhite}/>
+                  <Card.Body>
+                    <Card.Title>Access Bleutooth White</Card.Title>
+                    <p>
+                     Rs 1,20,000/-
+                    </p>
+                    <Button variant="outline-success"  className="veiwmorebutton" href="/NewBike">View More</Button>
+                  </Card.Body>
+                </Card>
+
         </Carousel2>
         <Button
         className="mt-2"
        variant="outline-primary">
       More
     </Button>
-      </div>
-       
+      </div>  
     </>
 
 
