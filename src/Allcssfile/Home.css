@@ -14,6 +14,7 @@
 .allcol{
     height: 560px;
     width: 100%;
+    background-color: white;
 }
 .Htxt{
     margin-top: 70px;
@@ -26,6 +27,9 @@
 }
 .topbrandcard{
     width: 16rem;
+}
+#newaccbluespot{
+height: 145px;
 }
 .burgmanbikesection{
     margin: 70px;
@@ -48,10 +52,10 @@
     object-fit: cover;
     width: 100%!important;
     height: 100%!important;
-    border-bottom-left-radius: 60px!important;
-    border-bottom-right-radius: 60px!important;
-    border-bottom-style: groove;
-    border-bottom-color: whitesmoke;
+}
+.tabledata{
+    width: 32rem;
+    padding-left: 10px;
 }
 @media only screen and (max-width: 768px){
     .topnavlink{
@@ -76,6 +80,9 @@
     .topbrandcard{
         width: 10rem;
     }
+    #newaccbluespot{
+        height: 110px;
+        }
     .burgmanbikesection{
         margin: 15px;
         padding: 15px;
@@ -89,5 +96,10 @@
     }
     .homevideo{
         height: 60vh;
+    }
+    .tabledata{
+        width: 19rem;
+        padding-left: 2px;
+
     }
 }

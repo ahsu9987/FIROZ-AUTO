@@ -14,6 +14,7 @@ import Nav from "react-bootstrap/Nav";
 import Carousel2 from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import AccessBTmatblue from './HomeAllimages/AllAccessimages/AccmatblueBT.png';
+import NewAccBTBlue from '../images/NewAccessmatblue.jpg';
 import AccesBTwhite from './HomeAllimages/AllAccessimages/AccwhiteBT.png';
 import ReactPlayer from "react-player";
 import myvideo from "../assets/bannervideo.mp4";
@@ -51,7 +52,7 @@ function HomePage() {
     </div>
       <Carousel>
         <Carousel.Item interval={3000}>
-          <Row className="bg-light">
+          <Row className="bg-dark">
             <Col xs={12} md={8} lg={7} className="bg-light p-3 allcol">
               <Image
                 src={accesicegreen}
@@ -237,12 +238,12 @@ function HomePage() {
         <Carousel2
           responsive={responsive}
         >
-                <Card className="topbrandcard">
-                  <Card.Img variant="top"  src={AccessBTmatblue}   fluid/>
+                <Card className="topbrandcard " >
+                  <Card.Img variant="top" id="newaccbluespot" src={NewAccBTBlue} fluid/>
                   <Card.Body>
-                    <Card.Title>Access Bleutooth Blue</Card.Title>
+                    <Card.Title>Newly launch Access BT Blue</Card.Title>
                     <p>
-                     Rs 1,20,000/-
+                     Rs 1,25,000/-
                     </p>
                     <Button variant="outline-success"  className="veiwmorebutton" href="/AccessBTBlue">View More</Button>
                   </Card.Body>
@@ -325,7 +326,7 @@ function HomePage() {
 
       {/* ACCESS BIKE SECTION*/}
       <div className="bg-light burgmanbikesection">
-      <h1 className="">BRAND NEW ALL ACCESS BIKE</h1>
+      <h1 className="">BRAND NEW ALL ACCESS & BURGMAN</h1>
         <Nav id="nav1" className="  my-3 my-lg-0   navtxt" navbarScroll>
           <Nav.Link href="">HOME</Nav.Link>
           <Nav.Link href="ch2">NEWBIKES</Nav.Link>

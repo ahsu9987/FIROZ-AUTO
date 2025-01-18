@@ -5,6 +5,9 @@ import Navbar from "react-bootstrap/Navbar";
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { NavLink } from "react-router-dom/cjs/react-router-dom";
+import logo from '../images/firozautologo.jpeg';
+import Image from 'react-bootstrap/Image';
+
 function Header() {
   return (
     <>
@@ -13,6 +16,7 @@ function Header() {
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
            
+             <Image src={logo} fluid />;
               <h4 href="#action1" className="fw-bold">FIROZ AUTORIDES</h4>
 
             <Nav
