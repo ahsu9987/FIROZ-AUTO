@@ -19,8 +19,12 @@
 .Htxt{
     margin-top: 70px;
 }
-.burgmanwhite{
-    width: 100%;
+.logofiroz{
+    width: 60%;
+    height: 60vh;
+    padding: 40px;
+    padding-left: 50px;
+    margin-left: 100px;
 }
 .navtxt{
     font-size: medium;
@@ -33,7 +37,7 @@ height: 145px;
 }
 .burgmanbikesection{
     margin: 70px;
-    padding: 30px;
+    padding: 20px;
     border-radius: 20px;
     border-style: groove;
 }
@@ -41,22 +45,50 @@ height: 145px;
     padding: 8px 70px 8px 70px!important;
 }
 .homevideo{
-    width: 100%;
-    height: 100vh;
-}
-.react-player{
     width: 100%!important;
-    height: 98vh!important;
+    height: 100vh!important;
+    /* background-color: red; */
 }
 .react-player video{
+    width: 250%!important;
+    height: 100vh!important;
     object-fit: cover;
-    width: 100%!important;
-    height: 100%!important;
 }
-.tabledata{
+/* .tabledata{
     width: 32rem;
     padding-left: 10px;
+} */
+.logotable{
+    width: 100%!important;
 }
+.bannerfirstsection{
+    width: 33%;
+    height: 390px;
+}
+.btnbrandlogo{
+    padding-left: 630px;
+    padding-right: 630px;
+}
+.brandlogocenter{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Reveiwcard{
+   margin-left: 25px;
+   width: 17rem!important;
+
+}
+.testimonialsection{
+    margin: 15px;
+    padding: 20px;
+    border-radius: 20px;
+    border-style: groove;
+}
+.reviewimages{
+    height: 30vh;
+}
+
 @media only screen and (max-width: 768px){
     .topnavlink{
         margin-top: 0px;
@@ -71,8 +103,11 @@ height: 145px;
     .Htxt{
         margin-top: 3px;
     }
-    .burgmanwhite{
-        width: 100%;
+    .logofiroz{
+        height: 35vh;
+        padding: 10px;
+        padding-left: 10px;
+        margin-left: 70px;
     }
     .navtxt{
         font-size: small;
@@ -84,22 +119,49 @@ height: 145px;
         height: 110px;
         }
     .burgmanbikesection{
-        margin: 15px;
-        padding: 15px;
+        margin: 13px;
+        padding: 8px;
         margin-top: 10px;
     }
     .veiwmorebutton{
         padding: 8px 20px 8px 20px!important;
     }
-    .react-player{
-        height: 60vh!important;
+    .react-player video{
+        height: 80vh!important;
+        width: 100%!important;
     }
     .homevideo{
-        height: 60vh;
+        height: 80vh!important;
+        width: 100%!important;
     }
     .tabledata{
-        width: 19rem;
+        /* width: 19rem; */
         padding-left: 2px;
-
     }
+    .bannerfirstsection{
+        width: 33%;
+        height: 150px;
+    }
+    .logotable{
+        /* width: 10%!important; */
+        background-color: red;
+    }
+    .reviewfont{
+        font-size: 20px;
+    }
+    .Reveiwcard{
+        margin-left: 1px;
+        width: 10rem!important;
+     
+     }
+     .testimonialsection{
+         margin: 5px;
+         padding: 10px;
+         border-radius: 20px;
+         border-style: groove;
+     }
+     .reviewimages{
+         height: 22vh;
+     }
+   
 }

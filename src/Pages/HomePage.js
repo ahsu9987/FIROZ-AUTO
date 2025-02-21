@@ -1,8 +1,9 @@
-import React from "react";
+import { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import { Image } from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import firozlogo from "../images/logofiroz.jpg";
 import accesicegreen from "../images/acces-icegreen.png";
 import accesmatblack from "../images/access mat blk.png";
 import burgmanmatred from "../images/mat red burgman.png";
@@ -11,18 +12,38 @@ import burgmanwhite from "../images/white-burgman.png";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Nav from "react-bootstrap/Nav";
-import Carousel2 from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
-import AccessBTmatblue from './HomeAllimages/AllAccessimages/AccmatblueBT.png';
-import NewAccBTBlue from '../images/NewAccessmatblue.jpg';
-import AccesBTwhite from './HomeAllimages/AllAccessimages/AccwhiteBT.png';
+import Carousel2 from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import AccessBTmatblue from "./HomeAllimages/AllAccessimages/AccmatblueBT.png";
+import NewAccBTBlue from "../images/NewAccessmatblue.jpg";
+import AccesBTwhite from "./HomeAllimages/AllAccessimages/AccwhiteBT.png";
 import ReactPlayer from "react-player";
-import myvideo from "../assets/bannervideo.mp4";
-
-
+import myvideo from "../assets/accesicegreen.mp4";
+import bannerburgmanimg from "../images/bannerburgmanimg.jpg";
+import bannerblkburgman from "../images/bannerblkburgman.jpeg";
+import banneravenis from "../images/banneravenis.jpeg";
+import Table from "react-bootstrap/Table";
+import Collapse from "react-bootstrap/Collapse";
+import suzukilogo from "../Pages/HomeAllimages/Alllogo/suzukilogo.png";
+import tvslogo from "../Pages/HomeAllimages/Alllogo/tvslogo.png";
+import royalelogo from "../Pages/HomeAllimages/Alllogo/royallogo.png";
+import honda from "../Pages/HomeAllimages/Alllogo/hondalogo.png";
+import hero from "../Pages/HomeAllimages/Alllogo/herologo.png";
+import kawasaki from "../Pages/HomeAllimages/Alllogo/kawasakilogo.png";
+import yamaha from "../Pages/HomeAllimages/Alllogo/yamhalogo.png";
+import vespa from "../Pages/HomeAllimages/Alllogo/vespalogo.png";
+import ktm from "../Pages/HomeAllimages/Alllogo/ktmlogo.png";
+import bajaj from "../Pages/HomeAllimages/Alllogo/bajajlogo.png";
+import Reveiw1 from "../Pages/HomeAllimages/Review/Review1.png";
+import Reveiw2 from "../Pages/HomeAllimages/Review/Review2.png";
+import Reveiw3 from "../Pages/HomeAllimages/Review/review3.png";
+import Reveiw4 from "../Pages/HomeAllimages/Review/review4.png";
+import Reveiw5 from "../Pages/HomeAllimages/Review/review5.png";
+import Reveiw6 from "../Pages/HomeAllimages/Review/review6.png";
+import Reveiw7 from "../Pages/HomeAllimages/Review/review7.png";
+import Reveiw8 from "../Pages/HomeAllimages/Review/review8.png";
 
 function HomePage() {
-
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 1024 },
@@ -31,7 +52,7 @@ function HomePage() {
     desktop: {
       breakpoint: { max: 1024, min: 768 },
       items: 1,
-      slidesToSlide: 2 ,
+      slidesToSlide: 2,
     },
     tablet: {
       breakpoint: { max: 768, min: 464 },
@@ -44,20 +65,58 @@ function HomePage() {
     },
   };
 
+  const [open, setOpen] = useState(false); //logosection
 
   return (
     <>
-    <div className='homevideo'>
-      <ReactPlayer url={myvideo}  playing={true} loop={false} controls={false} muted={true} progressInterval={1000} className='react-player' />
-    </div>
+      {/* HOMEVIDEO*/}
+      <div className="homevideo d-flex">
+        <ReactPlayer
+          url={myvideo}
+          playing={true}
+          loop={true}
+          controls={false}
+          muted={true}
+          progressInterval={8000}
+          className="react-player"
+          auotplay
+        />
+      </div>
+
+      {/* ABOUT US */}
+      <Row>
+        <Col xs={12} md={8} lg={6} className="bg-light p-5">
+          <h1>ABOUT US</h1>
+          <h3>WELCOME TO FIROZ AUTORIDES SAFE RIDE</h3>
+          <h6>
+            Welcome to Firoz AutoRides, your trusted destination for brand new
+            two-wheelers. Established in 2018, Firoz AutoRides has quickly
+            become a leading name in the two-wheeler Multi Brand Dealer,
+            renowned for our commitment to quality, customer satisfaction, and
+            innovation. <br></br>
+            Since our inception, we have been dedicated to providing our
+            customers with the best selection of two-wheelers, ranging from
+            scooters to motorcycles. Our journey began with a simple mission: to
+            make high-quality two-wheelers accessible to everyone, ensuring a
+            smooth, safe, and enjoyable ride for our customers.<br></br>
+            Experience the difference at Firoz AutoRides. Visit our showroom and
+            explore our wide range of brand new two-wheelers. Our friendly and
+            knowledgeable staff are here to help you make the right choice and
+            ensure you have an unforgettable riding experience.
+          </h6>
+        </Col>
+        <Col xs={12} md={8} lg={6} className="bg-light">
+          <Image src={firozlogo} className="logofiroz" />
+        </Col>
+      </Row>
+
+      {/* HOME SCROLL VEHICLES */}
+
       <Carousel>
         <Carousel.Item interval={3000}>
           <Row className="bg-dark">
             <Col xs={12} md={8} lg={7} className="bg-light p-3 allcol">
-              <Image
-                src={accesicegreen}
-                className="carsoulimg p-5 "
-              />
+              <Image src={accesicegreen} className="carsoulimg p-5 " />
             </Col>
             <Col xs={12} md={4} lg={5} className="bg-light p-5 ">
               <h1 className="Htxt" style={{ color: "#87D8C3" }}>
@@ -83,10 +142,7 @@ function HomePage() {
         <Carousel.Item interval={3000}>
           <Row>
             <Col xs={12} md={8} lg={7} className="bg-light p-3 allcol ">
-              <Image
-                className="carsoulimg p-5"
-                src={accesmatblack}
-              />
+              <Image className="carsoulimg p-5" src={accesmatblack} />
             </Col>
             <Col xs={12} md={4} lg={5} className="bg-light p-5">
               <h1 className="text-danger Htxt">
@@ -112,10 +168,7 @@ function HomePage() {
         <Carousel.Item interval={3000}>
           <Row>
             <Col xs={12} md={8} lg={7} className="bg-light p-3 allcol">
-              <Image
-                className="carsoulimg p-5"
-                src={burgmanmatred}
-              />
+              <Image className="carsoulimg p-5" src={burgmanmatred} />
             </Col>
             <Col xs={12} md={4} lg={5} className="bg-light p-5">
               <h1 className=" Htxt" style={{ color: "#841b2d" }}>
@@ -141,10 +194,7 @@ function HomePage() {
         <Carousel.Item interval={1000}>
           <Row>
             <Col xs={12} md={8} lg={7} className="bg-light p-3 allcol">
-              <Image
-                className="carsoulimg p-5"
-                src={burgmanmatblue}
-              />
+              <Image className="carsoulimg p-5" src={burgmanmatblue} />
             </Col>
             <Col xs={12} md={4} lg={5} className="bg-light p-5">
               <h1 className="Htxt" style={{ color: "#2c6fbb" }}>
@@ -170,10 +220,7 @@ function HomePage() {
         <Carousel.Item interval={1000}>
           <Row>
             <Col xs={12} md={8} lg={7} className="bg-light p-3 allcol">
-              <Image
-                className="carsoulimg p-5"
-                src={burgmanwhite}
-              />
+              <Image className="carsoulimg p-5" src={burgmanwhite} />
             </Col>
             <Col xs={12} md={4} lg={5} className="bg-light p-5">
               <h1 className="Htxt text-dark">
@@ -197,37 +244,9 @@ function HomePage() {
         </Carousel.Item>
       </Carousel>
 
-      {/* ABOUT US */}
-      <Row >
-        <Col xs={12} md={8} lg={6} className="bg-light p-5">
-          <h1>ABOUT US</h1>
-          <h3>WELCOME TO FIROZ AUTORIDES SAFE RIDE</h3>
-          <h6>
-            Welcome to Firoz AutoRides, your trusted destination for brand new
-            two-wheelers. Established in 2018, Firoz AutoRides has quickly
-            become a leading name in the two-wheeler Multi Brand Dealer,
-            renowned for our commitment to quality, customer satisfaction, and
-            innovation. <br></br>
-            Since our inception, we have been dedicated to providing our
-            customers with the best selection of two-wheelers, ranging from
-            scooters to motorcycles. Our journey began with a simple mission: to
-            make high-quality two-wheelers accessible to everyone, ensuring a
-            smooth, safe, and enjoyable ride for our customers.<br></br>
-            Experience the difference at Firoz AutoRides. Visit our showroom and
-            explore our wide range of brand new two-wheelers. Our friendly and
-            knowledgeable staff are here to help you make the right choice and
-            ensure you have an unforgettable riding experience.
-          </h6>
-        </Col>
-        <Col xs={12} md={8} lg={6} className="bg-light">
-          <Image src={burgmanwhite} className="burgmanwhite" />
-        </Col>
-      </Row>
-
-
-           {/* Bikes in Spotlight BIKE SECTION*/}
-          <div className="bg-light burgmanbikesection">
-      <h1 className="">BIKE IN SPOTLIGHT</h1>
+      {/* Bikes in Spotlight BIKE SECTION*/}
+      <div className="bg-light burgmanbikesection">
+        <h1 className="">BIKE IN SPOTLIGHT</h1>
         <Nav id="nav1" className="  my-3 my-lg-0   navtxt" navbarScroll>
           <Nav.Link href="">HOME</Nav.Link>
           <Nav.Link href="ch2">NEWBIKES</Nav.Link>
@@ -235,98 +254,143 @@ function HomePage() {
           <Nav.Link href="#action2">NEW1</Nav.Link>
         </Nav>
 
-        <Carousel2
-          responsive={responsive}
-        >
-                <Card className="topbrandcard " >
-                  <Card.Img variant="top" id="newaccbluespot" src={NewAccBTBlue} fluid/>
-                  <Card.Body>
-                    <Card.Title>Newly launch Access BT Blue</Card.Title>
-                    <p>
-                     Rs 1,25,000/-
-                    </p>
-                    <Button variant="outline-success"  className="veiwmorebutton" href="/AccessBTBlue">View More</Button>
-                  </Card.Body>
-                </Card>
+        <Carousel2 responsive={responsive}>
+          <Card className="topbrandcard ">
+            <a href="/AccessBTBlue">
+              <Card.Img
+                variant="top"
+                id="newaccbluespot"
+                src={NewAccBTBlue}
+                fluid
+                style={{ cursor: "pointer" }}
+              />
+            </a>
 
-                <Card className="topbrandcard">
-                  <Card.Img variant="top" src={AccesBTwhite}/>
-                  <Card.Body>
-                    <Card.Title>Access Bleutooth White</Card.Title>
-                    <p>
-                     Rs 1,20,000/-
-                    </p>
-                    <Button variant="outline-success"  className="veiwmorebutton" href="/NewBike">View More</Button>
-                  </Card.Body>
-                </Card>
+            <Card.Body>
+              <Card.Title>Newly launch Access BT Blue</Card.Title>
+              <p>Rs 1,25,000/-</p>
+              <Button
+                variant="outline-success"
+                className="veiwmorebutton"
+                href="/AccessBTBlue"
+              >
+                View More
+              </Button>
+            </Card.Body>
+          </Card>
 
-                <Card className="topbrandcard">
-                  <Card.Img variant="top" src={AccesBTwhite}/>
-                  <Card.Body>
-                    <Card.Title>Access Bleutooth White</Card.Title>
-                    <p>
-                     Rs 1,20,000/-
-                    </p>
-                    <Button variant="outline-success"  className="veiwmorebutton" href="/NewBike">View More</Button>
-                  </Card.Body>
-                </Card>
+          <Card className="topbrandcard">
+            <a href="/AccessBTBlue">
+              <Card.Img
+                variant="top"
+                src={AccesBTwhite}
+                fluid
+                style={{ cursor: "pointer" }}
+              />
+            </a>
+            <Card.Body>
+              <Card.Title>Access Bleutooth White</Card.Title>
+              <p>Rs 1,20,000/-</p>
+              <Button
+                variant="outline-success"
+                className="veiwmorebutton"
+                href="/NewBike"
+              >
+                View More
+              </Button>
+            </Card.Body>
+          </Card>
 
-                <Card className="topbrandcard">
-                  <Card.Img variant="top" src={AccesBTwhite}/>
-                  <Card.Body>
-                    <Card.Title>Access Bleutooth White</Card.Title>
-                    <p>
-                     Rs 1,20,000/-
-                    </p>
-                    <Button variant="outline-success"  className="veiwmorebutton" href="/NewBike">View More</Button>
-                  </Card.Body>
-                </Card>
+          <Card className="topbrandcard">
+            <a href="/AccessBTBlue">
+              <Card.Img
+                variant="top"
+                src={AccesBTwhite}
+                fluid
+                style={{ cursor: "pointer" }}
+              />
+            </a>
+            <Card.Body>
+              <Card.Title>Access Bleutooth White</Card.Title>
+              <p>Rs 1,20,000/-</p>
+              <Button
+                variant="outline-success"
+                className="veiwmorebutton"
+                href="/NewBike"
+              >
+                View More
+              </Button>
+            </Card.Body>
+          </Card>
 
-                <Card className="topbrandcard">
-                  <Card.Img variant="top" src={AccesBTwhite}/>
-                  <Card.Body>
-                    <Card.Title>Access Bleutooth White</Card.Title>
-                    <p>
-                     Rs 1,20,000/-
-                    </p>
-                    <Button variant="outline-success"  className="veiwmorebutton" href="/NewBike">View More</Button>
-                  </Card.Body>
-                </Card>
+          <Card className="topbrandcard">
+            <Card.Img variant="top" src={AccesBTwhite} />
+            <Card.Body>
+              <Card.Title>Access Bleutooth White</Card.Title>
+              <p>Rs 1,20,000/-</p>
+              <Button
+                variant="outline-success"
+                className="veiwmorebutton"
+                href="/NewBike"
+              >
+                View More
+              </Button>
+            </Card.Body>
+          </Card>
 
-                <Card className="topbrandcard">
-                  <Card.Img variant="top" src={AccesBTwhite}/>
-                  <Card.Body>
-                    <Card.Title>Access Bleutooth White</Card.Title>
-                    <p>
-                     Rs 1,20,000/-
-                    </p>
-                    <Button variant="outline-success"  className="veiwmorebutton" href="/NewBike">View More</Button>
-                  </Card.Body>
-                </Card>
+          <Card className="topbrandcard">
+            <Card.Img variant="top" src={AccesBTwhite} />
+            <Card.Body>
+              <Card.Title>Access Bleutooth White</Card.Title>
+              <p>Rs 1,20,000/-</p>
+              <Button
+                variant="outline-success"
+                className="veiwmorebutton"
+                href="/NewBike"
+              >
+                View More
+              </Button>
+            </Card.Body>
+          </Card>
 
-                <Card className="topbrandcard">
-                  <Card.Img variant="top" src={AccesBTwhite}/>
-                  <Card.Body>
-                    <Card.Title>Access Bleutooth White</Card.Title>
-                    <p>
-                     Rs 1,20,000/-
-                    </p>
-                    <Button variant="outline-success"  className="veiwmorebutton" href="/NewBike">View More</Button>
-                  </Card.Body>
-                </Card>
+          <Card className="topbrandcard">
+            <Card.Img variant="top" src={AccesBTwhite} />
+            <Card.Body>
+              <Card.Title>Access Bleutooth White</Card.Title>
+              <p>Rs 1,20,000/-</p>
+              <Button
+                variant="outline-success"
+                className="veiwmorebutton"
+                href="/NewBike"
+              >
+                View More
+              </Button>
+            </Card.Body>
+          </Card>
 
+          <Card className="topbrandcard">
+            <Card.Img variant="top" src={AccesBTwhite} />
+            <Card.Body>
+              <Card.Title>Access Bleutooth White</Card.Title>
+              <p>Rs 1,20,000/-</p>
+              <Button
+                variant="outline-success"
+                className="veiwmorebutton"
+                href="/NewBike"
+              >
+                View More
+              </Button>
+            </Card.Body>
+          </Card>
         </Carousel2>
-        <Button
-        className="mt-2"
-       variant="outline-primary">
-      More
-    </Button>
+        <Button className="mt-2" variant="outline-primary">
+          More
+        </Button>
       </div>
-
 
       {/* ACCESS BIKE SECTION*/}
       <div className="bg-light burgmanbikesection">
-      <h1 className="">BRAND NEW ALL ACCESS & BURGMAN</h1>
+        <h1 className="">BRAND NEW ALL ACCESS & BURGMAN</h1>
         <Nav id="nav1" className="  my-3 my-lg-0   navtxt" navbarScroll>
           <Nav.Link href="">HOME</Nav.Link>
           <Nav.Link href="ch2">NEWBIKES</Nav.Link>
@@ -334,100 +398,127 @@ function HomePage() {
           <Nav.Link href="#action2">NEW1</Nav.Link>
         </Nav>
 
-        <Carousel2
-          responsive={responsive}
-        >
-                <Card className="topbrandcard">
-                  <Card.Img variant="top"  src={AccessBTmatblue}   fluid/>
-                  <Card.Body>
-                    <Card.Title>Access Bleutooth Blue</Card.Title>
-                    <p>
-                     Rs 1,20,000/-
-                    </p>
-                    <Button variant="outline-success"  className="veiwmorebutton" href="/NewBike">View More</Button>
-                  </Card.Body>
-                </Card>
+        <Carousel2 responsive={responsive}>
+          <Card className="topbrandcard">
+            <Card.Img variant="top" src={AccessBTmatblue} fluid />
+            <Card.Body>
+              <Card.Title>Access Bleutooth Blue</Card.Title>
+              <p>Rs 1,20,000/-</p>
+              <Button
+                variant="outline-success"
+                className="veiwmorebutton"
+                href="/NewBike"
+              >
+                View More
+              </Button>
+            </Card.Body>
+          </Card>
 
-                <Card className="topbrandcard">
-                  <Card.Img variant="top" src={AccesBTwhite}/>
-                  <Card.Body>
-                    <Card.Title>Access Bleutooth White</Card.Title>
-                    <p>
-                     Rs 1,20,000/-
-                    </p>
-                    <Button variant="outline-success"  className="veiwmorebutton" href="/NewBike">View More</Button>
-                  </Card.Body>
-                </Card>
+          <Card className="topbrandcard">
+            <Card.Img variant="top" src={AccesBTwhite} />
+            <Card.Body>
+              <Card.Title>Access Bleutooth White</Card.Title>
+              <p>Rs 1,20,000/-</p>
+              <Button
+                variant="outline-success"
+                className="veiwmorebutton"
+                href="/NewBike"
+              >
+                View More
+              </Button>
+            </Card.Body>
+          </Card>
 
-                <Card className="topbrandcard">
-                  <Card.Img variant="top" src={AccesBTwhite}/>
-                  <Card.Body>
-                    <Card.Title>Access Bleutooth White</Card.Title>
-                    <p>
-                     Rs 1,20,000/-
-                    </p>
-                    <Button variant="outline-success"  className="veiwmorebutton" href="/NewBike">View More</Button>
-                  </Card.Body>
-                </Card>
+          <Card className="topbrandcard">
+            <Card.Img variant="top" src={AccesBTwhite} />
+            <Card.Body>
+              <Card.Title>Access Bleutooth White</Card.Title>
+              <p>Rs 1,20,000/-</p>
+              <Button
+                variant="outline-success"
+                className="veiwmorebutton"
+                href="/NewBike"
+              >
+                View More
+              </Button>
+            </Card.Body>
+          </Card>
 
-                <Card className="topbrandcard">
-                  <Card.Img variant="top" src={AccesBTwhite}/>
-                  <Card.Body>
-                    <Card.Title>Access Bleutooth White</Card.Title>
-                    <p>
-                     Rs 1,20,000/-
-                    </p>
-                    <Button variant="outline-success"  className="veiwmorebutton" href="/NewBike">View More</Button>
-                  </Card.Body>
-                </Card>
+          <Card className="topbrandcard">
+            <Card.Img variant="top" src={AccesBTwhite} />
+            <Card.Body>
+              <Card.Title>Access Bleutooth White</Card.Title>
+              <p>Rs 1,20,000/-</p>
+              <Button
+                variant="outline-success"
+                className="veiwmorebutton"
+                href="/NewBike"
+              >
+                View More
+              </Button>
+            </Card.Body>
+          </Card>
 
-                <Card className="topbrandcard">
-                  <Card.Img variant="top" src={AccesBTwhite}/>
-                  <Card.Body>
-                    <Card.Title>Access Bleutooth White</Card.Title>
-                    <p>
-                     Rs 1,20,000/-
-                    </p>
-                    <Button variant="outline-success"  className="veiwmorebutton" href="/NewBike">View More</Button>
-                  </Card.Body>
-                </Card>
+          <Card className="topbrandcard">
+            <Card.Img variant="top" src={AccesBTwhite} />
+            <Card.Body>
+              <Card.Title>Access Bleutooth White</Card.Title>
+              <p>Rs 1,20,000/-</p>
+              <Button
+                variant="outline-success"
+                className="veiwmorebutton"
+                href="/NewBike"
+              >
+                View More
+              </Button>
+            </Card.Body>
+          </Card>
 
-                <Card className="topbrandcard">
-                  <Card.Img variant="top" src={AccesBTwhite}/>
-                  <Card.Body>
-                    <Card.Title>Access Bleutooth White</Card.Title>
-                    <p>
-                     Rs 1,20,000/-
-                    </p>
-                    <Button variant="outline-success"  className="veiwmorebutton" href="/NewBike">View More</Button>
-                  </Card.Body>
-                </Card>
+          <Card className="topbrandcard">
+            <Card.Img variant="top" src={AccesBTwhite} />
+            <Card.Body>
+              <Card.Title>Access Bleutooth White</Card.Title>
+              <p>Rs 1,20,000/-</p>
+              <Button
+                variant="outline-success"
+                className="veiwmorebutton"
+                href="/NewBike"
+              >
+                View More
+              </Button>
+            </Card.Body>
+          </Card>
 
-                <Card className="topbrandcard">
-                  <Card.Img variant="top" src={AccesBTwhite}/>
-                  <Card.Body>
-                    <Card.Title>Access Bleutooth White</Card.Title>
-                    <p>
-                     Rs 1,20,000/-
-                    </p>
-                    <Button variant="outline-success"  className="veiwmorebutton" href="/NewBike">View More</Button>
-                  </Card.Body>
-                </Card>
-
+          <Card className="topbrandcard">
+            <Card.Img variant="top" src={AccesBTwhite} />
+            <Card.Body>
+              <Card.Title>Access Bleutooth White</Card.Title>
+              <p>Rs 1,20,000/-</p>
+              <Button
+                variant="outline-success"
+                className="veiwmorebutton"
+                href="/NewBike"
+              >
+                View More
+              </Button>
+            </Card.Body>
+          </Card>
         </Carousel2>
-        <Button
-        className="mt-2"
-       variant="outline-primary">
-      More
-    </Button>
+        <Button className="mt-2" variant="outline-primary">
+          More
+        </Button>
       </div>
 
+      {/* Banner SECTION*/}
+      <div className="mt-2 mb-3">
+        <Image src={bannerburgmanimg} className="bannerfirstsection" />
+        <Image src={bannerblkburgman} className="bannerfirstsection" />
+        <Image src={banneravenis} className="bannerfirstsection" />
+      </div>
 
-      
-     
       {/* BURGMAN BIKE SECTION*/}
       <div className="bg-light burgmanbikesection">
-      <h1 className="">BRAND NEW ALL BURGMAN BIKE</h1>
+        <h1 className="">BRAND NEW ALL OTHERS</h1>
         <Nav id="nav1" className="  my-3 my-lg-0   navtxt" navbarScroll>
           <Nav.Link href="">HOME</Nav.Link>
           <Nav.Link href="ch2">NEWBIKES</Nav.Link>
@@ -435,102 +526,351 @@ function HomePage() {
           <Nav.Link href="#action2">NEW1</Nav.Link>
         </Nav>
 
-        <Carousel2
-          responsive={responsive}
-        >
-                <Card className="topbrandcard">
-                  <Card.Img variant="top"  src={AccessBTmatblue}   fluid/>
-                  <Card.Body>
-                    <Card.Title>Access Bleutooth Blue</Card.Title>
-                    <p>
-                     Rs 1,20,000/-
-                    </p>
-                    <Button variant="outline-success"  className="veiwmorebutton" href="/NewBike">View More</Button>
-                  </Card.Body>
-                </Card>
+        <Carousel2 responsive={responsive}>
+          <Card className="topbrandcard">
+            <Card.Img variant="top" src={AccessBTmatblue} fluid />
+            <Card.Body>
+              <Card.Title>Access Bleutooth Blue</Card.Title>
+              <p>Rs 1,20,000/-</p>
+              <Button
+                variant="outline-success"
+                className="veiwmorebutton"
+                href="/NewBike"
+              >
+                View More
+              </Button>
+            </Card.Body>
+          </Card>
 
-                <Card className="topbrandcard">
-                  <Card.Img variant="top" src={AccesBTwhite}/>
-                  <Card.Body>
-                    <Card.Title>Access Bleutooth White</Card.Title>
-                    <p>
-                     Rs 1,20,000/-
-                    </p>
-                    <Button variant="outline-success"  className="veiwmorebutton" href="/NewBike">View More</Button>
-                  </Card.Body>
-                </Card>
+          <Card className="topbrandcard">
+            <Card.Img variant="top" src={AccesBTwhite} />
+            <Card.Body>
+              <Card.Title>Access Bleutooth White</Card.Title>
+              <p>Rs 1,20,000/-</p>
+              <Button
+                variant="outline-success"
+                className="veiwmorebutton"
+                href="/NewBike"
+              >
+                View More
+              </Button>
+            </Card.Body>
+          </Card>
 
-                <Card className="topbrandcard">
-                  <Card.Img variant="top" src={AccesBTwhite}/>
-                  <Card.Body>
-                    <Card.Title>Access Bleutooth White</Card.Title>
-                    <p>
-                     Rs 1,20,000/-
-                    </p>
-                    <Button variant="outline-success"  className="veiwmorebutton" href="/NewBike">View More</Button>
-                  </Card.Body>
-                </Card>
+          <Card className="topbrandcard">
+            <Card.Img variant="top" src={AccesBTwhite} />
+            <Card.Body>
+              <Card.Title>Access Bleutooth White</Card.Title>
+              <p>Rs 1,20,000/-</p>
+              <Button
+                variant="outline-success"
+                className="veiwmorebutton"
+                href="/NewBike"
+              >
+                View More
+              </Button>
+            </Card.Body>
+          </Card>
 
-                <Card className="topbrandcard">
-                  <Card.Img variant="top" src={AccesBTwhite}/>
-                  <Card.Body>
-                    <Card.Title>Access Bleutooth White</Card.Title>
-                    <p>
-                     Rs 1,20,000/-
-                    </p>
-                    <Button variant="outline-success"  className="veiwmorebutton" href="/NewBike">View More</Button>
-                  </Card.Body>
-                </Card>
+          <Card className="topbrandcard">
+            <Card.Img variant="top" src={AccesBTwhite} />
+            <Card.Body>
+              <Card.Title>Access Bleutooth White</Card.Title>
+              <p>Rs 1,20,000/-</p>
+              <Button
+                variant="outline-success"
+                className="veiwmorebutton"
+                href="/NewBike"
+              >
+                View More
+              </Button>
+            </Card.Body>
+          </Card>
 
-                <Card className="topbrandcard">
-                  <Card.Img variant="top" src={AccesBTwhite}/>
-                  <Card.Body>
-                    <Card.Title>Access Bleutooth White</Card.Title>
-                    <p>
-                     Rs 1,20,000/-
-                    </p>
-                    <Button variant="outline-success"  className="veiwmorebutton" href="/NewBike">View More</Button>
-                  </Card.Body>
-                </Card>
+          <Card className="topbrandcard">
+            <Card.Img variant="top" src={AccesBTwhite} />
+            <Card.Body>
+              <Card.Title>Access Bleutooth White</Card.Title>
+              <p>Rs 1,20,000/-</p>
+              <Button
+                variant="outline-success"
+                className="veiwmorebutton"
+                href="/NewBike"
+              >
+                View More
+              </Button>
+            </Card.Body>
+          </Card>
 
-                <Card className="topbrandcard">
-                  <Card.Img variant="top" src={AccesBTwhite}/>
-                  <Card.Body>
-                    <Card.Title>Access Bleutooth White</Card.Title>
-                    <p>
-                     Rs 1,20,000/-
-                    </p>
-                    <Button variant="outline-success"  className="veiwmorebutton" href="/NewBike">View More</Button>
-                  </Card.Body>
-                </Card>
+          <Card className="topbrandcard">
+            <Card.Img variant="top" src={AccesBTwhite} />
+            <Card.Body>
+              <Card.Title>Access Bleutooth White</Card.Title>
+              <p>Rs 1,20,000/-</p>
+              <Button
+                variant="outline-success"
+                className="veiwmorebutton"
+                href="/NewBike"
+              >
+                View More
+              </Button>
+            </Card.Body>
+          </Card>
 
-                <Card className="topbrandcard">
-                  <Card.Img variant="top" src={AccesBTwhite}/>
-                  <Card.Body>
-                    <Card.Title>Access Bleutooth White</Card.Title>
-                    <p>
-                     Rs 1,20,000/-
-                    </p>
-                    <Button variant="outline-success"  className="veiwmorebutton" href="/NewBike">View More</Button>
-                  </Card.Body>
-                </Card>
-
+          <Card className="topbrandcard">
+            <Card.Img variant="top" src={AccesBTwhite} />
+            <Card.Body>
+              <Card.Title>Access Bleutooth White</Card.Title>
+              <p>Rs 1,20,000/-</p>
+              <Button
+                variant="outline-success"
+                className="veiwmorebutton"
+                href="/NewBike"
+              >
+                View More
+              </Button>
+            </Card.Body>
+          </Card>
         </Carousel2>
-        <Button
-        className="mt-2"
-       variant="outline-primary">
-      More
-    </Button>
-      </div>  
+        <Button className="mt-2" variant="outline-primary">
+          More
+        </Button>
+      </div>
+
+      {/* brandlogo SECTION*/}
+      <div className="bg-light burgmanbikesection">
+        <h1 className="ms-5">Browse Bikes Brand</h1>
+
+        <Table striped="columns" className="logotable" border={"3px"}>
+          <tbody>
+            <tr>
+              <td style={{ width: "20px" }}>
+                <a href="/AccessBTBlue">
+                  <Image src={suzukilogo} className="brandlogocenter" />
+                </a>
+              </td>
+              <td style={{ width: "20px" }}>
+                {" "}
+                <a href="/AccessBTBlue">
+                  <Image src={tvslogo} className="brandlogocenter" />
+                </a>
+              </td>
+              <td style={{ width: "20px" }}>
+                {" "}
+                <a href="/AccessBTBlue">
+                  <Image src={royalelogo} className="brandlogocenter" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td style={{ width: "20px" }}>
+                <a href="/AccessBTBlue">
+                  <Image src={honda} className="brandlogocenter" />
+                </a>
+              </td>
+              <td style={{ width: "20px" }}>
+                {" "}
+                <a href="/AccessBTBlue">
+                  <Image src={hero} className="brandlogocenter" />
+                </a>
+              </td>
+              <td style={{ width: "20px" }}>
+                {" "}
+                <a href="/AccessBTBlue">
+                  <Image src={kawasaki} className="brandlogocenter" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td style={{ width: "20px" }}>
+                <a href="/AccessBTBlue">
+                  <Image src={yamaha} className="brandlogocenter" />
+                </a>
+              </td>
+              <td style={{ width: "20px" }}>
+                {" "}
+                <a href="/AccessBTBlue">
+                  <Image src={vespa} className="brandlogocenter" />
+                </a>
+              </td>
+              <td style={{ width: "20px" }}>
+                {" "}
+                <a href="/AccessBTBlue">
+                  <Image src={ktm} className="brandlogocenter" />
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td colSpan={5}>
+                <Button
+                  onClick={() => setOpen(!open)}
+                  aria-controls="example-collapse-text"
+                  aria-expanded={open}
+                  variant="outline-dark"
+                  className="btnbrandlogo"
+                >
+                  Veiw more
+                </Button>
+                <Collapse in={open}>
+                  <Table striped="columns">
+                    <tbody border="3px">
+                      <tr>
+                        <td style={{ width: "20px" }}>
+                          <a href="/AccessBTBlue">
+                            <Image src={bajaj} className="brandlogocenter" />
+                          </a>
+                        </td>
+                        <td style={{ width: "20px" }}>
+                          {" "}
+                          <a href="/AccessBTBlue">
+                            <Image src={bajaj} className="brandlogocenter" />
+                          </a>
+                        </td>
+                        <td style={{ width: "20px" }}>
+                          {" "}
+                          <a href="/AccessBTBlue">
+                            <Image src={bajaj} className="brandlogocenter" />
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style={{ width: "20px" }}>
+                          <a href="/AccessBTBlue">
+                            <Image src={bajaj} className="brandlogocenter" />
+                          </a>
+                        </td>
+                        <td style={{ width: "20px" }}>
+                          {" "}
+                          <a href="/AccessBTBlue">
+                            <Image src={bajaj} className="brandlogocenter" />
+                          </a>
+                        </td>
+                        <td style={{ width: "20px" }}>
+                          {" "}
+                          <a href="/AccessBTBlue">
+                            <Image src={bajaj} className="brandlogocenter" />
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style={{ width: "20px" }}>
+                          <a href="/AccessBTBlue">
+                            <Image src={bajaj} className="brandlogocenter" />
+                          </a>
+                        </td>
+                        <td style={{ width: "20px" }}>
+                          {" "}
+                          <a href="/AccessBTBlue">
+                            <Image src={bajaj} className="brandlogocenter" />
+                          </a>
+                        </td>
+                        <td style={{ width: "20px" }}>
+                          {" "}
+                          <a href="/AccessBTBlue">
+                            <Image src={bajaj} className="brandlogocenter" />
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </Table>
+                </Collapse>
+              </td>
+            </tr>
+          </tbody>
+        </Table>
+      </div>
+
+      {/* testimonial*/}
+      <div className="bg-light testimonialsection">
+        <h1 className="text-center mb-4 mt-4 reviewfont"><span style={{color:'#ffdb0f'}}>******</span>CUSTOMER REVIEW<span style={{color:'#ffdb0f'}}>******</span></h1>
+
+        <Carousel2 responsive={responsive}>
+          <Card className="Reveiwcard">
+            <Card.Img
+              variant="top"
+              className="reviewimages"
+              src={Reveiw1}
+              fluid
+              style={{ cursor: "pointer" }}
+            />
+          </Card>
+
+          <Card className="Reveiwcard ">
+            <Card.Img
+              variant="top"
+              className="reviewimages"
+              src={Reveiw2}
+              fluid
+              style={{ cursor: "pointer" }}
+            />
+          </Card>
+
+          <Card className="Reveiwcard ">
+            <Card.Img
+              variant="top"
+              className="reviewimages"
+              src={Reveiw3}
+              fluid
+              style={{ cursor: "pointer" }}
+            />
+          </Card>
+
+          <Card className="Reveiwcard ">
+            <Card.Img
+              variant="top"
+              className="reviewimages"
+              src={Reveiw4}
+              fluid
+              style={{ cursor: "pointer" }}
+            />
+          </Card>
+
+          <Card className="Reveiwcard ">
+            <Card.Img
+              variant="top"
+              className="reviewimages"
+              src={Reveiw5}
+              fluid
+              style={{ cursor: "pointer" }}
+            />
+          </Card>
+
+          <Card className="Reveiwcard ">
+            <Card.Img
+              variant="top"
+              className="reviewimages"
+              src={Reveiw6}
+              fluid
+              style={{ cursor: "pointer" }}
+            />
+          </Card>
+
+          <Card className="Reveiwcard ">
+            <Card.Img
+              variant="top"
+              className="reviewimages"
+              src={Reveiw7}
+              fluid
+              style={{ cursor: "pointer" }}
+            />
+          </Card>
+
+          <Card className="Reveiwcard ">
+            <Card.Img
+              variant="top"
+              className="reviewimages"
+              src={Reveiw8}
+              fluid
+              style={{ cursor: "pointer" }}
+            />
+          </Card>
+        </Carousel2>
+        <Button className="mt-2" variant="outline-primary" href="https://www.google.com/maps/place/Firoz+autoriders/@18.9653402,72.8262387,17z/data=!4m18!1m9!3m8!1s0x3be7cfb356591615:0xb080cc0812f74994!2sFiroz+autoriders!8m2!3d18.9653402!4d72.8288136!9m1!1b1!16s%2Fg%2F11nsb0_d0h!3m7!1s0x3be7cfb356591615:0xb080cc0812f74994!8m2!3d18.9653402!4d72.8288136!9m1!1b1!16s%2Fg%2F11nsb0_d0h?entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoASAFQAw%3D%3D">
+          More
+        </Button>
+      </div>
     </>
-
-
-    
   );
-
-  
-
 }
-
 
 export default HomePage;
