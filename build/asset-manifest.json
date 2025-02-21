@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f6ae8f0e.css",
-    "main.js": "/static/js/main.d8943404.js",
+    "main.css": "/static/css/main.739f8fa4.css",
+    "main.js": "/static/js/main.58d84a9a.js",
     "reactPlayerYouTube.js": "/static/js/reactPlayerYouTube.2aa14195.chunk.js",
     "reactPlayerSoundCloud.js": "/static/js/reactPlayerSoundCloud.e07a2192.chunk.js",
     "reactPlayerVimeo.js": "/static/js/reactPlayerVimeo.946a806f.chunk.js",
@@ -17,7 +17,7 @@
     "reactPlayerFilePlayer.js": "/static/js/reactPlayerFilePlayer.eeadd4e4.chunk.js",
     "reactPlayerPreview.js": "/static/js/reactPlayerPreview.8f274653.chunk.js",
     "static/js/453.cc726cfe.chunk.js": "/static/js/453.cc726cfe.chunk.js",
-    "static/media/newaccess.mp4": "/static/media/newaccess.e345cabe65c7998effc0.mp4",
+    "static/media/accesicegreen.mp4": "/static/media/accesicegreen.d252cb25b61c2e663c72.mp4",
     "static/media/white-burgman.png": "/static/media/white-burgman.0bc015786b7f2d4c9b37.png",
     "static/media/acces-icegreen.png": "/static/media/acces-icegreen.fd29b6d98f7d44328175.png",
     "static/media/mat blue burgman.png": "/static/media/mat blue burgman.c101679bb9f792dadd3f.png",
@@ -29,12 +29,21 @@
     "static/media/banneravenis.jpeg": "/static/media/banneravenis.431ff1e0305e4a13481e.jpeg",
     "static/media/bannerburgmanimg.jpg": "/static/media/bannerburgmanimg.f5fb7a7a5604f428e7a8.jpg",
     "static/media/bannerblkburgman.jpeg": "/static/media/bannerblkburgman.93aab64749d55aad5e7e.jpeg",
+    "static/media/review3.png": "/static/media/review3.c0175b06335fdbe9bcca.png",
+    "static/media/Review2.png": "/static/media/Review2.5d3e65e6d8870e8c10a6.png",
+    "static/media/Review1.png": "/static/media/Review1.5c7c64293a5a11560c38.png",
+    "static/media/review8.png": "/static/media/review8.816f10d951a2620fab33.png",
+    "static/media/review7.png": "/static/media/review7.0319ddf95b08e34631d8.png",
+    "static/media/review4.png": "/static/media/review4.b725fd1e5b19b2764414.png",
+    "static/media/review6.png": "/static/media/review6.1148743ca04810bea090.png",
+    "static/media/review5.png": "/static/media/review5.12dda6ddaf46417cc8fe.png",
     "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/logofiroz.jpg": "/static/media/logofiroz.1bfdd527d76b7367e930.jpg",
     "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
-    "main.f6ae8f0e.css.map": "/static/css/main.f6ae8f0e.css.map",
-    "main.d8943404.js.map": "/static/js/main.d8943404.js.map",
+    "main.739f8fa4.css.map": "/static/css/main.739f8fa4.css.map",
+    "main.58d84a9a.js.map": "/static/js/main.58d84a9a.js.map",
     "reactPlayerYouTube.2aa14195.chunk.js.map": "/static/js/reactPlayerYouTube.2aa14195.chunk.js.map",
     "reactPlayerSoundCloud.e07a2192.chunk.js.map": "/static/js/reactPlayerSoundCloud.e07a2192.chunk.js.map",
     "reactPlayerVimeo.946a806f.chunk.js.map": "/static/js/reactPlayerVimeo.946a806f.chunk.js.map",
@@ -52,7 +61,7 @@
     "453.cc726cfe.chunk.js.map": "/static/js/453.cc726cfe.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f6ae8f0e.css",
-    "static/js/main.d8943404.js"
+    "static/css/main.739f8fa4.css",
+    "static/js/main.58d84a9a.js"
   ]
 }

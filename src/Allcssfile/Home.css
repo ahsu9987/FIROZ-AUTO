@@ -73,6 +73,7 @@ height: 145px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    height: 90px;
 }
 .Reveiwcard{
    margin-left: 25px;
@@ -114,14 +115,16 @@ height: 145px;
     }
     .topbrandcard{
         width: 10rem;
+        /* height: 300px!important; */
     }
     #newaccbluespot{
         height: 110px;
         }
     .burgmanbikesection{
-        margin: 13px;
-        padding: 8px;
+        margin: 10px;
+        padding:8px;
         margin-top: 10px;
+        margin-left: 10px;
     }
     .veiwmorebutton{
         padding: 8px 20px 8px 20px!important;
@@ -142,9 +145,11 @@ height: 145px;
         width: 33%;
         height: 150px;
     }
-    .logotable{
-        /* width: 10%!important; */
-        background-color: red;
+    .brandlogocenter{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 50px;
     }
     .reviewfont{
         font-size: 20px;
