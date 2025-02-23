@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import { Image } from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
