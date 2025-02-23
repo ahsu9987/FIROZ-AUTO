@@ -1,3 +1,4 @@
+import React from 'react';
 import "./App.css";
 import "../src/Allcssfile/Home.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -10,9 +11,8 @@ import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Home from "./Pages/HomePage";
 import NewBike from "./Pages/NewBikes";
-import AccBTBlue from "./Pages/AllCollectionPages/Accesspage/AccessBTVariant/AccessBTMatblue";
+import AccessBTMatblue from "./Pages/AllCollectionPages/Accesspage/AccessBTVariant/AccessBTMatblue";
 import Accbluechangeimg from "./Pages/AllCollectionPages/Accesspage/AccessBTVariant/AccesblueChangeimg";
-import NewAccBTBlue  from "./Pages/AllCollectionPages/Accesspage/AccessBTVariant/AccessBTMatblue";
 
 function App() {
   return (
@@ -22,11 +22,8 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/Newbikes" component={NewBike} />
-          <Route exact path="/AccessBTBlue" component={AccBTBlue} />
           <Route exact path="/Accchangeimg" component={Accbluechangeimg} />
-          <Route exact path="/NewAccBTBlue" component={NewAccBTBlue} />
-
-
+          <Route exact path="/AccessBTBlue" component={AccessBTMatblue} />
         </Switch>
 
         <Footer />

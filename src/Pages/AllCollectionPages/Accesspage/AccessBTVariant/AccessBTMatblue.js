@@ -7,7 +7,7 @@ import NewAccBTBlue from "./images/NewAccessmatblue.jpg";
 import Table from "react-bootstrap/Table";
 // import access from './images/acces ice green BT.avif';
 
-  const ImageSwitcher = () => {
+  const AccessBTMatblue = () => {
     // Define image URLs
     const images = {
       image1: {NewAccBTBlue},
@@ -26,7 +26,7 @@ import Table from "react-bootstrap/Table";
     const handleImageChange = (imageKey) => {
       setCurrentImage(images[imageKey]);
     };
-  return (
+    return (
     <>
       <div className=" p-5 mt-5">
         <Row>
@@ -108,4 +108,4 @@ import Table from "react-bootstrap/Table";
   );
 }
 
-export default  ImageSwitcher;
+export default  AccessBTMatblue;
