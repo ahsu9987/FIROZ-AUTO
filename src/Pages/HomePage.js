@@ -43,7 +43,6 @@ import Reveiw5 from "../Pages/HomeAllimages/Review/review5.png";
 import Reveiw6 from "../Pages/HomeAllimages/Review/review6.png";
 import Reveiw7 from "../Pages/HomeAllimages/Review/review7.png";
 import Reveiw8 from "../Pages/HomeAllimages/Review/review8.png";
-import happycs1 from "../Pages/HomeAllimages/Happycsm/happycsm1.jpeg";
 import happycs5 from "../Pages/HomeAllimages/Happycsm/happycsm5.jpeg";
 
 function HomePage() {
