@@ -12,7 +12,6 @@ import Header from "./Components/Header";
 import Home from "./Pages/HomePage";
 import NewBike from "./Pages/NewBikes";
 import AccessBTMatblue from "./Pages/AllCollectionPages/Accesspage/AccessBTVariant/AccessBTMatblue";
-import Accbluechangeimg from "./Pages/AllCollectionPages/Accesspage/AccessBTVariant/AccesblueChangeimg";
 
 function App() {
   return (
@@ -22,7 +21,6 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/Newbikes" component={NewBike} />
-          <Route exact path="/Accchangeimg" component={Accbluechangeimg} />
           <Route exact path="/AccessBTBlue" component={AccessBTMatblue} />
         </Switch>
 

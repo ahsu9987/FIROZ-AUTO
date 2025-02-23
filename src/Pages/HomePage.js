@@ -258,7 +258,7 @@ function HomePage() {
 
         <Carousel2 responsive={responsive}>
           <Card className="topbrandcard ">
-            <a href="/AccessBTBlue">
+          <Link to="/AccessBTBlue"> 
               <Card.Img
                 variant="top"
                 id="newaccbluespot"
@@ -266,18 +266,20 @@ function HomePage() {
                 fluid
                 style={{ cursor: "pointer" }}
               />
-            </a>
+            </Link>
 
             <Card.Body>
               <Card.Title>Newly launch Access BT Blue</Card.Title>
               <p>Rs 1,25,000/-</p>
+              <Link to="/AccessBTBlue"> 
               <Button
                 variant="outline-success"
                 className="veiwmorebutton"
-                href="/AccessBTBlue"
               >
                 View More
               </Button>
+              </Link>
+
             </Card.Body>
           </Card>
 
