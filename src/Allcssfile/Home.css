@@ -114,11 +114,11 @@ height: 145px;
         font-size: small;
     }
     .topbrandcard{
-        width: 10rem;
-        /* height: 300px!important; */
+        width: 20rem;
+        margin-left: 2px;
     }
     #newaccbluespot{
-        height: 110px;
+        height: 200px;
         }
     .burgmanbikesection{
         margin: 10px;
@@ -155,9 +155,9 @@ height: 145px;
         font-size: 20px;
     }
     .Reveiwcard{
-        margin-left: 1px;
-        width: 10rem!important;
-     
+        margin-left: 15px;
+        width: 19rem!important;
+        padding: 1px;
      }
      .testimonialsection{
          margin: 5px;
@@ -166,7 +166,7 @@ height: 145px;
          border-style: groove;
      }
      .reviewimages{
-         height: 22vh;
+        height: 15rem!important;
      }
    
 }

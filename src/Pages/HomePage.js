@@ -3,6 +3,7 @@ import Carousel from "react-bootstrap/Carousel";
 import { Image } from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
 import firozlogo from "../images/logofiroz.jpg";
 import accesicegreen from "../images/acces-icegreen.png";
 import accesmatblack from "../images/access mat blk.png";
@@ -42,6 +43,8 @@ import Reveiw5 from "../Pages/HomeAllimages/Review/review5.png";
 import Reveiw6 from "../Pages/HomeAllimages/Review/review6.png";
 import Reveiw7 from "../Pages/HomeAllimages/Review/review7.png";
 import Reveiw8 from "../Pages/HomeAllimages/Review/review8.png";
+import happycs1 from "../Pages/HomeAllimages/Happycsm/happycsm1.jpeg";
+import happycs5 from "../Pages/HomeAllimages/Happycsm/happycsm5.jpeg";
 
 function HomePage() {
   const responsive = {
@@ -60,7 +63,7 @@ function HomePage() {
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 2,
+      items: 1,
       // slidesToSlide: 2 ,
     },
   };
@@ -85,10 +88,10 @@ function HomePage() {
 
       {/* ABOUT US */}
       <Row>
-        <Col xs={12} md={8} lg={6} className="bg-light p-5">
-          <h1>ABOUT US</h1>
-          <h3>WELCOME TO FIROZ AUTORIDES SAFE RIDE</h3>
-          <h6>
+        <Col xs={12} md={8} lg={6} className="bg-light p-4">
+          <h2>ABOUT US</h2>
+          <h5>WELCOME TO FIROZ AUTORIDES SAFE RIDE</h5>
+          <p className="txt-bold">
             Welcome to Firoz AutoRides, your trusted destination for brand new
             two-wheelers. Established in 2018, Firoz AutoRides has quickly
             become a leading name in the two-wheeler Multi Brand Dealer,
@@ -103,7 +106,7 @@ function HomePage() {
             explore our wide range of brand new two-wheelers. Our friendly and
             knowledgeable staff are here to help you make the right choice and
             ensure you have an unforgettable riding experience.
-          </h6>
+          </p>
         </Col>
         <Col xs={12} md={8} lg={6} className="bg-light">
           <Image src={firozlogo} className="logofiroz" />
@@ -113,12 +116,12 @@ function HomePage() {
       {/* HOME SCROLL VEHICLES */}
 
       <Carousel>
-        <Carousel.Item interval={3000}>
-          <Row className="bg-dark">
-            <Col xs={12} md={8} lg={7} className="bg-light p-3 allcol">
+        <Carousel.Item interval={1000}>
+          <Row className="">
+            <Col xs={12} md={8} lg={7} className="bg-light p-2 allcol">
               <Image src={accesicegreen} className="carsoulimg p-5 " />
             </Col>
-            <Col xs={12} md={4} lg={5} className="bg-light p-5 ">
+            <Col xs={12} md={4} lg={5} className="bg-light p-5">
               <h1 className="Htxt" style={{ color: "#87D8C3" }}>
                 THE NEW COLOUR<br></br>ACCESS ICE-GREEN BT
               </h1>
@@ -141,7 +144,7 @@ function HomePage() {
 
         <Carousel.Item interval={3000}>
           <Row>
-            <Col xs={12} md={8} lg={7} className="bg-light p-3 allcol ">
+            <Col xs={12} md={8} lg={7} className="bg-light p-2 allcol ">
               <Image className="carsoulimg p-5" src={accesmatblack} />
             </Col>
             <Col xs={12} md={4} lg={5} className="bg-light p-5">
@@ -167,7 +170,7 @@ function HomePage() {
 
         <Carousel.Item interval={3000}>
           <Row>
-            <Col xs={12} md={8} lg={7} className="bg-light p-3 allcol">
+            <Col xs={12} md={8} lg={7} className="bg-light p-2 allcol">
               <Image className="carsoulimg p-5" src={burgmanmatred} />
             </Col>
             <Col xs={12} md={4} lg={5} className="bg-light p-5">
@@ -193,7 +196,7 @@ function HomePage() {
 
         <Carousel.Item interval={1000}>
           <Row>
-            <Col xs={12} md={8} lg={7} className="bg-light p-3 allcol">
+            <Col xs={12} md={8} lg={7} className="bg-light p-2 allcol">
               <Image className="carsoulimg p-5" src={burgmanmatblue} />
             </Col>
             <Col xs={12} md={4} lg={5} className="bg-light p-5">
@@ -219,7 +222,7 @@ function HomePage() {
 
         <Carousel.Item interval={1000}>
           <Row>
-            <Col xs={12} md={8} lg={7} className="bg-light p-3 allcol">
+            <Col xs={12} md={8} lg={7} className="bg-light p-2 allcol">
               <Image className="carsoulimg p-5" src={burgmanwhite} />
             </Col>
             <Col xs={12} md={4} lg={5} className="bg-light p-5">
@@ -246,7 +249,7 @@ function HomePage() {
 
       {/* Bikes in Spotlight BIKE SECTION*/}
       <div className="bg-light burgmanbikesection">
-        <h1 className="">BIKE IN SPOTLIGHT</h1>
+        <h2 className="">BIKE IN SPOTLIGHT</h2>
         <Nav id="nav1" className="  my-3 my-lg-0   navtxt" navbarScroll>
           <Nav.Link href="">HOME</Nav.Link>
           <Nav.Link href="ch2">NEWBIKES</Nav.Link>
@@ -390,7 +393,7 @@ function HomePage() {
 
       {/* ACCESS BIKE SECTION*/}
       <div className="bg-light burgmanbikesection">
-        <h1 className="">BRAND NEW ALL ACCESS & BURGMAN</h1>
+        <h2 className="">BRAND NEW ALL ACCESS & BURGMAN</h2>
         <Nav id="nav1" className="  my-3 my-lg-0   navtxt" navbarScroll>
           <Nav.Link href="">HOME</Nav.Link>
           <Nav.Link href="ch2">NEWBIKES</Nav.Link>
@@ -518,7 +521,7 @@ function HomePage() {
 
       {/* BURGMAN BIKE SECTION*/}
       <div className="bg-light burgmanbikesection">
-        <h1 className="">BRAND NEW ALL OTHERS</h1>
+        <h2 className="">BRAND NEW ALL OTHERS</h2>
         <Nav id="nav1" className="  my-3 my-lg-0   navtxt" navbarScroll>
           <Nav.Link href="">HOME</Nav.Link>
           <Nav.Link href="ch2">NEWBIKES</Nav.Link>
@@ -782,7 +785,10 @@ function HomePage() {
 
       {/* testimonial*/}
       <div className="bg-light testimonialsection">
-        <h1 className="text-center mb-4 mt-4 reviewfont"><span style={{color:'#ffdb0f'}}>******</span>CUSTOMER REVIEW<span style={{color:'#ffdb0f'}}>******</span></h1>
+        <h1 className="text-center mb-4 mt-4 reviewfont">
+          <span style={{ color: "#ffdb0f" }}>******</span>CUSTOMER REVIEW
+          <span style={{ color: "#ffdb0f" }}>******</span>
+        </h1>
 
         <Carousel2 responsive={responsive}>
           <Card className="Reveiwcard">
@@ -865,9 +871,134 @@ function HomePage() {
             />
           </Card>
         </Carousel2>
-        <Button className="mt-2" variant="outline-primary" href="https://www.google.com/maps/place/Firoz+autoriders/@18.9653402,72.8262387,17z/data=!4m18!1m9!3m8!1s0x3be7cfb356591615:0xb080cc0812f74994!2sFiroz+autoriders!8m2!3d18.9653402!4d72.8288136!9m1!1b1!16s%2Fg%2F11nsb0_d0h!3m7!1s0x3be7cfb356591615:0xb080cc0812f74994!8m2!3d18.9653402!4d72.8288136!9m1!1b1!16s%2Fg%2F11nsb0_d0h?entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoASAFQAw%3D%3D">
+        <Button
+          className="mt-2"
+          variant="outline-primary"
+          href="https://www.google.com/maps/place/Firoz+autoriders/@18.9653402,72.8262387,17z/data=!4m18!1m9!3m8!1s0x3be7cfb356591615:0xb080cc0812f74994!2sFiroz+autoriders!8m2!3d18.9653402!4d72.8288136!9m1!1b1!16s%2Fg%2F11nsb0_d0h!3m7!1s0x3be7cfb356591615:0xb080cc0812f74994!8m2!3d18.9653402!4d72.8288136!9m1!1b1!16s%2Fg%2F11nsb0_d0h?entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoASAFQAw%3D%3D"
+        >
           More
         </Button>
+      </div>
+
+      {/*HAPPY CUSTOMERS*/}
+      <div className="bg-light burgmanbikesection">
+        <h1 className="text-center mb-5 mt-2 reviewfont">
+          <span style={{ color: "#ffdb0f" }}>******</span>HAPPY CUSTOMER
+          <span style={{ color: "#ffdb0f" }}>******</span>
+        </h1>
+        <Container>
+          <Row className="">
+          <Col lg={4} xs={12} md={8}  className="mb-2">
+              {" "}
+              <Card className=""           
+              >
+                <Card.Img
+                  variant="top"
+                  className=""
+                  src={happycs5}
+                  fluid
+                  style={{  height: "300px" }}
+                />
+              </Card>
+            </Col>
+            <Col lg={4} xs={12} md={8}  className="mb-2">
+              {" "}
+              <Card className="">
+                <Card.Img
+                  variant="top"
+                  className=""
+                  src={happycs5}
+                  fluid
+                  style={{  height: "300px" ,   }}
+                />
+              </Card>
+            </Col>
+            <Col lg={4} xs={12} md={8}  className="mb-2">
+              {" "}
+              <Card className="">
+                <Card.Img
+                  variant="top"
+                  className=""
+                  src={happycs5}
+                  fluid
+                  style={{  height: "300px" ,   }}
+                />
+              </Card>
+            </Col>
+            <Col lg={4} xs={12} md={8}  className="mb-2">
+              {" "}
+              <Card className="">
+                <Card.Img
+                  variant="top"
+                  className=""
+                  src={happycs5}
+                  fluid
+                  style={{  height: "300px" ,   }}
+                />
+              </Card>
+            </Col>
+            <Col lg={4} xs={12} md={8}  className="mb-2">
+              {" "}
+              <Card className="">
+                <Card.Img
+                  variant="top"
+                  className=""
+                  src={happycs5}
+                  fluid
+                  style={{  height: "300px" ,   }}
+                />
+              </Card>
+            </Col>
+            <Col lg={4} xs={12} md={8}  className="mb-2">
+              {" "}
+              <Card className="">
+                <Card.Img
+                  variant="top"
+                  className=""
+                  src={happycs5}
+                  fluid
+                  style={{  height: "300px" ,   }}
+                />
+              </Card>
+            </Col>
+            <Col lg={4} xs={12} md={8}  className="mb-2">
+              {" "}
+              <Card className="">
+                <Card.Img
+                  variant="top"
+                  className=""
+                  src={happycs5}
+                  fluid
+                  style={{  height: "300px" ,   }}
+                />
+              </Card>
+            </Col>
+            <Col lg={4} xs={12} md={8}  className="mb-2">
+              {" "}
+              <Card className="">
+                <Card.Img
+                  variant="top"
+                  className=""
+                  src={happycs5}
+                  fluid
+                  style={{  height: "300px" ,   }}
+                />
+              </Card>
+            </Col>
+            <Col lg={4} xs={12} md={8}  className="mb-2">
+              {" "}
+              <Card className="">
+                <Card.Img
+                  variant="top"
+                  className=""
+                  src={happycs5}
+                  fluid
+                  style={{  height: "300px" ,   }}
+                />
+              </Card>
+            </Col>
+          </Row>
+        </Container>
       </div>
     </>
   );
