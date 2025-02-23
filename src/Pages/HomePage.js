@@ -883,7 +883,7 @@ function HomePage() {
       {/*HAPPY CUSTOMERS*/}
       <div className="bg-light burgmanbikesection">
         <h1 className="text-center mb-5 mt-2 reviewfont">
-          <span style={{ color: "#ffdb0f" }}>******</span>HAPPY CUSTOMER
+          <span style={{ color: "#ffdb0f" }}>******</span>HAPPY CUSTOMERS
           <span style={{ color: "#ffdb0f" }}>******</span>
         </h1>
         <Container>
