@@ -12,6 +12,7 @@ import Home from "./Pages/HomePage";
 import NewBike from "./Pages/NewBikes";
 import AccBTBlue from "./Pages/AllCollectionPages/Accesspage/AccessBTVariant/AccessBTMatblue";
 import Accbluechangeimg from "./Pages/AllCollectionPages/Accesspage/AccessBTVariant/AccesblueChangeimg";
+import NewAccBTBlue  from "./Pages/AllCollectionPages/Accesspage/AccessBTVariant/AccessBTMatblue";
 
 function App() {
   return (
@@ -22,7 +23,10 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/Newbikes" component={NewBike} />
           <Route exact path="/AccessBTBlue" component={AccBTBlue} />
-          <Route exact path="/Accchangeimg" component={Accbluechangeimg}/>
+          <Route exact path="/Accchangeimg" component={Accbluechangeimg} />
+          <Route exact path="/NewAccBTBlue" component={NewAccBTBlue} />
+
+
         </Switch>
 
         <Footer />
