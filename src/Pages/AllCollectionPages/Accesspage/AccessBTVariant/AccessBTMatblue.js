@@ -7,7 +7,7 @@ import NewAccBTBlue from "./images/NewAccessmatblue.jpg";
 import Table from "react-bootstrap/Table";
 // import access from './images/acces ice green BT.avif';
 
-  const AccessBTMatblue = () => {
+  function AccessBTMatblue  ()  {
     // Define image URLs
     const images = {
       image1: {NewAccBTBlue},
