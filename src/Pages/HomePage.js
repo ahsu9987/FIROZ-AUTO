@@ -35,7 +35,11 @@ import kawasaki from "../Pages/HomeAllimages/Alllogo/kawasakilogo.png";
 import yamaha from "../Pages/HomeAllimages/Alllogo/yamhalogo.png";
 import vespa from "../Pages/HomeAllimages/Alllogo/vespalogo.png";
 import ktm from "../Pages/HomeAllimages/Alllogo/ktmlogo.png";
+import R15 from "../Pages/HomeAllimages/Alllogo/R15.png";
+import bmw from "../Pages/HomeAllimages/Alllogo/bmwlogo.png";
+import tripuh from "../Pages/HomeAllimages/Alllogo/Triumph.png";
 import bajaj from "../Pages/HomeAllimages/Alllogo/bajajlogo.png";
+import harleydavidson from "../Pages/HomeAllimages/Alllogo/harley.png";
 import Reveiw1 from "../Pages/HomeAllimages/Review/Review1.png";
 import Reveiw2 from "../Pages/HomeAllimages/Review/Review2.png";
 import Reveiw3 from "../Pages/HomeAllimages/Review/review3.png";
@@ -45,6 +49,15 @@ import Reveiw6 from "../Pages/HomeAllimages/Review/review6.png";
 import Reveiw7 from "../Pages/HomeAllimages/Review/review7.png";
 import Reveiw8 from "../Pages/HomeAllimages/Review/review8.png";
 import happycs5 from "../Pages/HomeAllimages/Happycsm/happycsm5.jpeg";
+import happycs1 from "../Pages/HomeAllimages/Happycsm/happycsm1.jpeg";
+import happycs2 from "../Pages/HomeAllimages/Happycsm/happycsm2.jpeg";
+import happycs3 from "../Pages/HomeAllimages/Happycsm/happycsm3.jpeg";
+import happycs4 from "../Pages/HomeAllimages/Happycsm/happycsm4.jpeg";
+import happycs6 from "../Pages/HomeAllimages/Happycsm/happycsm6.jpeg";
+import happycs7 from "../Pages/HomeAllimages/Happycsm/happycsm7.jpeg";
+import happycs8 from "../Pages/HomeAllimages/Happycsm/happycsm8.jpeg";
+import Accordion from "react-bootstrap/Accordion";
+import MyForm from "./MyForm";
 
 function HomePage() {
   const responsive = {
@@ -259,7 +272,7 @@ function HomePage() {
 
         <Carousel2 responsive={responsive}>
           <Card className="topbrandcard ">
-          <Link to="/AccessBTBlue"> 
+            <Link to="/AccessBTBlue">
               <Card.Img
                 variant="top"
                 id="newaccbluespot"
@@ -272,15 +285,11 @@ function HomePage() {
             <Card.Body>
               <Card.Title>Newly launch Access BT Blue</Card.Title>
               <p>Rs 1,25,000/-</p>
-              <Link to="/AccessBTBlue"> 
-              <Button
-                variant="outline-success"
-                className="veiwmorebutton"
-              >
-                View More
-              </Button>
+              <Link to="/AccessBTBlue">
+                <Button variant="outline-success" className="veiwmorebutton">
+                  View More
+                </Button>
               </Link>
-
             </Card.Body>
           </Card>
 
@@ -722,19 +731,19 @@ function HomePage() {
                       <tr>
                         <td style={{ width: "20px" }}>
                           <a href="/AccessBTBlue">
-                            <Image src={bajaj} className="brandlogocenter" />
+                            <Image src={tripuh} className="brandlogocenter" />
                           </a>
                         </td>
                         <td style={{ width: "20px" }}>
                           {" "}
                           <a href="/AccessBTBlue">
-                            <Image src={bajaj} className="brandlogocenter" />
+                            <Image src={bmw} className="brandlogocenter" />
                           </a>
                         </td>
                         <td style={{ width: "20px" }}>
                           {" "}
                           <a href="/AccessBTBlue">
-                            <Image src={bajaj} className="brandlogocenter" />
+                            <Image src={R15} className="brandlogocenter" />
                           </a>
                         </td>
                       </tr>
@@ -747,7 +756,7 @@ function HomePage() {
                         <td style={{ width: "20px" }}>
                           {" "}
                           <a href="/AccessBTBlue">
-                            <Image src={bajaj} className="brandlogocenter" />
+                            <Image src={harleydavidson} className="brandlogocenter" />
                           </a>
                         </td>
                         <td style={{ width: "20px" }}>
@@ -890,20 +899,7 @@ function HomePage() {
         </h1>
         <Container>
           <Row className="">
-          <Col lg={4} xs={12} md={8}  className="mb-2">
-              {" "}
-              <Card className=""           
-              >
-                <Card.Img
-                  variant="top"
-                  className=""
-                  src={happycs5}
-                  fluid
-                  style={{  height: "300px" }}
-                />
-              </Card>
-            </Col>
-            <Col lg={4} xs={12} md={8}  className="mb-2">
+            <Col lg={4} xs={12} md={8} className="mb-2">
               {" "}
               <Card className="">
                 <Card.Img
@@ -911,11 +907,11 @@ function HomePage() {
                   className=""
                   src={happycs5}
                   fluid
-                  style={{  height: "300px" ,   }}
+                  style={{ height: "370px" }}
                 />
               </Card>
             </Col>
-            <Col lg={4} xs={12} md={8}  className="mb-2">
+            <Col lg={4} xs={12} md={8} className="mb-2">
               {" "}
               <Card className="">
                 <Card.Img
@@ -923,85 +919,155 @@ function HomePage() {
                   className=""
                   src={happycs5}
                   fluid
-                  style={{  height: "300px" ,   }}
+                  style={{ height: "370px" }}
                 />
               </Card>
             </Col>
-            <Col lg={4} xs={12} md={8}  className="mb-2">
+            <Col lg={4} xs={12} md={8} className="mb-2">
               {" "}
               <Card className="">
                 <Card.Img
                   variant="top"
                   className=""
-                  src={happycs5}
+                  src={happycs1}
                   fluid
-                  style={{  height: "300px" ,   }}
+                  style={{ height: "370px" }}
                 />
               </Card>
             </Col>
-            <Col lg={4} xs={12} md={8}  className="mb-2">
+            <Col lg={4} xs={12} md={8} className="mb-2">
               {" "}
               <Card className="">
                 <Card.Img
                   variant="top"
                   className=""
-                  src={happycs5}
+                  src={happycs2}
                   fluid
-                  style={{  height: "300px" ,   }}
+                  style={{ height: "370px" }}
                 />
               </Card>
             </Col>
-            <Col lg={4} xs={12} md={8}  className="mb-2">
+            <Col lg={4} xs={12} md={8} className="mb-2">
               {" "}
               <Card className="">
                 <Card.Img
                   variant="top"
                   className=""
-                  src={happycs5}
+                  src={happycs3}
                   fluid
-                  style={{  height: "300px" ,   }}
+                  style={{ height: "370px" }}
                 />
               </Card>
             </Col>
-            <Col lg={4} xs={12} md={8}  className="mb-2">
+            <Col lg={4} xs={12} md={8} className="mb-2">
               {" "}
               <Card className="">
                 <Card.Img
                   variant="top"
                   className=""
-                  src={happycs5}
+                  src={happycs4}
                   fluid
-                  style={{  height: "300px" ,   }}
+                  style={{ height: "370px" }}
                 />
               </Card>
             </Col>
-            <Col lg={4} xs={12} md={8}  className="mb-2">
+            <Col lg={4} xs={12} md={8} className="mb-2">
               {" "}
               <Card className="">
                 <Card.Img
                   variant="top"
                   className=""
-                  src={happycs5}
+                  src={happycs6}
                   fluid
-                  style={{  height: "300px" ,   }}
+                  style={{ height: "370px" }}
                 />
               </Card>
             </Col>
-            <Col lg={4} xs={12} md={8}  className="mb-2">
+            <Col lg={4} xs={12} md={8} className="mb-2">
               {" "}
               <Card className="">
                 <Card.Img
                   variant="top"
                   className=""
-                  src={happycs5}
+                  src={happycs7}
                   fluid
-                  style={{  height: "300px" ,   }}
+                  style={{ height: "370px" }}
+                />
+              </Card>
+            </Col>
+            <Col lg={4} xs={12} md={8} className="mb-2">
+              {" "}
+              <Card className="">
+                <Card.Img
+                  variant="top"
+                  className=""
+                  src={happycs8}
+                  fluid
+                  style={{ height: "370px" }}
                 />
               </Card>
             </Col>
           </Row>
         </Container>
       </div>
+
+      <ReactPlayer
+        url={"https:www.youtube.com/embed/LQzVhSVfm1A?autoplay=1&mute=1"}
+        playing={true}
+        loop={true}
+        controls={false}
+        muted={true}
+        progressInterval={8000}
+        className="react-player"
+        width={"100%"}
+        height={"500px"}
+        auotplay
+      />
+
+      <div className="p-4">
+     <h2>Suzuki Access 125 FAQs</h2> 
+        <Accordion defaultActiveKey="0">
+          <Accordion.Item eventKey="0">
+            <Accordion.Header>
+            Q: What is the on-road price of Suzuki Access 125 in 2025?
+            </Accordion.Header>
+            <Accordion.Body>
+           A: The 2025 on-road price of Suzuki Access 125 in Mumbai is Rs. 1,03,041. 
+            This Suzuki Access 125 price includes the ex-showroom price, RTO and insurance charges.
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="1">
+            <Accordion.Header>
+            Q: What is the actual mileage of Suzuki Access 125?
+            </Accordion.Header>
+            <Accordion.Body>
+           A: According to the user reported data, Suzuki Access 125 gives an average mileage of 46 kmpl.
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="2">
+            <Accordion.Header>Q: Which is better Suzuki Access 125 or Honda Activa 125?</Accordion.Header>
+            <Accordion.Body>
+            A: Suzuki Access 125 is priced at Rs. 85,470, has a 124 cc engine, gives a mileage of 46 kmpl and weighs 106 kg, 
+            whereas, the price of Honda Activa 125 is Rs. 85,196 with a 123.92 cc engine, giving a mileage of 47 kmpl and weighing 110 kg.
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="3">
+            <Accordion.Header>Q: What are the colour options of Suzuki Access 125?</Accordion.Header>
+            <Accordion.Body>
+            A: Suzuki Access 125 is available in 5 colours which are Metallic Mat Black, Pearl Grace White, Metallic Mat Stellar Blue, Solid Ice Green and Pearl Shiny Beige.
+            </Accordion.Body>
+          </Accordion.Item>
+          <Accordion.Item eventKey="4">
+            <Accordion.Header>Q: What are the key specifications of Suzuki Access 125?</Accordion.Header>
+            <Accordion.Body>
+            A: Suzuki Access 125 is a Scooter that weighs 106 kg, has a 124 cc BS6 Phase 2B engine and a fuel capacity of 5.3 litres.
+            </Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
+      </div>
+
+      <MyForm/>
+      
     </>
   );
 }

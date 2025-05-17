@@ -5,9 +5,36 @@ import { Image } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import NewAccBTBlue from "./images/NewAccessmatblue.jpg";
 import Table from "react-bootstrap/Table";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import Card from "react-bootstrap/Card";
+import Nav from "react-bootstrap/Nav";
+import Carousel2 from "react-multi-carousel";
+
 // import access from './images/acces ice green BT.avif';
 
   function AccessBTMatblue (){
+
+    const responsive = {
+      superLargeDesktop: {
+        breakpoint: { max: 4000, min: 1024 },
+        items: 5,
+      },
+      desktop: {
+        breakpoint: { max: 1024, min: 768 },
+        items: 1,
+        slidesToSlide: 2,
+      },
+      tablet: {
+        breakpoint: { max: 768, min: 464 },
+        items: 2,
+      },
+      mobile: {
+        breakpoint: { max: 464, min: 0 },
+        items: 1,
+        // slidesToSlide: 2 ,
+      },
+    };
+  
     // Define image URLs
     const images = {
       image1: {NewAccBTBlue},
@@ -101,6 +128,154 @@ import Table from "react-bootstrap/Table";
           </Col>
         </Row>
       </div>
+
+
+       {/* Bikes in Spotlight BIKE SECTION*/}
+       <div className="bg-light burgmanbikesection">
+        <h2 className="">MORE MODALS IN SPOTLIGHT</h2>
+        <Nav id="nav1" className="  my-3 my-lg-0   navtxt" navbarScroll>
+          <Nav.Link href="">HOME</Nav.Link>
+          <Nav.Link href="ch2">NEWBIKES</Nav.Link>
+          <Nav.Link href="#action1">NEWS</Nav.Link>
+          <Nav.Link href="#action2">NEW1</Nav.Link>
+        </Nav>
+
+        <Carousel2 responsive={responsive}>
+          <Card className="topbrandcard ">
+          <Link to="/AccessBTBlue"> 
+              <Card.Img
+                variant="top"
+                id="newaccbluespot"
+                src={NewAccBTBlue}
+                fluid
+                style={{ cursor: "pointer" }}
+              />
+            </Link>
+
+            <Card.Body>
+              <Card.Title>Newly launch Access BT Blue</Card.Title>
+              <p>Rs 1,25,000/-</p>
+              <Link to="/AccessBTBlue"> 
+              <Button
+                variant="outline-success"
+                className="veiwmorebutton"
+              >
+                View More
+              </Button>
+              </Link>
+
+            </Card.Body>
+          </Card>
+
+          <Card className="topbrandcard">
+            <a href="/AccessBTBlue">
+              <Card.Img
+                variant="top"
+                src={NewAccBTBlue}
+                fluid
+                style={{ cursor: "pointer" }}
+              />
+            </a>
+            <Card.Body>
+              <Card.Title>Access Bleutooth White</Card.Title>
+              <p>Rs 1,20,000/-</p>
+              <Button
+                variant="outline-success"
+                className="veiwmorebutton"
+                href="/NewBike"
+              >
+                View More
+              </Button>
+            </Card.Body>
+          </Card>
+
+          <Card className="topbrandcard">
+            <a href="/AccessBTBlue">
+              <Card.Img
+                variant="top"
+                src={NewAccBTBlue}
+                fluid
+                style={{ cursor: "pointer" }}
+              />
+            </a>
+            <Card.Body>
+              <Card.Title>Access Bleutooth White</Card.Title>
+              <p>Rs 1,20,000/-</p>
+              <Button
+                variant="outline-success"
+                className="veiwmorebutton"
+                href="/NewBike"
+              >
+                View More
+              </Button>
+            </Card.Body>
+          </Card>
+
+          <Card className="topbrandcard">
+            <Card.Img variant="top" src={NewAccBTBlue} />
+            <Card.Body>
+              <Card.Title>Access Bleutooth White</Card.Title>
+              <p>Rs 1,20,000/-</p>
+              <Button
+                variant="outline-success"
+                className="veiwmorebutton"
+                href="/NewBike"
+              >
+                View More
+              </Button>
+            </Card.Body>
+          </Card>
+
+          <Card className="topbrandcard">
+            <Card.Img variant="top" src={NewAccBTBlue} />
+            <Card.Body>
+              <Card.Title>Access Bleutooth White</Card.Title>
+              <p>Rs 1,20,000/-</p>
+              <Button
+                variant="outline-success"
+                className="veiwmorebutton"
+                href="/NewBike"
+              >
+                View More
+              </Button>
+            </Card.Body>
+          </Card>
+
+          <Card className="topbrandcard">
+            <Card.Img variant="top" src={NewAccBTBlue} />
+            <Card.Body>
+              <Card.Title>Access Bleutooth White</Card.Title>
+              <p>Rs 1,20,000/-</p>
+              <Button
+                variant="outline-success"
+                className="veiwmorebutton"
+                href="/NewBike"
+              >
+                View More
+              </Button>
+            </Card.Body>
+          </Card>
+
+          <Card className="topbrandcard">
+            <Card.Img variant="top" src={NewAccBTBlue} />
+            <Card.Body>
+              <Card.Title>Access Bleutooth White</Card.Title>
+              <p>Rs 1,20,000/-</p>
+              <Button
+                variant="outline-success"
+                className="veiwmorebutton"
+                href="/NewBike"
+              >
+                View More
+              </Button>
+            </Card.Body>
+          </Card>
+        </Carousel2>
+        <Button className="mt-2" variant="outline-primary">
+          More
+        </Button>
+      </div>
+
 
 
       

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import "./App.css";
 import "../src/Allcssfile/Home.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -10,8 +10,8 @@ import {
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Home from "./Pages/HomePage";
-import NewBike from "./Pages/NewBikes";
 import AccessBTMatblue from "./Pages/AllCollectionPages/Accesspage/AccessBTVariant/AccessBTMatblue";
+import Myform from "./Pages/MyForm";
 
 function App() {
   return (
@@ -20,8 +20,8 @@ function App() {
         <Header />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/Newbikes" component={NewBike} />
           <Route exact path="/AccessBTBlue" component={AccessBTMatblue} />
+          <Route exact path="/Getintouch" component={Myform} />
         </Switch>
 
         <Footer />
