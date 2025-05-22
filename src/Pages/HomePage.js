@@ -5,20 +5,21 @@ import { Image } from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
-import firozlogo from "../images/logofiroz.jpg";
-import accesicegreen from "../images/acces-icegreen.png";
-import accesmatblack from "../images/access mat blk.png";
-import burgmanmatred from "../images/mat red burgman.png";
-import burgmanmatblue from "../images/mat blue burgman.png";
+import firozautologo from "./HomeAllimages/Alllogo/Firozauto-logo.jpg";
+import burgmanmatblue from "../Pages/HomeAllimages/AllBurgmanimages/mat blue burgman.png";
+import burgmanbrown from "../Pages/HomeAllimages/AllBurgmanimages/burgmanbrownex.png";
 import burgmanwhite from "../images/white-burgman.png";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Nav from "react-bootstrap/Nav";
 import Carousel2 from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import AccessBTmatblue from "./HomeAllimages/AllAccessimages/AccmatblueBT.png";
-import NewAccBTBlue from "../images/NewAccessmatblue.jpg";
-import AccesBTwhite from "./HomeAllimages/AllAccessimages/AccwhiteBT.png";
+import NewAccicemat from "../Pages/HomeAllimages/AllAccessimages/Accicegreenmat.png";
+import NewAccmatblk from "../Pages/HomeAllimages/AllAccessimages/accblack.png";
+import Accesblack from "../Pages/HomeAllimages/AllAccessimages/accblack.png";
+import Accessmatblue from "../Pages/HomeAllimages/AllAccessimages/Accmatblue.jpeg";
+import burgmangreenbt from "../Pages/HomeAllimages/AllBurgmanimages/burgmangreenBT.png";
+import burgmannonbtblk from "../Pages/HomeAllimages/AllBurgmanimages/burgmannonbtblk.png";
 import ReactPlayer from "react-player";
 import myvideo from "../assets/accesicegreen.mp4";
 import bannerburgmanimg from "../images/bannerburgmanimg.jpg";
@@ -122,7 +123,7 @@ function HomePage() {
           </p>
         </Col>
         <Col xs={12} md={8} lg={6} className="bg-light">
-          <Image src={firozlogo} className="logofiroz" />
+          <Image src={firozautologo} className="logofiroz" />
         </Col>
       </Row>
 
@@ -132,10 +133,10 @@ function HomePage() {
         <Carousel.Item interval={1000}>
           <Row className="">
             <Col xs={12} md={8} lg={7} className="bg-light p-2 allcol">
-              <Image src={accesicegreen} className="carsoulimg p-5 " />
+              <Image src={NewAccicemat} className="carsoulimg p-5 " />
             </Col>
             <Col xs={12} md={4} lg={5} className="bg-light p-5">
-              <h1 className="Htxt" style={{ color: "#87D8C3" }}>
+              <h1 className="Htxt text-info">
                 THE NEW COLOUR<br></br>ACCESS ICE-GREEN BT
               </h1>
               <p className=" text-dark">
@@ -148,7 +149,7 @@ function HomePage() {
                 Engine Type:- 4- Stroke, 1-Cylinder, Air Cooled <br></br>Fuel
                 Tank Capacity 5 L <br></br>Starter System Kick and Electric
               </p>
-              <Button variant="outline-success" className="mt-4">
+              <Button variant="outline-info" className="mt-4">
                 BOOK NOW
               </Button>{" "}
             </Col>
@@ -158,10 +159,10 @@ function HomePage() {
         <Carousel.Item interval={3000}>
           <Row>
             <Col xs={12} md={8} lg={7} className="bg-light p-2 allcol ">
-              <Image className="carsoulimg p-5" src={accesmatblack} />
+              <Image className="carsoulimg p-5" src={NewAccmatblk} />
             </Col>
             <Col xs={12} md={4} lg={5} className="bg-light p-5">
-              <h1 className="text-danger Htxt">
+              <h1 className=" Htxt">
                 THE NEW COLOUR<br></br>ACCESS MAT-BLACK
               </h1>
               <p className=" text-dark">
@@ -174,7 +175,7 @@ function HomePage() {
                 Engine Type:- 4- Stroke, 1-Cylinder, Air Cooled <br></br>Fuel
                 Tank Capacity 5 L <br></br>Starter System Kick and Electric
               </p>
-              <Button variant="outline-danger" className="mt-4">
+              <Button variant="outline-dark" className="mt-4">
                 BOOK NOW
               </Button>{" "}
             </Col>
@@ -184,11 +185,11 @@ function HomePage() {
         <Carousel.Item interval={3000}>
           <Row>
             <Col xs={12} md={8} lg={7} className="bg-light p-2 allcol">
-              <Image className="carsoulimg p-5" src={burgmanmatred} />
+              <Image className="carsoulimg p-5" src={burgmanbrown} />
             </Col>
             <Col xs={12} md={4} lg={5} className="bg-light p-5">
               <h1 className=" Htxt" style={{ color: "#841b2d" }}>
-                THE NEW COLOUR<br></br>BURGMAN MAT-RED
+                THE NEW COLOUR<br></br>BURGMAN BROWN-EX
               </h1>
               <p className=" text-dark">
                 E20 COMPLIANT / LED HEADLAMP / LED POSITION LIGHTS /<br></br>
@@ -260,9 +261,9 @@ function HomePage() {
         </Carousel.Item>
       </Carousel>
 
-      {/* Bikes in Spotlight BIKE SECTION*/}
+      {/* ACCESS & BURGMAN BIKE SECTION SPOTLIGHT*/}
       <div className="bg-light burgmanbikesection">
-        <h2 className="">BIKE IN SPOTLIGHT</h2>
+        <h2 className="">TRENDING BIKES OF 2025</h2>
         <Nav id="nav1" className="  my-3 my-lg-0   navtxt" navbarScroll>
           <Nav.Link href="">HOME</Nav.Link>
           <Nav.Link href="ch2">NEWBIKES</Nav.Link>
@@ -272,21 +273,21 @@ function HomePage() {
 
         <Carousel2 responsive={responsive}>
           <Card className="topbrandcard ">
-            <Link to="/AccessBTBlue">
+            <Link to="/AccessBT">
               <Card.Img
                 variant="top"
-                id="newaccbluespot"
-                src={NewAccBTBlue}
+                id="newaccimagespot"
+                src={NewAccicemat}
                 fluid
                 style={{ cursor: "pointer" }}
               />
             </Link>
 
             <Card.Body>
-              <Card.Title>Newly launch Access BT Blue</Card.Title>
+              <Card.Title>Access Bleutooth Edition Disc Break</Card.Title>
               <p>Rs 1,25,000/-</p>
-              <Link to="/AccessBTBlue">
-                <Button variant="outline-success" className="veiwmorebutton">
+              <Link to="/AccessBT">
+                <Button variant="outline-info" className="veiwmorebutton">
                   View More
                 </Button>
               </Link>
@@ -297,16 +298,17 @@ function HomePage() {
             <a href="/AccessBTBlue">
               <Card.Img
                 variant="top"
-                src={AccesBTwhite}
+                id="newaccimagespot"
+                src={Accesblack}
                 fluid
                 style={{ cursor: "pointer" }}
               />
             </a>
             <Card.Body>
-              <Card.Title>Access Bleutooth White</Card.Title>
+              <Card.Title>Access Special Edition Disc Break</Card.Title>
               <p>Rs 1,20,000/-</p>
               <Button
-                variant="outline-success"
+                variant="outline-dark"
                 className="veiwmorebutton"
                 href="/NewBike"
               >
@@ -319,14 +321,45 @@ function HomePage() {
             <a href="/AccessBTBlue">
               <Card.Img
                 variant="top"
-                src={AccesBTwhite}
+                id="newaccimagespot"
+                src={Accessmatblue}
                 fluid
                 style={{ cursor: "pointer" }}
               />
             </a>
             <Card.Body>
-              <Card.Title>Access Bleutooth White</Card.Title>
-              <p>Rs 1,20,000/-</p>
+              <Card.Title>Access Drum Break Edition</Card.Title>
+              <p>Rs 1,05,000/-</p>
+              <Button
+                variant="outline-primary"
+                className="veiwmorebutton"
+                href="/NewBike"
+              >
+                View More
+              </Button>
+            </Card.Body>
+          </Card>
+
+          <Card className="topbrandcard">
+            <Card.Img variant="top" id="newaccimagespot" src={burgmanbrown} />
+            <Card.Body>
+              <Card.Title>Burgman Ex Bleutooth Top Edition</Card.Title>
+              <p>Rs 1,52,000/-</p>
+              <Button
+                variant="outline-secondary"
+                className="veiwmorebutton"
+                href="/NewBike"
+              >
+                View More
+              </Button>
+            </Card.Body>
+          </Card>
+
+          <Card className="topbrandcard">
+            <Card.Img variant="top" id="newaccimagespot" src={burgmangreenbt} />
+            <Card.Body>
+              <Card.Title>Burgman Bleutooth Edition</Card.Title>
+              <p>Rs 1,35,000/-</p>
               <Button
                 variant="outline-success"
                 className="veiwmorebutton"
@@ -338,57 +371,16 @@ function HomePage() {
           </Card>
 
           <Card className="topbrandcard">
-            <Card.Img variant="top" src={AccesBTwhite} />
+            <Card.Img
+              variant="top"
+              id="newaccimagespot"
+              src={burgmannonbtblk}
+            />
             <Card.Body>
-              <Card.Title>Access Bleutooth White</Card.Title>
-              <p>Rs 1,20,000/-</p>
+              <Card.Title>Burgman Non Bleutooth Edition</Card.Title>
+              <p>Rs 1,30,000/-</p>
               <Button
-                variant="outline-success"
-                className="veiwmorebutton"
-                href="/NewBike"
-              >
-                View More
-              </Button>
-            </Card.Body>
-          </Card>
-
-          <Card className="topbrandcard">
-            <Card.Img variant="top" src={AccesBTwhite} />
-            <Card.Body>
-              <Card.Title>Access Bleutooth White</Card.Title>
-              <p>Rs 1,20,000/-</p>
-              <Button
-                variant="outline-success"
-                className="veiwmorebutton"
-                href="/NewBike"
-              >
-                View More
-              </Button>
-            </Card.Body>
-          </Card>
-
-          <Card className="topbrandcard">
-            <Card.Img variant="top" src={AccesBTwhite} />
-            <Card.Body>
-              <Card.Title>Access Bleutooth White</Card.Title>
-              <p>Rs 1,20,000/-</p>
-              <Button
-                variant="outline-success"
-                className="veiwmorebutton"
-                href="/NewBike"
-              >
-                View More
-              </Button>
-            </Card.Body>
-          </Card>
-
-          <Card className="topbrandcard">
-            <Card.Img variant="top" src={AccesBTwhite} />
-            <Card.Body>
-              <Card.Title>Access Bleutooth White</Card.Title>
-              <p>Rs 1,20,000/-</p>
-              <Button
-                variant="outline-success"
+                variant="outline-dark"
                 className="veiwmorebutton"
                 href="/NewBike"
               >
@@ -402,9 +394,9 @@ function HomePage() {
         </Button>
       </div>
 
-      {/* ACCESS BIKE SECTION*/}
+      {/* SPORTS BIKE SECTION*/}
       <div className="bg-light burgmanbikesection">
-        <h2 className="">BRAND NEW ALL ACCESS & BURGMAN</h2>
+        <h2 className="">GET OFFERS ON POPULAR BIKES IN SPOTLIGHT</h2>
         <Nav id="nav1" className="  my-3 my-lg-0   navtxt" navbarScroll>
           <Nav.Link href="">HOME</Nav.Link>
           <Nav.Link href="ch2">NEWBIKES</Nav.Link>
@@ -413,11 +405,94 @@ function HomePage() {
         </Nav>
 
         <Carousel2 responsive={responsive}>
-          <Card className="topbrandcard">
-            <Card.Img variant="top" src={AccessBTmatblue} fluid />
+          <Card className="topbrandcard ">
+            <Link to="/AccessBTBlue">
+              <Card.Img
+                variant="top"
+                id="newaccimagespot"
+                src={NewAccicemat}
+                fluid
+                style={{ cursor: "pointer" }}
+              />
+            </Link>
+
             <Card.Body>
-              <Card.Title>Access Bleutooth Blue</Card.Title>
+              <Card.Title>Access Bleutooth Edition Disc Break</Card.Title>
+              <p>Rs 1,25,000/-</p>
+              <Link to="/AccessBTBlue">
+                <Button variant="outline-info" className="veiwmorebutton">
+                  View More
+                </Button>
+              </Link>
+            </Card.Body>
+          </Card>
+
+          <Card className="topbrandcard">
+            <a href="/AccessBTBlue">
+              <Card.Img
+                variant="top"
+                id="newaccimagespot"
+                src={Accesblack}
+                fluid
+                style={{ cursor: "pointer" }}
+              />
+            </a>
+            <Card.Body>
+              <Card.Title>Access Special Edition Disc Break</Card.Title>
               <p>Rs 1,20,000/-</p>
+              <Button
+                variant="outline-dark"
+                className="veiwmorebutton"
+                href="/NewBike"
+              >
+                View More
+              </Button>
+            </Card.Body>
+          </Card>
+
+          <Card className="topbrandcard">
+            <a href="/AccessBTBlue">
+              <Card.Img
+                variant="top"
+                id="newaccimagespot"
+                src={Accessmatblue}
+                fluid
+                style={{ cursor: "pointer" }}
+              />
+            </a>
+            <Card.Body>
+              <Card.Title>Access Drum Break Edition</Card.Title>
+              <p>Rs 1,05,000/-</p>
+              <Button
+                variant="outline-primary"
+                className="veiwmorebutton"
+                href="/NewBike"
+              >
+                View More
+              </Button>
+            </Card.Body>
+          </Card>
+
+          <Card className="topbrandcard">
+            <Card.Img variant="top" id="newaccimagespot" src={burgmanbrown} />
+            <Card.Body>
+              <Card.Title>Burgman Ex Bleutooth Top Edition</Card.Title>
+              <p>Rs 1,52,000/-</p>
+              <Button
+                variant="outline-secondary"
+                className="veiwmorebutton"
+                href="/NewBike"
+              >
+                View More
+              </Button>
+            </Card.Body>
+          </Card>
+
+          <Card className="topbrandcard">
+            <Card.Img variant="top" id="newaccimagespot" src={burgmangreenbt} />
+            <Card.Body>
+              <Card.Title>Burgman Bleutooth Edition</Card.Title>
+              <p>Rs 1,35,000/-</p>
               <Button
                 variant="outline-success"
                 className="veiwmorebutton"
@@ -429,87 +504,16 @@ function HomePage() {
           </Card>
 
           <Card className="topbrandcard">
-            <Card.Img variant="top" src={AccesBTwhite} />
+            <Card.Img
+              variant="top"
+              id="newaccimagespot"
+              src={burgmannonbtblk}
+            />
             <Card.Body>
-              <Card.Title>Access Bleutooth White</Card.Title>
-              <p>Rs 1,20,000/-</p>
+              <Card.Title>Burgman Non Bleutooth Edition</Card.Title>
+              <p>Rs 1,30,000/-</p>
               <Button
-                variant="outline-success"
-                className="veiwmorebutton"
-                href="/NewBike"
-              >
-                View More
-              </Button>
-            </Card.Body>
-          </Card>
-
-          <Card className="topbrandcard">
-            <Card.Img variant="top" src={AccesBTwhite} />
-            <Card.Body>
-              <Card.Title>Access Bleutooth White</Card.Title>
-              <p>Rs 1,20,000/-</p>
-              <Button
-                variant="outline-success"
-                className="veiwmorebutton"
-                href="/NewBike"
-              >
-                View More
-              </Button>
-            </Card.Body>
-          </Card>
-
-          <Card className="topbrandcard">
-            <Card.Img variant="top" src={AccesBTwhite} />
-            <Card.Body>
-              <Card.Title>Access Bleutooth White</Card.Title>
-              <p>Rs 1,20,000/-</p>
-              <Button
-                variant="outline-success"
-                className="veiwmorebutton"
-                href="/NewBike"
-              >
-                View More
-              </Button>
-            </Card.Body>
-          </Card>
-
-          <Card className="topbrandcard">
-            <Card.Img variant="top" src={AccesBTwhite} />
-            <Card.Body>
-              <Card.Title>Access Bleutooth White</Card.Title>
-              <p>Rs 1,20,000/-</p>
-              <Button
-                variant="outline-success"
-                className="veiwmorebutton"
-                href="/NewBike"
-              >
-                View More
-              </Button>
-            </Card.Body>
-          </Card>
-
-          <Card className="topbrandcard">
-            <Card.Img variant="top" src={AccesBTwhite} />
-            <Card.Body>
-              <Card.Title>Access Bleutooth White</Card.Title>
-              <p>Rs 1,20,000/-</p>
-              <Button
-                variant="outline-success"
-                className="veiwmorebutton"
-                href="/NewBike"
-              >
-                View More
-              </Button>
-            </Card.Body>
-          </Card>
-
-          <Card className="topbrandcard">
-            <Card.Img variant="top" src={AccesBTwhite} />
-            <Card.Body>
-              <Card.Title>Access Bleutooth White</Card.Title>
-              <p>Rs 1,20,000/-</p>
-              <Button
-                variant="outline-success"
+                variant="outline-dark"
                 className="veiwmorebutton"
                 href="/NewBike"
               >
@@ -528,127 +532,6 @@ function HomePage() {
         <Image src={bannerburgmanimg} className="bannerfirstsection" />
         <Image src={bannerblkburgman} className="bannerfirstsection" />
         <Image src={banneravenis} className="bannerfirstsection" />
-      </div>
-
-      {/* BURGMAN BIKE SECTION*/}
-      <div className="bg-light burgmanbikesection">
-        <h2 className="">BRAND NEW ALL OTHERS</h2>
-        <Nav id="nav1" className="  my-3 my-lg-0   navtxt" navbarScroll>
-          <Nav.Link href="">HOME</Nav.Link>
-          <Nav.Link href="ch2">NEWBIKES</Nav.Link>
-          <Nav.Link href="#action1">NEWS</Nav.Link>
-          <Nav.Link href="#action2">NEW1</Nav.Link>
-        </Nav>
-
-        <Carousel2 responsive={responsive}>
-          <Card className="topbrandcard">
-            <Card.Img variant="top" src={AccessBTmatblue} fluid />
-            <Card.Body>
-              <Card.Title>Access Bleutooth Blue</Card.Title>
-              <p>Rs 1,20,000/-</p>
-              <Button
-                variant="outline-success"
-                className="veiwmorebutton"
-                href="/NewBike"
-              >
-                View More
-              </Button>
-            </Card.Body>
-          </Card>
-
-          <Card className="topbrandcard">
-            <Card.Img variant="top" src={AccesBTwhite} />
-            <Card.Body>
-              <Card.Title>Access Bleutooth White</Card.Title>
-              <p>Rs 1,20,000/-</p>
-              <Button
-                variant="outline-success"
-                className="veiwmorebutton"
-                href="/NewBike"
-              >
-                View More
-              </Button>
-            </Card.Body>
-          </Card>
-
-          <Card className="topbrandcard">
-            <Card.Img variant="top" src={AccesBTwhite} />
-            <Card.Body>
-              <Card.Title>Access Bleutooth White</Card.Title>
-              <p>Rs 1,20,000/-</p>
-              <Button
-                variant="outline-success"
-                className="veiwmorebutton"
-                href="/NewBike"
-              >
-                View More
-              </Button>
-            </Card.Body>
-          </Card>
-
-          <Card className="topbrandcard">
-            <Card.Img variant="top" src={AccesBTwhite} />
-            <Card.Body>
-              <Card.Title>Access Bleutooth White</Card.Title>
-              <p>Rs 1,20,000/-</p>
-              <Button
-                variant="outline-success"
-                className="veiwmorebutton"
-                href="/NewBike"
-              >
-                View More
-              </Button>
-            </Card.Body>
-          </Card>
-
-          <Card className="topbrandcard">
-            <Card.Img variant="top" src={AccesBTwhite} />
-            <Card.Body>
-              <Card.Title>Access Bleutooth White</Card.Title>
-              <p>Rs 1,20,000/-</p>
-              <Button
-                variant="outline-success"
-                className="veiwmorebutton"
-                href="/NewBike"
-              >
-                View More
-              </Button>
-            </Card.Body>
-          </Card>
-
-          <Card className="topbrandcard">
-            <Card.Img variant="top" src={AccesBTwhite} />
-            <Card.Body>
-              <Card.Title>Access Bleutooth White</Card.Title>
-              <p>Rs 1,20,000/-</p>
-              <Button
-                variant="outline-success"
-                className="veiwmorebutton"
-                href="/NewBike"
-              >
-                View More
-              </Button>
-            </Card.Body>
-          </Card>
-
-          <Card className="topbrandcard">
-            <Card.Img variant="top" src={AccesBTwhite} />
-            <Card.Body>
-              <Card.Title>Access Bleutooth White</Card.Title>
-              <p>Rs 1,20,000/-</p>
-              <Button
-                variant="outline-success"
-                className="veiwmorebutton"
-                href="/NewBike"
-              >
-                View More
-              </Button>
-            </Card.Body>
-          </Card>
-        </Carousel2>
-        <Button className="mt-2" variant="outline-primary">
-          More
-        </Button>
       </div>
 
       {/* brandlogo SECTION*/}
@@ -756,7 +639,10 @@ function HomePage() {
                         <td style={{ width: "20px" }}>
                           {" "}
                           <a href="/AccessBTBlue">
-                            <Image src={harleydavidson} className="brandlogocenter" />
+                            <Image
+                              src={harleydavidson}
+                              className="brandlogocenter"
+                            />
                           </a>
                         </td>
                         <td style={{ width: "20px" }}>
@@ -792,6 +678,139 @@ function HomePage() {
             </tr>
           </tbody>
         </Table>
+      </div>
+
+      {/* SPORTS BIKE SECTION*/}
+      <div className="bg-light burgmanbikesection">
+        <h2 className="">GET OFFERS ON POPULAR BIKES IN SPOTLIGHT</h2>
+        <Nav id="nav1" className="  my-3 my-lg-0   navtxt" navbarScroll>
+          <Nav.Link href="">HOME</Nav.Link>
+          <Nav.Link href="ch2">NEWBIKES</Nav.Link>
+          <Nav.Link href="#action1">NEWS</Nav.Link>
+          <Nav.Link href="#action2">NEW1</Nav.Link>
+        </Nav>
+
+        <Carousel2 responsive={responsive}>
+          <Card className="topbrandcard ">
+            <Link to="/AccessBTBlue">
+              <Card.Img
+                variant="top"
+                id="newaccimagespot"
+                src={NewAccicemat}
+                fluid
+                style={{ cursor: "pointer" }}
+              />
+            </Link>
+
+            <Card.Body>
+              <Card.Title>Access Bleutooth Edition Disc Break</Card.Title>
+              <p>Rs 1,25,000/-</p>
+              <Link to="/AccessBTBlue">
+                <Button variant="outline-info" className="veiwmorebutton">
+                  View More
+                </Button>
+              </Link>
+            </Card.Body>
+          </Card>
+
+          <Card className="topbrandcard">
+            <a href="/AccessBTBlue">
+              <Card.Img
+                variant="top"
+                id="newaccimagespot"
+                src={Accesblack}
+                fluid
+                style={{ cursor: "pointer" }}
+              />
+            </a>
+            <Card.Body>
+              <Card.Title>Access Special Edition Disc Break</Card.Title>
+              <p>Rs 1,20,000/-</p>
+              <Button
+                variant="outline-dark"
+                className="veiwmorebutton"
+                href="/NewBike"
+              >
+                View More
+              </Button>
+            </Card.Body>
+          </Card>
+
+          <Card className="topbrandcard">
+            <a href="/AccessBTBlue">
+              <Card.Img
+                variant="top"
+                id="newaccimagespot"
+                src={Accessmatblue}
+                fluid
+                style={{ cursor: "pointer" }}
+              />
+            </a>
+            <Card.Body>
+              <Card.Title>Access Drum Break Edition</Card.Title>
+              <p>Rs 1,05,000/-</p>
+              <Button
+                variant="outline-primary"
+                className="veiwmorebutton"
+                href="/NewBike"
+              >
+                View More
+              </Button>
+            </Card.Body>
+          </Card>
+
+          <Card className="topbrandcard">
+            <Card.Img variant="top" id="newaccimagespot" src={burgmanbrown} />
+            <Card.Body>
+              <Card.Title>Burgman Ex Bleutooth Top Edition</Card.Title>
+              <p>Rs 1,52,000/-</p>
+              <Button
+                variant="outline-secondary"
+                className="veiwmorebutton"
+                href="/NewBike"
+              >
+                View More
+              </Button>
+            </Card.Body>
+          </Card>
+
+          <Card className="topbrandcard">
+            <Card.Img variant="top" id="newaccimagespot" src={burgmangreenbt} />
+            <Card.Body>
+              <Card.Title>Burgman Bleutooth Edition</Card.Title>
+              <p>Rs 1,35,000/-</p>
+              <Button
+                variant="outline-success"
+                className="veiwmorebutton"
+                href="/NewBike"
+              >
+                View More
+              </Button>
+            </Card.Body>
+          </Card>
+
+          <Card className="topbrandcard">
+            <Card.Img
+              variant="top"
+              id="newaccimagespot"
+              src={burgmannonbtblk}
+            />
+            <Card.Body>
+              <Card.Title>Burgman Non Bleutooth Edition</Card.Title>
+              <p>Rs 1,30,000/-</p>
+              <Button
+                variant="outline-dark"
+                className="veiwmorebutton"
+                href="/NewBike"
+              >
+                View More
+              </Button>
+            </Card.Body>
+          </Card>
+        </Carousel2>
+        <Button className="mt-2" variant="outline-primary">
+          More
+        </Button>
       </div>
 
       {/* testimonial*/}
@@ -1025,49 +1044,61 @@ function HomePage() {
       />
 
       <div className="p-4">
-     <h2>Suzuki Access 125 FAQs</h2> 
+        <h2>Suzuki Access 125 FAQs</h2>
         <Accordion defaultActiveKey="0">
           <Accordion.Item eventKey="0">
             <Accordion.Header>
-            Q: What is the on-road price of Suzuki Access 125 in 2025?
+              Q: What is the on-road price of Suzuki Access 125 in 2025?
             </Accordion.Header>
             <Accordion.Body>
-           A: The 2025 on-road price of Suzuki Access 125 in Mumbai is Rs. 1,03,041. 
-            This Suzuki Access 125 price includes the ex-showroom price, RTO and insurance charges.
+              A: The 2025 on-road price of Suzuki Access 125 in Mumbai is Rs.
+              1,03,041. This Suzuki Access 125 price includes the ex-showroom
+              price, RTO and insurance charges.
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="1">
             <Accordion.Header>
-            Q: What is the actual mileage of Suzuki Access 125?
+              Q: What is the actual mileage of Suzuki Access 125?
             </Accordion.Header>
             <Accordion.Body>
-           A: According to the user reported data, Suzuki Access 125 gives an average mileage of 46 kmpl.
+              A: According to the user reported data, Suzuki Access 125 gives an
+              average mileage of 46 kmpl.
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="2">
-            <Accordion.Header>Q: Which is better Suzuki Access 125 or Honda Activa 125?</Accordion.Header>
+            <Accordion.Header>
+              Q: Which is better Suzuki Access 125 or Honda Activa 125?
+            </Accordion.Header>
             <Accordion.Body>
-            A: Suzuki Access 125 is priced at Rs. 85,470, has a 124 cc engine, gives a mileage of 46 kmpl and weighs 106 kg, 
-            whereas, the price of Honda Activa 125 is Rs. 85,196 with a 123.92 cc engine, giving a mileage of 47 kmpl and weighing 110 kg.
+              A: Suzuki Access 125 is priced at Rs. 85,470, has a 124 cc engine,
+              gives a mileage of 46 kmpl and weighs 106 kg, whereas, the price
+              of Honda Activa 125 is Rs. 85,196 with a 123.92 cc engine, giving
+              a mileage of 47 kmpl and weighing 110 kg.
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="3">
-            <Accordion.Header>Q: What are the colour options of Suzuki Access 125?</Accordion.Header>
+            <Accordion.Header>
+              Q: What are the colour options of Suzuki Access 125?
+            </Accordion.Header>
             <Accordion.Body>
-            A: Suzuki Access 125 is available in 5 colours which are Metallic Mat Black, Pearl Grace White, Metallic Mat Stellar Blue, Solid Ice Green and Pearl Shiny Beige.
+              A: Suzuki Access 125 is available in 5 colours which are Metallic
+              Mat Black, Pearl Grace White, Metallic Mat Stellar Blue, Solid Ice
+              Green and Pearl Shiny Beige.
             </Accordion.Body>
           </Accordion.Item>
           <Accordion.Item eventKey="4">
-            <Accordion.Header>Q: What are the key specifications of Suzuki Access 125?</Accordion.Header>
+            <Accordion.Header>
+              Q: What are the key specifications of Suzuki Access 125?
+            </Accordion.Header>
             <Accordion.Body>
-            A: Suzuki Access 125 is a Scooter that weighs 106 kg, has a 124 cc BS6 Phase 2B engine and a fuel capacity of 5.3 litres.
+              A: Suzuki Access 125 is a Scooter that weighs 106 kg, has a 124 cc
+              BS6 Phase 2B engine and a fuel capacity of 5.3 litres.
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
       </div>
 
-      <MyForm/>
-      
+      <MyForm />
     </>
   );
 }

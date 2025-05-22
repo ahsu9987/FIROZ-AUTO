@@ -10,8 +10,9 @@ import {
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Home from "./Pages/HomePage";
-import AccessBTMatblue from "./Pages/AllCollectionPages/Accesspage/AccessBTVariant/AccessBTMatblue";
+import AccessBT from "./Pages/AllCollectionPages/Accesspage/AccessBTVariant/AccessBT";
 import Myform from "./Pages/MyForm";
+import "./Pages/AllCollectionPages/Accesspage/AccessBTVariant/cssfile/AccessBT.css";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
         <Header />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/AccessBTBlue" component={AccessBTMatblue} />
+          <Route exact path="/AccessBT" component={AccessBT} />
           <Route exact path="/Getintouch" component={Myform} />
         </Switch>
 

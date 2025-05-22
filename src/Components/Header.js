@@ -1,14 +1,15 @@
-import React from "react";
+// import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
 import { NavLink } from "react-router-dom/cjs/react-router-dom";
-import logo from "../images/firozautologo.jpeg";
+import logo from "../Pages/HomeAllimages/Alllogo/Firozauto-logo.jpg";
 import Image from "react-bootstrap/Image";
 
 function Header() {
+
+
   return (
     <>
       <Navbar
@@ -19,7 +20,7 @@ function Header() {
         <Container>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
-            <Image src={logo} fluid />;
+            <Image src={logo}  className="headerlogo"/>;
             <h4 href="#action1" className="fw-bold">
               FIROZ AUTORIDES
             </h4>
@@ -39,11 +40,11 @@ function Header() {
               <Form className="d-flex">
                 <Form.Control
                   type="search"
-                  placeholder="Search"
+                  placeholder="Search..."
                   className="me-2"
                   aria-label="Search"
                 />
-                <Button variant="outline-dark">Search</Button>
+                {/* <Button variant="outline-dark">Search</Button> */}
               </Form>
             </Nav>
           </Navbar.Collapse>
