@@ -33,12 +33,16 @@
     font-size: medium;
 }
 
-.topbrandcard{
-    width:auto;
-}
+/* .topbrandcard{
+    width:260px;
+} */
 
 #newaccimagespot{
-height: 175px;
+height: 180px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 85%;
 }
 .burgmanbikesection{
     margin: 70px;
@@ -93,11 +97,6 @@ height: 175px;
 }
 .reviewimages{
     height: 30vh;
-}
-.myform{
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
 }
 input[type=text],[type=email],[type=number] select, textarea {
   width: 100%;
@@ -196,6 +195,9 @@ input[type=submit]:hover {
     .navtxt{
         font-size: small;
     }
+    #newaccimagespot{
+    width: 75%;
+}
     #newaccbluespot{
         height: 200px;
         }

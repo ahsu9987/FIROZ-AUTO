@@ -11,7 +11,6 @@ import burgmanbrown from "../Pages/HomeAllimages/AllBurgmanimages/burgmanbrownex
 import burgmanwhite from "../images/white-burgman.png";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import Nav from "react-bootstrap/Nav";
 import Carousel2 from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import NewAccicemat from "../Pages/HomeAllimages/AllAccessimages/Accicegreenmat.png";
@@ -263,13 +262,7 @@ function HomePage() {
 
       {/* ACCESS & BURGMAN BIKE SECTION SPOTLIGHT*/}
       <div className="bg-light burgmanbikesection">
-        <h2 className="">TRENDING BIKES OF 2025</h2>
-        <Nav id="nav1" className="  my-3 my-lg-0   navtxt" navbarScroll>
-          <Nav.Link href="">HOME</Nav.Link>
-          <Nav.Link href="ch2">NEWBIKES</Nav.Link>
-          <Nav.Link href="#action1">NEWS</Nav.Link>
-          <Nav.Link href="#action2">NEW1</Nav.Link>
-        </Nav>
+        <h2 className="mb-4 mt-3">TRENDING BIKES OF 2025</h2>
 
         <Carousel2 responsive={responsive}>
           <Card className="topbrandcard ">
@@ -396,13 +389,7 @@ function HomePage() {
 
       {/* SPORTS BIKE SECTION*/}
       <div className="bg-light burgmanbikesection">
-        <h2 className="">GET OFFERS ON POPULAR BIKES IN SPOTLIGHT</h2>
-        <Nav id="nav1" className="  my-3 my-lg-0   navtxt" navbarScroll>
-          <Nav.Link href="">HOME</Nav.Link>
-          <Nav.Link href="ch2">NEWBIKES</Nav.Link>
-          <Nav.Link href="#action1">NEWS</Nav.Link>
-          <Nav.Link href="#action2">NEW1</Nav.Link>
-        </Nav>
+        <h2 className="mb-4 mt-3">GET OFFERS ON POPULAR BIKES IN SPOTLIGHT</h2>
 
         <Carousel2 responsive={responsive}>
           <Card className="topbrandcard ">
@@ -542,7 +529,7 @@ function HomePage() {
           <tbody>
             <tr>
               <td style={{ width: "20px" }}>
-                <a href="/AccessBTBlue">
+                <a href="/AccessBT">
                   <Image src={suzukilogo} className="brandlogocenter" />
                 </a>
               </td>
@@ -682,13 +669,13 @@ function HomePage() {
 
       {/* SPORTS BIKE SECTION*/}
       <div className="bg-light burgmanbikesection">
-        <h2 className="">GET OFFERS ON POPULAR BIKES IN SPOTLIGHT</h2>
-        <Nav id="nav1" className="  my-3 my-lg-0   navtxt" navbarScroll>
+        <h2 className="mb-4 mt-3">GET OFFERS ON POPULAR BIKES IN SPOTLIGHT</h2>
+        {/* <Nav id="nav1" className="  my-3 my-lg-0   navtxt" navbarScroll>
           <Nav.Link href="">HOME</Nav.Link>
           <Nav.Link href="ch2">NEWBIKES</Nav.Link>
           <Nav.Link href="#action1">NEWS</Nav.Link>
           <Nav.Link href="#action2">NEW1</Nav.Link>
-        </Nav>
+        </Nav> */}
 
         <Carousel2 responsive={responsive}>
           <Card className="topbrandcard ">
@@ -821,7 +808,7 @@ function HomePage() {
         </h1>
 
         <Carousel2 responsive={responsive}>
-          <Card className="Reveiwcard">
+          <Card className="Reveiwcard" id="newaccimagespot">
             <Card.Img
               variant="top"
               className="reviewimages"
@@ -831,7 +818,7 @@ function HomePage() {
             />
           </Card>
 
-          <Card className="Reveiwcard ">
+          <Card className="Reveiwcard" id="newaccimagespot">
             <Card.Img
               variant="top"
               className="reviewimages"
@@ -841,7 +828,7 @@ function HomePage() {
             />
           </Card>
 
-          <Card className="Reveiwcard ">
+          <Card className="Reveiwcard " id="newaccimagespot">
             <Card.Img
               variant="top"
               className="reviewimages"
@@ -851,7 +838,7 @@ function HomePage() {
             />
           </Card>
 
-          <Card className="Reveiwcard ">
+          <Card className="Reveiwcard " id="newaccimagespot">
             <Card.Img
               variant="top"
               className="reviewimages"
@@ -861,7 +848,7 @@ function HomePage() {
             />
           </Card>
 
-          <Card className="Reveiwcard ">
+          <Card className="Reveiwcard " id="newaccimagespot">
             <Card.Img
               variant="top"
               className="reviewimages"
@@ -871,7 +858,7 @@ function HomePage() {
             />
           </Card>
 
-          <Card className="Reveiwcard ">
+          <Card className="Reveiwcard " id="newaccimagespot">
             <Card.Img
               variant="top"
               className="reviewimages"
@@ -881,7 +868,7 @@ function HomePage() {
             />
           </Card>
 
-          <Card className="Reveiwcard ">
+          <Card className="Reveiwcard " id="newaccimagespot">
             <Card.Img
               variant="top"
               className="reviewimages"
@@ -891,7 +878,7 @@ function HomePage() {
             />
           </Card>
 
-          <Card className="Reveiwcard ">
+          <Card className="Reveiwcard " id="newaccimagespot">
             <Card.Img
               variant="top"
               className="reviewimages"
@@ -912,10 +899,15 @@ function HomePage() {
 
       {/*HAPPY CUSTOMERS*/}
       <div className="bg-light burgmanbikesection">
-        <h1 className="text-center mb-5 mt-2 reviewfont">
-          <span style={{ color: "#ffdb0f" }}>******</span>HAPPY CUSTOMERS
-          <span style={{ color: "#ffdb0f" }}>******</span>
-        </h1>
+        <div>
+          <h1 className="text-center mb-5 mt-2 reviewfont">
+            <span style={{ color: "#ffdb0f" }}>******</span>HAPPY CUSTOMERS
+            <span style={{ color: "#ffdb0f" }}>******</span><br></br>
+                      <p style={{fontSize:'15px'}}>Firoz AutoRides</p>
+
+          </h1>
+        </div>
+
         <Container>
           <Row className="">
             <Col lg={4} xs={12} md={8} className="mb-2">
