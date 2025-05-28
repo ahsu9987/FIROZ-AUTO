@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c0327fa8.css",
-    "main.js": "/static/js/main.fcd96b49.js",
+    "main.css": "/static/css/main.bbf9b123.css",
+    "main.js": "/static/js/main.6828c168.js",
     "reactPlayerYouTube.js": "/static/js/reactPlayerYouTube.2aa14195.chunk.js",
     "reactPlayerSoundCloud.js": "/static/js/reactPlayerSoundCloud.e07a2192.chunk.js",
     "reactPlayerVimeo.js": "/static/js/reactPlayerVimeo.946a806f.chunk.js",
@@ -18,17 +18,27 @@
     "reactPlayerPreview.js": "/static/js/reactPlayerPreview.8f274653.chunk.js",
     "static/js/453.cc726cfe.chunk.js": "/static/js/453.cc726cfe.chunk.js",
     "static/media/accesicegreen.mp4": "/static/media/accesicegreen.d252cb25b61c2e663c72.mp4",
+    "static/media/Normalmeter.png": "/static/media/Normalmeter.c6a9520043869df90955.png",
     "static/media/white-burgman.png": "/static/media/white-burgman.0bc015786b7f2d4c9b37.png",
+    "static/media/HazardLights.png": "/static/media/HazardLights.5cc98da755a58f467fd6.png",
     "static/media/mat blue burgman.png": "/static/media/mat blue burgman.c101679bb9f792dadd3f.png",
+    "static/media/Gixxersfblue.png": "/static/media/Gixxersfblue.2f5c752551bb46f426e0.png",
+    "static/media/usbcharger.png": "/static/media/usbcharger.a07dcc968870f38f3e13.png",
+    "static/media/GloveBox.png": "/static/media/GloveBox.64bb00f0db92c9bb4d41.png",
+    "static/media/rightsidestarter.png": "/static/media/rightsidestarter.63f0c937e17a696f7b98.png",
+    "static/media/TFT Meter.png": "/static/media/TFT Meter.943cad9b7f21ef5b7d7e.png",
+    "static/media/FrontHook.png": "/static/media/FrontHook.139ecfd4d7c62c9d35a4.png",
     "static/media/Accicegreenmat.png": "/static/media/Accicegreenmat.af5e7db4c615d553b342.png",
     "static/media/AccBeige.png": "/static/media/AccBeige.6696ff27bbdb270eef5d.png",
     "static/media/burgmanbrownex.png": "/static/media/burgmanbrownex.717b220e61773bf44961.png",
+    "static/media/gixxernakedblk.png": "/static/media/gixxernakedblk.a87a2bad7070f9ea997d.png",
     "static/media/Accmatblue.png": "/static/media/Accmatblue.639547d51529496bc05a.png",
     "static/media/banneravenis.jpeg": "/static/media/banneravenis.431ff1e0305e4a13481e.jpeg",
     "static/media/accwhite.png": "/static/media/accwhite.e00e69658d17fb4b6761.png",
     "static/media/bannerburgmanimg.jpg": "/static/media/bannerburgmanimg.f5fb7a7a5604f428e7a8.jpg",
     "static/media/accblack.png": "/static/media/accblack.872e947b881306474137.png",
     "static/media/burgmannonbtblk.png": "/static/media/burgmannonbtblk.aaf602637cb31cf865f0.png",
+    "static/media/Avenisbllknew.png": "/static/media/Avenisbllknew.58b37cd0da1374971c1b.png",
     "static/media/bannerblkburgman.jpeg": "/static/media/bannerblkburgman.93aab64749d55aad5e7e.jpeg",
     "static/media/happycsm6.jpeg": "/static/media/happycsm6.707c7a2fa85c19d16b7c.jpeg",
     "static/media/happycsm4.jpeg": "/static/media/happycsm4.37743c7277753daa7ddd.jpeg",
@@ -55,8 +65,8 @@
     "static/media/bmwlogo.png": "/static/media/bmwlogo.f616d036b5fa7bbf0920.png",
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
-    "main.c0327fa8.css.map": "/static/css/main.c0327fa8.css.map",
-    "main.fcd96b49.js.map": "/static/js/main.fcd96b49.js.map",
+    "main.bbf9b123.css.map": "/static/css/main.bbf9b123.css.map",
+    "main.6828c168.js.map": "/static/js/main.6828c168.js.map",
     "reactPlayerYouTube.2aa14195.chunk.js.map": "/static/js/reactPlayerYouTube.2aa14195.chunk.js.map",
     "reactPlayerSoundCloud.e07a2192.chunk.js.map": "/static/js/reactPlayerSoundCloud.e07a2192.chunk.js.map",
     "reactPlayerVimeo.946a806f.chunk.js.map": "/static/js/reactPlayerVimeo.946a806f.chunk.js.map",
@@ -74,7 +84,7 @@
     "453.cc726cfe.chunk.js.map": "/static/js/453.cc726cfe.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c0327fa8.css",
-    "static/js/main.fcd96b49.js"
+    "static/css/main.bbf9b123.css",
+    "static/js/main.6828c168.js"
   ]
 }

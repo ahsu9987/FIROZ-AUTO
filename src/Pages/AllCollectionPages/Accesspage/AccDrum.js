@@ -3,22 +3,22 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Table from "react-bootstrap/Table";
-import img1 from "./images/Accicegreenmat.png";
-import img2 from "./images/Accmatblue.png";
-import img3 from "./images/AccBeige.png";
-import img4 from "./images/accwhite.png";
+import img1 from "../Accesspage/images/Accicegreenmat.png";
+import img2 from "../Accesspage/images/Accmatblue.png";
+import img3 from "../Accesspage/images/accblack.png";
+import img4 from "../Accesspage/images/accwhite.png";
 import Carousel2 from "react-multi-carousel";
 import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
-import burgmanexbrown from "../AccessBTVariant/images/burgmanbrownex.png";
-import Avenisimg from "../AccessBTVariant/images/Avenisbllknew.png";
-import Gixxersfblue from "../AccessBTVariant/images/Gixxersfblue.png";
-import Gixxernakedblk from "../AccessBTVariant/images/gixxernakedblk.png";
+import burgmanexbrown from "../Accesspage/images/burgmanbrownex.png";
+import Avenisimg from "../Accesspage/images/Avenisbllknew.png";
+import Gixxersfblue from "../Accesspage/images/Gixxersfblue.png";
+import Gixxernakedblk from "../Accesspage/images/gixxernakedblk.png";
 
 const swatches = [
-  { color: "#2596be", name: "MAT AQUA SILVER", image: img1 },
+//   { color: "#2596be", name: "MAT AQUA SILVER", image: img1 },
   { color: "#13183C", name: "MATBLUE", image: img2 },
-  { color: "#C89A28", name: "BEIGE WHITE", image: img3 },
+  { color: "#28282B", name: "MAT BLACK", image: img3 },
   { color: "#EEEEEE", name: "WHITE", image: img4 },
 ];
 
@@ -42,7 +42,7 @@ const responsive = {
   },
 };
 
-const AccessBT = () => {
+const AccDrum = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   return (
@@ -83,11 +83,11 @@ const AccessBT = () => {
           </Col>
 
           <Col xs={12} md={4} lg={4} className="p-3">
-            <h1 className="mt-2">Access Bleutooth Edition Disc Break</h1>
+            <h1 className="mt-2">Access Drum Break Edition</h1>
             <p className=" text-dark">
               E20 COMPLIANT / LED HEADLAMP / LED POSITION LIGHTS /<br></br>
               SIDE STAND INTERLOCK / PREMIUM CHROME EXTERNAL FUEL LID/ <br></br>{" "}
-              BLUETOOTH® ENABLED DIGITAL CONSOLE
+              
             </p>
             <h3 className=" text-dark">SPECIFICATION:-</h3>
             <div className="tabledata">
@@ -129,7 +129,7 @@ const AccessBT = () => {
                   <tr>
                     <td>
                       Front Brake Type:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      Disc
+                      Drum
                     </td>
                   </tr>
                   <tr>
@@ -213,7 +213,7 @@ const AccessBT = () => {
               <Card.Img
                 variant="top"
                 id="newaccimagespot"
-                src={img4}
+                src={img2}
                 roundedCircle
                 fluid
                 style={{ cursor: "pointer" }}
@@ -221,7 +221,7 @@ const AccessBT = () => {
             </Link>
 
             <Card.Body>
-              <Card.Title>Access Drum Break Edition</Card.Title>
+              <Card.Title>Access Disc Break Bleutooth Edition </Card.Title>
               <p>Rs 1,05,000/-</p>
               <Link to="/AccessBT">
                 <Button variant="outline-info" className="veiwmorebutton">
@@ -255,11 +255,11 @@ const AccessBT = () => {
           </Card>
 
           <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12 ">
-            <a href="/AccessBTBlue">
+            <a href="/AccDrum">
               <Card.Img
                 variant="top"
                 id="newaccimagespot"
-                src={img2}
+                src={img1}
                 fluid
                 style={{ cursor: "pointer" }}
               />
@@ -270,7 +270,7 @@ const AccessBT = () => {
               <Button
                 variant="outline-dark"
                 className="veiwmorebutton"
-                href="/NewBike"
+                href="/AccDrum"
               >
                 View More
               </Button>
@@ -330,4 +330,4 @@ const AccessBT = () => {
   );
 };
 
-export default AccessBT;
+export default AccDrum;

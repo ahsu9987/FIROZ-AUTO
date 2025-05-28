@@ -129,7 +129,7 @@ function HomePage() {
       {/* HOME SCROLL VEHICLES */}
 
       <Carousel>
-        <Carousel.Item interval={1000}>
+        <Carousel.Item interval={300}>
           <Row className="">
             <Col xs={12} md={8} lg={7} className="bg-light p-2 allcol">
               <Image src={NewAccicemat} className="carsoulimg p-5 " />
@@ -155,7 +155,7 @@ function HomePage() {
           </Row>
         </Carousel.Item>
 
-        <Carousel.Item interval={3000}>
+        <Carousel.Item interval={300}>
           <Row>
             <Col xs={12} md={8} lg={7} className="bg-light p-2 allcol ">
               <Image className="carsoulimg p-5" src={NewAccmatblk} />
@@ -181,7 +181,7 @@ function HomePage() {
           </Row>
         </Carousel.Item>
 
-        <Carousel.Item interval={3000}>
+        <Carousel.Item interval={300}>
           <Row>
             <Col xs={12} md={8} lg={7} className="bg-light p-2 allcol">
               <Image className="carsoulimg p-5" src={burgmanbrown} />
@@ -207,7 +207,7 @@ function HomePage() {
           </Row>
         </Carousel.Item>
 
-        <Carousel.Item interval={1000}>
+        <Carousel.Item interval={300}>
           <Row>
             <Col xs={12} md={8} lg={7} className="bg-light p-2 allcol">
               <Image className="carsoulimg p-5" src={burgmanmatblue} />
@@ -233,7 +233,7 @@ function HomePage() {
           </Row>
         </Carousel.Item>
 
-        <Carousel.Item interval={1000}>
+        <Carousel.Item interval={300}>
           <Row>
             <Col xs={12} md={8} lg={7} className="bg-light p-2 allcol">
               <Image className="carsoulimg p-5" src={burgmanwhite} />
