@@ -3,10 +3,11 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Table from "react-bootstrap/Table";
-import img1 from "../Accesspage/images/Accicegreenmat.png";
-import img2 from "../Accesspage/images/AccessDrummatblue.png";
-import img3 from "../Accesspage/images/AccDrumblk.png";
-import img4 from "../Accesspage/images/AccDrumWhite.png";
+import img1 from "../Accesspage/images/Avenismatblk.png";
+import img2 from "../Accesspage/images/Avenisblk.png";
+import img3 from "../Accesspage/images/Avenisred.png";
+import img4 from "../Accesspage/images/Aveniswhite.png";
+import img5 from "../Accesspage/images/Avenisyellow.png";
 import Carousel2 from "react-multi-carousel";
 import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
@@ -14,6 +15,9 @@ import burgmanexbrown from "../Accesspage/images/burgmanbrownex.png";
 import Avenisimg from "../Accesspage/images/Avenisbllknew.png";
 import Gixxersfblue from "../Accesspage/images/Gixxersfblue.png";
 import Gixxernakedblk from "../Accesspage/images/gixxernakedblk.png";
+import Container from "react-bootstrap/Container";
+import TFTMETER from "../Accesspage/images/TFT Meter.png";
+import Normalmeter from "../Accesspage/images/Normalmeter.png";
 import Accordion from "react-bootstrap/Accordion";
 import starterbtn from "../Accesspage/images/rightsidestarter.png";
 import HazardLights from "../Accesspage/images/HazardLights.png";
@@ -25,15 +29,13 @@ import HeatProtector from "../Accesspage/images/HeatProtector.png";
 import frontwheel from "../Accesspage/images/frontwheel.png";
 import frontalloywheel from "../Accesspage/images/frontalloywheel.png";
 import CloseFuel from "../Accesspage/images/CloseFuelLid.png";
-import Container from "react-bootstrap/Container";
-import Normalmeter from "../Accesspage/images/Normalmeter.png";
-import accdrummeter from "../Accesspage/images/AccDrummeter.png";
-import AccblkSE from "../Accesspage/images/accblack.png";
 
 const swatches = [
-  { color: "#13183C", name: "MATBLUE", image: img2 },
-  { color: "#28282B", name: "MAT BLACK", image: img3 },
-  { color: "#EEEEEE", name: "WHITE", image: img4 },
+  { color: "#28282B", name: "Glossy Sparkle Black", image: img1 },
+  { color: "#000000", name: "Glossy Sparkle Black", image: img2 },
+  { color: "#FE1D37", name: "Glossy Pearl Mira Red", image: img3 },
+  { color: "#F6F6F6", name: "Glossy Pearl Mira Red", image: img4 },
+  { color: "#FFEA4E", name: "Champion Yellow", image: img5 },
 ];
 
 const responsive = {
@@ -56,7 +58,7 @@ const responsive = {
   },
 };
 
-const AccDrum = () => {
+const Avenis = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   return (
@@ -97,11 +99,12 @@ const AccDrum = () => {
           </Col>
 
           <Col xs={12} md={4} lg={4} className="p-3">
-            <h1 className="mt-2">Access Drum Break Edition</h1>
+            <h1 className="mt-2">Suzuki Avenis 125 Bleutooth Edition</h1>
             <p className=" text-dark">
-              E20 COMPLIANT / LED HEADLAMP / LED POSITION LIGHTS /<br></br>
-              SIDE STAND INTERLOCK / PREMIUM CHROME EXTERNAL FUEL LID/ <br></br>{" "}
-              
+              The Suzuki Avenis 125 is a modern sporty scooter that has been developed to take on the TVS Ntorq 125.    <br></br>
+              It gets aggressive styling, good number of features and an engine that is known to offer excellent refinement and performance.<br></br>
+              But the scooter is priced on the higher side. <br></br>{" "}
+              BLUETOOTH® ENABLED DIGITAL CONSOLE
             </p>
             <h3 className=" text-dark">SPECIFICATION:-</h3>
             <div className="tabledata">
@@ -119,87 +122,90 @@ const AccDrum = () => {
                   </tr>
                   <tr>
                     <td>
-                      Max Power:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      Max
+                      Power:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       8.3 bhp @ 6500 rpm
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      Top Speed:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      Top
+                      Speed:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       90 kmph
                     </td>
                   </tr>
                   <tr>
-                    <td>
-                     [Brakes & Wheels]
-                    </td>
+                    <td>[Brakes & Wheels]</td>
                   </tr>
                   <tr>
                     <td>
-                      Braking System:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      Braking
+                      System:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       CBS
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      Front Brake Type:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      Drum
+                      Front Brake
+                      Type:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      Disc
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>[Dimensions]</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Kerb
+                      Weight:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      106 kg
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      [Dimensions]
+                      Fuel Tank
+                      Capacity:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      5.2 litres
                     </td>
                   </tr>
-                    <tr>
-                    <td>
-                      Kerb Weight:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      106 kg
-                    </td>
+                  <tr>
+                    <td>[Manufacturer Warranty]</td>
                   </tr>
-                    <tr>
+                  <tr>
                     <td>
-                      Fuel Tank Capacity:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      5.3 litres
-                    </td>
-                  </tr>
-                    <tr>
-                    <td>
-                      [Manufacturer Warranty]
-                    </td>
-                  </tr>
-                   <tr>
-                    <td>
-                      Standard Warranty:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      Standard
+                      Warranty:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       2 year
                     </td>
                   </tr>
-                   <tr>
-                    <td>
-                      [Service & Maintenance Schedule]
-                    </td>
+                  <tr>
+                    <td>[Service & Maintenance Schedule]</td>
                   </tr>
-                   <tr>
+                  <tr>
                     <td>
-                      1st Service:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      1st
+                      Service:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       750-1000 Kms/30-45 Days
                     </td>
                   </tr>
-                    <tr>
+                  <tr>
                     <td>
-                      2nd Service:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      2nd
+                      Service:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       3500-4000 Kms/120-135 Days
                     </td>
                   </tr>
-                    <tr>
+                  <tr>
                     <td>
-                      3rd Service:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      3rd
+                      Service:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       7500-8000 Kms/210-225 Days
                     </td>
                   </tr>
-                    <tr>
+                  <tr>
                     <td>
-                      4th Service:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      4th
+                      Service:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       9500-12000 Kms
                     </td>
                   </tr>
@@ -224,11 +230,11 @@ const AccDrum = () => {
             <Container>
               <Row>
                 <Col lg={6} xs={12} md={4}>
-                  <p className="text-center">  Normal Meter Instrument Cluster</p>
+                  <p className="text-center">TFT Right Front Three Quarter</p>
                   <Card.Img
                     variant="top"
                     id="newaccimagespot"
-                    src={accdrummeter}
+                    src={TFTMETER}
                     roundedCircle
                     fluid
                     style={{ cursor: "pointer" }}
@@ -236,7 +242,7 @@ const AccDrum = () => {
                 </Col>
                 <Col lg={6} xs={12} md={4}>
                   <p className="text-center mt-3">
-                    Normal Meter Instrument Cluster
+                    TFT Touchscreen Instrument Cluster
                   </p>
                   <Card.Img
                     variant="top"
@@ -384,11 +390,11 @@ const AccDrum = () => {
 
         <Carousel2 responsive={responsive} className="card-container">
           <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12 ">
-            <Link to="/AccessBT">
+            <Link to="/AccDrum">
               <Card.Img
                 variant="top"
                 id="newaccimagespot"
-                src={img1}
+                src={img4}
                 roundedCircle
                 fluid
                 style={{ cursor: "pointer" }}
@@ -396,9 +402,9 @@ const AccDrum = () => {
             </Link>
 
             <Card.Body>
-              <Card.Title>Access Bleutooth Edition Disc Break  </Card.Title>
+              <Card.Title>Access Drum Break Edition</Card.Title>
               <p>Rs 1,05,000/-</p>
-              <Link to="/AccessBT">
+              <Link to="/AccDrum">
                 <Button variant="outline-info" className="veiwmorebutton">
                   View More
                 </Button>
@@ -407,7 +413,7 @@ const AccDrum = () => {
           </Card>
 
           <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12 ">
-            <a href="/AccessBTBlue">
+            <a href="/Avenis">
               <Card.Img
                 variant="top"
                 id="newaccimagespot"
@@ -422,7 +428,7 @@ const AccDrum = () => {
               <Button
                 variant="outline-primary"
                 className="veiwmorebutton"
-                href="/NewBike"
+                href="/Avenis"
               >
                 View More
               </Button>
@@ -430,11 +436,11 @@ const AccDrum = () => {
           </Card>
 
           <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12 ">
-            <a href="/AccessBT">
+            <a href="/AccessBTBlue">
               <Card.Img
                 variant="top"
                 id="newaccimagespot"
-                src={AccblkSE}
+                src={img2}
                 fluid
                 style={{ cursor: "pointer" }}
               />
@@ -445,7 +451,7 @@ const AccDrum = () => {
               <Button
                 variant="outline-dark"
                 className="veiwmorebutton"
-                href="/AccessBT"
+                href="/NewBike"
               >
                 View More
               </Button>
@@ -505,4 +511,4 @@ const AccDrum = () => {
   );
 };
 
-export default AccDrum;
+export default Avenis;

@@ -15,7 +15,7 @@ import burgmanexbrown from "../Accesspage/images/burgmanbrownex.png";
 import Avenisimg from "../Accesspage/images/Avenisbllknew.png";
 import Gixxersfblue from "../Accesspage/images/Gixxersfblue.png";
 import Gixxernakedblk from "../Accesspage/images/gixxernakedblk.png";
-import Container from 'react-bootstrap/Container';
+import Container from "react-bootstrap/Container";
 import TFTMETER from "../Accesspage/images/TFT Meter.png";
 import Normalmeter from "../Accesspage/images/Normalmeter.png";
 import Accordion from "react-bootstrap/Accordion";
@@ -24,7 +24,11 @@ import HazardLights from "../Accesspage/images/HazardLights.png";
 import usbcharger from "../Accesspage/images/usbcharger.png";
 import FrontHook from "../Accesspage/images/FrontHook.png";
 import GloveBox from "../Accesspage/images/GloveBox.png";
-
+import UnderseatStorage from "../Accesspage/images/UnderseatStorage.png";
+import HeatProtector from "../Accesspage/images/HeatProtector.png";
+import frontwheel from "../Accesspage/images/frontwheel.png";
+import frontalloywheel from "../Accesspage/images/frontalloywheel.png";
+import CloseFuel from "../Accesspage/images/CloseFuelLid.png";
 
 const swatches = [
   { color: "#2596be", name: "MAT AQUA SILVER", image: img1 },
@@ -117,87 +121,90 @@ const AccessBT = () => {
                   </tr>
                   <tr>
                     <td>
-                      Max Power:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      Max
+                      Power:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       8.3 bhp @ 6500 rpm
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      Top Speed:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      Top
+                      Speed:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       90 kmph
                     </td>
                   </tr>
                   <tr>
-                    <td>
-                     [Brakes & Wheels]
-                    </td>
+                    <td>[Brakes & Wheels]</td>
                   </tr>
                   <tr>
                     <td>
-                      Braking System:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      Braking
+                      System:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       CBS
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      Front Brake Type:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      Front Brake
+                      Type:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       Disc
                     </td>
                   </tr>
                   <tr>
-                    <td>
-                      [Dimensions]
-                    </td>
+                    <td>[Dimensions]</td>
                   </tr>
-                    <tr>
+                  <tr>
                     <td>
-                      Kerb Weight:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      Kerb
+                      Weight:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       106 kg
                     </td>
                   </tr>
-                    <tr>
+                  <tr>
                     <td>
-                      Fuel Tank Capacity:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      Fuel Tank
+                      Capacity:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       5.3 litres
                     </td>
                   </tr>
-                    <tr>
-                    <td>
-                      [Manufacturer Warranty]
-                    </td>
+                  <tr>
+                    <td>[Manufacturer Warranty]</td>
                   </tr>
-                   <tr>
+                  <tr>
                     <td>
-                      Standard Warranty:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      Standard
+                      Warranty:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       2 year
                     </td>
                   </tr>
-                   <tr>
-                    <td>
-                      [Service & Maintenance Schedule]
-                    </td>
+                  <tr>
+                    <td>[Service & Maintenance Schedule]</td>
                   </tr>
-                   <tr>
+                  <tr>
                     <td>
-                      1st Service:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      1st
+                      Service:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       750-1000 Kms/30-45 Days
                     </td>
                   </tr>
-                    <tr>
+                  <tr>
                     <td>
-                      2nd Service:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      2nd
+                      Service:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       3500-4000 Kms/120-135 Days
                     </td>
                   </tr>
-                    <tr>
+                  <tr>
                     <td>
-                      3rd Service:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      3rd
+                      Service:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       7500-8000 Kms/210-225 Days
                     </td>
                   </tr>
-                    <tr>
+                  <tr>
                     <td>
-                      4th Service:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      4th
+                      Service:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       9500-12000 Kms
                     </td>
                   </tr>
@@ -215,124 +222,166 @@ const AccessBT = () => {
         </Row>
       </div>
 
+      <Accordion defaultActiveKey="0">
+        <Accordion.Item>
+          <Accordion.Header>ALL PARTS IMAGES</Accordion.Header>
+          <Accordion.Body>
+            <Container>
+              <Row>
+                <Col lg={6} xs={12} md={4}>
+                  <p className="text-center">TFT Right Front Three Quarter</p>
+                  <Card.Img
+                    variant="top"
+                    id="newaccimagespot"
+                    src={TFTMETER}
+                    roundedCircle
+                    fluid
+                    style={{ cursor: "pointer" }}
+                  />
+                </Col>
+                <Col lg={6} xs={12} md={4}>
+                  <p className="text-center mt-3">
+                    TFT Touchscreen Instrument Cluster
+                  </p>
+                  <Card.Img
+                    variant="top"
+                    id="newaccimagespot"
+                    src={Normalmeter}
+                    roundedCircle
+                    fluid
+                    style={{ cursor: "pointer" }}
+                  />
+                </Col>
+              </Row>
 
+              <Row>
+                <Col lg={6} xs={12} md={4}>
+                  <p className="text-center mt-3">Right Side Throttle Grip</p>
+                  <Card.Img
+                    variant="top"
+                    id="newaccimagespot"
+                    src={starterbtn}
+                    roundedCircle
+                    fluid
+                    style={{ cursor: "pointer" }}
+                  />
+                </Col>
+                <Col lg={6} xs={12} md={4}>
+                  <p className="text-center mt-3">Hazard Lights Switch</p>
+                  <Card.Img
+                    variant="top"
+                    id="newaccimagespot"
+                    src={HazardLights}
+                    roundedCircle
+                    fluid
+                    style={{ cursor: "pointer" }}
+                  />
+                </Col>
+              </Row>
 
+              <Row>
+                <Col lg={6} xs={12} md={4}>
+                  <p className="text-center mt-3">USB Charging Port</p>
+                  <Card.Img
+                    variant="top"
+                    id="newaccimagespot"
+                    src={usbcharger}
+                    roundedCircle
+                    fluid
+                    style={{ cursor: "pointer" }}
+                  />
+                </Col>
+                <Col lg={6} xs={12} md={4}>
+                  <p className="text-center mt-3">Front Luggage Hook</p>
+                  <Card.Img
+                    variant="top"
+                    id="newaccimagespot"
+                    src={FrontHook}
+                    roundedCircle
+                    fluid
+                    style={{ cursor: "pointer" }}
+                  />
+                </Col>
+              </Row>
 
-<Accordion defaultActiveKey="0">
-          <Accordion.Item >
-            <Accordion.Header >
-              ALL PARTS IMAGES
-            </Accordion.Header>
-            <Accordion.Body>
-             <Container>
- <Row>
-        <Col lg={6} xs={12} md={4}>
-        <p className="text-center">TFT Right Front Three Quarter</p>
-             <Card.Img
-                variant="top"
-                id="newaccimagespot"
-                src={TFTMETER}
-                roundedCircle
-                fluid
-                style={{ cursor: "pointer" }}
-              />
-        </Col>
-        <Col lg={6} xs={12} md={4}>
-         <p className="text-center mt-3">TFT Touchscreen Instrument Cluster</p>
-             <Card.Img
-                variant="top"
-                id="newaccimagespot"
-                src={Normalmeter}
-                roundedCircle
-                fluid
-                style={{ cursor: "pointer" }}
-              />
-        </Col>
-      </Row>
+              <Row>
+                <Col lg={6} xs={12} md={4}>
+                  <p className="text-center mt-3">Glove Box</p>
+                  <Card.Img
+                    variant="top"
+                    id="newaccimagespot"
+                    src={GloveBox}
+                    roundedCircle
+                    fluid
+                    style={{ cursor: "pointer" }}
+                  />
+                </Col>
+                <Col lg={6} xs={12} md={4}>
+                  <p className="text-center mt-3">Underseat Storage</p>
+                  <Card.Img
+                    variant="top"
+                    id="newaccimagespot"
+                    src={UnderseatStorage}
+                    roundedCircle
+                    fluid
+                    style={{ cursor: "pointer" }}
+                  />
+                </Col>
+              </Row>
 
-       <Row>
-        <Col lg={6} xs={12} md={4}>
-         <p className="text-center mt-3">Right Side Throttle Grip</p>
-             <Card.Img
-                variant="top"
-                id="newaccimagespot"
-                src={starterbtn}
-                roundedCircle
-                fluid
-                style={{ cursor: "pointer" }}
-              />
-        </Col>
-        <Col lg={6} xs={12} md={4}>
-         <p className="text-center mt-3">Hazard Lights Switch</p>
-             <Card.Img
-                variant="top"
-                id="newaccimagespot"
-                src={HazardLights}
-                roundedCircle
-                fluid
-                style={{ cursor: "pointer" }}
-              />
-        </Col>
-      </Row>
+              <Row>
+                <Col lg={6} xs={12} md={4}>
+                  <p className="text-center mt-3">HeatProtector</p>
+                  <Card.Img
+                    variant="top"
+                    id="newaccimagespot"
+                    src={HeatProtector}
+                    roundedCircle
+                    fluid
+                    style={{ cursor: "pointer" }}
+                  />
+                </Col>
+                <Col lg={6} xs={12} md={4}>
+                  <p className="text-center mt-3">front wheel</p>
+                  <Card.Img
+                    variant="top"
+                    id="newaccimagespot"
+                    src={frontwheel}
+                    roundedCircle
+                    fluid
+                    style={{ cursor: "pointer" }}
+                  />
+                </Col>
+              </Row>
 
-      <Row>
-        <Col lg={6} xs={12} md={4}>
-         <p className="text-center mt-3">USB Charging Port</p>
-             <Card.Img
-                variant="top"
-                id="newaccimagespot"
-                src={usbcharger}
-                roundedCircle
-                fluid
-                style={{ cursor: "pointer" }}
-              />
-        </Col>
-        <Col lg={6} xs={12} md={4}>
-         <p className="text-center mt-3">Front Luggage Hook</p>
-             <Card.Img
-                variant="top"
-                id="newaccimagespot"
-                src={FrontHook}
-                roundedCircle
-                fluid
-                style={{ cursor: "pointer" }}
-              />
-        </Col>
-      </Row>
-
-      <Row>
-        <Col lg={6} xs={12} md={4}>
-         <p className="text-center mt-3">Glove Box</p>
-             <Card.Img
-                variant="top"
-                id="newaccimagespot"
-                src={GloveBox}
-                roundedCircle
-                fluid
-                style={{ cursor: "pointer" }}
-              />
-        </Col>
-        <Col lg={6} xs={12} md={4}>
-         <p className="text-center mt-3">Hazard Lights Switch</p>
-             <Card.Img
-                variant="top"
-                id="newaccimagespot"
-                src={FrontHook}
-                roundedCircle
-                fluid
-                style={{ cursor: "pointer" }}
-              />
-        </Col>
-      </Row>
-    </Container>
-            </Accordion.Body>
-          </Accordion.Item>
-        </Accordion>
-
-
-      
-
-
+              <Row>
+                <Col lg={6} xs={12} md={4}>
+                  <p className="text-center mt-3">Front Alloy Wheel</p>
+                  <Card.Img
+                    variant="top"
+                    id="newaccimagespot"
+                    src={frontalloywheel}
+                    roundedCircle
+                    fluid
+                    style={{ cursor: "pointer" }}
+                  />
+                </Col>
+                <Col lg={6} xs={12} md={4}>
+                  <p className="text-center mt-3">Close Fuel Lid</p>
+                  <Card.Img
+                    variant="top"
+                    id="newaccimagespot"
+                    src={CloseFuel}
+                    roundedCircle
+                    fluid
+                    style={{ cursor: "pointer" }}
+                  />
+                </Col>
+              </Row>
+            </Container>
+          </Accordion.Body>
+        </Accordion.Item>
+      </Accordion>
 
       {/* ACCESS & BURGMAN BIKE SECTION SPOTLIGHT*/}
       <div className="bg-light burgmanbikesection">
@@ -363,7 +412,7 @@ const AccessBT = () => {
           </Card>
 
           <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12 ">
-            <a href="/AccessBTBlue">
+            <a href="/Avenis">
               <Card.Img
                 variant="top"
                 id="newaccimagespot"
@@ -378,7 +427,7 @@ const AccessBT = () => {
               <Button
                 variant="outline-primary"
                 className="veiwmorebutton"
-                href="/NewBike"
+                href="/Avenis"
               >
                 View More
               </Button>

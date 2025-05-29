@@ -13,6 +13,7 @@ import Home from "./Pages/HomePage";
 import AccessBT from "./Pages/AllCollectionPages/Accesspage/AccessBT";
 import Myform from "./Pages/MyForm";
 import AccDrum from "./Pages/AllCollectionPages/Accesspage/AccDrum";
+import Avenis from "./Pages/AllCollectionPages/Accesspage/Avenis";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route exact path="/AccessBT" component={AccessBT} />
           <Route exact path="/Getintouch" component={Myform} />
           <Route exact path="/AccDrum" component={AccDrum} />
+          <Route exact path="/Avenis" component={Avenis} />
         </Switch>
 
         <Footer />
