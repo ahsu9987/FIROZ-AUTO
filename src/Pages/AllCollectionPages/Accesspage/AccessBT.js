@@ -64,8 +64,8 @@ const AccessBT = () => {
   return (
     <>
       <div className=" mt-5 ">
-        <Row className="p-2">
-          <Col className="ms-1 " xs={12} md={4} lg={7}>
+        <Row className="p-2 ">
+          <Col className="ms-1 bg-white" xs={12} md={4} lg={7}>
             <div className="product-container">
               <div className="product-header">
                 <span>{`${currentIndex + 1}/${swatches.length}`}</span>
@@ -99,13 +99,13 @@ const AccessBT = () => {
           </Col>
 
           <Col xs={12} md={4} lg={4} className="p-3">
-            <h1 className="mt-2">Access Bleutooth Edition Disc Break</h1>
-            <p className=" text-dark">
+            <h1 className="mt-2 text-light">Access Bleutooth Edition Disc Break</h1>
+            <p className=" text-light">
               E20 COMPLIANT / LED HEADLAMP / LED POSITION LIGHTS /<br></br>
               SIDE STAND INTERLOCK / PREMIUM CHROME EXTERNAL FUEL LID/ <br></br>{" "}
               BLUETOOTH® ENABLED DIGITAL CONSOLE
             </p>
-            <h3 className=" text-dark">SPECIFICATION:-</h3>
+            <h3 className="text-light">SPECIFICATION:-</h3>
             <div className="tabledata">
               <Table striped bordered hover>
                 <tbody>

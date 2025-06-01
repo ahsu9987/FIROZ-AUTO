@@ -1,5 +1,7 @@
 body{
   overflow-x: hidden;
-  background-color: white!important;
+  background-image: linear-gradient(to right, #141e30, #243b55);
+
+  
 }
 

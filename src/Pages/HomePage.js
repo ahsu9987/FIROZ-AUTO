@@ -101,7 +101,7 @@ function HomePage() {
 
       {/* ABOUT US */}
       <Row>
-        <Col xs={12} md={8} lg={6} className="bg-light p-4">
+        <Col xs={12} md={8} lg={6} className="text-light p-4">
           <h2>ABOUT US</h2>
           <h5>WELCOME TO FIROZ AUTORIDES SAFE RIDE</h5>
           <p className="txt-bold">
@@ -121,7 +121,7 @@ function HomePage() {
             ensure you have an unforgettable riding experience.
           </p>
         </Col>
-        <Col xs={12} md={8} lg={6} className="bg-light">
+        <Col xs={12} md={8} lg={6} className="">
           <Image src={firozautologo} className="logofiroz" />
         </Col>
       </Row>
@@ -131,8 +131,8 @@ function HomePage() {
       <Carousel>
         <Carousel.Item interval={300}>
           <Row className="">
-            <Col xs={12} md={8} lg={7} className="bg-light p-2 allcol">
-              <Image src={NewAccicemat} className="carsoulimg p-5 " />
+            <Col xs={12} md={8} lg={7} className="bg-light  allcol">
+              <Image src={NewAccicemat}  className="carsoulimg p-5 " />
             </Col>
             <Col xs={12} md={4} lg={5} className="bg-light p-5">
               <h1 className="Htxt text-info">
@@ -157,7 +157,7 @@ function HomePage() {
 
         <Carousel.Item interval={300}>
           <Row>
-            <Col xs={12} md={8} lg={7} className="bg-light p-2 allcol ">
+            <Col xs={12} md={8} lg={7} className="bg-light  allcol ">
               <Image className="carsoulimg p-5" src={NewAccmatblk} />
             </Col>
             <Col xs={12} md={4} lg={5} className="bg-light p-5">
@@ -183,7 +183,7 @@ function HomePage() {
 
         <Carousel.Item interval={300}>
           <Row>
-            <Col xs={12} md={8} lg={7} className="bg-light p-2 allcol">
+            <Col xs={12} md={8} lg={7} className="bg-light allcol">
               <Image className="carsoulimg p-5" src={burgmanbrown} />
             </Col>
             <Col xs={12} md={4} lg={5} className="bg-light p-5">
@@ -209,7 +209,7 @@ function HomePage() {
 
         <Carousel.Item interval={300}>
           <Row>
-            <Col xs={12} md={8} lg={7} className="bg-light p-2 allcol">
+            <Col xs={12} md={8} lg={7} className="bg-light  allcol">
               <Image className="carsoulimg p-5" src={burgmanmatblue} />
             </Col>
             <Col xs={12} md={4} lg={5} className="bg-light p-5">
@@ -233,9 +233,9 @@ function HomePage() {
           </Row>
         </Carousel.Item>
 
-        <Carousel.Item interval={300}>
+        <Carousel.Item interval={100}>
           <Row>
-            <Col xs={12} md={8} lg={7} className="bg-light p-2 allcol">
+            <Col xs={12} md={8} lg={7} className="bg-light  allcol">
               <Image className="carsoulimg p-5" src={burgmanwhite} />
             </Col>
             <Col xs={12} md={4} lg={5} className="bg-light p-5">
