@@ -10,7 +10,7 @@ import img4 from "../Accesspage/images/AccDrumWhite.png";
 import Carousel2 from "react-multi-carousel";
 import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
-import burgmanexbrown from "../Accesspage/images/burgmanbrownex.png";
+import burgmanexbrown from "../Accesspage/images/burgmanexbrown.png";
 import Avenisimg from "../Accesspage/images/Avenisbllknew.png";
 import Gixxersfblue from "../Accesspage/images/Gixxersfblue.png";
 import Gixxernakedblk from "../Accesspage/images/gixxernakedblk.png";
@@ -22,13 +22,10 @@ import FrontHook from "../Accesspage/images/FrontHook.png";
 import GloveBox from "../Accesspage/images/GloveBox.png";
 import UnderseatStorage from "../Accesspage/images/UnderseatStorage.png";
 import HeatProtector from "../Accesspage/images/HeatProtector.png";
-import frontwheel from "../Accesspage/images/frontwheel.png";
-import frontalloywheel from "../Accesspage/images/frontalloywheel.png";
-import CloseFuel from "../Accesspage/images/CloseFuelLid.png";
 import Container from "react-bootstrap/Container";
-import Normalmeter from "../Accesspage/images/Normalmeter.png";
 import accdrummeter from "../Accesspage/images/AccDrummeter.png";
 import AccblkSE from "../Accesspage/images/accblack.png";
+import drumtyre from "../Accesspage/images/drumtyre.png";
 
 const swatches = [
   { color: "#13183C", name: "MATBLUE", image: img2 },
@@ -234,19 +231,6 @@ const AccDrum = () => {
                     style={{ cursor: "pointer" }}
                   />
                 </Col>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center mt-3">
-                    Normal Meter Instrument Cluster
-                  </p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={Normalmeter}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer" }}
-                  />
-                </Col>
               </Row>
 
               <Row>
@@ -337,36 +321,11 @@ const AccDrum = () => {
                   />
                 </Col>
                 <Col lg={6} xs={12} md={4}>
-                  <p className="text-center mt-3">front wheel</p>
+                  <p className="text-center mt-3">front Drum</p>
                   <Card.Img
                     variant="top"
                     id="newaccimagespot"
-                    src={frontwheel}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer" }}
-                  />
-                </Col>
-              </Row>
-
-              <Row>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center mt-3">Front Alloy Wheel</p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={frontalloywheel}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer" }}
-                  />
-                </Col>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center mt-3">Close Fuel Lid</p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={CloseFuel}
+                    src={drumtyre}
                     roundedCircle
                     fluid
                     style={{ cursor: "pointer" }}
@@ -407,7 +366,7 @@ const AccDrum = () => {
           </Card>
 
           <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12 ">
-            <a href="/AccessBTBlue">
+            <a href="/Avenis">
               <Card.Img
                 variant="top"
                 id="newaccimagespot"
@@ -422,7 +381,7 @@ const AccDrum = () => {
               <Button
                 variant="outline-primary"
                 className="veiwmorebutton"
-                href="/NewBike"
+                href="/Avenis"
               >
                 View More
               </Button>

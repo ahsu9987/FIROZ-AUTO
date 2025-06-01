@@ -14,6 +14,7 @@ import AccessBT from "./Pages/AllCollectionPages/Accesspage/AccessBT";
 import Myform from "./Pages/MyForm";
 import AccDrum from "./Pages/AllCollectionPages/Accesspage/AccDrum";
 import Avenis from "./Pages/AllCollectionPages/Accesspage/Avenis";
+import BurgmanEx from "./Pages/AllCollectionPages/Accesspage/BurgmanEx";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route exact path="/Getintouch" component={Myform} />
           <Route exact path="/AccDrum" component={AccDrum} />
           <Route exact path="/Avenis" component={Avenis} />
+          <Route exact path="/BurgmanEx" component={BurgmanEx} />
         </Switch>
 
         <Footer />
