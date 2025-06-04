@@ -55,12 +55,12 @@ width: 85%;
 }
 .homevideo{
     width: 100%!important;
-    height: 100vh!important;
+    height: 90vh!important;
     /* background-color: red; */
 }
 .react-player video{
     width: 250%!important;
-    height: 100vh!important;
+    height: 90vh!important;
     object-fit: cover;
 }
 /* .tabledata{
@@ -170,7 +170,10 @@ input[type=submit]:hover {
   font-weight: bold;
   pointer-events: none;
 }
-
+.cardgrove{
+    border-color: #000;
+    border-style: groove;
+}
 
 @media only screen and (max-width: 768px){
     .topnavlink{
@@ -211,11 +214,11 @@ input[type=submit]:hover {
         padding: 8px 20px 8px 20px!important;
     }
     .react-player video{
-        height: 80vh!important;
+        height: 85vh!important;
         width: 100%!important;
     }
     .homevideo{
-        height: 80vh!important;
+        height: 85vh!important;
         width: 100%!important;
     }
     .tabledata{
@@ -263,11 +266,11 @@ input[type=submit]:hover {
   justify-content:flex-start;
 }
 .swatch-group {
-  gap: 20px;
+  gap: 15px;
 }
 .swatch {
-  width: 35px;
-  height: 35px;
+  width: 33px;
+  height: 33px;
 }
 .checkmark {
   position: absolute;

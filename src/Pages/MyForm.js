@@ -52,7 +52,7 @@ export const MyForm = () => {
   const [modalShow, setModalShow] = React.useState(false);
   return (
     <>
-      <Container className="bg-light mt-3 mb-3 p-3">
+      <Container className="bg-light mt-3 mb-3 p-3 cardgrove">
         <h1>GET IN TOUCH</h1>
         <Row >
           <Col xs={12} md={8} lg={4}  className="bg-dark rounded p-3  " >

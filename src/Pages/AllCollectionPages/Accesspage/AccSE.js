@@ -3,36 +3,39 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Table from "react-bootstrap/Table";
-import img1 from "../Accesspage/images/BurgmanExnewMatblue.png";
-import img2 from "../Accesspage/images/burgmanexbrown.png";
-import img3 from "../Accesspage/images/burgmanexsilver.png";
-import img4 from "../Accesspage/images/burgmanexblk.png";
+import img1 from "../Accesspage/images/Accicegreenmat.png";
+import img2 from "../Accesspage/images/Accmatblue.png";
+import img3 from "../Accesspage/images/AccBeige.png";
+import img4 from "../Accesspage/images/accwhite.png";
+import img5 from "../Accesspage/images/accblack.png";
 import Carousel2 from "react-multi-carousel";
 import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import burgmanexbrown from "../Accesspage/images/burgmanexbrown.png";
-import Accdrum from "../Accesspage/images/AccessDrummatblue.png";
-import Gixxersfblue from "../Accesspage/images/Gixxersfblue.png";
-import Gixxernakedblk from "../Accesspage/images/gixxernakedblk.png";
+import Avenisimg from "../Accesspage/images/Avenisbllknew.png";
+import Gixxersfblue from "../GixxerSF&Naked/images/Gixxersfblue.png";
+import Gixxernakedblk from "../GixxerSF&Naked/images/gixxernakedblk.png";
 import Container from "react-bootstrap/Container";
-import burgmanexmeter from "../Accesspage/images/burgmanexmeter.png";
-import keyignition from "../Accesspage/images/KeyIgnition.png";
+import TFTMETER from "../Accesspage/images/TFT Meter.png";
+import Normalmeter from "../Accesspage/images/Normalmeter.png";
 import Accordion from "react-bootstrap/Accordion";
-import avenisfrontwheel from "../Accesspage/images/avenisFrontAlloyWheel.png";
-import AvenisAlloywheel from "../Accesspage/images/avenisFrontWheel.png";
-import AvenisUnderseatStorage from "../Accesspage/images/avenisUnderseatstorage.png";
-import AvenisSideStand from "../Accesspage/images/avenisidestand.png";
-import AvenisFrontLamp from "../Accesspage/images/AvenisDaytimeLamp.png";
-import AvenisKickstart from "../Accesspage/images/Kickstarter.png";
-import AvenisKillswitc from "../Accesspage/images/KillSwitch.png";
-import accspecial from "../Accesspage/images/accwhite.png"
-
+import starterbtn from "../Accesspage/images/rightsidestarter.png";
+import HazardLights from "../Accesspage/images/HazardLights.png";
+import usbcharger from "../Accesspage/images/usbcharger.png";
+import FrontHook from "../Accesspage/images/FrontHook.png";
+import GloveBox from "../Accesspage/images/GloveBox.png";
+import UnderseatStorage from "../Accesspage/images/UnderseatStorage.png";
+import HeatProtector from "../Accesspage/images/HeatProtector.png";
+import frontwheel from "../Accesspage/images/frontwheel.png";
+import frontalloywheel from "../Accesspage/images/frontalloywheel.png";
+import CloseFuel from "../Accesspage/images/CloseFuelLid.png";
 
 const swatches = [
-  { color: "#112239", name: "New Metallic Royal MatBlue", image: img1 },
-  { color: "#5c371d", name: "Metallic Royal Bronze", image: img2 },
-  { color: "#d5e3d9", name: "Metallic Platinum Silver", image: img3 },
-  { color: "#191919", name: "Metallic Matte Black ", image: img4 },
+  { color: "#2596be", name: "MAT AQUA SILVER", image: img1 },
+  { color: "#13183C", name: "MATBLUE", image: img2 },
+  { color: "#C89A28", name: "BEIGE WHITE", image: img3 },
+  { color: "#EEEEEE", name: "WHITE", image: img4 },
+  { color: "#28282B", name: "MAT BLACK", image: img5 },
 ];
 
 const responsive = {
@@ -55,14 +58,14 @@ const responsive = {
   },
 };
 
-const BurgmanEx = () => {
+const AccSE = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   return (
     <>
       <div className=" mt-5 ">
-        <Row className="p-2">
-          <Col className="ms-1 " xs={12} md={4} lg={7}>
+        <Row className="p-2 ">
+          <Col className="ms-1 bg-white" xs={12} md={4} lg={7}>
             <div className="product-container">
               <div className="product-header">
                 <span>{`${currentIndex + 1}/${swatches.length}`}</span>
@@ -76,14 +79,14 @@ const BurgmanEx = () => {
                 alt="Product"
                 class="img-fluid rounded mx-auto d-block "
               />
-              <div className="swatch-group">
+              <div className="swatch-group" >
                 {swatches.map((swatch, index) => (
                   <div
                     key={index}
                     className={`swatch ${
                       currentIndex === index ? "selected" : ""
                     }`}
-                    style={{ backgroundColor: swatch.color }}
+                    style={{ backgroundColor: swatch.color , border: "groove",borderColor:"black" }}
                     onClick={() => setCurrentIndex(index)}
                   >
                     {currentIndex === index && (
@@ -96,18 +99,15 @@ const BurgmanEx = () => {
           </Col>
 
           <Col xs={12} md={4} lg={4} className="p-3">
-            <h1 className="mt-2">Suzuki Burgman Ex Top 125 Bleutooth Edition</h1>
-            <p className=" text-dark">
-        When we speak of maxi-styled scooters in India, although the list is fairly short, 
-        the Suzuki Burgman Street 125 is one of the popular names in the category. But recently, 
-        the company launched an updated version of it with the ‘EX’ 
-         Three things – an auto-engine start/stop system, 12-inch rear alloy, 
-         and Suzuki Eco Performance Alpha. And how do all these updates translate into the real world for the customer? 
-         That’s what we have explored in this road test review of the Suzuki Burgman Street 125 EX.
+            <h1 className="mt-2 text-light">Access Special Edition Disc Break</h1>
+            <p className=" text-light">
+              E20 COMPLIANT / LED HEADLAMP / LED POSITION LIGHTS /<br></br>
+              SIDE STAND INTERLOCK / PREMIUM CHROME EXTERNAL FUEL LID/ <br></br>{" "}
+              BLUETOOTH® ENABLED DIGITAL CONSOLE
             </p>
-            <h3 className=" text-dark">SPECIFICATION:-</h3>
+            <h3 className="text-light mt-3 mb-3">SPECIFICATION:-</h3>
             <div className="tabledata">
-              <Table striped bordered hover>
+              <Table striped bordered  style={{ border: "groove" }}>
                 <tbody>
                   <tr>
                     <td>[Power & Performance]</td>
@@ -123,14 +123,14 @@ const BurgmanEx = () => {
                     <td>
                       Max
                       Power:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      8.58 bhp @ 6750 rpm
+                      8.3 bhp @ 6500 rpm
                     </td>
                   </tr>
                   <tr>
                     <td>
                       Top
                       Speed:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      95 kmph
+                      90 kmph
                     </td>
                   </tr>
                   <tr>
@@ -157,14 +157,14 @@ const BurgmanEx = () => {
                     <td>
                       Kerb
                       Weight:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      110 kg
+                      106 kg
                     </td>
                   </tr>
                   <tr>
                     <td>
                       Fuel Tank
                       Capacity:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      5.5 litres
+                      5.3 litres
                     </td>
                   </tr>
                   <tr>
@@ -215,6 +215,7 @@ const BurgmanEx = () => {
               variant="outline-success"
               className="mt-4"
               href="https://web.whatsapp.com/"
+              style={{ border: "groove" }}
             >
               BOOK NOW
             </Button>
@@ -223,122 +224,158 @@ const BurgmanEx = () => {
       </div>
 
       <Accordion defaultActiveKey="0">
-        <Accordion.Item>
+        <Accordion.Item className="bg-dark">
           <Accordion.Header>ALL PARTS IMAGES</Accordion.Header>
           <Accordion.Body>
             <Container>
               <Row>
                 <Col lg={6} xs={12} md={4}>
-                  <p className="text-center">Avenis meter BT</p>
+                  <p className="text-center text-light">TFT Right Front Three Quarter</p>
                   <Card.Img
                     variant="top"
                     id="newaccimagespot"
-                    src={burgmanexmeter}
+                    src={TFTMETER}
                     roundedCircle
                     fluid
-                    style={{ cursor: "pointer" }}
+                    style={{ cursor: "pointer", border: "groove" }}
                   />
                 </Col>
                 <Col lg={6} xs={12} md={4}>
-                  <p className="text-center mt-3">
-                    key-ignition
+                  <p className="text-center  text-light mt-3">
+                    TFT Touchscreen Instrument Cluster
                   </p>
                   <Card.Img
                     variant="top"
                     id="newaccimagespot"
-                    src={keyignition}
+                    src={Normalmeter}
                     roundedCircle
                     fluid
-                    style={{ cursor: "pointer" }}
+                    style={{ cursor: "pointer" ,border: "groove"}}
                   />
                 </Col>
               </Row>
 
               <Row>
                 <Col lg={6} xs={12} md={4}>
-                  <p className="text-center mt-3">Avenis front-wheel</p>
+                  <p className="text-center  text-light mt-3">Right Side Throttle Grip</p>
                   <Card.Img
                     variant="top"
                     id="newaccimagespot"
-                    src={avenisfrontwheel}
+                    src={starterbtn}
                     roundedCircle
                     fluid
-                    style={{ cursor: "pointer" }}
+                    style={{ cursor: "pointer",border: "groove" }}
                   />
                 </Col>
                 <Col lg={6} xs={12} md={4}>
-                  <p className="text-center mt-3">Avenis front Alloy-wheel</p>
+                  <p className="text-center  text-light mt-3">Hazard Lights Switch</p>
                   <Card.Img
                     variant="top"
                     id="newaccimagespot"
-                    src={AvenisAlloywheel}
+                    src={HazardLights}
                     roundedCircle
                     fluid
-                    style={{ cursor: "pointer" }}
-                  />
-                </Col>
-              </Row>
-
-              <Row>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center mt-3">Avenis UnderseatStorage</p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={AvenisUnderseatStorage}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer" }}
-                  />
-                </Col>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center mt-3">Avenis SideStand</p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={AvenisSideStand}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer" }}
+                    style={{ cursor: "pointer",border: "groove" }}
                   />
                 </Col>
               </Row>
 
               <Row>
                 <Col lg={6} xs={12} md={4}>
-                  <p className="text-center mt-3">Avenis FrontLamp</p>
+                  <p className="text-center  text-light mt-3">USB Charging Port</p>
                   <Card.Img
                     variant="top"
                     id="newaccimagespot"
-                    src={AvenisFrontLamp}
+                    src={usbcharger}
                     roundedCircle
                     fluid
-                    style={{ cursor: "pointer" }}
+                    style={{ cursor: "pointer",border: "groove" }}
                   />
                 </Col>
                 <Col lg={6} xs={12} md={4}>
-                  <p className="text-center mt-3">Avenis Kickstart</p>
+                  <p className="text-center  text-light mt-3">Front Luggage Hook</p>
                   <Card.Img
                     variant="top"
                     id="newaccimagespot"
-                    src={AvenisKickstart}
+                    src={FrontHook}
                     roundedCircle
                     fluid
-                    style={{ cursor: "pointer" }}
+                    style={{ cursor: "pointer",border: "groove" }}
                   />
                 </Col>
               </Row>
 
               <Row>
                 <Col lg={6} xs={12} md={4}>
-                  <p className="text-center mt-3">Avenis Killswitc</p>
+                  <p className="text-center  text-light mt-3">Glove Box</p>
                   <Card.Img
                     variant="top"
                     id="newaccimagespot"
-                    src={AvenisKillswitc}
+                    src={GloveBox}
                     roundedCircle
                     fluid
-                    style={{ cursor: "pointer" }}
+                    style={{ cursor: "pointer",border: "groove" }}
+                  />
+                </Col>
+                <Col lg={6} xs={12} md={4}>
+                  <p className="text-center  text-light mt-3">Underseat Storage</p>
+                  <Card.Img
+                    variant="top"
+                    id="newaccimagespot"
+                    src={UnderseatStorage}
+                    roundedCircle
+                    fluid
+                    style={{ cursor: "pointer",border: "groove" }}
+                  />
+                </Col>
+              </Row>
+
+              <Row>
+                <Col lg={6} xs={12} md={4}>
+                  <p className="text-center  text-light mt-3">HeatProtector</p>
+                  <Card.Img
+                    variant="top"
+                    id="newaccimagespot"
+                    src={HeatProtector}
+                    roundedCircle
+                    fluid
+                    style={{ cursor: "pointer",border: "groove" }}
+                  />
+                </Col>
+                <Col lg={6} xs={12} md={4}>
+                  <p className="text-center  text-light mt-3">front wheel</p>
+                  <Card.Img
+                    variant="top"
+                    id="newaccimagespot"
+                    src={frontwheel}
+                    roundedCircle
+                    fluid
+                    style={{ cursor: "pointer",border: "groove" }}
+                  />
+                </Col>
+              </Row>
+
+              <Row>
+                <Col lg={6} xs={12} md={4}>
+                  <p className="text-center  text-light mt-3">Front Alloy Wheel</p>
+                  <Card.Img
+                    variant="top"
+                    id="newaccimagespot"
+                    src={frontalloywheel}
+                    roundedCircle
+                    fluid
+                    style={{ cursor: "pointer",border: "groove" }}
+                  />
+                </Col>
+                <Col lg={6} xs={12} md={4}>
+                  <p className="text-center  text-light mt-3">Close Fuel Lid</p>
+                  <Card.Img
+                    variant="top"
+                    id="newaccimagespot"
+                    src={CloseFuel}
+                    roundedCircle
+                    fluid
+                    style={{ cursor: "pointer",border: "groove" }}
                   />
                 </Col>
               </Row>
@@ -348,16 +385,16 @@ const BurgmanEx = () => {
       </Accordion>
 
       {/* ACCESS & BURGMAN BIKE SECTION SPOTLIGHT*/}
-      <div className="bg-light burgmanbikesection">
+      <div className="bg-light burgmanbikesection cardgrove">
         <h2 className="mb-4 mt-3"> RELATED SUZUKI BIKES OF 2025</h2>
 
-        <Carousel2 responsive={responsive} className="card-container">
-          <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12 ">
+        <Carousel2 responsive={responsive} className="card-container " >
+          <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12 " >
             <Link to="/AccDrum">
               <Card.Img
                 variant="top"
                 id="newaccimagespot"
-                src={Accdrum}
+                src={img4}
                 roundedCircle
                 fluid
                 style={{ cursor: "pointer" }}
@@ -375,29 +412,35 @@ const BurgmanEx = () => {
             </Card.Body>
           </Card>
 
-           <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12  ">
-            <Card.Img variant="top" id="newaccimagespot" src={burgmanexbrown} />
+          <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12 ">
+            <a href="/Avenis">
+              <Card.Img
+                variant="top"
+                id="newaccimagespot"
+                src={Avenisimg}
+                fluid
+                style={{ cursor: "pointer" }}
+              />
+            </a>
             <Card.Body>
-              <Card.Title>Burgman Ex Bleutooth Top Edition</Card.Title>
-              <p>Rs 1,52,000/-</p>
+              <Card.Title>Avenis Disc Break Bleutooth Edition</Card.Title>
+              <p>Rs 1,10,000/-</p>
               <Button
-                variant="outline-secondary"
+                variant="outline-primary"
                 className="veiwmorebutton"
-                href="/NewBike"
+                href="/Avenis"
               >
                 View More
               </Button>
             </Card.Body>
           </Card>
 
-         
-
           <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12 ">
             <a href="/AccessBT">
               <Card.Img
                 variant="top"
                 id="newaccimagespot"
-                src={accspecial}
+                src={img2}
                 fluid
                 style={{ cursor: "pointer" }}
               />
@@ -415,23 +458,15 @@ const BurgmanEx = () => {
             </Card.Body>
           </Card>
 
-          <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12 ">
-            <a href="/Avenis">
-              <Card.Img
-                variant="top"
-                id="newaccimagespot"
-                src={Accdrum}
-                fluid
-                style={{ cursor: "pointer" }}
-              />
-            </a>
+          <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12  ">
+            <Card.Img variant="top" id="newaccimagespot" src={burgmanexbrown} />
             <Card.Body>
-              <Card.Title>Avenis Disc Break Bleutooth Edition</Card.Title>
-              <p>Rs 1,10,000/-</p>
+              <Card.Title>Burgman Ex Bleutooth Top Edition</Card.Title>
+              <p>Rs 1,52,000/-</p>
               <Button
-                variant="outline-primary"
+                variant="outline-secondary"
                 className="veiwmorebutton"
-                href="/Avenis"
+                href="/NewBike"
               >
                 View More
               </Button>
@@ -468,7 +503,7 @@ const BurgmanEx = () => {
             </Card.Body>
           </Card>
         </Carousel2>
-        <Button className="mt-2" variant="outline-primary">
+        <Button className="mt-3 mb-3" variant="outline-primary">
           More
         </Button>
       </div>
@@ -476,4 +511,4 @@ const BurgmanEx = () => {
   );
 };
 
-export default BurgmanEx;
+export default AccSE;

@@ -16,6 +16,7 @@ import "react-multi-carousel/lib/styles.css";
 import NewAccicemat from "../Pages/HomeAllimages/AllAccessimages/Accicegreenmat.png";
 import NewAccmatblk from "../Pages/HomeAllimages/AllAccessimages/accblack.png";
 import Accesblack from "../Pages/HomeAllimages/AllAccessimages/accblack.png";
+import Accessdrumblue from "../Pages/AllCollectionPages/Accesspage/images/AccessDrummatblue.png";
 import Accessmatblue from "../Pages/HomeAllimages/AllAccessimages/Accmatblue.jpeg";
 import burgmangreenbt from "../Pages/HomeAllimages/AllBurgmanimages/burgmangreenBT.png";
 import burgmannonbtblk from "../Pages/HomeAllimages/AllBurgmanimages/burgmannonbtblk.png";
@@ -100,8 +101,9 @@ function HomePage() {
       </div>
 
       {/* ABOUT US */}
-      <Row>
-        <Col xs={12} md={8} lg={6} className="text-light p-4">
+      <div>
+        <Row>
+        <Col xs={12} md={8} lg={6} className="text-light p-4 ">
           <h2>ABOUT US</h2>
           <h5>WELCOME TO FIROZ AUTORIDES SAFE RIDE</h5>
           <p className="txt-bold">
@@ -126,6 +128,8 @@ function HomePage() {
         </Col>
       </Row>
 
+      </div>
+      
       {/* HOME SCROLL VEHICLES */}
 
       <Carousel>
@@ -148,7 +152,7 @@ function HomePage() {
                 Engine Type:- 4- Stroke, 1-Cylinder, Air Cooled <br></br>Fuel
                 Tank Capacity 5 L <br></br>Starter System Kick and Electric
               </p>
-              <Button variant="outline-info" className="mt-4">
+              <Button variant="outline-info" className="mt-4" href="/AccessBT">
                 BOOK NOW
               </Button>{" "}
             </Col>
@@ -174,7 +178,7 @@ function HomePage() {
                 Engine Type:- 4- Stroke, 1-Cylinder, Air Cooled <br></br>Fuel
                 Tank Capacity 5 L <br></br>Starter System Kick and Electric
               </p>
-              <Button variant="outline-dark" className="mt-4">
+              <Button variant="outline-dark" className="mt-4" href="/AccDrum">
                 BOOK NOW
               </Button>{" "}
             </Col>
@@ -187,7 +191,7 @@ function HomePage() {
               <Image className="carsoulimg p-5" src={burgmanbrown} />
             </Col>
             <Col xs={12} md={4} lg={5} className="bg-light p-5">
-              <h1 className=" Htxt" style={{ color: "#841b2d" }}>
+              <h1 className=" Htxt" style={{ color: "#5c371d" }}>
                 THE NEW COLOUR<br></br>BURGMAN BROWN-EX
               </h1>
               <p className=" text-dark">
@@ -200,7 +204,7 @@ function HomePage() {
                 Engine Type:- 4- Stroke, 1-Cylinder, Air Cooled <br></br>Fuel
                 Tank Capacity 5 L <br></br>Starter System Kick and Electric
               </p>
-              <Button variant="outline-danger" className="mt-4">
+              <Button variant="outline-danger" className="mt-4" href="/BurgmanEx">
                 BOOK NOW
               </Button>{" "}
             </Col>
@@ -288,7 +292,7 @@ function HomePage() {
           </Card>
 
           <Card className="topbrandcard">
-            <a href="/AccessBTBlue">
+            <a href="/AccSE">
               <Card.Img
                 variant="top"
                 id="newaccimagespot"
@@ -303,7 +307,7 @@ function HomePage() {
               <Button
                 variant="outline-dark"
                 className="veiwmorebutton"
-                href="/NewBike"
+                href="/AccSE"
               >
                 View More
               </Button>
@@ -311,11 +315,11 @@ function HomePage() {
           </Card>
 
           <Card className="topbrandcard">
-            <a href="/AccessBTBlue">
+            <a href="/AccDrum">
               <Card.Img
                 variant="top"
                 id="newaccimagespot"
-                src={Accessmatblue}
+                src={Accessdrumblue}
                 fluid
                 style={{ cursor: "pointer" }}
               />
@@ -326,7 +330,7 @@ function HomePage() {
               <Button
                 variant="outline-primary"
                 className="veiwmorebutton"
-                href="/NewBike"
+                href="/AccDrum"
               >
                 View More
               </Button>
@@ -334,14 +338,16 @@ function HomePage() {
           </Card>
 
           <Card className="topbrandcard">
-            <Card.Img variant="top" id="newaccimagespot" src={burgmanbrown} />
+            <a href="/BurgmanEx">
+              <Card.Img variant="top" id="newaccimagespot" src={burgmanbrown} />
+            </a>
             <Card.Body>
               <Card.Title>Burgman Ex Bleutooth Top Edition</Card.Title>
               <p>Rs 1,52,000/-</p>
               <Button
                 variant="outline-secondary"
                 className="veiwmorebutton"
-                href="/NewBike"
+                href="/BurgmanEx"
               >
                 View More
               </Button>
@@ -349,14 +355,16 @@ function HomePage() {
           </Card>
 
           <Card className="topbrandcard">
-            <Card.Img variant="top" id="newaccimagespot" src={burgmangreenbt} />
+            <a href="/BurgBT">
+                <Card.Img variant="top" id="newaccimagespot" src={burgmangreenbt} />
+            </a>
             <Card.Body>
               <Card.Title>Burgman Bleutooth Edition</Card.Title>
               <p>Rs 1,35,000/-</p>
               <Button
                 variant="outline-success"
                 className="veiwmorebutton"
-                href="/NewBike"
+                href="/BurgBT"
               >
                 View More
               </Button>
@@ -382,7 +390,7 @@ function HomePage() {
             </Card.Body>
           </Card>
         </Carousel2>
-        <Button className="mt-2" variant="outline-primary">
+        <Button className="mt-4 mb-4" variant="outline-primary">
           More
         </Button>
       </div>
@@ -509,24 +517,24 @@ function HomePage() {
             </Card.Body>
           </Card>
         </Carousel2>
-        <Button className="mt-2" variant="outline-primary">
+        <Button className="mt-4 mb-4" variant="outline-primary">
           More
         </Button>
       </div>
 
       {/* Banner SECTION*/}
-      <div className="mt-2 mb-3">
+      <div className="mt-2 mb-3 cardgrove">
         <Image src={bannerburgmanimg} className="bannerfirstsection" />
         <Image src={bannerblkburgman} className="bannerfirstsection" />
         <Image src={banneravenis} className="bannerfirstsection" />
       </div>
 
       {/* brandlogo SECTION*/}
-      <div className="bg-light burgmanbikesection">
-        <h1 className="ms-5">Browse Bikes Brand</h1>
+      <div className="bg-light burgmanbikesection cardgrove">
+        <h1 className="ms-2 mt-2 mb-2">Browse Bikes Brand</h1>
 
-        <Table striped="columns" className="logotable" border={"3px"}>
-          <tbody>
+        <Table striped="columns" className="logotable " border={"3px"}>
+          <tbody className="cardgrove">
             <tr>
               <td style={{ width: "20px" }}>
                 <a href="/AccessBT">
@@ -591,13 +599,13 @@ function HomePage() {
                   aria-controls="example-collapse-text"
                   aria-expanded={open}
                   variant="outline-dark"
-                  className="btnbrandlogo"
+                  className="btnbrandlogo mb-2 mt-2"
                 >
                   Veiw more
                 </Button>
                 <Collapse in={open}>
                   <Table striped="columns">
-                    <tbody border="3px">
+                    <tbody border="3px" className="cardgrove">
                       <tr>
                         <td style={{ width: "20px" }}>
                           <a href="/AccessBTBlue">
@@ -668,7 +676,7 @@ function HomePage() {
       </div>
 
       {/* SPORTS BIKE SECTION*/}
-      <div className="bg-light burgmanbikesection">
+      <div className="bg-light burgmanbikesection cardgrove" >
         <h2 className="mb-4 mt-3">GET OFFERS ON POPULAR BIKES IN SPOTLIGHT</h2>
         {/* <Nav id="nav1" className="  my-3 my-lg-0   navtxt" navbarScroll>
           <Nav.Link href="">HOME</Nav.Link>
@@ -795,20 +803,20 @@ function HomePage() {
             </Card.Body>
           </Card>
         </Carousel2>
-        <Button className="mt-2" variant="outline-primary">
+        <Button className="mt-4 mb-4" variant="outline-primary">
           More
         </Button>
       </div>
 
       {/* testimonial*/}
-      <div className="bg-light testimonialsection">
+      <div className="bg-light testimonialsection cardgrove">
         <h1 className="text-center mb-4 mt-4 reviewfont">
           <span style={{ color: "#ffdb0f" }}>******</span>CUSTOMER REVIEW
           <span style={{ color: "#ffdb0f" }}>******</span>
         </h1>
 
         <Carousel2 responsive={responsive}>
-          <Card className="Reveiwcard" id="newaccimagespot">
+          <Card className="Reveiwcard " id="newaccimagespot">
             <Card.Img
               variant="top"
               className="reviewimages"
@@ -889,7 +897,7 @@ function HomePage() {
           </Card>
         </Carousel2>
         <Button
-          className="mt-2"
+          className="mt-4 ms-5 mb-4"
           variant="outline-primary"
           href="https://www.google.com/maps/place/Firoz+autoriders/@18.9653402,72.8262387,17z/data=!4m18!1m9!3m8!1s0x3be7cfb356591615:0xb080cc0812f74994!2sFiroz+autoriders!8m2!3d18.9653402!4d72.8288136!9m1!1b1!16s%2Fg%2F11nsb0_d0h!3m7!1s0x3be7cfb356591615:0xb080cc0812f74994!8m2!3d18.9653402!4d72.8288136!9m1!1b1!16s%2Fg%2F11nsb0_d0h?entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoASAFQAw%3D%3D"
         >
@@ -898,7 +906,7 @@ function HomePage() {
       </div>
 
       {/*HAPPY CUSTOMERS*/}
-      <div className="bg-light burgmanbikesection">
+      <div className="bg-light burgmanbikesection cardgrove">
         <div>
           <h1 className="text-center mb-5 mt-2 reviewfont">
             <span style={{ color: "#ffdb0f" }}>******</span>HAPPY CUSTOMERS
@@ -915,7 +923,7 @@ function HomePage() {
               <Card className="">
                 <Card.Img
                   variant="top"
-                  className=""
+                  className="cardgrove"
                   src={happycs5}
                   fluid
                   style={{ height: "370px" }}
@@ -927,7 +935,7 @@ function HomePage() {
               <Card className="">
                 <Card.Img
                   variant="top"
-                  className=""
+                  className="cardgrove"
                   src={happycs5}
                   fluid
                   style={{ height: "370px" }}
@@ -939,7 +947,7 @@ function HomePage() {
               <Card className="">
                 <Card.Img
                   variant="top"
-                  className=""
+                  className="cardgrove"
                   src={happycs1}
                   fluid
                   style={{ height: "370px" }}
@@ -951,7 +959,7 @@ function HomePage() {
               <Card className="">
                 <Card.Img
                   variant="top"
-                  className=""
+                  className="cardgrove"
                   src={happycs2}
                   fluid
                   style={{ height: "370px" }}
@@ -963,7 +971,7 @@ function HomePage() {
               <Card className="">
                 <Card.Img
                   variant="top"
-                  className=""
+                  className="cardgrove"
                   src={happycs3}
                   fluid
                   style={{ height: "370px" }}
@@ -975,7 +983,7 @@ function HomePage() {
               <Card className="">
                 <Card.Img
                   variant="top"
-                  className=""
+                  className="cardgrove"
                   src={happycs4}
                   fluid
                   style={{ height: "370px" }}
@@ -987,7 +995,7 @@ function HomePage() {
               <Card className="">
                 <Card.Img
                   variant="top"
-                  className=""
+                  className="cardgrove"
                   src={happycs6}
                   fluid
                   style={{ height: "370px" }}
@@ -999,7 +1007,7 @@ function HomePage() {
               <Card className="">
                 <Card.Img
                   variant="top"
-                  className=""
+                  className="cardgrove"
                   src={happycs7}
                   fluid
                   style={{ height: "370px" }}
@@ -1011,7 +1019,7 @@ function HomePage() {
               <Card className="">
                 <Card.Img
                   variant="top"
-                  className=""
+                  className="cardgrove"
                   src={happycs8}
                   fluid
                   style={{ height: "370px" }}
@@ -1035,11 +1043,11 @@ function HomePage() {
         auotplay
       />
 
-      <div className="p-4">
-        <h2>Suzuki Access 125 FAQs</h2>
-        <Accordion defaultActiveKey="0">
-          <Accordion.Item eventKey="0">
-            <Accordion.Header>
+      <div className="p-3">
+        <h2 className="text-light">Suzuki Access 125 FAQs</h2>
+        <Accordion defaultActiveKey="0" className="cardgrove">
+          <Accordion.Item eventKey="0" className="bg-info">
+            <Accordion.Header >
               Q: What is the on-road price of Suzuki Access 125 in 2025?
             </Accordion.Header>
             <Accordion.Body>
@@ -1048,7 +1056,7 @@ function HomePage() {
               price, RTO and insurance charges.
             </Accordion.Body>
           </Accordion.Item>
-          <Accordion.Item eventKey="1">
+          <Accordion.Item eventKey="1" className="bg-info">
             <Accordion.Header>
               Q: What is the actual mileage of Suzuki Access 125?
             </Accordion.Header>
@@ -1057,7 +1065,7 @@ function HomePage() {
               average mileage of 46 kmpl.
             </Accordion.Body>
           </Accordion.Item>
-          <Accordion.Item eventKey="2">
+          <Accordion.Item eventKey="2" className="bg-info">
             <Accordion.Header>
               Q: Which is better Suzuki Access 125 or Honda Activa 125?
             </Accordion.Header>
@@ -1068,7 +1076,7 @@ function HomePage() {
               a mileage of 47 kmpl and weighing 110 kg.
             </Accordion.Body>
           </Accordion.Item>
-          <Accordion.Item eventKey="3">
+          <Accordion.Item eventKey="3" className="bg-info">
             <Accordion.Header>
               Q: What are the colour options of Suzuki Access 125?
             </Accordion.Header>
@@ -1078,7 +1086,7 @@ function HomePage() {
               Green and Pearl Shiny Beige.
             </Accordion.Body>
           </Accordion.Item>
-          <Accordion.Item eventKey="4">
+          <Accordion.Item eventKey="4" className="bg-info">
             <Accordion.Header>
               Q: What are the key specifications of Suzuki Access 125?
             </Accordion.Header>

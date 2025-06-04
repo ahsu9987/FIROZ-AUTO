@@ -3,38 +3,41 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Table from "react-bootstrap/Table";
-import img1 from "../Accesspage/images/Avenismatblk.png";
-import img2 from "../Accesspage/images/Avenisblk.png";
-import img3 from "../Accesspage/images/Avenisred.png";
-import img4 from "../Accesspage/images/Aveniswhite.png";
-import img5 from "../Accesspage/images/Avenisyellow.png";
+import img1 from "../Burgmanpage/images/burgmanbtgreen.png";
+import img2 from "../Burgmanpage/images/burgmanbtblkred.png";
+import img3 from "../Burgmanpage/images/burgmanbtblue.png";
+import img4 from "../Burgmanpage/images/burgmanbttitaniuem.png";
+import img5 from "../Burgmanpage/images/burgmanwhite.png";
+import img6 from "../Burgmanpage/images/burgmangray.png";
 import Carousel2 from "react-multi-carousel";
 import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import burgmanexbrown from "../Accesspage/images/burgmanexbrown.png";
 import Accdrum from "../Accesspage/images/AccessDrummatblue.png";
+import Avenisblknew from "../Accesspage/images/Avenisbllknew.png";
 import Gixxersfblue from "../GixxerSF&Naked/images/Gixxersfblue.png";
 import Gixxernakedblk from "../GixxerSF&Naked/images/gixxernakedblk.png";
 import Container from "react-bootstrap/Container";
-import avenismeter from "../Accesspage/images/avenismeter.png";
+import burgmanexmeter from "../Accesspage/images/burgmanexmeter.png";
 import keyignition from "../Accesspage/images/KeyIgnition.png";
 import Accordion from "react-bootstrap/Accordion";
-import avenisfrontwheel from "../Accesspage/images/avenisFrontAlloyWheel.png";
-import AvenisAlloywheel from "../Accesspage/images/avenisFrontWheel.png";
-import AvenisUnderseatStorage from "../Accesspage/images/avenisUnderseatstorage.png";
-import AvenisSideStand from "../Accesspage/images/avenisidestand.png";
-import AvenisFrontLamp from "../Accesspage/images/AvenisDaytimeLamp.png";
+import underseat from "../Burgmanpage/images/burgmanunderstorage.png";
+import FrontFootVeiw from "../Burgmanpage/images/burgmanfrontfoot.png";
+import FrontPocket from "../Burgmanpage/images/burgmanfrontpocket.png";
+import FrontDiscBreak from "../Burgmanpage/images/burgmandiscbreakwheel.png";
+import Cylenser from "../Burgmanpage/images/burgmanexcylenser.png";
 import AvenisKickstart from "../Accesspage/images/Kickstarter.png";
 import AvenisKillswitc from "../Accesspage/images/KillSwitch.png";
 import accspecial from "../Accesspage/images/accwhite.png"
 
 
 const swatches = [
-  { color: "#28282B", name: "Glossy Sparkle Black", image: img1 },
-  { color: "#000000", name: "Glossy Sparkle Black", image: img2 },
-  { color: "#FE1D37", name: "Glossy Pearl Mira Red", image: img3 },
-  { color: "#F6F6F6", name: "Glossy Pearl Mira Red", image: img4 },
-  { color: "#FFEA4E", name: "Champion Yellow", image: img5 },
+  { color: "#1b390b", name: "Pearl Matte Shadow Green", image: img1 },
+  { color: "#0a0a0a", name: "Metallic Matte Black", image: img2 },
+  { color: "#04044b", name: "Matte Blue", image: img3 },
+  { color: "#7e5408", name: "Metallic Matte Titanium Silver", image: img4 },
+  { color: "#dbd7d0", name: "white", image: img5 },
+  { color: "#b5b5b3", name: "gray", image: img6 },
 ];
 
 const responsive = {
@@ -57,14 +60,14 @@ const responsive = {
   },
 };
 
-const Avenis = () => {
+const BurgBT = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   return (
     <>
       <div className=" mt-5 ">
         <Row className="p-2">
-          <Col className="ms-1 bg-white" xs={12} md={4} lg={7}>
+          <Col className="ms-1 bg-white " xs={12} md={4} lg={7}>
             <div className="product-container">
               <div className="product-header">
                 <span>{`${currentIndex + 1}/${swatches.length}`}</span>
@@ -85,7 +88,7 @@ const Avenis = () => {
                     className={`swatch ${
                       currentIndex === index ? "selected" : ""
                     }`}
-                    style={{ backgroundColor: swatch.color , border: "groove",borderColor:"black"  }}
+                    style={{ backgroundColor: swatch.color , border: "groove",borderColor:"black" }}
                     onClick={() => setCurrentIndex(index)}
                   >
                     {currentIndex === index && (
@@ -98,16 +101,18 @@ const Avenis = () => {
           </Col>
 
           <Col xs={12} md={4} lg={4} className="p-3">
-            <h1 className="mt-2 text-light">Suzuki Avenis 125 Bleutooth Edition</h1>
+            <h1 className="mt-2 text-light">Burgman 125 Bleutooth Edition Disc Break</h1>
             <p className="text-light">
-              The Suzuki Avenis 125 is a modern sporty scooter that has been developed to take on the TVS Ntorq 125.    <br></br>
-              It gets aggressive styling, good number of features and an engine that is known to offer excellent refinement and performance.<br></br>
-              But the scooter is priced on the higher side. <br></br>{" "}
-              BLUETOOTH® ENABLED DIGITAL CONSOLE
+        When we speak of maxi-styled scooters in India, although the list is fairly short, 
+        the Suzuki Burgman Street 125 is one of the popular names in the category. But recently, 
+        the company launched an updated version of it with the ‘EX’ 
+         Three things – an auto-engine start/stop system, 12-inch rear alloy, 
+         and Suzuki Eco Performance Alpha. And how do all these updates translate into the real world for the customer? 
+         That’s what we have explored in this road test review of the Suzuki Burgman Street 125 EX.
             </p>
             <h3 className="text-light mt-3 mb-3">SPECIFICATION:-</h3>
             <div className="tabledata">
-              <Table striped bordered style={{ border: "groove" }} >
+              <Table striped bordered  style={{ border: "groove" }}>
                 <tbody>
                   <tr>
                     <td>[Power & Performance]</td>
@@ -123,14 +128,14 @@ const Avenis = () => {
                     <td>
                       Max
                       Power:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      8.3 bhp @ 6500 rpm
+                      8.58 bhp @ 6750 rpm
                     </td>
                   </tr>
                   <tr>
                     <td>
                       Top
                       Speed:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      90 kmph
+                      95 kmph
                     </td>
                   </tr>
                   <tr>
@@ -157,14 +162,14 @@ const Avenis = () => {
                     <td>
                       Kerb
                       Weight:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      106 kg
+                      110 kg
                     </td>
                   </tr>
                   <tr>
                     <td>
                       Fuel Tank
                       Capacity:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      5.2 litres
+                      5.5 litres
                     </td>
                   </tr>
                   <tr>
@@ -230,18 +235,18 @@ const Avenis = () => {
             <Container>
               <Row>
                 <Col lg={6} xs={12} md={4}>
-                  <p className="text-center  text-light">Avenis meter BT</p>
+                  <p className="text-center text-light">Digital meter BT</p>
                   <Card.Img
                     variant="top"
                     id="newaccimagespot"
-                    src={avenismeter}
+                    src={burgmanexmeter}
                     roundedCircle
                     fluid
                     style={{ cursor: "pointer",border: "groove"  }}
                   />
                 </Col>
                 <Col lg={6} xs={12} md={4}>
-                  <p className="text-center  text-light mt-3">
+                  <p className="text-center text-light mt-3">
                     key-ignition
                   </p>
                   <Card.Img
@@ -257,47 +262,22 @@ const Avenis = () => {
 
               <Row>
                 <Col lg={6} xs={12} md={4}>
-                  <p className="text-center  text-light mt-3">Avenis front-wheel</p>
+                  <p className="text-center text-light mt-3">Underseat Storage</p>
                   <Card.Img
                     variant="top"
                     id="newaccimagespot"
-                    src={avenisfrontwheel}
+                    src={underseat}
                     roundedCircle
                     fluid
                     style={{ cursor: "pointer",border: "groove"  }}
                   />
                 </Col>
                 <Col lg={6} xs={12} md={4}>
-                  <p className="text-center  text-light mt-3">Avenis front Alloy-wheel</p>
+                  <p className="text-center text-light mt-3">Front FootVeiw</p>
                   <Card.Img
                     variant="top"
                     id="newaccimagespot"
-                    src={AvenisAlloywheel}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer",border: "groove"  }}
-                  />
-                </Col>
-              </Row>
-
-              <Row>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center  text-light mt-3">Avenis UnderseatStorage</p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={AvenisUnderseatStorage}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer",border: "groove"  }}
-                  />
-                </Col>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center  text-light mt-3">Avenis SideStand</p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={AvenisSideStand}
+                    src={FrontFootVeiw}
                     roundedCircle
                     fluid
                     style={{ cursor: "pointer",border: "groove"  }}
@@ -307,18 +287,43 @@ const Avenis = () => {
 
               <Row>
                 <Col lg={6} xs={12} md={4}>
-                  <p className="text-center  text-light mt-3">Avenis FrontLamp</p>
+                  <p className="text-center text-light mt-3">FrontPocket</p>
                   <Card.Img
                     variant="top"
                     id="newaccimagespot"
-                    src={AvenisFrontLamp}
+                    src={FrontPocket}
                     roundedCircle
                     fluid
                     style={{ cursor: "pointer",border: "groove"  }}
                   />
                 </Col>
                 <Col lg={6} xs={12} md={4}>
-                  <p className="text-center  text-light mt-3">Avenis Kickstart</p>
+                  <p className="text-center text-light mt-3">Front DiscBreak</p>
+                  <Card.Img
+                    variant="top"
+                    id="newaccimagespot"
+                    src={FrontDiscBreak}
+                    roundedCircle
+                    fluid
+                    style={{ cursor: "pointer",border: "groove"  }}
+                  />
+                </Col>
+              </Row>
+
+              <Row>
+                <Col lg={6} xs={12} md={4}>
+                  <p className="text-center text-light mt-3">Cylenser</p>
+                  <Card.Img
+                    variant="top"
+                    id="newaccimagespot"
+                    src={Cylenser}
+                    roundedCircle
+                    fluid
+                    style={{ cursor: "pointer",border: "groove"  }}
+                  />
+                </Col>
+                <Col lg={6} xs={12} md={4}>
+                  <p className="text-center text-light mt-3">Kickstart</p>
                   <Card.Img
                     variant="top"
                     id="newaccimagespot"
@@ -332,7 +337,7 @@ const Avenis = () => {
 
               <Row>
                 <Col lg={6} xs={12} md={4}>
-                  <p className="text-center  text-light mt-3">Avenis Killswitc</p>
+                  <p className="text-center text-light mt-3">KillSwitch</p>
                   <Card.Img
                     variant="top"
                     id="newaccimagespot"
@@ -377,9 +382,9 @@ const Avenis = () => {
           </Card>
 
            <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12  ">
-              <Link to="/BurgmanEx">
+            <a href="/BurgmanEx">
             <Card.Img variant="top" id="newaccimagespot" src={burgmanexbrown} />
-            </Link>
+            </a>
             <Card.Body>
               <Card.Title>Burgman Ex Bleutooth Top Edition</Card.Title>
               <p>Rs 1,52,000/-</p>
@@ -423,7 +428,7 @@ const Avenis = () => {
               <Card.Img
                 variant="top"
                 id="newaccimagespot"
-                src={Accdrum}
+                src={Avenisblknew}
                 fluid
                 style={{ cursor: "pointer" }}
               />
@@ -479,4 +484,4 @@ const Avenis = () => {
   );
 };
 
-export default Avenis;
+export default BurgBT;

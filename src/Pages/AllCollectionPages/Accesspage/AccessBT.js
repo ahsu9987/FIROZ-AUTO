@@ -13,8 +13,8 @@ import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import burgmanexbrown from "../Accesspage/images/burgmanexbrown.png";
 import Avenisimg from "../Accesspage/images/Avenisbllknew.png";
-import Gixxersfblue from "../Accesspage/images/Gixxersfblue.png";
-import Gixxernakedblk from "../Accesspage/images/gixxernakedblk.png";
+import Gixxersfblue from "../GixxerSF&Naked/images/Gixxersfblue.png";
+import Gixxernakedblk from "../GixxerSF&Naked/images/gixxernakedblk.png";
 import Container from "react-bootstrap/Container";
 import TFTMETER from "../Accesspage/images/TFT Meter.png";
 import Normalmeter from "../Accesspage/images/Normalmeter.png";
@@ -79,14 +79,14 @@ const AccessBT = () => {
                 alt="Product"
                 class="img-fluid rounded mx-auto d-block "
               />
-              <div className="swatch-group">
+              <div className="swatch-group" >
                 {swatches.map((swatch, index) => (
                   <div
                     key={index}
                     className={`swatch ${
                       currentIndex === index ? "selected" : ""
                     }`}
-                    style={{ backgroundColor: swatch.color }}
+                    style={{ backgroundColor: swatch.color , border: "groove",borderColor:"black" }}
                     onClick={() => setCurrentIndex(index)}
                   >
                     {currentIndex === index && (
@@ -105,9 +105,9 @@ const AccessBT = () => {
               SIDE STAND INTERLOCK / PREMIUM CHROME EXTERNAL FUEL LID/ <br></br>{" "}
               BLUETOOTH® ENABLED DIGITAL CONSOLE
             </p>
-            <h3 className="text-light">SPECIFICATION:-</h3>
+            <h3 className="text-light mt-3 mb-3">SPECIFICATION:-</h3>
             <div className="tabledata">
-              <Table striped bordered hover>
+              <Table striped bordered  style={{ border: "groove" }}>
                 <tbody>
                   <tr>
                     <td>[Power & Performance]</td>
@@ -215,6 +215,7 @@ const AccessBT = () => {
               variant="outline-success"
               className="mt-4"
               href="https://web.whatsapp.com/"
+              style={{ border: "groove" }}
             >
               BOOK NOW
             </Button>
@@ -223,24 +224,24 @@ const AccessBT = () => {
       </div>
 
       <Accordion defaultActiveKey="0">
-        <Accordion.Item>
+        <Accordion.Item className="bg-dark">
           <Accordion.Header>ALL PARTS IMAGES</Accordion.Header>
           <Accordion.Body>
             <Container>
               <Row>
                 <Col lg={6} xs={12} md={4}>
-                  <p className="text-center">TFT Right Front Three Quarter</p>
+                  <p className="text-center text-light">TFT Right Front Three Quarter</p>
                   <Card.Img
                     variant="top"
                     id="newaccimagespot"
                     src={TFTMETER}
                     roundedCircle
                     fluid
-                    style={{ cursor: "pointer" }}
+                    style={{ cursor: "pointer", border: "groove" }}
                   />
                 </Col>
                 <Col lg={6} xs={12} md={4}>
-                  <p className="text-center mt-3">
+                  <p className="text-center  text-light mt-3">
                     TFT Touchscreen Instrument Cluster
                   </p>
                   <Card.Img
@@ -249,132 +250,132 @@ const AccessBT = () => {
                     src={Normalmeter}
                     roundedCircle
                     fluid
-                    style={{ cursor: "pointer" }}
+                    style={{ cursor: "pointer" ,border: "groove"}}
                   />
                 </Col>
               </Row>
 
               <Row>
                 <Col lg={6} xs={12} md={4}>
-                  <p className="text-center mt-3">Right Side Throttle Grip</p>
+                  <p className="text-center  text-light mt-3">Right Side Throttle Grip</p>
                   <Card.Img
                     variant="top"
                     id="newaccimagespot"
                     src={starterbtn}
                     roundedCircle
                     fluid
-                    style={{ cursor: "pointer" }}
+                    style={{ cursor: "pointer",border: "groove" }}
                   />
                 </Col>
                 <Col lg={6} xs={12} md={4}>
-                  <p className="text-center mt-3">Hazard Lights Switch</p>
+                  <p className="text-center  text-light mt-3">Hazard Lights Switch</p>
                   <Card.Img
                     variant="top"
                     id="newaccimagespot"
                     src={HazardLights}
                     roundedCircle
                     fluid
-                    style={{ cursor: "pointer" }}
+                    style={{ cursor: "pointer",border: "groove" }}
                   />
                 </Col>
               </Row>
 
               <Row>
                 <Col lg={6} xs={12} md={4}>
-                  <p className="text-center mt-3">USB Charging Port</p>
+                  <p className="text-center  text-light mt-3">USB Charging Port</p>
                   <Card.Img
                     variant="top"
                     id="newaccimagespot"
                     src={usbcharger}
                     roundedCircle
                     fluid
-                    style={{ cursor: "pointer" }}
+                    style={{ cursor: "pointer",border: "groove" }}
                   />
                 </Col>
                 <Col lg={6} xs={12} md={4}>
-                  <p className="text-center mt-3">Front Luggage Hook</p>
+                  <p className="text-center  text-light mt-3">Front Luggage Hook</p>
                   <Card.Img
                     variant="top"
                     id="newaccimagespot"
                     src={FrontHook}
                     roundedCircle
                     fluid
-                    style={{ cursor: "pointer" }}
+                    style={{ cursor: "pointer",border: "groove" }}
                   />
                 </Col>
               </Row>
 
               <Row>
                 <Col lg={6} xs={12} md={4}>
-                  <p className="text-center mt-3">Glove Box</p>
+                  <p className="text-center  text-light mt-3">Glove Box</p>
                   <Card.Img
                     variant="top"
                     id="newaccimagespot"
                     src={GloveBox}
                     roundedCircle
                     fluid
-                    style={{ cursor: "pointer" }}
+                    style={{ cursor: "pointer",border: "groove" }}
                   />
                 </Col>
                 <Col lg={6} xs={12} md={4}>
-                  <p className="text-center mt-3">Underseat Storage</p>
+                  <p className="text-center  text-light mt-3">Underseat Storage</p>
                   <Card.Img
                     variant="top"
                     id="newaccimagespot"
                     src={UnderseatStorage}
                     roundedCircle
                     fluid
-                    style={{ cursor: "pointer" }}
+                    style={{ cursor: "pointer",border: "groove" }}
                   />
                 </Col>
               </Row>
 
               <Row>
                 <Col lg={6} xs={12} md={4}>
-                  <p className="text-center mt-3">HeatProtector</p>
+                  <p className="text-center  text-light mt-3">HeatProtector</p>
                   <Card.Img
                     variant="top"
                     id="newaccimagespot"
                     src={HeatProtector}
                     roundedCircle
                     fluid
-                    style={{ cursor: "pointer" }}
+                    style={{ cursor: "pointer",border: "groove" }}
                   />
                 </Col>
                 <Col lg={6} xs={12} md={4}>
-                  <p className="text-center mt-3">front wheel</p>
+                  <p className="text-center  text-light mt-3">front wheel</p>
                   <Card.Img
                     variant="top"
                     id="newaccimagespot"
                     src={frontwheel}
                     roundedCircle
                     fluid
-                    style={{ cursor: "pointer" }}
+                    style={{ cursor: "pointer",border: "groove" }}
                   />
                 </Col>
               </Row>
 
               <Row>
                 <Col lg={6} xs={12} md={4}>
-                  <p className="text-center mt-3">Front Alloy Wheel</p>
+                  <p className="text-center  text-light mt-3">Front Alloy Wheel</p>
                   <Card.Img
                     variant="top"
                     id="newaccimagespot"
                     src={frontalloywheel}
                     roundedCircle
                     fluid
-                    style={{ cursor: "pointer" }}
+                    style={{ cursor: "pointer",border: "groove" }}
                   />
                 </Col>
                 <Col lg={6} xs={12} md={4}>
-                  <p className="text-center mt-3">Close Fuel Lid</p>
+                  <p className="text-center  text-light mt-3">Close Fuel Lid</p>
                   <Card.Img
                     variant="top"
                     id="newaccimagespot"
                     src={CloseFuel}
                     roundedCircle
                     fluid
-                    style={{ cursor: "pointer" }}
+                    style={{ cursor: "pointer",border: "groove" }}
                   />
                 </Col>
               </Row>
@@ -384,11 +385,11 @@ const AccessBT = () => {
       </Accordion>
 
       {/* ACCESS & BURGMAN BIKE SECTION SPOTLIGHT*/}
-      <div className="bg-light burgmanbikesection">
+      <div className="bg-light burgmanbikesection cardgrove">
         <h2 className="mb-4 mt-3"> RELATED SUZUKI BIKES OF 2025</h2>
 
-        <Carousel2 responsive={responsive} className="card-container">
-          <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12 ">
+        <Carousel2 responsive={responsive} className="card-container " >
+          <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12 " >
             <Link to="/AccDrum">
               <Card.Img
                 variant="top"
@@ -435,7 +436,7 @@ const AccessBT = () => {
           </Card>
 
           <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12 ">
-            <a href="/AccessBTBlue">
+            <a href="/AccSE">
               <Card.Img
                 variant="top"
                 id="newaccimagespot"
@@ -450,7 +451,7 @@ const AccessBT = () => {
               <Button
                 variant="outline-dark"
                 className="veiwmorebutton"
-                href="/NewBike"
+                href="/AccSE"
               >
                 View More
               </Button>
@@ -458,14 +459,16 @@ const AccessBT = () => {
           </Card>
 
           <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12  ">
+            <a href="/BurgmanEx">
             <Card.Img variant="top" id="newaccimagespot" src={burgmanexbrown} />
+            </a>
             <Card.Body>
               <Card.Title>Burgman Ex Bleutooth Top Edition</Card.Title>
               <p>Rs 1,52,000/-</p>
               <Button
                 variant="outline-secondary"
                 className="veiwmorebutton"
-                href="/NewBike"
+                href="/BurgmanEx"
               >
                 View More
               </Button>
@@ -502,7 +505,7 @@ const AccessBT = () => {
             </Card.Body>
           </Card>
         </Carousel2>
-        <Button className="mt-2" variant="outline-primary">
+        <Button className="mt-3 mb-3" variant="outline-primary">
           More
         </Button>
       </div>
