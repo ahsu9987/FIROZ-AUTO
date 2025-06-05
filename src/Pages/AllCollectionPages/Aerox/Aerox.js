@@ -3,39 +3,36 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Table from "react-bootstrap/Table";
-import img1 from "../Accesspage/images/Accicegreenmat.png";
-import img2 from "../Accesspage/images/Accmatblue.png";
-import img3 from "../Accesspage/images/AccBeige.png";
-import img4 from "../Accesspage/images/accwhite.png";
-import img5 from "../Accesspage/images/accblack.png";
+import img1 from "../Aerox/images/aeroxwhitenew.jpeg";
+import img2 from "../Aerox/images/Aeroxnewblue.jpeg";
+import img3 from "../Aerox/images/aeroxblk.jpeg";
+import img4 from "../Aerox/images/aeroxgray.jpeg";
 import Carousel2 from "react-multi-carousel";
 import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import burgmanexbrown from "../Accesspage/images/burgmanexbrown.png";
-import Avenisimg from "../Accesspage/images/Avenisbllknew.png";
+import Accdrum from "../Accesspage/images/AccessDrummatblue.png";
+import Avenisblknew from "../Accesspage/images/Avenisbllknew.png";
 import Gixxersfblue from "../GixxerSF&Naked/images/Gixxersfblue.png";
 import Gixxernakedblk from "../GixxerSF&Naked/images/gixxernakedblk.png";
 import Container from "react-bootstrap/Container";
-import TFTMETER from "../Accesspage/images/TFT Meter.png";
-import Normalmeter from "../Accesspage/images/Normalmeter.png";
+import burgmanexmeter from "../Accesspage/images/burgmanexmeter.png";
+import keyignition from "../Accesspage/images/KeyIgnition.png";
 import Accordion from "react-bootstrap/Accordion";
-import starterbtn from "../Accesspage/images/rightsidestarter.png";
-import HazardLights from "../Accesspage/images/HazardLights.png";
-import usbcharger from "../Accesspage/images/usbcharger.png";
-import FrontHook from "../Accesspage/images/FrontHook.png";
-import GloveBox from "../Accesspage/images/GloveBox.png";
-import UnderseatStorage from "../Accesspage/images/UnderseatStorage.png";
-import HeatProtector from "../Accesspage/images/HeatProtector.png";
-import frontwheel from "../Accesspage/images/frontwheel.png";
-import frontalloywheel from "../Accesspage/images/frontalloywheel.png";
-import CloseFuel from "../Accesspage/images/CloseFuelLid.png";
+import underseat from "../Burgmanpage/images/burgmanunderstorage.png";
+import FrontFootVeiw from "../Burgmanpage/images/burgmanfrontfoot.png";
+import FrontPocket from "../Burgmanpage/images/burgmanfrontpocket.png";
+import FrontDiscBreak from "../Burgmanpage/images/burgmandiscbreakwheel.png";
+import Cylenser from "../Burgmanpage/images/burgmanexcylenser.png";
+import AvenisKickstart from "../Accesspage/images/Kickstarter.png";
+import AvenisKillswitc from "../Accesspage/images/KillSwitch.png";
+import accspecial from "../Accesspage/images/accwhite.png";
 
 const swatches = [
-  { color: "#2596be", name: "MAT AQUA SILVER", image: img1 },
-  { color: "#13183C", name: "MATBLUE", image: img2 },
-  { color: "#C89A28", name: "BEIGE WHITE", image: img3 },
-  { color: "#EEEEEE", name: "WHITE", image: img4 },
-  { color: "#28282B", name: "MAT BLACK", image: img5 },
+  { color: "#f3eeee", name: "Ice Fluo Vermillion", image: img1 },
+  { color: "#04044b", name: "Racing Blue", image: img2 },
+  { color: "#0a0505", name: "Metallic Black", image: img3 },
+  { color: "#afacac", name: "Grey Vermillion", image: img4 },
 ];
 
 const responsive = {
@@ -58,14 +55,14 @@ const responsive = {
   },
 };
 
-const AccSE = () => {
+const Aerox = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   return (
     <>
       <div className=" mt-5 ">
-        <Row className="p-2 ">
-          <Col className="ms-1 bg-white" xs={12} md={4} lg={7}>
+        <Row className="p-2">
+          <Col className="ms-1 bg-white " xs={12} md={4} lg={7}>
             <div className="product-container">
               <div className="product-header">
                 <span>{`${currentIndex + 1}/${swatches.length}`}</span>
@@ -104,12 +101,16 @@ const AccSE = () => {
 
           <Col xs={12} md={4} lg={4} className="p-3">
             <h1 className="mt-2 text-light">
-              Access Special Edition Disc Break
+              Burgman 125 Bleutooth Edition Disc Break
             </h1>
-            <p className=" text-light">
-              E20 COMPLIANT / LED HEADLAMP / LED POSITION LIGHTS /<br></br>
-              SIDE STAND INTERLOCK / PREMIUM CHROME EXTERNAL FUEL LID/ <br></br>{" "}
-              BLUETOOTH® ENABLED DIGITAL CONSOLE
+            <p className="text-light">
+              The Aerox 155 is a maxi-scooter from Yamaha which gets the
+              fantastic motor from the proven R15. The engine offers excellent
+              performance, is refined and is also fuel efficient. Plus, the
+              scooter has good road presence which makes it quite aspirational.
+              But when it comes to overall practicality, it isn’t great due to
+              lack of floorboard space. Plus, Yamaha spares are a bit expensive
+              for its premium products.
             </p>
             <h3 className="text-light mt-3 mb-3">SPECIFICATION:-</h3>
             <div className="tabledata">
@@ -122,21 +123,21 @@ const AccSE = () => {
                     <td>
                       Displacement
                       Type:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      125CC
+                      155 cc
                     </td>
                   </tr>
                   <tr>
                     <td>
                       Max
                       Power:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      8.3 bhp @ 6500 rpm
+                    14.75 bhp @ 8000 rpm
                     </td>
                   </tr>
                   <tr>
                     <td>
                       Top
                       Speed:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      90 kmph
+                      115 kmph
                     </td>
                   </tr>
                   <tr>
@@ -146,7 +147,7 @@ const AccSE = () => {
                     <td>
                       Braking
                       System:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      CBS
+                      Single Channel ABS
                     </td>
                   </tr>
                   <tr>
@@ -163,14 +164,14 @@ const AccSE = () => {
                     <td>
                       Kerb
                       Weight:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      106 kg
+                      126 kg
                     </td>
                   </tr>
                   <tr>
                     <td>
                       Fuel Tank
                       Capacity:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      5.3 litres
+                      5.5 litres
                     </td>
                   </tr>
                   <tr>
@@ -236,55 +237,22 @@ const AccSE = () => {
             <Container>
               <Row>
                 <Col lg={6} xs={12} md={4}>
-                  <p className="text-center text-light">
-                    TFT Right Front Three Quarter
-                  </p>
+                  <p className="text-center text-light">Digital meter BT</p>
                   <Card.Img
                     variant="top"
                     id="newaccimagespot"
-                    src={TFTMETER}
+                    src={burgmanexmeter}
                     roundedCircle
                     fluid
                     style={{ cursor: "pointer", border: "groove" }}
                   />
                 </Col>
                 <Col lg={6} xs={12} md={4}>
-                  <p className="text-center  text-light mt-3">
-                    TFT Touchscreen Instrument Cluster
-                  </p>
+                  <p className="text-center text-light mt-3">key-ignition</p>
                   <Card.Img
                     variant="top"
                     id="newaccimagespot"
-                    src={Normalmeter}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer", border: "groove" }}
-                  />
-                </Col>
-              </Row>
-
-              <Row>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center  text-light mt-3">
-                    Right Side Throttle Grip
-                  </p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={starterbtn}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer", border: "groove" }}
-                  />
-                </Col>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center  text-light mt-3">
-                    Hazard Lights Switch
-                  </p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={HazardLights}
+                    src={keyignition}
                     roundedCircle
                     fluid
                     style={{ cursor: "pointer", border: "groove" }}
@@ -294,53 +262,24 @@ const AccSE = () => {
 
               <Row>
                 <Col lg={6} xs={12} md={4}>
-                  <p className="text-center  text-light mt-3">
-                    USB Charging Port
-                  </p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={usbcharger}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer", border: "groove" }}
-                  />
-                </Col>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center  text-light mt-3">
-                    Front Luggage Hook
-                  </p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={FrontHook}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer", border: "groove" }}
-                  />
-                </Col>
-              </Row>
-
-              <Row>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center  text-light mt-3">Glove Box</p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={GloveBox}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer", border: "groove" }}
-                  />
-                </Col>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center  text-light mt-3">
+                  <p className="text-center text-light mt-3">
                     Underseat Storage
                   </p>
                   <Card.Img
                     variant="top"
                     id="newaccimagespot"
-                    src={UnderseatStorage}
+                    src={underseat}
+                    roundedCircle
+                    fluid
+                    style={{ cursor: "pointer", border: "groove" }}
+                  />
+                </Col>
+                <Col lg={6} xs={12} md={4}>
+                  <p className="text-center text-light mt-3">Front FootVeiw</p>
+                  <Card.Img
+                    variant="top"
+                    id="newaccimagespot"
+                    src={FrontFootVeiw}
                     roundedCircle
                     fluid
                     style={{ cursor: "pointer", border: "groove" }}
@@ -350,22 +289,22 @@ const AccSE = () => {
 
               <Row>
                 <Col lg={6} xs={12} md={4}>
-                  <p className="text-center  text-light mt-3">HeatProtector</p>
+                  <p className="text-center text-light mt-3">FrontPocket</p>
                   <Card.Img
                     variant="top"
                     id="newaccimagespot"
-                    src={HeatProtector}
+                    src={FrontPocket}
                     roundedCircle
                     fluid
                     style={{ cursor: "pointer", border: "groove" }}
                   />
                 </Col>
                 <Col lg={6} xs={12} md={4}>
-                  <p className="text-center  text-light mt-3">front wheel</p>
+                  <p className="text-center text-light mt-3">Front DiscBreak</p>
                   <Card.Img
                     variant="top"
                     id="newaccimagespot"
-                    src={frontwheel}
+                    src={FrontDiscBreak}
                     roundedCircle
                     fluid
                     style={{ cursor: "pointer", border: "groove" }}
@@ -375,24 +314,36 @@ const AccSE = () => {
 
               <Row>
                 <Col lg={6} xs={12} md={4}>
-                  <p className="text-center  text-light mt-3">
-                    Front Alloy Wheel
-                  </p>
+                  <p className="text-center text-light mt-3">Cylenser</p>
                   <Card.Img
                     variant="top"
                     id="newaccimagespot"
-                    src={frontalloywheel}
+                    src={Cylenser}
                     roundedCircle
                     fluid
                     style={{ cursor: "pointer", border: "groove" }}
                   />
                 </Col>
                 <Col lg={6} xs={12} md={4}>
-                  <p className="text-center  text-light mt-3">Close Fuel Lid</p>
+                  <p className="text-center text-light mt-3">Kickstart</p>
                   <Card.Img
                     variant="top"
                     id="newaccimagespot"
-                    src={CloseFuel}
+                    src={AvenisKickstart}
+                    roundedCircle
+                    fluid
+                    style={{ cursor: "pointer", border: "groove" }}
+                  />
+                </Col>
+              </Row>
+
+              <Row>
+                <Col lg={6} xs={12} md={4}>
+                  <p className="text-center text-light mt-3">KillSwitch</p>
+                  <Card.Img
+                    variant="top"
+                    id="newaccimagespot"
+                    src={AvenisKillswitc}
                     roundedCircle
                     fluid
                     style={{ cursor: "pointer", border: "groove" }}
@@ -408,13 +359,13 @@ const AccSE = () => {
       <div className="bg-light burgmanbikesection cardgrove">
         <h2 className="mb-4 mt-3"> RELATED SUZUKI BIKES OF 2025</h2>
 
-        <Carousel2 responsive={responsive} className="card-container ">
+        <Carousel2 responsive={responsive} className="card-container">
           <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12 ">
             <Link to="/AccDrum">
               <Card.Img
                 variant="top"
                 id="newaccimagespot"
-                src={img4}
+                src={Accdrum}
                 roundedCircle
                 fluid
                 style={{ cursor: "pointer" }}
@@ -429,52 +380,6 @@ const AccSE = () => {
                   View More
                 </Button>
               </Link>
-            </Card.Body>
-          </Card>
-
-          <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12 ">
-            <a href="/Avenis">
-              <Card.Img
-                variant="top"
-                id="newaccimagespot"
-                src={Avenisimg}
-                fluid
-                style={{ cursor: "pointer" }}
-              />
-            </a>
-            <Card.Body>
-              <Card.Title>Avenis Disc Break Bleutooth Edition</Card.Title>
-              <p>Rs 1,10,000/-</p>
-              <Button
-                variant="outline-primary"
-                className="veiwmorebutton"
-                href="/Avenis"
-              >
-                View More
-              </Button>
-            </Card.Body>
-          </Card>
-
-          <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12 ">
-            <a href="/AccessBT">
-              <Card.Img
-                variant="top"
-                id="newaccimagespot"
-                src={img2}
-                fluid
-                style={{ cursor: "pointer" }}
-              />
-            </a>
-            <Card.Body>
-              <Card.Title>Access Bleutooth Edition Disc Break</Card.Title>
-              <p>Rs 1,20,000/-</p>
-              <Button
-                variant="outline-dark"
-                className="veiwmorebutton"
-                href="/AccessBT"
-              >
-                View More
-              </Button>
             </Card.Body>
           </Card>
 
@@ -493,6 +398,52 @@ const AccSE = () => {
                 variant="outline-secondary"
                 className="veiwmorebutton"
                 href="/BurgmanEx"
+              >
+                View More
+              </Button>
+            </Card.Body>
+          </Card>
+
+          <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12 ">
+            <a href="/AccessBT">
+              <Card.Img
+                variant="top"
+                id="newaccimagespot"
+                src={accspecial}
+                fluid
+                style={{ cursor: "pointer" }}
+              />
+            </a>
+            <Card.Body>
+              <Card.Title>Access Bleutooth Edition Disc Break</Card.Title>
+              <p>Rs 1,20,000/-</p>
+              <Button
+                variant="outline-dark"
+                className="veiwmorebutton"
+                href="/AccessBT"
+              >
+                View More
+              </Button>
+            </Card.Body>
+          </Card>
+
+          <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12 ">
+            <a href="/Avenis">
+              <Card.Img
+                variant="top"
+                id="newaccimagespot"
+                src={Avenisblknew}
+                fluid
+                style={{ cursor: "pointer" }}
+              />
+            </a>
+            <Card.Body>
+              <Card.Title>Avenis Disc Break Bleutooth Edition</Card.Title>
+              <p>Rs 1,10,000/-</p>
+              <Button
+                variant="outline-primary"
+                className="veiwmorebutton"
+                href="/Avenis"
               >
                 View More
               </Button>
@@ -545,4 +496,4 @@ const AccSE = () => {
   );
 };
 
-export default AccSE;
+export default Aerox;

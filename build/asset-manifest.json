@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1d69164e.css",
-    "main.js": "/static/js/main.0d9e4f79.js",
+    "main.js": "/static/js/main.f13bd875.js",
     "reactPlayerYouTube.js": "/static/js/reactPlayerYouTube.2aa14195.chunk.js",
     "reactPlayerSoundCloud.js": "/static/js/reactPlayerSoundCloud.e07a2192.chunk.js",
     "reactPlayerVimeo.js": "/static/js/reactPlayerVimeo.946a806f.chunk.js",
@@ -50,10 +50,12 @@
     "static/media/FrontHook.png": "/static/media/FrontHook.4f7af0e5e9b669126a80.png",
     "static/media/rightsidestarter.png": "/static/media/rightsidestarter.d78f978865f59923c438.png",
     "static/media/mat blue burgman.png": "/static/media/mat blue burgman.c101679bb9f792dadd3f.png",
+    "static/media/gixxernakedgreen.png": "/static/media/gixxernakedgreen.4e90e4a6b74e7f9679ef.png",
     "static/media/TFT Meter.png": "/static/media/TFT Meter.95a779f5a24e5ccdf996.png",
     "static/media/burgmanexdashboard.png": "/static/media/burgmanexdashboard.63f212863d70ed9ec387.png",
     "static/media/KeyIgnition.png": "/static/media/KeyIgnition.6c99545978448a23873b.png",
     "static/media/burgmanbtblue.png": "/static/media/burgmanbtblue.4decab0bc173b64dd447.png",
+    "static/media/gixxernakedblue.png": "/static/media/gixxernakedblue.c38f2067075f4b9f24e6.png",
     "static/media/Avenisyellow.png": "/static/media/Avenisyellow.f29a01c424fad239768e.png",
     "static/media/Gixxersfblue.png": "/static/media/Gixxersfblue.795adafea7f68e59d7aa.png",
     "static/media/AccessDrummatblue.png": "/static/media/AccessDrummatblue.383ebf0f98e17f3b456b.png",
@@ -61,6 +63,7 @@
     "static/media/Avenisred.png": "/static/media/Avenisred.a06e6b3174415460e2a6.png",
     "static/media/burgmanexbrown.png": "/static/media/burgmanexbrown.74a4b530886f7db021df.png",
     "static/media/AccDrumWhite.png": "/static/media/AccDrumWhite.60ec4410eab0e8b80757.png",
+    "static/media/gixxersfsilverred.png": "/static/media/gixxersfsilverred.3c23ff423a4fe19d94d1.png",
     "static/media/Avenisblk.png": "/static/media/Avenisblk.65c53a1eaec74290da22.png",
     "static/media/burgmanbtblkred.png": "/static/media/burgmanbtblkred.81c3d828a9db67f80d46.png",
     "static/media/burgmangray.png": "/static/media/burgmangray.ea227d095af3d6bfd433.png",
@@ -73,9 +76,12 @@
     "static/media/AccDrumblk.png": "/static/media/AccDrumblk.cdb0968d82820488cb78.png",
     "static/media/Accmatblue.png": "/static/media/Accmatblue.b865cd8b0025f28ccdae.png",
     "static/media/Aveniswhite.png": "/static/media/Aveniswhite.aa60c775a94708030f06.png",
+    "static/media/Aeroxnewblue.jpeg": "/static/media/Aeroxnewblue.34a7bb7f788a9603b715.jpeg",
     "static/media/burgmanexblk.png": "/static/media/burgmanexblk.221e11b313fc95b1574c.png",
     "static/media/burgmanbrownex.png": "/static/media/burgmanbrownex.717b220e61773bf44961.png",
     "static/media/accwhite.png": "/static/media/accwhite.7fb6964d3f3bb275049b.png",
+    "static/media/aeroxwhitenew.jpeg": "/static/media/aeroxwhitenew.e1e41af3f3a06b63d710.jpeg",
+    "static/media/aeroxgray.jpeg": "/static/media/aeroxgray.41e53ae73da1405914bf.jpeg",
     "static/media/banneravenis.jpeg": "/static/media/banneravenis.431ff1e0305e4a13481e.jpeg",
     "static/media/bannerburgmanimg.jpg": "/static/media/bannerburgmanimg.f5fb7a7a5604f428e7a8.jpg",
     "static/media/Avenisbllknew.png": "/static/media/Avenisbllknew.8b075caa88e08e5b48fe.png",
@@ -83,6 +89,7 @@
     "static/media/burgmannonbtblk.png": "/static/media/burgmannonbtblk.aaf602637cb31cf865f0.png",
     "static/media/gixxernakedblk.png": "/static/media/gixxernakedblk.9a34e244c11d0af591fd.png",
     "static/media/burgmanwhite.png": "/static/media/burgmanwhite.410b6de11934e265e55c.png",
+    "static/media/aeroxblk.jpeg": "/static/media/aeroxblk.fa584d0139495dcbf3ce.jpeg",
     "static/media/bannerblkburgman.jpeg": "/static/media/bannerblkburgman.93aab64749d55aad5e7e.jpeg",
     "static/media/happycsm6.jpeg": "/static/media/happycsm6.707c7a2fa85c19d16b7c.jpeg",
     "static/media/happycsm4.jpeg": "/static/media/happycsm4.37743c7277753daa7ddd.jpeg",
@@ -110,7 +117,7 @@
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
     "main.1d69164e.css.map": "/static/css/main.1d69164e.css.map",
-    "main.0d9e4f79.js.map": "/static/js/main.0d9e4f79.js.map",
+    "main.f13bd875.js.map": "/static/js/main.f13bd875.js.map",
     "reactPlayerYouTube.2aa14195.chunk.js.map": "/static/js/reactPlayerYouTube.2aa14195.chunk.js.map",
     "reactPlayerSoundCloud.e07a2192.chunk.js.map": "/static/js/reactPlayerSoundCloud.e07a2192.chunk.js.map",
     "reactPlayerVimeo.946a806f.chunk.js.map": "/static/js/reactPlayerVimeo.946a806f.chunk.js.map",
@@ -129,6 +136,6 @@
   },
   "entrypoints": [
     "static/css/main.1d69164e.css",
-    "static/js/main.0d9e4f79.js"
+    "static/js/main.f13bd875.js"
   ]
 }

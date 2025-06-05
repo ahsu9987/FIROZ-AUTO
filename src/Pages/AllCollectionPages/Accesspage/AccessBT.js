@@ -476,14 +476,16 @@ const AccessBT = () => {
           </Card>
 
           <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12 ">
-            <Card.Img variant="top" id="newaccimagespot" src={Gixxersfblue} />
+          <a href="/gixxersf">
+              <Card.Img variant="top" id="newaccimagespot" src={Gixxersfblue} />
+          </a>
             <Card.Body>
               <Card.Title>Gixxer-SF Bleutooth Edition</Card.Title>
               <p>Rs 2,25,000/-</p>
               <Button
                 variant="outline-success"
                 className="veiwmorebutton"
-                href="/NewBike"
+                href="/gixxersf"
               >
                 View More
               </Button>
@@ -491,14 +493,16 @@ const AccessBT = () => {
           </Card>
 
           <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12 ">
-            <Card.Img variant="top" id="newaccimagespot" src={Gixxernakedblk} />
+            <a href="/gixxernaked">
+              <Card.Img variant="top" id="newaccimagespot" src={Gixxernakedblk} />
+            </a>
             <Card.Body>
               <Card.Title>Gixxer Naked Bleutooth Edition</Card.Title>
               <p>Rs 2,20,000/-</p>
               <Button
                 variant="outline-dark"
                 className="veiwmorebutton"
-                href="/NewBike"
+                href="/gixxernaked"
               >
                 View More
               </Button>

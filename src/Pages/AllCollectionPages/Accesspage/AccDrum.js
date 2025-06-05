@@ -81,7 +81,11 @@ const AccDrum = () => {
                     className={`swatch ${
                       currentIndex === index ? "selected" : ""
                     }`}
-                    style={{ backgroundColor: swatch.color,border: "groove",borderColor:"black" }}
+                    style={{
+                      backgroundColor: swatch.color,
+                      border: "groove",
+                      borderColor: "black",
+                    }}
                     onClick={() => setCurrentIndex(index)}
                   >
                     {currentIndex === index && (
@@ -98,11 +102,10 @@ const AccDrum = () => {
             <p className="text-light">
               E20 COMPLIANT / LED HEADLAMP / LED POSITION LIGHTS /<br></br>
               SIDE STAND INTERLOCK / PREMIUM CHROME EXTERNAL FUEL LID/ <br></br>{" "}
-              
             </p>
             <h3 className="text-light mt-3 mb-3">SPECIFICATION:-</h3>
             <div className="tabledata">
-              <Table striped bordered  style={{ border: "groove" }}>
+              <Table striped bordered style={{ border: "groove" }}>
                 <tbody>
                   <tr>
                     <td>[Power & Performance]</td>
@@ -116,87 +119,90 @@ const AccDrum = () => {
                   </tr>
                   <tr>
                     <td>
-                      Max Power:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      Max
+                      Power:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       8.3 bhp @ 6500 rpm
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      Top Speed:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      Top
+                      Speed:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       90 kmph
                     </td>
                   </tr>
                   <tr>
-                    <td>
-                     [Brakes & Wheels]
-                    </td>
+                    <td>[Brakes & Wheels]</td>
                   </tr>
                   <tr>
                     <td>
-                      Braking System:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      Braking
+                      System:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       CBS
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      Front Brake Type:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      Front Brake
+                      Type:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       Drum
                     </td>
                   </tr>
                   <tr>
-                    <td>
-                      [Dimensions]
-                    </td>
+                    <td>[Dimensions]</td>
                   </tr>
-                    <tr>
+                  <tr>
                     <td>
-                      Kerb Weight:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      Kerb
+                      Weight:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       106 kg
                     </td>
                   </tr>
-                    <tr>
+                  <tr>
                     <td>
-                      Fuel Tank Capacity:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      Fuel Tank
+                      Capacity:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       5.3 litres
                     </td>
                   </tr>
-                    <tr>
-                    <td>
-                      [Manufacturer Warranty]
-                    </td>
+                  <tr>
+                    <td>[Manufacturer Warranty]</td>
                   </tr>
-                   <tr>
+                  <tr>
                     <td>
-                      Standard Warranty:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      Standard
+                      Warranty:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       2 year
                     </td>
                   </tr>
-                   <tr>
-                    <td>
-                      [Service & Maintenance Schedule]
-                    </td>
+                  <tr>
+                    <td>[Service & Maintenance Schedule]</td>
                   </tr>
-                   <tr>
+                  <tr>
                     <td>
-                      1st Service:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      1st
+                      Service:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       750-1000 Kms/30-45 Days
                     </td>
                   </tr>
-                    <tr>
+                  <tr>
                     <td>
-                      2nd Service:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      2nd
+                      Service:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       3500-4000 Kms/120-135 Days
                     </td>
                   </tr>
-                    <tr>
+                  <tr>
                     <td>
-                      3rd Service:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      3rd
+                      Service:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       7500-8000 Kms/210-225 Days
                     </td>
                   </tr>
-                    <tr>
+                  <tr>
                     <td>
-                      4th Service:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      4th
+                      Service:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       9500-12000 Kms
                     </td>
                   </tr>
@@ -207,7 +213,7 @@ const AccDrum = () => {
               variant="outline-success"
               className="mt-4"
               href="https://web.whatsapp.com/"
-                style={{ border: "groove" }}
+              style={{ border: "groove" }}
             >
               BOOK NOW
             </Button>
@@ -222,64 +228,75 @@ const AccDrum = () => {
             <Container>
               <Row>
                 <Col lg={6} xs={12} md={4}>
-                  <p className="text-center text-light">  Normal Meter Instrument Cluster</p>
+                  <p className="text-center text-light">
+                    {" "}
+                    Normal Meter Instrument Cluster
+                  </p>
                   <Card.Img
                     variant="top"
                     id="newaccimagespot"
                     src={accdrummeter}
                     roundedCircle
                     fluid
-                    style={{ cursor: "pointer",border: "groove"  }}
+                    style={{ cursor: "pointer", border: "groove" }}
                   />
                 </Col>
               </Row>
 
               <Row>
                 <Col lg={6} xs={12} md={4}>
-                  <p className="text-center text-light mt-3">Right Side Throttle Grip</p>
+                  <p className="text-center text-light mt-3">
+                    Right Side Throttle Grip
+                  </p>
                   <Card.Img
                     variant="top"
                     id="newaccimagespot"
                     src={starterbtn}
                     roundedCircle
                     fluid
-                    style={{ cursor: "pointer",border: "groove" }}
+                    style={{ cursor: "pointer", border: "groove" }}
                   />
                 </Col>
                 <Col lg={6} xs={12} md={4}>
-                  <p className="text-center text-light mt-3">Hazard Lights Switch</p>
+                  <p className="text-center text-light mt-3">
+                    Hazard Lights Switch
+                  </p>
                   <Card.Img
                     variant="top"
                     id="newaccimagespot"
                     src={HazardLights}
                     roundedCircle
                     fluid
-                    style={{ cursor: "pointer",border: "groove"  }}
+                    style={{ cursor: "pointer", border: "groove" }}
                   />
                 </Col>
               </Row>
 
               <Row>
                 <Col lg={6} xs={12} md={4}>
-                  <p className="text-center text-light mt-3">USB Charging Port</p>
+                  <p className="text-center text-light mt-3">
+                    USB Charging Port
+                  </p>
                   <Card.Img
                     variant="top"
                     id="newaccimagespot"
                     src={usbcharger}
                     roundedCircle
                     fluid
-                    style={{ cursor: "pointer",border: "groove" }}
+                    style={{ cursor: "pointer", border: "groove" }}
                   />
                 </Col>
                 <Col lg={6} xs={12} md={4}>
-                  <p className="text-center text-light mt-3">Front Luggage Hook</p>
+                  <p className="text-center text-light mt-3">
+                    Front Luggage Hook
+                  </p>
                   <Card.Img
                     variant="top"
                     id="newaccimagespot"
                     src={FrontHook}
                     roundedCircle
                     fluid
-                    style={{ cursor: "pointer",border: "groove"  }}
+                    style={{ cursor: "pointer", border: "groove" }}
                   />
                 </Col>
               </Row>
@@ -293,18 +310,20 @@ const AccDrum = () => {
                     src={GloveBox}
                     roundedCircle
                     fluid
-                    style={{ cursor: "pointer",border: "groove" }}
+                    style={{ cursor: "pointer", border: "groove" }}
                   />
                 </Col>
                 <Col lg={6} xs={12} md={4}>
-                  <p className="text-center text-light mt-3">Underseat Storage</p>
+                  <p className="text-center text-light mt-3">
+                    Underseat Storage
+                  </p>
                   <Card.Img
                     variant="top"
                     id="newaccimagespot"
                     src={UnderseatStorage}
                     roundedCircle
                     fluid
-                    style={{ cursor: "pointer",border: "groove"  }}
+                    style={{ cursor: "pointer", border: "groove" }}
                   />
                 </Col>
               </Row>
@@ -318,7 +337,7 @@ const AccDrum = () => {
                     src={HeatProtector}
                     roundedCircle
                     fluid
-                    style={{ cursor: "pointer",border: "groove"  }}
+                    style={{ cursor: "pointer", border: "groove" }}
                   />
                 </Col>
                 <Col lg={6} xs={12} md={4}>
@@ -329,7 +348,7 @@ const AccDrum = () => {
                     src={drumtyre}
                     roundedCircle
                     fluid
-                    style={{ cursor: "pointer",border: "groove"  }}
+                    style={{ cursor: "pointer", border: "groove" }}
                   />
                 </Col>
               </Row>
@@ -356,7 +375,7 @@ const AccDrum = () => {
             </Link>
 
             <Card.Body>
-              <Card.Title>Access Bleutooth Edition Disc Break  </Card.Title>
+              <Card.Title>Access Bleutooth Edition Disc Break </Card.Title>
               <p>Rs 1,05,000/-</p>
               <Link to="/AccessBT">
                 <Button variant="outline-info" className="veiwmorebutton">
@@ -414,7 +433,11 @@ const AccDrum = () => {
 
           <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12  ">
             <a href="/BurgmanEx">
-            <Card.Img variant="top" id="newaccimagespot" src={burgmanexbrown} />
+              <Card.Img
+                variant="top"
+                id="newaccimagespot"
+                src={burgmanexbrown}
+              />
             </a>
             <Card.Body>
               <Card.Title>Burgman Ex Bleutooth Top Edition</Card.Title>
@@ -430,14 +453,16 @@ const AccDrum = () => {
           </Card>
 
           <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12 ">
-            <Card.Img variant="top" id="newaccimagespot" src={Gixxersfblue} />
+            <a href="/gixxersf">
+              <Card.Img variant="top" id="newaccimagespot" src={Gixxersfblue} />
+            </a>
             <Card.Body>
               <Card.Title>Gixxer-SF Bleutooth Edition</Card.Title>
               <p>Rs 2,25,000/-</p>
               <Button
                 variant="outline-success"
                 className="veiwmorebutton"
-                href="/NewBike"
+                href="/gixxersf"
               >
                 View More
               </Button>
@@ -445,14 +470,20 @@ const AccDrum = () => {
           </Card>
 
           <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12 ">
-            <Card.Img variant="top" id="newaccimagespot" src={Gixxernakedblk} />
+            <a href="/gixxernaked">
+              <Card.Img
+                variant="top"
+                id="newaccimagespot"
+                src={Gixxernakedblk}
+              />
+            </a>
             <Card.Body>
               <Card.Title>Gixxer Naked Bleutooth Edition</Card.Title>
               <p>Rs 2,20,000/-</p>
               <Button
                 variant="outline-dark"
                 className="veiwmorebutton"
-                href="/NewBike"
+                href="/gixxernaked"
               >
                 View More
               </Button>

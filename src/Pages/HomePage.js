@@ -58,6 +58,7 @@ import happycs6 from "../Pages/HomeAllimages/Happycsm/happycsm6.jpeg";
 import happycs7 from "../Pages/HomeAllimages/Happycsm/happycsm7.jpeg";
 import happycs8 from "../Pages/HomeAllimages/Happycsm/happycsm8.jpeg";
 import Accordion from "react-bootstrap/Accordion";
+import NewAeroxwhite from "./AllCollectionPages/Aerox/images/aeroxwhitenew.jpeg";
 import MyForm from "./MyForm";
 
 function HomePage() {
@@ -103,40 +104,39 @@ function HomePage() {
       {/* ABOUT US */}
       <div>
         <Row>
-        <Col xs={12} md={8} lg={6} className="text-light p-4 ">
-          <h2>ABOUT US</h2>
-          <h5>WELCOME TO FIROZ AUTORIDES SAFE RIDE</h5>
-          <p className="txt-bold">
-            Welcome to Firoz AutoRides, your trusted destination for brand new
-            two-wheelers. Established in 2018, Firoz AutoRides has quickly
-            become a leading name in the two-wheeler Multi Brand Dealer,
-            renowned for our commitment to quality, customer satisfaction, and
-            innovation. <br></br>
-            Since our inception, we have been dedicated to providing our
-            customers with the best selection of two-wheelers, ranging from
-            scooters to motorcycles. Our journey began with a simple mission: to
-            make high-quality two-wheelers accessible to everyone, ensuring a
-            smooth, safe, and enjoyable ride for our customers.<br></br>
-            Experience the difference at Firoz AutoRides. Visit our showroom and
-            explore our wide range of brand new two-wheelers. Our friendly and
-            knowledgeable staff are here to help you make the right choice and
-            ensure you have an unforgettable riding experience.
-          </p>
-        </Col>
-        <Col xs={12} md={8} lg={6} className="">
-          <Image src={firozautologo} className="logofiroz" />
-        </Col>
-      </Row>
-
+          <Col xs={12} md={8} lg={6} className="text-light p-4 ">
+            <h2>ABOUT US</h2>
+            <h5>WELCOME TO FIROZ AUTORIDES SAFE RIDE</h5>
+            <p className="txt-bold">
+              Welcome to Firoz AutoRides, your trusted destination for brand new
+              two-wheelers. Established in 2018, Firoz AutoRides has quickly
+              become a leading name in the two-wheeler Multi Brand Dealer,
+              renowned for our commitment to quality, customer satisfaction, and
+              innovation. <br></br>
+              Since our inception, we have been dedicated to providing our
+              customers with the best selection of two-wheelers, ranging from
+              scooters to motorcycles. Our journey began with a simple mission:
+              to make high-quality two-wheelers accessible to everyone, ensuring
+              a smooth, safe, and enjoyable ride for our customers.<br></br>
+              Experience the difference at Firoz AutoRides. Visit our showroom
+              and explore our wide range of brand new two-wheelers. Our friendly
+              and knowledgeable staff are here to help you make the right choice
+              and ensure you have an unforgettable riding experience.
+            </p>
+          </Col>
+          <Col xs={12} md={8} lg={6} className="">
+            <Image src={firozautologo} className="logofiroz" />
+          </Col>
+        </Row>
       </div>
-      
+
       {/* HOME SCROLL VEHICLES */}
 
       <Carousel>
         <Carousel.Item interval={300}>
           <Row className="">
             <Col xs={12} md={8} lg={7} className="bg-light  allcol">
-              <Image src={NewAccicemat}  className="carsoulimg p-5 " />
+              <Image src={NewAccicemat} className="carsoulimg p-5 " />
             </Col>
             <Col xs={12} md={4} lg={5} className="bg-light p-5">
               <h1 className="Htxt text-info">
@@ -204,7 +204,11 @@ function HomePage() {
                 Engine Type:- 4- Stroke, 1-Cylinder, Air Cooled <br></br>Fuel
                 Tank Capacity 5 L <br></br>Starter System Kick and Electric
               </p>
-              <Button variant="outline-danger" className="mt-4" href="/BurgmanEx">
+              <Button
+                variant="outline-danger"
+                className="mt-4"
+                href="/BurgmanEx"
+              >
                 BOOK NOW
               </Button>{" "}
             </Col>
@@ -230,7 +234,7 @@ function HomePage() {
                 Engine Type:- 4- Stroke, 1-Cylinder, Air Cooled <br></br>Fuel
                 Tank Capacity 5 L <br></br>Starter System Kick and Electric
               </p>
-              <Button variant="outline-primary" className="mt-4">
+              <Button variant="outline-primary" className="mt-4" href="/BurgBT">
                 BOOK NOW
               </Button>{" "}
             </Col>
@@ -256,7 +260,7 @@ function HomePage() {
                 Engine Type:- 4- Stroke, 1-Cylinder, Air Cooled <br></br>Fuel
                 Tank Capacity 5 L <br></br>Starter System Kick and Electric
               </p>
-              <Button variant="outline-dark" className="mt-4">
+              <Button variant="outline-dark" className="mt-4" href="/BurgBT">
                 BOOK NOW
               </Button>{" "}
             </Col>
@@ -356,7 +360,11 @@ function HomePage() {
 
           <Card className="topbrandcard">
             <a href="/BurgBT">
-                <Card.Img variant="top" id="newaccimagespot" src={burgmangreenbt} />
+              <Card.Img
+                variant="top"
+                id="newaccimagespot"
+                src={burgmangreenbt}
+              />
             </a>
             <Card.Body>
               <Card.Title>Burgman Bleutooth Edition</Card.Title>
@@ -365,25 +373,6 @@ function HomePage() {
                 variant="outline-success"
                 className="veiwmorebutton"
                 href="/BurgBT"
-              >
-                View More
-              </Button>
-            </Card.Body>
-          </Card>
-
-          <Card className="topbrandcard">
-            <Card.Img
-              variant="top"
-              id="newaccimagespot"
-              src={burgmannonbtblk}
-            />
-            <Card.Body>
-              <Card.Title>Burgman Non Bleutooth Edition</Card.Title>
-              <p>Rs 1,30,000/-</p>
-              <Button
-                variant="outline-dark"
-                className="veiwmorebutton"
-                href="/NewBike"
               >
                 View More
               </Button>
@@ -401,21 +390,21 @@ function HomePage() {
 
         <Carousel2 responsive={responsive}>
           <Card className="topbrandcard ">
-            <Link to="/AccessBTBlue">
+            <Link to="/Aerox">
               <Card.Img
                 variant="top"
                 id="newaccimagespot"
-                src={NewAccicemat}
+                src={NewAeroxwhite}
                 fluid
                 style={{ cursor: "pointer" }}
               />
             </Link>
 
             <Card.Body>
-              <Card.Title>Access Bleutooth Edition Disc Break</Card.Title>
+              <Card.Title>Yamaha Aerox 155</Card.Title>
               <p>Rs 1,25,000/-</p>
               <Link to="/AccessBTBlue">
-                <Button variant="outline-info" className="veiwmorebutton">
+                <Button variant="outline-info" className="veiwmorebutton" href="/Aerox">
                   View More
                 </Button>
               </Link>
@@ -676,7 +665,7 @@ function HomePage() {
       </div>
 
       {/* SPORTS BIKE SECTION*/}
-      <div className="bg-light burgmanbikesection cardgrove" >
+      <div className="bg-light burgmanbikesection cardgrove">
         <h2 className="mb-4 mt-3">GET OFFERS ON POPULAR BIKES IN SPOTLIGHT</h2>
         {/* <Nav id="nav1" className="  my-3 my-lg-0   navtxt" navbarScroll>
           <Nav.Link href="">HOME</Nav.Link>
@@ -910,9 +899,9 @@ function HomePage() {
         <div>
           <h1 className="text-center mb-5 mt-2 reviewfont">
             <span style={{ color: "#ffdb0f" }}>******</span>HAPPY CUSTOMERS
-            <span style={{ color: "#ffdb0f" }}>******</span><br></br>
-                      <p style={{fontSize:'15px'}}>Firoz AutoRides</p>
-
+            <span style={{ color: "#ffdb0f" }}>******</span>
+            <br></br>
+            <p style={{ fontSize: "15px" }}>Firoz AutoRides</p>
           </h1>
         </div>
 
@@ -1047,7 +1036,7 @@ function HomePage() {
         <h2 className="text-light">Suzuki Access 125 FAQs</h2>
         <Accordion defaultActiveKey="0" className="cardgrove">
           <Accordion.Item eventKey="0" className="bg-info">
-            <Accordion.Header >
+            <Accordion.Header>
               Q: What is the on-road price of Suzuki Access 125 in 2025?
             </Accordion.Header>
             <Accordion.Body>

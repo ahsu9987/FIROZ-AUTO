@@ -6,6 +6,7 @@ import Table from "react-bootstrap/Table";
 import img1 from "../GixxerSF&Naked/images/Gixxersfblue.png";
 import img2 from "../GixxerSF&Naked/images/gixxersfGlass Sparkle Black.png";
 import img3 from "../GixxerSF&Naked/images/gixxersfMet Oort Gray and  Green.png";
+import img4 from "../GixxerSF&Naked/images/gixxersfsilverred.png";
 import Carousel2 from "react-multi-carousel";
 import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
@@ -13,25 +14,18 @@ import burgmanexbrown from "../Accesspage/images/burgmanexbrown.png";
 import Accdrum from "../Accesspage/images/AccessDrummatblue.png";
 import Gixxersfblue from "../GixxerSF&Naked/images/Gixxersfblue.png";
 import Gixxernakedblk from "../GixxerSF&Naked/images/gixxernakedblk.png";
-import Container from "react-bootstrap/Container";
-import burgmanexmeter from "../Accesspage/images/burgmanexmeter.png";
-import keyignition from "../Accesspage/images/KeyIgnition.png";
-import Accordion from "react-bootstrap/Accordion";
-import FrontDashboard from "../Burgmanpage/images/burgmanexdashboard.png";
-import FrontWheel from "../Burgmanpage/images/burgmanexFront View.png";
-import UnderseatStorage from "../Burgmanpage/images/burgmanunderstorage.png";
-import FrontPocket from "../Burgmanpage/images/burgmanfrontpocket.png";
-import FrontFootVeiw from "../Burgmanpage/images/burgmanfrontfoot.png";
-import AvenisKickstart from "../Accesspage/images/Kickstarter.png";
-import AvenisKillswitc from "../Accesspage/images/KillSwitch.png";
-import accspecial from "../Accesspage/images/accwhite.png"
+import accspecial from "../Accesspage/images/accwhite.png";
 import Avenisblknew from "../Accesspage/images/Avenisbllknew.png";
 
-
 const swatches = [
-  { color: "#4a9ce0", name: "Met Triton Blue and Pearl Glacier White", image: img1 },
+  {
+    color: "#4a9ce0",
+    name: "Met Triton Blue and Pearl Glacier White",
+    image: img1,
+  },
   { color: "#000000", name: "Glass Sparkle Black", image: img2 },
   { color: "#92e04a ", name: "Met Oort Gray and Met Lush Green", image: img3 },
+  { color: "#ea1d20", name: "Glass red & silver", image: img4 },
 ];
 
 const responsive = {
@@ -82,7 +76,11 @@ const GixxerSF = () => {
                     className={`swatch ${
                       currentIndex === index ? "selected" : ""
                     }`}
-                    style={{ backgroundColor: swatch.color , border: "groove",borderColor:"black" }}
+                    style={{
+                      backgroundColor: swatch.color,
+                      border: "groove",
+                      borderColor: "black",
+                    }}
                     onClick={() => setCurrentIndex(index)}
                   >
                     {currentIndex === index && (
@@ -95,18 +93,20 @@ const GixxerSF = () => {
           </Col>
 
           <Col xs={12} md={4} lg={4} className="p-3">
-            <h1 className="mt-2 text-light">Suzuki Gixxer-SF Top 155cc Bleutooth Edition</h1>
+            <h1 className="mt-2 text-light">
+              Suzuki Gixxer-SF Top 155cc Bleutooth Edition
+            </h1>
             <p className="text-light">
-        When we speak of maxi-styled scooters in India, although the list is fairly short, 
-        the Suzuki Burgman Street 125 is one of the popular names in the category. But recently, 
-        the company launched an updated version of it with the ‘EX’ 
-         Three things – an auto-engine start/stop system, 12-inch rear alloy, 
-         and Suzuki Eco Performance Alpha. And how do all these updates translate into the real world for the customer? 
-         That’s what we have explored in this road test review of the Suzuki Burgman Street 125 EX.
+              The Gixxer SF is a fully-faired premium motorcycle from Suzuki
+              that has recently received a design overhaul giving it a fresh
+              look. Despite its sporty looks, the motorcycle offers comfortable
+              riding stance for everyday riding. It also packs a potent motor
+              and agile handling attributes which make it an interesting
+              motorcycle.
             </p>
             <h3 className="text-light mt-3 mb-3">SPECIFICATION:-</h3>
             <div className="tabledata">
-              <Table striped bordered  style={{ border: "groove" }}>
+              <Table striped bordered style={{ border: "groove" }}>
                 <tbody>
                   <tr>
                     <td>[Power & Performance]</td>
@@ -115,21 +115,21 @@ const GixxerSF = () => {
                     <td>
                       Displacement
                       Type:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      125CC
+                      155 cc
                     </td>
                   </tr>
                   <tr>
                     <td>
                       Max
                       Power:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      8.58 bhp @ 6750 rpm
+                      13.4 bhp @ 8000 rpm
                     </td>
                   </tr>
                   <tr>
                     <td>
                       Top
                       Speed:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      95 kmph
+                      125 kmph
                     </td>
                   </tr>
                   <tr>
@@ -139,7 +139,7 @@ const GixxerSF = () => {
                     <td>
                       Braking
                       System:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      CBS
+                      Single Channel ABS
                     </td>
                   </tr>
                   <tr>
@@ -156,14 +156,14 @@ const GixxerSF = () => {
                     <td>
                       Kerb
                       Weight:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      110 kg
+                      148 kg
                     </td>
                   </tr>
                   <tr>
                     <td>
                       Fuel Tank
                       Capacity:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      5.5 litres
+                      12 L
                     </td>
                   </tr>
                   <tr>
@@ -173,7 +173,7 @@ const GixxerSF = () => {
                     <td>
                       Standard
                       Warranty:-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                      2 year
+                      30000 km
                     </td>
                   </tr>
                   <tr>
@@ -214,138 +214,13 @@ const GixxerSF = () => {
               variant="outline-success"
               className="mt-4"
               href="https://web.whatsapp.com/"
-                            style={{ border: "groove" }}
+              style={{ border: "groove" }}
             >
               BOOK NOW
             </Button>
           </Col>
         </Row>
       </div>
-
-      <Accordion defaultActiveKey="0">
-        <Accordion.Item className="bg-dark">
-          <Accordion.Header>ALL PARTS IMAGES</Accordion.Header>
-          <Accordion.Body>
-            <Container>
-              <Row>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center text-light">Digital meter BT</p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={burgmanexmeter}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer",border: "groove"  }}
-                  />
-                </Col>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center text-light mt-3">
-                    key-ignition
-                  </p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={keyignition}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer",border: "groove"  }}
-                  />
-                </Col>
-              </Row>
-
-              <Row>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center text-light mt-3">Front Dashboard</p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={FrontDashboard}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer",border: "groove"  }}
-                  />
-                </Col>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center text-light mt-3">Front Wheel</p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={FrontWheel}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer",border: "groove"  }}
-                  />
-                </Col>
-              </Row>
-
-              <Row>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center text-light mt-3">UnderseatStorage</p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={UnderseatStorage}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer",border: "groove"  }}
-                  />
-                </Col>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center text-light mt-3">Front Pocket</p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={FrontPocket}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer",border: "groove"  }}
-                  />
-                </Col>
-              </Row>
-
-              <Row>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center text-light mt-3">Front Foot Veiw</p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={FrontFootVeiw}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer",border: "groove"  }}
-                  />
-                </Col>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center text-light mt-3">Kickstart</p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={AvenisKickstart}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer",border: "groove"  }}
-                  />
-                </Col>
-              </Row>
-
-              <Row>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center text-light mt-3">KillSwitch</p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={AvenisKillswitc}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer",border: "groove"  }}
-                  />
-                </Col>
-              </Row>
-            </Container>
-          </Accordion.Body>
-        </Accordion.Item>
-      </Accordion>
 
       {/* ACCESS & BURGMAN BIKE SECTION SPOTLIGHT*/}
       <div className="bg-light burgmanbikesection cardgrove">
@@ -375,7 +250,7 @@ const GixxerSF = () => {
             </Card.Body>
           </Card>
 
-           <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12  ">
+          <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12  ">
             <Card.Img variant="top" id="newaccimagespot" src={burgmanexbrown} />
             <Card.Body>
               <Card.Title>Burgman Ex Bleutooth Top Edition</Card.Title>
@@ -389,8 +264,6 @@ const GixxerSF = () => {
               </Button>
             </Card.Body>
           </Card>
-
-         
 
           <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12 ">
             <a href="/AccessBT">

@@ -28,8 +28,7 @@ import FrontDiscBreak from "../Burgmanpage/images/burgmandiscbreakwheel.png";
 import Cylenser from "../Burgmanpage/images/burgmanexcylenser.png";
 import AvenisKickstart from "../Accesspage/images/Kickstarter.png";
 import AvenisKillswitc from "../Accesspage/images/KillSwitch.png";
-import accspecial from "../Accesspage/images/accwhite.png"
-
+import accspecial from "../Accesspage/images/accwhite.png";
 
 const swatches = [
   { color: "#1b390b", name: "Pearl Matte Shadow Green", image: img1 },
@@ -88,7 +87,11 @@ const BurgBT = () => {
                     className={`swatch ${
                       currentIndex === index ? "selected" : ""
                     }`}
-                    style={{ backgroundColor: swatch.color , border: "groove",borderColor:"black" }}
+                    style={{
+                      backgroundColor: swatch.color,
+                      border: "groove",
+                      borderColor: "black",
+                    }}
                     onClick={() => setCurrentIndex(index)}
                   >
                     {currentIndex === index && (
@@ -101,18 +104,22 @@ const BurgBT = () => {
           </Col>
 
           <Col xs={12} md={4} lg={4} className="p-3">
-            <h1 className="mt-2 text-light">Burgman 125 Bleutooth Edition Disc Break</h1>
+            <h1 className="mt-2 text-light">
+              Burgman 125 Bleutooth Edition Disc Break
+            </h1>
             <p className="text-light">
-        When we speak of maxi-styled scooters in India, although the list is fairly short, 
-        the Suzuki Burgman Street 125 is one of the popular names in the category. But recently, 
-        the company launched an updated version of it with the ‘EX’ 
-         Three things – an auto-engine start/stop system, 12-inch rear alloy, 
-         and Suzuki Eco Performance Alpha. And how do all these updates translate into the real world for the customer? 
-         That’s what we have explored in this road test review of the Suzuki Burgman Street 125 EX.
+              When we speak of maxi-styled scooters in India, although the list
+              is fairly short, the Suzuki Burgman Street 125 is one of the
+              popular names in the category. But recently, the company launched
+              an updated version of it with the ‘EX’ Three things – an
+              auto-engine start/stop system, 12-inch rear alloy, and Suzuki Eco
+              Performance Alpha. And how do all these updates translate into the
+              real world for the customer? That’s what we have explored in this
+              road test review of the Suzuki Burgman Street 125 EX.
             </p>
             <h3 className="text-light mt-3 mb-3">SPECIFICATION:-</h3>
             <div className="tabledata">
-              <Table striped bordered  style={{ border: "groove" }}>
+              <Table striped bordered style={{ border: "groove" }}>
                 <tbody>
                   <tr>
                     <td>[Power & Performance]</td>
@@ -220,7 +227,7 @@ const BurgBT = () => {
               variant="outline-success"
               className="mt-4"
               href="https://web.whatsapp.com/"
-                            style={{ border: "groove" }}
+              style={{ border: "groove" }}
             >
               BOOK NOW
             </Button>
@@ -242,34 +249,34 @@ const BurgBT = () => {
                     src={burgmanexmeter}
                     roundedCircle
                     fluid
-                    style={{ cursor: "pointer",border: "groove"  }}
+                    style={{ cursor: "pointer", border: "groove" }}
                   />
                 </Col>
                 <Col lg={6} xs={12} md={4}>
-                  <p className="text-center text-light mt-3">
-                    key-ignition
-                  </p>
+                  <p className="text-center text-light mt-3">key-ignition</p>
                   <Card.Img
                     variant="top"
                     id="newaccimagespot"
                     src={keyignition}
                     roundedCircle
                     fluid
-                    style={{ cursor: "pointer",border: "groove"  }}
+                    style={{ cursor: "pointer", border: "groove" }}
                   />
                 </Col>
               </Row>
 
               <Row>
                 <Col lg={6} xs={12} md={4}>
-                  <p className="text-center text-light mt-3">Underseat Storage</p>
+                  <p className="text-center text-light mt-3">
+                    Underseat Storage
+                  </p>
                   <Card.Img
                     variant="top"
                     id="newaccimagespot"
                     src={underseat}
                     roundedCircle
                     fluid
-                    style={{ cursor: "pointer",border: "groove"  }}
+                    style={{ cursor: "pointer", border: "groove" }}
                   />
                 </Col>
                 <Col lg={6} xs={12} md={4}>
@@ -280,7 +287,7 @@ const BurgBT = () => {
                     src={FrontFootVeiw}
                     roundedCircle
                     fluid
-                    style={{ cursor: "pointer",border: "groove"  }}
+                    style={{ cursor: "pointer", border: "groove" }}
                   />
                 </Col>
               </Row>
@@ -294,7 +301,7 @@ const BurgBT = () => {
                     src={FrontPocket}
                     roundedCircle
                     fluid
-                    style={{ cursor: "pointer",border: "groove"  }}
+                    style={{ cursor: "pointer", border: "groove" }}
                   />
                 </Col>
                 <Col lg={6} xs={12} md={4}>
@@ -305,7 +312,7 @@ const BurgBT = () => {
                     src={FrontDiscBreak}
                     roundedCircle
                     fluid
-                    style={{ cursor: "pointer",border: "groove"  }}
+                    style={{ cursor: "pointer", border: "groove" }}
                   />
                 </Col>
               </Row>
@@ -319,7 +326,7 @@ const BurgBT = () => {
                     src={Cylenser}
                     roundedCircle
                     fluid
-                    style={{ cursor: "pointer",border: "groove"  }}
+                    style={{ cursor: "pointer", border: "groove" }}
                   />
                 </Col>
                 <Col lg={6} xs={12} md={4}>
@@ -330,7 +337,7 @@ const BurgBT = () => {
                     src={AvenisKickstart}
                     roundedCircle
                     fluid
-                    style={{ cursor: "pointer",border: "groove"  }}
+                    style={{ cursor: "pointer", border: "groove" }}
                   />
                 </Col>
               </Row>
@@ -344,7 +351,7 @@ const BurgBT = () => {
                     src={AvenisKillswitc}
                     roundedCircle
                     fluid
-                    style={{ cursor: "pointer",border: "groove"  }}
+                    style={{ cursor: "pointer", border: "groove" }}
                   />
                 </Col>
               </Row>
@@ -381,9 +388,13 @@ const BurgBT = () => {
             </Card.Body>
           </Card>
 
-           <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12  ">
+          <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12  ">
             <a href="/BurgmanEx">
-            <Card.Img variant="top" id="newaccimagespot" src={burgmanexbrown} />
+              <Card.Img
+                variant="top"
+                id="newaccimagespot"
+                src={burgmanexbrown}
+              />
             </a>
             <Card.Body>
               <Card.Title>Burgman Ex Bleutooth Top Edition</Card.Title>
@@ -397,8 +408,6 @@ const BurgBT = () => {
               </Button>
             </Card.Body>
           </Card>
-
-         
 
           <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12 ">
             <a href="/AccessBT">
@@ -447,14 +456,16 @@ const BurgBT = () => {
           </Card>
 
           <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12 ">
-            <Card.Img variant="top" id="newaccimagespot" src={Gixxersfblue} />
+            <a href="/gixxersf">
+              <Card.Img variant="top" id="newaccimagespot" src={Gixxersfblue} />
+            </a>
             <Card.Body>
               <Card.Title>Gixxer-SF Bleutooth Edition</Card.Title>
               <p>Rs 2,25,000/-</p>
               <Button
                 variant="outline-success"
                 className="veiwmorebutton"
-                href="/NewBike"
+                href="/gixxersf"
               >
                 View More
               </Button>
@@ -462,14 +473,20 @@ const BurgBT = () => {
           </Card>
 
           <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12 ">
-            <Card.Img variant="top" id="newaccimagespot" src={Gixxernakedblk} />
+            <a href="/gixxernaked">
+              <Card.Img
+                variant="top"
+                id="newaccimagespot"
+                src={Gixxernakedblk}
+              />
+            </a>
             <Card.Body>
               <Card.Title>Gixxer Naked Bleutooth Edition</Card.Title>
               <p>Rs 2,20,000/-</p>
               <Button
                 variant="outline-dark"
                 className="veiwmorebutton"
-                href="/NewBike"
+                href="/gixxernaked"
               >
                 View More
               </Button>
