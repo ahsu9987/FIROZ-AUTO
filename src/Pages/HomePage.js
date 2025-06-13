@@ -60,6 +60,8 @@ import happycs8 from "../Pages/HomeAllimages/Happycsm/happycsm8.jpeg";
 import Accordion from "react-bootstrap/Accordion";
 import NewAeroxwhite from "./AllCollectionPages/Aerox/images/aeroxwhitenew.jpeg";
 import MyForm from "./MyForm";
+import { motion } from "framer-motion";
+// import { fadeIn } from "../MyAnimation";
 
 function HomePage() {
   const responsive = {
@@ -105,27 +107,54 @@ function HomePage() {
       <div>
         <Row>
           <Col xs={12} md={8} lg={6} className="text-light p-4 ">
-            <h2>ABOUT US</h2>
-            <h5>WELCOME TO FIROZ AUTORIDES SAFE RIDE</h5>
-            <p className="txt-bold">
-              Welcome to Firoz AutoRides, your trusted destination for brand new
-              two-wheelers. Established in 2018, Firoz AutoRides has quickly
-              become a leading name in the two-wheeler Multi Brand Dealer,
-              renowned for our commitment to quality, customer satisfaction, and
-              innovation. <br></br>
-              Since our inception, we have been dedicated to providing our
-              customers with the best selection of two-wheelers, ranging from
-              scooters to motorcycles. Our journey began with a simple mission:
-              to make high-quality two-wheelers accessible to everyone, ensuring
-              a smooth, safe, and enjoyable ride for our customers.<br></br>
-              Experience the difference at Firoz AutoRides. Visit our showroom
-              and explore our wide range of brand new two-wheelers. Our friendly
-              and knowledgeable staff are here to help you make the right choice
-              and ensure you have an unforgettable riding experience.
-            </p>
+            <motion.div
+              initial={{ x: -120, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                delay: 2,
+                x: { type: "spring", stiffness: 60 },
+                opacity: { duration: 1 },
+                ease: "easeIn",
+                duration: 0.1,
+              }}
+            >
+              <h2>ABOUT US</h2>
+              <h5>WELCOME TO FIROZ AUTORIDES SAFE RIDE</h5>
+              <p className="txt-bold">
+                Welcome to Firoz AutoRides, your trusted destination for brand
+                new two-wheelers. Established in 2018, Firoz AutoRides has
+                quickly become a leading name in the two-wheeler Multi Brand
+                Dealer, renowned for our commitment to quality, customer
+                satisfaction, and innovation. <br></br>
+                Since our inception, we have been dedicated to providing our
+                customers with the best selection of two-wheelers, ranging from
+                scooters to motorcycles. Our journey began with a simple
+                mission: to make high-quality two-wheelers accessible to
+                everyone, ensuring a smooth, safe, and enjoyable ride for our
+                customers.<br></br>
+                Experience the difference at Firoz AutoRides. Visit our showroom
+                and explore our wide range of brand new two-wheelers. Our
+                friendly and knowledgeable staff are here to help you make the
+                right choice and ensure you have an unforgettable riding
+                experience.
+              </p>
+            </motion.div>
           </Col>
+
           <Col xs={12} md={8} lg={6} className="">
-            <Image src={firozautologo} className="logofiroz" />
+            <motion.div
+              initial={{ x: 100, opacity: 0.2 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                delay: 2,
+                x: { type: "spring", stiffness: 30 },
+                opacity: { duration: 1 },
+                ease: "easeIn",
+                duration: 0.1,
+              }}
+            >
+              <Image src={firozautologo} className="logofiroz" />
+            </motion.div>
           </Col>
         </Row>
       </div>
@@ -404,7 +433,11 @@ function HomePage() {
               <Card.Title>Yamaha Aerox 155</Card.Title>
               <p>Rs 1,25,000/-</p>
               <Link to="/AccessBTBlue">
-                <Button variant="outline-info" className="veiwmorebutton" href="/Aerox">
+                <Button
+                  variant="outline-info"
+                  className="veiwmorebutton"
+                  href="/Aerox"
+                >
                   View More
                 </Button>
               </Link>
