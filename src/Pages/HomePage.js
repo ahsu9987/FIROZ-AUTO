@@ -107,46 +107,67 @@ function HomePage() {
       <div>
         <Row>
           <Col xs={12} md={8} lg={6} className="text-light p-4 ">
-            <motion.div
-              initial={{ x: -120, opacity: 0 }}
+            <motion.h2
+              initial={{ x: -100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{
-                delay: 2,
+                delay: 0.2,
                 x: { type: "spring", stiffness: 60 },
                 opacity: { duration: 1 },
                 ease: "easeIn",
-                duration: 0.1,
+                duration: 1,
               }}
             >
-              <h2>ABOUT US</h2>
-              <h5>WELCOME TO FIROZ AUTORIDES SAFE RIDE</h5>
-              <p className="txt-bold">
-                Welcome to Firoz AutoRides, your trusted destination for brand
-                new two-wheelers. Established in 2018, Firoz AutoRides has
-                quickly become a leading name in the two-wheeler Multi Brand
-                Dealer, renowned for our commitment to quality, customer
-                satisfaction, and innovation. <br></br>
-                Since our inception, we have been dedicated to providing our
-                customers with the best selection of two-wheelers, ranging from
-                scooters to motorcycles. Our journey began with a simple
-                mission: to make high-quality two-wheelers accessible to
-                everyone, ensuring a smooth, safe, and enjoyable ride for our
-                customers.<br></br>
-                Experience the difference at Firoz AutoRides. Visit our showroom
-                and explore our wide range of brand new two-wheelers. Our
-                friendly and knowledgeable staff are here to help you make the
-                right choice and ensure you have an unforgettable riding
-                experience.
-              </p>
-            </motion.div>
+              ABOUT US
+            </motion.h2>
+            <motion.h5
+              initial={{ x: -100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                delay: 0.3,
+                x: { type: "spring", stiffness: 60 },
+                opacity: { duration: 0.6 },
+                ease: "easeIn",
+                duration: 1,
+              }}
+            >
+              WELCOME TO FIROZ AUTORIDES SAFE RIDE
+            </motion.h5>
+            <motion.p
+              initial={{ x: -100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                delay: 0.4,
+                x: { type: "spring", stiffness: 60 },
+                opacity: { duration: 0.6 },
+                ease: "easeIn",
+                duration: 1,
+              }}
+              className="txt-bold"
+            >
+              Welcome to Firoz AutoRides, your trusted destination for brand new
+              two-wheelers. Established in 2018, Firoz AutoRides has quickly
+              become a leading name in the two-wheeler Multi Brand Dealer,
+              renowned for our commitment to quality, customer satisfaction, and
+              innovation. <br></br>
+              Since our inception, we have been dedicated to providing our
+              customers with the best selection of two-wheelers, ranging from
+              scooters to motorcycles. Our journey began with a simple mission:
+              to make high-quality two-wheelers accessible to everyone, ensuring
+              a smooth, safe, and enjoyable ride for our customers.<br></br>
+              Experience the difference at Firoz AutoRides. Visit our showroom
+              and explore our wide range of brand new two-wheelers. Our friendly
+              and knowledgeable staff are here to help you make the right choice
+              and ensure you have an unforgettable riding experience.
+            </motion.p>
           </Col>
 
           <Col xs={12} md={8} lg={6} className="">
             <motion.div
-              initial={{ x: 100, opacity: 0.2 }}
+              initial={{ x: 50, opacity: 0.2 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{
-                delay: 2,
+                delay: 0.8,
                 x: { type: "spring", stiffness: 30 },
                 opacity: { duration: 1 },
                 ease: "easeIn",
@@ -299,56 +320,153 @@ function HomePage() {
 
       {/* ACCESS & BURGMAN BIKE SECTION SPOTLIGHT*/}
       <div className="bg-light burgmanbikesection">
-        <h2 className="mb-4 mt-3">TRENDING BIKES OF 2025</h2>
+        <motion.h2
+          initial={{ y: -20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{
+            delay: 0.2,
+            x: { type: "spring", stiffness: 60 },
+            opacity: { duration: 0.6 },
+            ease: "easeIn",
+            duration: 0.1,
+          }}
+          className="mb-4 mt-3"
+        >
+          TRENDING BIKES OF 2025
+        </motion.h2>
 
         <Carousel2 responsive={responsive}>
           <Card className="topbrandcard ">
             <Link to="/AccessBT">
-              <Card.Img
-                variant="top"
-                id="newaccimagespot"
-                src={NewAccicemat}
-                fluid
-                style={{ cursor: "pointer" }}
-              />
+              <motion.div
+                initial={{ x: 100, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{
+                  delay: 0.2,
+                  x: { type: "spring", stiffness: 60 },
+                  opacity: { duration: 0.7 },
+                  ease: "easeIn",
+                  duration: 0.1,
+                }}
+              >
+                <Card.Img
+                  variant="top"
+                  id="newaccimagespot"
+                  src={NewAccicemat}
+                  fluid
+                  style={{ cursor: "pointer" }}
+                />
+              </motion.div>
             </Link>
 
             <Card.Body>
-              <Card.Title>Access Bleutooth Edition Disc Break</Card.Title>
-              <p>Rs 1,25,000/-</p>
+              <motion.div
+                initial={{ x: -50, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{
+                  delay: 0.3,
+                  x: { type: "spring", stiffness: 60 },
+                  opacity: { duration: 0.7 },
+                  ease: "easeIn",
+                  duration: 0.1,
+                }}
+              >
+                <Card.Title>Access Bleutooth Edition Disc Break</Card.Title>
+                <p>Rs 1,25,000/-</p>
+              </motion.div>
               <Link to="/AccessBT">
-                <Button variant="outline-info" className="veiwmorebutton">
-                  View More
-                </Button>
+                <motion.div
+                  initial={{ y: 50, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  transition={{
+                    delay: 0.4,
+                    x: { type: "spring", stiffness: 60 },
+                    opacity: { duration: 0.7 },
+                    ease: "easeIn",
+                    duration: 0.1,
+                  }}
+                >
+                  <Button variant="outline-info" className="veiwmorebutton">
+                    View More
+                  </Button>
+                </motion.div>
               </Link>
             </Card.Body>
           </Card>
 
           <Card className="topbrandcard">
             <a href="/AccSE">
-              <Card.Img
-                variant="top"
-                id="newaccimagespot"
-                src={Accesblack}
-                fluid
-                style={{ cursor: "pointer" }}
-              />
+              <motion.div
+                initial={{ x: 100, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{
+                  delay: 0.3,
+                  x: { type: "spring", stiffness: 60 },
+                  opacity: { duration: 0.7 },
+                  ease: "easeIn",
+                  duration: 0.1,
+                }}
+              >
+                <Card.Img
+                  variant="top"
+                  id="newaccimagespot"
+                  src={Accesblack}
+                  fluid
+                  style={{ cursor: "pointer" }}
+                />
+              </motion.div>
             </a>
             <Card.Body>
-              <Card.Title>Access Special Edition Disc Break</Card.Title>
-              <p>Rs 1,20,000/-</p>
-              <Button
-                variant="outline-dark"
-                className="veiwmorebutton"
-                href="/AccSE"
+              <motion.div
+                initial={{ x: -20, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{
+                  delay: 0.4,
+                  x: { type: "spring", stiffness: 60 },
+                  opacity: { duration: 0.7 },
+                  ease: "easeIn",
+                  duration: 0.1,
+                }}
               >
-                View More
-              </Button>
+                <Card.Title>Access Special Edition Disc Break</Card.Title>
+                <p>Rs 1,20,000/-</p>
+              </motion.div>
+
+              <motion.div
+                initial={{ y: 50, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{
+                  delay: 0.4,
+                  x: { type: "spring", stiffness: 60 },
+                  opacity: { duration: 0.7 },
+                  ease: "easeIn",
+                  duration: 0.1,
+                }}
+              >
+                <Button
+                  variant="outline-dark"
+                  className="veiwmorebutton"
+                  href="/AccSE"
+                >
+                  View More
+                </Button>
+              </motion.div>
             </Card.Body>
           </Card>
 
           <Card className="topbrandcard">
             <a href="/AccDrum">
+               <motion.div
+                initial={{ x: 100, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{
+                  delay: 0.3,
+                  x: { type: "spring", stiffness: 60 },
+                  opacity: { duration: 0.7 },
+                  ease: "easeIn",
+                  duration: 0.1,
+                }}
+              >
               <Card.Img
                 variant="top"
                 id="newaccimagespot"
@@ -356,10 +474,35 @@ function HomePage() {
                 fluid
                 style={{ cursor: "pointer" }}
               />
+              </motion.div>
             </a>
             <Card.Body>
+              <motion.div
+                initial={{ x: -20, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{
+                  delay: 0.4,
+                  x: { type: "spring", stiffness: 60 },
+                  opacity: { duration: 0.7 },
+                  ease: "easeIn",
+                  duration: 0.1,
+                }}
+              >
               <Card.Title>Access Drum Break Edition</Card.Title>
               <p>Rs 1,05,000/-</p>
+              </motion.div>
+
+                <motion.div
+                initial={{ y: 50, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{
+                  delay: 0.4,
+                  x: { type: "spring", stiffness: 60 },
+                  opacity: { duration: 0.7 },
+                  ease: "easeIn",
+                  duration: 0.1,
+                }}
+              >
               <Button
                 variant="outline-primary"
                 className="veiwmorebutton"
@@ -367,16 +510,53 @@ function HomePage() {
               >
                 View More
               </Button>
+              </motion.div>
             </Card.Body>
           </Card>
 
           <Card className="topbrandcard">
             <a href="/BurgmanEx">
+               <motion.div
+                initial={{ x: 100, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{
+                  delay: 0.3,
+                  x: { type: "spring", stiffness: 60 },
+                  opacity: { duration: 0.7 },
+                  ease: "easeIn",
+                  duration: 0.1,
+                }}
+              >
               <Card.Img variant="top" id="newaccimagespot" src={burgmanbrown} />
+              </motion.div>
             </a>
             <Card.Body>
+               <motion.div
+                initial={{ x: -20, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{
+                  delay: 0.4,
+                  x: { type: "spring", stiffness: 60 },
+                  opacity: { duration: 0.7 },
+                  ease: "easeIn",
+                  duration: 0.1,
+                }}
+              >
               <Card.Title>Burgman Ex Bleutooth Top Edition</Card.Title>
               <p>Rs 1,52,000/-</p>
+              </motion.div>
+
+                <motion.div
+                initial={{ y: 50, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{
+                  delay: 0.4,
+                  x: { type: "spring", stiffness: 60 },
+                  opacity: { duration: 0.7 },
+                  ease: "easeIn",
+                  duration: 0.1,
+                }}
+              >
               <Button
                 variant="outline-secondary"
                 className="veiwmorebutton"
@@ -384,20 +564,57 @@ function HomePage() {
               >
                 View More
               </Button>
+              </motion.div>
             </Card.Body>
           </Card>
 
           <Card className="topbrandcard">
             <a href="/BurgBT">
+             <motion.div
+                initial={{ x: 100, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{
+                  delay: 0.3,
+                  x: { type: "spring", stiffness: 60 },
+                  opacity: { duration: 0.7 },
+                  ease: "easeIn",
+                  duration: 0.1,
+                }}
+              >
               <Card.Img
                 variant="top"
                 id="newaccimagespot"
                 src={burgmangreenbt}
               />
+              </motion.div>
             </a>
             <Card.Body>
+                <motion.div
+                initial={{ x: -20, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{
+                  delay: 0.4,
+                  x: { type: "spring", stiffness: 60 },
+                  opacity: { duration: 0.7 },
+                  ease: "easeIn",
+                  duration: 0.1,
+                }}
+              >
               <Card.Title>Burgman Bleutooth Edition</Card.Title>
               <p>Rs 1,35,000/-</p>
+              </motion.div>
+
+                  <motion.div
+                initial={{ y: 50, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{
+                  delay: 0.4,
+                  x: { type: "spring", stiffness: 60 },
+                  opacity: { duration: 0.7 },
+                  ease: "easeIn",
+                  duration: 0.1,
+                }}
+              >
               <Button
                 variant="outline-success"
                 className="veiwmorebutton"
@@ -405,12 +622,25 @@ function HomePage() {
               >
                 View More
               </Button>
+              </motion.div>
             </Card.Body>
           </Card>
         </Carousel2>
+         <motion.div
+                initial={{ x: -30, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{
+                  delay: 0.3,
+                  x: { type: "spring", stiffness: 60 },
+                  opacity: { duration: 0.7 },
+                  ease: "easeIn",
+                  duration: 0.1,
+                }}
+              >
         <Button className="mt-4 mb-4" variant="outline-primary">
           More
         </Button>
+        </motion.div>
       </div>
 
       {/* SPORTS BIKE SECTION*/}
@@ -553,8 +783,29 @@ function HomePage() {
 
       {/* brandlogo SECTION*/}
       <div className="bg-light burgmanbikesection cardgrove">
-        <h1 className="ms-2 mt-2 mb-2">Browse Bikes Brand</h1>
+        <motion.h1 
+         initial={{ y: -20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{
+            delay: 0.4,
+            x: { type: "spring", stiffness: 60 },
+            opacity: { duration: 0.6 },
+            ease: "easeIn",
+            duration: 0.1,
+          }}
+        className="ms-2 mt-2 mb-2">Browse Bikes Brand</motion.h1>
 
+  <motion.div
+                initial={{ x: 10, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{
+                  delay: 0.8,
+                  x: { type: "spring", stiffness: 60 },
+                  opacity: { duration: 0.7 },
+                  ease: "easeIn",
+                  duration: 0.1,
+                }}
+              >
         <Table striped="columns" className="logotable " border={"3px"}>
           <tbody className="cardgrove">
             <tr>
@@ -695,6 +946,7 @@ function HomePage() {
             </tr>
           </tbody>
         </Table>
+        </motion.div> 
       </div>
 
       {/* SPORTS BIKE SECTION*/}
@@ -832,13 +1084,33 @@ function HomePage() {
 
       {/* testimonial*/}
       <div className="bg-light testimonialsection cardgrove">
-        <h1 className="text-center mb-4 mt-4 reviewfont">
+        <motion.h1 
+         initial={{ y: 40, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{
+            delay: 0.4,
+            x: { type: "spring", stiffness: 60 },
+            opacity: { duration: 0.4 },
+            ease: "easeIn",
+            duration: 0.1,
+          }}
+        className="text-center mb-4 mt-4 reviewfont">
           <span style={{ color: "#ffdb0f" }}>******</span>CUSTOMER REVIEW
           <span style={{ color: "#ffdb0f" }}>******</span>
-        </h1>
+        </motion.h1>
 
         <Carousel2 responsive={responsive}>
-          <Card className="Reveiwcard " id="newaccimagespot">
+          <motion.Card 
+           initial={{ x: 40, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{
+            delay: 0.4,
+            x: { type: "spring", stiffness: 60 },
+            opacity: { duration: 0.4 },
+            ease: "easeIn",
+            duration: 0.1,
+          }}
+          className="Reveiwcard " id="newaccimagespot">
             <Card.Img
               variant="top"
               className="reviewimages"
@@ -846,7 +1118,7 @@ function HomePage() {
               fluid
               style={{ cursor: "pointer" }}
             />
-          </Card>
+          </motion.Card>
 
           <Card className="Reveiwcard" id="newaccimagespot">
             <Card.Img
@@ -930,19 +1202,66 @@ function HomePage() {
       {/*HAPPY CUSTOMERS*/}
       <div className="bg-light burgmanbikesection cardgrove">
         <div>
-          <h1 className="text-center mb-5 mt-2 reviewfont">
+          <motion.h1 
+               initial={{ y: 40, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{
+            delay: 0.4,
+            x: { type: "spring", stiffness: 60 },
+            opacity: { duration: 0.4 },
+            ease: "easeIn",
+            duration: 0.1,
+          }}
+          className="text-center mb-5 mt-2 reviewfont">
             <span style={{ color: "#ffdb0f" }}>******</span>HAPPY CUSTOMERS
             <span style={{ color: "#ffdb0f" }}>******</span>
             <br></br>
             <p style={{ fontSize: "15px" }}>Firoz AutoRides</p>
-          </h1>
+          </motion.h1>
         </div>
 
         <Container>
           <Row className="">
             <Col lg={4} xs={12} md={8} className="mb-2">
               {" "}
+              <Card 
+              className="">
+                <motion.div
+                   initial={{ y: 40, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{
+            delay: 0.2,
+            x: { type: "spring", stiffness: 60 },
+            opacity: { duration: 0.2 },
+            ease: "easeIn",
+            duration: 0.1,
+          }}
+                >
+<Card.Img
+                  variant="top"
+                  className="cardgrove"
+                  src={happycs5}
+                  fluid
+                  style={{ height: "370px" }}
+                />
+                </motion.div>
+                
+              </Card>
+            </Col>
+            <Col lg={4} xs={12} md={8} className="mb-2">
+              {" "}
               <Card className="">
+                     <motion.div
+                   initial={{ y: 40, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{
+            delay: 0.3,
+            x: { type: "spring", stiffness: 60 },
+            opacity: { duration: 0.3 },
+            ease: "easeIn",
+            duration: 0.1,
+          }}
+                >
                 <Card.Img
                   variant="top"
                   className="cardgrove"
@@ -950,23 +1269,23 @@ function HomePage() {
                   fluid
                   style={{ height: "370px" }}
                 />
+                </motion.div>
               </Card>
             </Col>
             <Col lg={4} xs={12} md={8} className="mb-2">
               {" "}
               <Card className="">
-                <Card.Img
-                  variant="top"
-                  className="cardgrove"
-                  src={happycs5}
-                  fluid
-                  style={{ height: "370px" }}
-                />
-              </Card>
-            </Col>
-            <Col lg={4} xs={12} md={8} className="mb-2">
-              {" "}
-              <Card className="">
+                        <motion.div
+                   initial={{ y: 40, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{
+            delay: 0.4,
+            x: { type: "spring", stiffness: 60 },
+            opacity: { duration: 0.4 },
+            ease: "easeIn",
+            duration: 0.1,
+          }}
+                >
                 <Card.Img
                   variant="top"
                   className="cardgrove"
@@ -974,11 +1293,23 @@ function HomePage() {
                   fluid
                   style={{ height: "370px" }}
                 />
+                </motion.div>
               </Card>
             </Col>
             <Col lg={4} xs={12} md={8} className="mb-2">
               {" "}
               <Card className="">
+                        <motion.div
+                   initial={{ y: 40, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{
+            delay: 0.5,
+            x: { type: "spring", stiffness: 60 },
+            opacity: { duration: 0.5 },
+            ease: "easeIn",
+            duration: 0.1,
+          }}
+                >
                 <Card.Img
                   variant="top"
                   className="cardgrove"
@@ -986,11 +1317,23 @@ function HomePage() {
                   fluid
                   style={{ height: "370px" }}
                 />
+                </motion.div>
               </Card>
             </Col>
             <Col lg={4} xs={12} md={8} className="mb-2">
               {" "}
               <Card className="">
+                            <motion.div
+                   initial={{ y: 40, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{
+            delay: 0.6,
+            x: { type: "spring", stiffness: 60 },
+            opacity: { duration: 0.6 },
+            ease: "easeIn",
+            duration: 0.1,
+          }}
+                >
                 <Card.Img
                   variant="top"
                   className="cardgrove"
@@ -998,11 +1341,23 @@ function HomePage() {
                   fluid
                   style={{ height: "370px" }}
                 />
+                </motion.div>
               </Card>
             </Col>
             <Col lg={4} xs={12} md={8} className="mb-2">
               {" "}
               <Card className="">
+                            <motion.div
+                   initial={{ y: 40, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{
+            delay: 0.7,
+            x: { type: "spring", stiffness: 60 },
+            opacity: { duration: 0.7 },
+            ease: "easeIn",
+            duration: 0.1,
+          }}
+                >
                 <Card.Img
                   variant="top"
                   className="cardgrove"
@@ -1010,11 +1365,23 @@ function HomePage() {
                   fluid
                   style={{ height: "370px" }}
                 />
+                </motion.div>
               </Card>
             </Col>
             <Col lg={4} xs={12} md={8} className="mb-2">
               {" "}
               <Card className="">
+                            <motion.div
+                   initial={{ y: 40, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{
+            delay: 0.8,
+            x: { type: "spring", stiffness: 60 },
+            opacity: { duration: 0.8 },
+            ease: "easeIn",
+            duration: 0.1,
+          }}
+                >
                 <Card.Img
                   variant="top"
                   className="cardgrove"
@@ -1022,11 +1389,23 @@ function HomePage() {
                   fluid
                   style={{ height: "370px" }}
                 />
+                </motion.div>
               </Card>
             </Col>
             <Col lg={4} xs={12} md={8} className="mb-2">
               {" "}
               <Card className="">
+                            <motion.div
+                   initial={{ y: 40, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{
+            delay: 0.9,
+            x: { type: "spring", stiffness: 60 },
+            opacity: { duration: 0.9 },
+            ease: "easeIn",
+            duration: 0.1,
+          }}
+                >
                 <Card.Img
                   variant="top"
                   className="cardgrove"
@@ -1034,11 +1413,23 @@ function HomePage() {
                   fluid
                   style={{ height: "370px" }}
                 />
+                </motion.div>
               </Card>
             </Col>
             <Col lg={4} xs={12} md={8} className="mb-2">
               {" "}
               <Card className="">
+                              <motion.div
+                   initial={{ y: 40, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{
+            delay: 1,
+            x: { type: "spring", stiffness: 60 },
+            opacity: { duration: 0.9 },
+            ease: "easeIn",
+            duration: 0.1,
+          }}
+                >
                 <Card.Img
                   variant="top"
                   className="cardgrove"
@@ -1046,6 +1437,7 @@ function HomePage() {
                   fluid
                   style={{ height: "370px" }}
                 />
+                </motion.div>
               </Card>
             </Col>
           </Row>

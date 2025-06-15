@@ -1,7 +1,7 @@
-body{
-  overflow-x: hidden;
-  background-image: linear-gradient(to right, #141e30, #243b55);
 
-  
+body{
+    background-image: linear-gradient(to right, #141e30, #243b55);
+  overflow-x: hidden;
 }
+
 
