@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d267c258.css",
-    "main.js": "/static/js/main.d8218e20.js",
+    "main.css": "/static/css/main.cc278242.css",
+    "main.js": "/static/js/main.144d4923.js",
     "reactPlayerYouTube.js": "/static/js/reactPlayerYouTube.e9c2c1cc.chunk.js",
     "reactPlayerSoundCloud.js": "/static/js/reactPlayerSoundCloud.a2d55c7d.chunk.js",
     "reactPlayerVimeo.js": "/static/js/reactPlayerVimeo.aa2da3dd.chunk.js",
@@ -17,7 +17,9 @@
     "reactPlayerFilePlayer.js": "/static/js/reactPlayerFilePlayer.d377c486.chunk.js",
     "reactPlayerPreview.js": "/static/js/reactPlayerPreview.a22eddd4.chunk.js",
     "static/js/453.cc726cfe.chunk.js": "/static/js/453.cc726cfe.chunk.js",
-    "static/media/accesicegreen.mp4": "/static/media/accesicegreen.d252cb25b61c2e663c72.mp4",
+    "static/media/new video home.mp4": "/static/media/new video home.e49d121c92f88c4382c5.mp4",
+    "static/media/Avenisvideo.mp4": "/static/media/Avenisvideo.cbd546cf80725e51d387.mp4",
+    "static/media/burgmanbannervideo.mp4": "/static/media/burgmanbannervideo.b103dd57274620499934.mp4",
     "static/media/burgmanfrontfoot.png": "/static/media/burgmanfrontfoot.990aee08d0695e52826a.png",
     "static/media/avenismeter.png": "/static/media/avenismeter.b0e0f3d664a3a9136319.png",
     "static/media/avenisUnderseatstorage.png": "/static/media/avenisUnderseatstorage.29d5992bdeac4428030a.png",
@@ -116,8 +118,8 @@
     "static/media/bmwlogo.png": "/static/media/bmwlogo.f616d036b5fa7bbf0920.png",
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
-    "main.d267c258.css.map": "/static/css/main.d267c258.css.map",
-    "main.d8218e20.js.map": "/static/js/main.d8218e20.js.map",
+    "main.cc278242.css.map": "/static/css/main.cc278242.css.map",
+    "main.144d4923.js.map": "/static/js/main.144d4923.js.map",
     "reactPlayerYouTube.e9c2c1cc.chunk.js.map": "/static/js/reactPlayerYouTube.e9c2c1cc.chunk.js.map",
     "reactPlayerSoundCloud.a2d55c7d.chunk.js.map": "/static/js/reactPlayerSoundCloud.a2d55c7d.chunk.js.map",
     "reactPlayerVimeo.aa2da3dd.chunk.js.map": "/static/js/reactPlayerVimeo.aa2da3dd.chunk.js.map",
@@ -135,7 +137,7 @@
     "453.cc726cfe.chunk.js.map": "/static/js/453.cc726cfe.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d267c258.css",
-    "static/js/main.d8218e20.js"
+    "static/css/main.cc278242.css",
+    "static/js/main.144d4923.js"
   ]
 }

@@ -21,7 +21,7 @@ import Accessmatblue from "../Pages/HomeAllimages/AllAccessimages/Accmatblue.jpe
 import burgmangreenbt from "../Pages/HomeAllimages/AllBurgmanimages/burgmangreenBT.png";
 import burgmannonbtblk from "../Pages/HomeAllimages/AllBurgmanimages/burgmannonbtblk.png";
 import ReactPlayer from "react-player";
-import myvideo from "../assets/accesicegreen.mp4";
+import myvideo from "../assets/new video home.mp4";
 import bannerburgmanimg from "../images/bannerburgmanimg.jpg";
 import bannerblkburgman from "../images/bannerblkburgman.jpeg";
 import banneravenis from "../images/banneravenis.jpeg";
@@ -41,6 +41,7 @@ import bmw from "../Pages/HomeAllimages/Alllogo/bmwlogo.png";
 import tripuh from "../Pages/HomeAllimages/Alllogo/Triumph.png";
 import bajaj from "../Pages/HomeAllimages/Alllogo/bajajlogo.png";
 import harleydavidson from "../Pages/HomeAllimages/Alllogo/harley.png";
+import avenisvideo from "../assets/Avenisvideo.mp4";
 import Reveiw1 from "../Pages/HomeAllimages/Review/Review1.png";
 import Reveiw2 from "../Pages/HomeAllimages/Review/Review2.png";
 import Reveiw3 from "../Pages/HomeAllimages/Review/review3.png";
@@ -61,6 +62,7 @@ import Accordion from "react-bootstrap/Accordion";
 import NewAeroxwhite from "./AllCollectionPages/Aerox/images/aeroxwhitenew.jpeg";
 import MyForm from "./MyForm";
 import { motion } from "framer-motion";
+import burgmanbannervideo from "../assets/burgmanbannervideo.mp4";
 // import { fadeIn } from "../MyAnimation";
 
 function HomePage() {
@@ -90,7 +92,6 @@ function HomePage() {
   return (
     <>
       {/* HOMEVIDEO*/}
-      <div className="homevideo d-flex">
         <ReactPlayer
           url={myvideo}
           playing={true}
@@ -98,10 +99,9 @@ function HomePage() {
           controls={false}
           muted={true}
           progressInterval={8000}
-          className="react-player"
+          className="react-player homevideo "
           auotplay
         />
-      </div>
 
       {/* ABOUT US */}
       <div>
@@ -164,14 +164,12 @@ function HomePage() {
 
           <Col xs={12} md={8} lg={6} className="">
             <motion.div
-              initial={{ x: 50, opacity: 0.2 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              transition={{
-                delay: 0.8,
-                x: { type: "spring", stiffness: 30 },
-                opacity: { duration: 1 },
-                ease: "easeIn",
-                duration: 0.1,
+               initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{
+                duration: 0.9,
+                delay: 0.5,
+                ease: [0, 0.40, 0.2, 1.01],
               }}
             >
               <Image src={firozautologo} className="logofiroz" />
@@ -1082,6 +1080,17 @@ function HomePage() {
         </Button>
       </div>
 
+  <ReactPlayer
+          url={avenisvideo}
+          playing={true}
+          loop={true}
+          controls={false}
+          muted={true}
+          progressInterval={8000}
+          className="react-player homevideo "
+          auotplay
+        />
+
       {/* testimonial*/}
       <div className="bg-light testimonialsection cardgrove">
         <motion.h1 
@@ -1227,15 +1236,13 @@ function HomePage() {
               <Card 
               className="">
                 <motion.div
-                   initial={{ y: 40, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{
-            delay: 0.2,
-            x: { type: "spring", stiffness: 60 },
-            opacity: { duration: 0.2 },
-            ease: "easeIn",
-            duration: 0.1,
-          }}
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{
+                duration: 0.9,
+                delay: 0.4,
+                ease: [0, 0.40, 0.2, 1.01],
+            }}
                 >
 <Card.Img
                   variant="top"
@@ -1252,15 +1259,13 @@ function HomePage() {
               {" "}
               <Card className="">
                      <motion.div
-                   initial={{ y: 40, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{
-            delay: 0.3,
-            x: { type: "spring", stiffness: 60 },
-            opacity: { duration: 0.3 },
-            ease: "easeIn",
-            duration: 0.1,
-          }}
+                       initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{
+                duration: 0.9,
+                delay: 0.4,
+                ease: [0, 0.40, 0.2, 1.01],
+            }}
                 >
                 <Card.Img
                   variant="top"
@@ -1276,15 +1281,13 @@ function HomePage() {
               {" "}
               <Card className="">
                         <motion.div
-                   initial={{ y: 40, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{
-            delay: 0.4,
-            x: { type: "spring", stiffness: 60 },
-            opacity: { duration: 0.4 },
-            ease: "easeIn",
-            duration: 0.1,
-          }}
+               initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{
+                duration: 0.9,
+                delay: 0.4,
+                ease: [0, 0.40, 0.2, 1.01],
+            }}
                 >
                 <Card.Img
                   variant="top"
@@ -1300,15 +1303,13 @@ function HomePage() {
               {" "}
               <Card className="">
                         <motion.div
-                   initial={{ y: 40, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{
-            delay: 0.5,
-            x: { type: "spring", stiffness: 60 },
-            opacity: { duration: 0.5 },
-            ease: "easeIn",
-            duration: 0.1,
-          }}
+           initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{
+                duration: 0.9,
+                delay: 0.4,
+                ease: [0, 0.40, 0.2, 1.01],
+            }}
                 >
                 <Card.Img
                   variant="top"
@@ -1324,15 +1325,13 @@ function HomePage() {
               {" "}
               <Card className="">
                             <motion.div
-                   initial={{ y: 40, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{
-            delay: 0.6,
-            x: { type: "spring", stiffness: 60 },
-            opacity: { duration: 0.6 },
-            ease: "easeIn",
-            duration: 0.1,
-          }}
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{
+                duration: 0.9,
+                delay: 0.4,
+                ease: [0, 0.40, 0.2, 1.01],
+            }}
                 >
                 <Card.Img
                   variant="top"
@@ -1348,15 +1347,13 @@ function HomePage() {
               {" "}
               <Card className="">
                             <motion.div
-                   initial={{ y: 40, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{
-            delay: 0.7,
-            x: { type: "spring", stiffness: 60 },
-            opacity: { duration: 0.7 },
-            ease: "easeIn",
-            duration: 0.1,
-          }}
+             initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{
+                duration: 0.9,
+                delay: 0.4,
+                ease: [0, 0.40, 0.2, 1.01],
+            }}
                 >
                 <Card.Img
                   variant="top"
@@ -1372,15 +1369,13 @@ function HomePage() {
               {" "}
               <Card className="">
                             <motion.div
-                   initial={{ y: 40, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{
-            delay: 0.8,
-            x: { type: "spring", stiffness: 60 },
-            opacity: { duration: 0.8 },
-            ease: "easeIn",
-            duration: 0.1,
-          }}
+              initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{
+                duration: 0.9,
+                delay: 0.4,
+                ease: [0, 0.40, 0.2, 1.01],
+            }}
                 >
                 <Card.Img
                   variant="top"
@@ -1396,15 +1391,13 @@ function HomePage() {
               {" "}
               <Card className="">
                             <motion.div
-                   initial={{ y: 40, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{
-            delay: 0.9,
-            x: { type: "spring", stiffness: 60 },
-            opacity: { duration: 0.9 },
-            ease: "easeIn",
-            duration: 0.1,
-          }}
+             initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{
+                duration: 0.9,
+                delay: 0.4,
+                ease: [0, 0.40, 0.2, 1.01],
+            }}
                 >
                 <Card.Img
                   variant="top"
@@ -1420,15 +1413,13 @@ function HomePage() {
               {" "}
               <Card className="">
                               <motion.div
-                   initial={{ y: 40, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{
-            delay: 1,
-            x: { type: "spring", stiffness: 60 },
-            opacity: { duration: 0.9 },
-            ease: "easeIn",
-            duration: 0.1,
-          }}
+             initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{
+                duration: 0.9,
+                delay: 0.4,
+                ease: [0, 0.40, 0.2, 1.01],
+            }}
                 >
                 <Card.Img
                   variant="top"
@@ -1444,18 +1435,16 @@ function HomePage() {
         </Container>
       </div>
 
-      <ReactPlayer
-        url={"https:www.youtube.com/embed/LQzVhSVfm1A?autoplay=1&mute=1"}
-        playing={true}
-        loop={true}
-        controls={false}
-        muted={true}
-        progressInterval={8000}
-        className="react-player"
-        width={"100%"}
-        height={"500px"}
-        auotplay
-      />
+        <ReactPlayer
+          url={burgmanbannervideo}
+          playing={true}
+          loop={true}
+          controls={false}
+          muted={true}
+          progressInterval={8000}
+          className="react-player homevideo "
+          auotplay
+        />
 
       <div className="p-3">
         <h2 className="text-light">Suzuki Access 125 FAQs</h2>

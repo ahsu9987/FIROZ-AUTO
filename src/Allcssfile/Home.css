@@ -32,11 +32,6 @@
 .navtxt{
     font-size: medium;
 }
-
-/* .topbrandcard{
-    width:260px;
-} */
-
 #newaccimagespot{
 height: 180px;
 display: block;
@@ -55,18 +50,13 @@ width: 85%;
 }
 .homevideo{
     width: 100%!important;
-    height: 90vh!important;
-    /* background-color: red; */
+    height: 10%!important;
+    /* margin-top: 58px; */
 }
 .react-player video{
-    width: 250%!important;
-    height: 90vh!important;
-    object-fit: cover;
+    width: 100%!important;
+    height: 100%!important;
 }
-/* .tabledata{
-    width: 32rem;
-    padding-left: 10px;
-} */
 .logotable{
     width: 100%!important;
 }
@@ -212,14 +202,6 @@ input[type=submit]:hover {
     }
     .veiwmorebutton{
         padding: 8px 20px 8px 20px!important;
-    }
-    .react-player video{
-        height: 85vh!important;
-        width: 100%!important;
-    }
-    .homevideo{
-        height: 85vh!important;
-        width: 100%!important;
     }
     .tabledata{
         /* width: 19rem; */
