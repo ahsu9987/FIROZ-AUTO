@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.cc278242.css",
-    "main.js": "/static/js/main.144d4923.js",
+    "main.css": "/static/css/main.da122c79.css",
+    "main.js": "/static/js/main.a4ec1331.js",
     "reactPlayerYouTube.js": "/static/js/reactPlayerYouTube.e9c2c1cc.chunk.js",
     "reactPlayerSoundCloud.js": "/static/js/reactPlayerSoundCloud.a2d55c7d.chunk.js",
     "reactPlayerVimeo.js": "/static/js/reactPlayerVimeo.aa2da3dd.chunk.js",
@@ -118,8 +118,8 @@
     "static/media/bmwlogo.png": "/static/media/bmwlogo.f616d036b5fa7bbf0920.png",
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
-    "main.cc278242.css.map": "/static/css/main.cc278242.css.map",
-    "main.144d4923.js.map": "/static/js/main.144d4923.js.map",
+    "main.da122c79.css.map": "/static/css/main.da122c79.css.map",
+    "main.a4ec1331.js.map": "/static/js/main.a4ec1331.js.map",
     "reactPlayerYouTube.e9c2c1cc.chunk.js.map": "/static/js/reactPlayerYouTube.e9c2c1cc.chunk.js.map",
     "reactPlayerSoundCloud.a2d55c7d.chunk.js.map": "/static/js/reactPlayerSoundCloud.a2d55c7d.chunk.js.map",
     "reactPlayerVimeo.aa2da3dd.chunk.js.map": "/static/js/reactPlayerVimeo.aa2da3dd.chunk.js.map",
@@ -137,7 +137,7 @@
     "453.cc726cfe.chunk.js.map": "/static/js/453.cc726cfe.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc278242.css",
-    "static/js/main.144d4923.js"
+    "static/css/main.da122c79.css",
+    "static/js/main.a4ec1331.js"
   ]
 }

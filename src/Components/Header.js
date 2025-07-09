@@ -8,8 +8,6 @@ import logo from "../Pages/HomeAllimages/Alllogo/Firozauto-logo.jpg";
 import Image from "react-bootstrap/Image";
 
 function Header() {
-
-
   return (
     <>
       <Navbar
@@ -18,9 +16,9 @@ function Header() {
         fixed="top"
       >
         <Container>
-          <Navbar.Toggle aria-controls="navbarScroll" />
+          <Navbar.Toggle  />
+          <Image src={logo} className="headerlogo" alt="Logo" />;
           <Navbar.Collapse id="navbarScroll">
-            <Image src={logo}  className="headerlogo"/>;
             <h4 href="#action1" className="fw-bold">
               FIROZ AUTORIDES
             </h4>
@@ -38,18 +36,27 @@ function Header() {
                 NEW
               </NavLink>
               <Form className="d-flex">
+                {/* <Form.Control
+                  type="text"
+                  placeholder="Search..."
+                  className="me-2"
+                  aria-label="Search"
+                  onChange={getData}
+                /> */}
+
                 <Form.Control
                   type="search"
                   placeholder="Search..."
                   className="me-2"
                   aria-label="Search"
                 />
+
                 {/* <Button variant="outline-dark">Search</Button> */}
               </Form>
             </Nav>
           </Navbar.Collapse>
         </Container>
-      </Navbar>{" "}
+      </Navbar>
     </>
   );
 }

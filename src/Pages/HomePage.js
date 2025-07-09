@@ -65,6 +65,7 @@ import { motion } from "framer-motion";
 import burgmanbannervideo from "../assets/burgmanbannervideo.mp4";
 // import { fadeIn } from "../MyAnimation";
 
+
 function HomePage() {
   const responsive = {
     superLargeDesktop: {
@@ -89,8 +90,13 @@ function HomePage() {
 
   const [open, setOpen] = useState(false); //logosection
 
+
+   
   return (
     <>
+   
+
+
       {/* HOMEVIDEO*/}
         <ReactPlayer
           url={myvideo}

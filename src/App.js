@@ -20,6 +20,7 @@ import gixxersf from "./Pages/AllCollectionPages/GixxerSF&Naked/GixxerSF";
 import gixxernaked from "./Pages/AllCollectionPages/GixxerSF&Naked/GixxerNaked";
 import Aerox from "./Pages/AllCollectionPages/Aerox/Aerox";
 import Myform from "./Pages/MyForm";
+// import Data from "./Components/Data";
 
 function App() {
   return (
@@ -36,8 +37,9 @@ function App() {
           <Route exact path="/Avenis" component={Avenis} />
           <Route exact path="/gixxersf" component={gixxersf} />
           <Route exact path="/gixxernaked" component={gixxernaked} />
-                    <Route exact path="/Aerox" component={Aerox} />
+          <Route exact path="/Aerox" component={Aerox} />
           <Route exact path="/Getintouch" component={Myform} />
+          {/* <Route exact path="/Data" component={Data} /> */}
         </Switch>
 
         <Footer />
