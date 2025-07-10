@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.da122c79.css",
-    "main.js": "/static/js/main.a4ec1331.js",
+    "main.js": "/static/js/main.0cf510de.js",
     "reactPlayerYouTube.js": "/static/js/reactPlayerYouTube.e9c2c1cc.chunk.js",
     "reactPlayerSoundCloud.js": "/static/js/reactPlayerSoundCloud.a2d55c7d.chunk.js",
     "reactPlayerVimeo.js": "/static/js/reactPlayerVimeo.aa2da3dd.chunk.js",
@@ -101,6 +101,7 @@
     "static/media/happycsm8.jpeg": "/static/media/happycsm8.2a8cb9261ccd32dd2ab4.jpeg",
     "static/media/happycsm7.jpeg": "/static/media/happycsm7.0e6ebc0f5dee7583007d.jpeg",
     "static/media/happycsm1.jpeg": "/static/media/happycsm1.6c58458cf21ad8c09564.jpeg",
+    "static/media/Firozauto-logo.png": "/static/media/Firozauto-logo.18cb92b9be8a18aa9983.png",
     "static/media/happycsm3.jpeg": "/static/media/happycsm3.3e53ae0034eeac7c0261.jpeg",
     "static/media/review3.png": "/static/media/review3.c0175b06335fdbe9bcca.png",
     "static/media/Review2.png": "/static/media/Review2.5d3e65e6d8870e8c10a6.png",
@@ -112,14 +113,13 @@
     "static/media/review6.png": "/static/media/review6.1148743ca04810bea090.png",
     "static/media/review5.png": "/static/media/review5.12dda6ddaf46417cc8fe.png",
     "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
-    "static/media/Firozauto-logo.jpg": "/static/media/Firozauto-logo.1bfdd527d76b7367e930.jpg",
     "static/media/R15.png": "/static/media/R15.55886a3b12c7567639c9.png",
     "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/bmwlogo.png": "/static/media/bmwlogo.f616d036b5fa7bbf0920.png",
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
     "main.da122c79.css.map": "/static/css/main.da122c79.css.map",
-    "main.a4ec1331.js.map": "/static/js/main.a4ec1331.js.map",
+    "main.0cf510de.js.map": "/static/js/main.0cf510de.js.map",
     "reactPlayerYouTube.e9c2c1cc.chunk.js.map": "/static/js/reactPlayerYouTube.e9c2c1cc.chunk.js.map",
     "reactPlayerSoundCloud.a2d55c7d.chunk.js.map": "/static/js/reactPlayerSoundCloud.a2d55c7d.chunk.js.map",
     "reactPlayerVimeo.aa2da3dd.chunk.js.map": "/static/js/reactPlayerVimeo.aa2da3dd.chunk.js.map",
@@ -138,6 +138,6 @@
   },
   "entrypoints": [
     "static/css/main.da122c79.css",
-    "static/js/main.a4ec1331.js"
+    "static/js/main.0cf510de.js"
   ]
 }

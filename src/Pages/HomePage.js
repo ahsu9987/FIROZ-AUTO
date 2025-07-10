@@ -5,7 +5,7 @@ import { Image } from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
-import firozautologo from "./HomeAllimages/Alllogo/Firozauto-logo.jpg";
+import firozautologo from "./HomeAllimages/Alllogo/Firozauto-logo.png";
 import burgmanmatblue from "../Pages/HomeAllimages/AllBurgmanimages/mat blue burgman.png";
 import burgmanbrown from "../Pages/HomeAllimages/AllBurgmanimages/burgmanbrownex.png";
 import burgmanwhite from "../images/white-burgman.png";
