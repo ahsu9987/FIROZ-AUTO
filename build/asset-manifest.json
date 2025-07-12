@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.da122c79.css",
-    "main.js": "/static/js/main.0cf510de.js",
+    "main.css": "/static/css/main.bb4e26c4.css",
+    "main.js": "/static/js/main.f08a086b.js",
     "reactPlayerYouTube.js": "/static/js/reactPlayerYouTube.e9c2c1cc.chunk.js",
     "reactPlayerSoundCloud.js": "/static/js/reactPlayerSoundCloud.a2d55c7d.chunk.js",
     "reactPlayerVimeo.js": "/static/js/reactPlayerVimeo.aa2da3dd.chunk.js",
@@ -91,6 +91,7 @@
     "static/media/burgmannonbtblk.png": "/static/media/burgmannonbtblk.aaf602637cb31cf865f0.png",
     "static/media/gixxernakedblk.png": "/static/media/gixxernakedblk.9a34e244c11d0af591fd.png",
     "static/media/burgmanwhite.png": "/static/media/burgmanwhite.410b6de11934e265e55c.png",
+    "static/media/firozlogo.png": "/static/media/firozlogo.ab09483b3925c407fb07.png",
     "static/media/aeroxblk.jpeg": "/static/media/aeroxblk.fa584d0139495dcbf3ce.jpeg",
     "static/media/bannerblkburgman.jpeg": "/static/media/bannerblkburgman.93aab64749d55aad5e7e.jpeg",
     "static/media/happycsm6.jpeg": "/static/media/happycsm6.707c7a2fa85c19d16b7c.jpeg",
@@ -101,7 +102,6 @@
     "static/media/happycsm8.jpeg": "/static/media/happycsm8.2a8cb9261ccd32dd2ab4.jpeg",
     "static/media/happycsm7.jpeg": "/static/media/happycsm7.0e6ebc0f5dee7583007d.jpeg",
     "static/media/happycsm1.jpeg": "/static/media/happycsm1.6c58458cf21ad8c09564.jpeg",
-    "static/media/Firozauto-logo.png": "/static/media/Firozauto-logo.18cb92b9be8a18aa9983.png",
     "static/media/happycsm3.jpeg": "/static/media/happycsm3.3e53ae0034eeac7c0261.jpeg",
     "static/media/review3.png": "/static/media/review3.c0175b06335fdbe9bcca.png",
     "static/media/Review2.png": "/static/media/Review2.5d3e65e6d8870e8c10a6.png",
@@ -118,8 +118,8 @@
     "static/media/bmwlogo.png": "/static/media/bmwlogo.f616d036b5fa7bbf0920.png",
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
-    "main.da122c79.css.map": "/static/css/main.da122c79.css.map",
-    "main.0cf510de.js.map": "/static/js/main.0cf510de.js.map",
+    "main.bb4e26c4.css.map": "/static/css/main.bb4e26c4.css.map",
+    "main.f08a086b.js.map": "/static/js/main.f08a086b.js.map",
     "reactPlayerYouTube.e9c2c1cc.chunk.js.map": "/static/js/reactPlayerYouTube.e9c2c1cc.chunk.js.map",
     "reactPlayerSoundCloud.a2d55c7d.chunk.js.map": "/static/js/reactPlayerSoundCloud.a2d55c7d.chunk.js.map",
     "reactPlayerVimeo.aa2da3dd.chunk.js.map": "/static/js/reactPlayerVimeo.aa2da3dd.chunk.js.map",
@@ -137,7 +137,7 @@
     "453.cc726cfe.chunk.js.map": "/static/js/453.cc726cfe.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.da122c79.css",
-    "static/js/main.0cf510de.js"
+    "static/css/main.bb4e26c4.css",
+    "static/js/main.f08a086b.js"
   ]
 }

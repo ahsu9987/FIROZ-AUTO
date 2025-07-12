@@ -5,7 +5,7 @@ import { Image } from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
-import firozautologo from "./HomeAllimages/Alllogo/Firozauto-logo.png";
+import firozautologo from "./HomeAllimages/Alllogo/firozlogo.png";
 import burgmanmatblue from "../Pages/HomeAllimages/AllBurgmanimages/mat blue burgman.png";
 import burgmanbrown from "../Pages/HomeAllimages/AllBurgmanimages/burgmanbrownex.png";
 import burgmanwhite from "../images/white-burgman.png";
@@ -390,9 +390,6 @@ function HomePage() {
                     duration: 0.1,
                   }}
                 >
-                  <Button variant="outline-info" className="veiwmorebutton">
-                    View More
-                  </Button>
                 </motion.div>
               </Link>
             </Card.Body>
@@ -447,13 +444,7 @@ function HomePage() {
                   duration: 0.1,
                 }}
               >
-                <Button
-                  variant="outline-dark"
-                  className="veiwmorebutton"
-                  href="/AccSE"
-                >
-                  View More
-                </Button>
+        
               </motion.div>
             </Card.Body>
           </Card>
@@ -507,13 +498,7 @@ function HomePage() {
                   duration: 0.1,
                 }}
               >
-              <Button
-                variant="outline-primary"
-                className="veiwmorebutton"
-                href="/AccDrum"
-              >
-                View More
-              </Button>
+        
               </motion.div>
             </Card.Body>
           </Card>
@@ -561,13 +546,7 @@ function HomePage() {
                   duration: 0.1,
                 }}
               >
-              <Button
-                variant="outline-secondary"
-                className="veiwmorebutton"
-                href="/BurgmanEx"
-              >
-                View More
-              </Button>
+            
               </motion.div>
             </Card.Body>
           </Card>
@@ -619,13 +598,7 @@ function HomePage() {
                   duration: 0.1,
                 }}
               >
-              <Button
-                variant="outline-success"
-                className="veiwmorebutton"
-                href="/BurgBT"
-              >
-                View More
-              </Button>
+                
               </motion.div>
             </Card.Body>
           </Card>
@@ -667,13 +640,7 @@ function HomePage() {
               <Card.Title>Yamaha Aerox 155</Card.Title>
               <p>Rs 1,25,000/-</p>
               <Link to="/AccessBTBlue">
-                <Button
-                  variant="outline-info"
-                  className="veiwmorebutton"
-                  href="/Aerox"
-                >
-                  View More
-                </Button>
+                
               </Link>
             </Card.Body>
           </Card>
@@ -691,13 +658,7 @@ function HomePage() {
             <Card.Body>
               <Card.Title>Access Special Edition Disc Break</Card.Title>
               <p>Rs 1,20,000/-</p>
-              <Button
-                variant="outline-dark"
-                className="veiwmorebutton"
-                href="/NewBike"
-              >
-                View More
-              </Button>
+             
             </Card.Body>
           </Card>
 
@@ -714,13 +675,7 @@ function HomePage() {
             <Card.Body>
               <Card.Title>Access Drum Break Edition</Card.Title>
               <p>Rs 1,05,000/-</p>
-              <Button
-                variant="outline-primary"
-                className="veiwmorebutton"
-                href="/NewBike"
-              >
-                View More
-              </Button>
+             
             </Card.Body>
           </Card>
 
@@ -729,13 +684,7 @@ function HomePage() {
             <Card.Body>
               <Card.Title>Burgman Ex Bleutooth Top Edition</Card.Title>
               <p>Rs 1,52,000/-</p>
-              <Button
-                variant="outline-secondary"
-                className="veiwmorebutton"
-                href="/NewBike"
-              >
-                View More
-              </Button>
+              
             </Card.Body>
           </Card>
 
@@ -744,13 +693,7 @@ function HomePage() {
             <Card.Body>
               <Card.Title>Burgman Bleutooth Edition</Card.Title>
               <p>Rs 1,35,000/-</p>
-              <Button
-                variant="outline-success"
-                className="veiwmorebutton"
-                href="/NewBike"
-              >
-                View More
-              </Button>
+             
             </Card.Body>
           </Card>
 
@@ -763,13 +706,7 @@ function HomePage() {
             <Card.Body>
               <Card.Title>Burgman Non Bleutooth Edition</Card.Title>
               <p>Rs 1,30,000/-</p>
-              <Button
-                variant="outline-dark"
-                className="veiwmorebutton"
-                href="/NewBike"
-              >
-                View More
-              </Button>
+              
             </Card.Body>
           </Card>
         </Carousel2>
@@ -978,11 +915,7 @@ function HomePage() {
             <Card.Body>
               <Card.Title>Access Bleutooth Edition Disc Break</Card.Title>
               <p>Rs 1,25,000/-</p>
-              <Link to="/AccessBTBlue">
-                <Button variant="outline-info" className="veiwmorebutton">
-                  View More
-                </Button>
-              </Link>
+             
             </Card.Body>
           </Card>
 
@@ -999,13 +932,7 @@ function HomePage() {
             <Card.Body>
               <Card.Title>Access Special Edition Disc Break</Card.Title>
               <p>Rs 1,20,000/-</p>
-              <Button
-                variant="outline-dark"
-                className="veiwmorebutton"
-                href="/NewBike"
-              >
-                View More
-              </Button>
+              
             </Card.Body>
           </Card>
 
@@ -1022,13 +949,7 @@ function HomePage() {
             <Card.Body>
               <Card.Title>Access Drum Break Edition</Card.Title>
               <p>Rs 1,05,000/-</p>
-              <Button
-                variant="outline-primary"
-                className="veiwmorebutton"
-                href="/NewBike"
-              >
-                View More
-              </Button>
+              
             </Card.Body>
           </Card>
 
@@ -1037,13 +958,7 @@ function HomePage() {
             <Card.Body>
               <Card.Title>Burgman Ex Bleutooth Top Edition</Card.Title>
               <p>Rs 1,52,000/-</p>
-              <Button
-                variant="outline-secondary"
-                className="veiwmorebutton"
-                href="/NewBike"
-              >
-                View More
-              </Button>
+              
             </Card.Body>
           </Card>
 
@@ -1052,13 +967,7 @@ function HomePage() {
             <Card.Body>
               <Card.Title>Burgman Bleutooth Edition</Card.Title>
               <p>Rs 1,35,000/-</p>
-              <Button
-                variant="outline-success"
-                className="veiwmorebutton"
-                href="/NewBike"
-              >
-                View More
-              </Button>
+             
             </Card.Body>
           </Card>
 
@@ -1071,13 +980,7 @@ function HomePage() {
             <Card.Body>
               <Card.Title>Burgman Non Bleutooth Edition</Card.Title>
               <p>Rs 1,30,000/-</p>
-              <Button
-                variant="outline-dark"
-                className="veiwmorebutton"
-                href="/NewBike"
-              >
-                View More
-              </Button>
+              
             </Card.Body>
           </Card>
         </Carousel2>

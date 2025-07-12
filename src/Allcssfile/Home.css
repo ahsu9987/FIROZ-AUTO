@@ -20,7 +20,6 @@
 .logofiroz{
     width: 60%;
     height: 60vh;
-    padding: 40px;
     padding-left: 50px;
     margin-left: 100px;
 }
@@ -39,9 +38,6 @@ width: 85%;
     padding: 20px;
     border-radius: 20px;
     border-style: groove;
-}
-.veiwmorebutton{
-    padding: 8px 70px 8px 70px!important;
 }
 .homevideo{
     width: 100%!important;
@@ -159,11 +155,23 @@ input[type=submit]:hover {
     border-color: #000;
     border-style: groove;
 }
+.reachcolor{
+ background: linear-gradient(90deg, #82f369 0%, #91cfff 40%, #ffaacc 100%);
+color: transparent;
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+text-fill-color: transparent;
+}
+
 
 @media only screen and (max-width: 768px){
     .headerlogo{
-        margin-left: 200px;
-        height: 50px;
+        height: 70px; 
+          display: block;
+  margin-left: auto;
+  margin-right: 0;
+  width: 80px;
 }
     .topnavlink{
         margin-top: 0px;
@@ -179,10 +187,11 @@ input[type=submit]:hover {
         margin-top: 3px;
     }
     .logofiroz{
-        height: 35vh;
-        padding: 10px;
-        padding-left: 10px;
-        margin-left: 70px;
+        height: 63vh;
+          display: block;
+  margin: 0 auto;
+  width: 90%;
+     padding-left: 0px;
     }
     .navtxt{
         font-size: small;
@@ -199,12 +208,8 @@ input[type=submit]:hover {
         margin-top: 10px;
         margin-left: 10px;
     }
-    .veiwmorebutton{
-        padding: 8px 20px 8px 20px!important;
-    }
     .tabledata{
-        /* width: 19rem; */
-        padding-left: 2px;
+            padding-left: 2px;
     }
     .bannerfirstsection{
         width: 33%;
@@ -257,6 +262,11 @@ input[type=submit]:hover {
   position: absolute;
   top: 4px;
   left: 10px;
+}
+.footerlogo{
+     display: block;
+  margin: 0 auto;
+  /* width: 200px; */
 }
 
    

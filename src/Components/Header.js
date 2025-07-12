@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Form from "react-bootstrap/Form";
 import { NavLink } from "react-router-dom/cjs/react-router-dom";
-import logo from "../Pages/HomeAllimages/Alllogo/Firozauto-logo.png";
+import logo from "../Pages/HomeAllimages/Alllogo/firozlogo.png";
 import Image from "react-bootstrap/Image";
 
 function Header() {
@@ -16,7 +16,7 @@ function Header() {
         fixed="top"
       >
         <Container>
-          <Navbar.Toggle  />
+          <Navbar.Toggle />
           <Image src={logo} className="headerlogo" alt="Logo" />
           <Navbar.Collapse id="navbarScroll">
             <h4 href="#action1" className="fw-bold">
@@ -36,14 +36,6 @@ function Header() {
                 NEW
               </NavLink>
               <Form className="d-flex">
-                {/* <Form.Control
-                  type="text"
-                  placeholder="Search..."
-                  className="me-2"
-                  aria-label="Search"
-                  onChange={getData}
-                /> */}
-
                 <Form.Control
                   type="search"
                   placeholder="Search..."
