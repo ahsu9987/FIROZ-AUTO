@@ -5,7 +5,7 @@ import { Image } from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
-import firozautologo from "./HomeAllimages/Alllogo/firozlogo.png";
+import firozautologo from "./HomeAllimages/Alllogo/logofirozauto.jpeg";
 import burgmanmatblue from "../Pages/HomeAllimages/AllBurgmanimages/mat blue burgman.png";
 import burgmanbrown from "../Pages/HomeAllimages/AllBurgmanimages/burgmanbrownex.png";
 import burgmanwhite from "../images/white-burgman.png";
@@ -22,9 +22,9 @@ import burgmangreenbt from "../Pages/HomeAllimages/AllBurgmanimages/burgmangreen
 import burgmannonbtblk from "../Pages/HomeAllimages/AllBurgmanimages/burgmannonbtblk.png";
 import ReactPlayer from "react-player";
 import myvideo from "../assets/new video home.mp4";
-import bannerburgmanimg from "../images/bannerburgmanimg.jpg";
-import bannerblkburgman from "../images/bannerblkburgman.jpeg";
-import banneravenis from "../images/banneravenis.jpeg";
+// import bannerburgmanimg from "../images/bannerburgmanimg.jpg";
+// import bannerblkburgman from "../images/bannerblkburgman.jpeg";
+import banneracessimg from "../images/bannerimgaccess.jpeg";
 import Table from "react-bootstrap/Table";
 import Collapse from "react-bootstrap/Collapse";
 import suzukilogo from "../Pages/HomeAllimages/Alllogo/suzukilogo.png";
@@ -65,7 +65,6 @@ import { motion } from "framer-motion";
 import burgmanbannervideo from "../assets/burgmanbannervideo.mp4";
 // import { fadeIn } from "../MyAnimation";
 
-
 function HomePage() {
   const responsive = {
     superLargeDesktop: {
@@ -90,24 +89,19 @@ function HomePage() {
 
   const [open, setOpen] = useState(false); //logosection
 
-
-   
   return (
     <>
-   
-
-
       {/* HOMEVIDEO*/}
-        <ReactPlayer
-          url={myvideo}
-          playing={true}
-          loop={true}
-          controls={false}
-          muted={true}
-          progressInterval={8000}
-          className="react-player homevideo "
-          auotplay
-        />
+      <ReactPlayer
+        url={myvideo}
+        playing={true}
+        loop={true}
+        controls={false}
+        muted={true}
+        progressInterval={8000}
+        className="react-player homevideo "
+        auotplay
+      />
 
       {/* ABOUT US */}
       <div>
@@ -170,12 +164,12 @@ function HomePage() {
 
           <Col xs={12} md={8} lg={6} className="">
             <motion.div
-               initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{
                 duration: 0.9,
                 delay: 0.5,
-                ease: [0, 0.40, 0.2, 1.01],
+                ease: [0, 0.4, 0.2, 1.01],
               }}
             >
               <Image src={firozautologo} className="logofiroz" />
@@ -325,10 +319,10 @@ function HomePage() {
       {/* ACCESS & BURGMAN BIKE SECTION SPOTLIGHT*/}
       <div className="bg-light burgmanbikesection">
         <motion.h2
-          initial={{ y: -20, opacity: 0 }}
+          initial={{ y: -20, opacity: 0.9 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{
-            delay: 0.2,
+            delay: 0.4,
             x: { type: "spring", stiffness: 60 },
             opacity: { duration: 0.6 },
             ease: "easeIn",
@@ -343,12 +337,12 @@ function HomePage() {
           <Card className="topbrandcard ">
             <Link to="/AccessBT">
               <motion.div
-                initial={{ x: 100, opacity: 0 }}
-                whileInView={{ x: 0, opacity: 1 }}
+                initial={{ x: 100, opacity: 0.1 }}
+                whileInView={{ x: 0.100, opacity: 1}}
                 transition={{
-                  delay: 0.2,
-                  x: { type: "spring", stiffness: 60 },
-                  opacity: { duration: 0.7 },
+                  delay: 0.9,
+                  x: { type: "spring", stiffness: 15},
+                  opacity: { duration: 0.9 },
                   ease: "easeIn",
                   duration: 0.1,
                 }}
@@ -365,11 +359,11 @@ function HomePage() {
 
             <Card.Body>
               <motion.div
-                initial={{ x: -50, opacity: 0 }}
+                initial={{ x: -50, opacity: 0.2 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{
-                  delay: 0.3,
-                  x: { type: "spring", stiffness: 60 },
+                  delay: 0.8,
+                  x: { type: "spring", stiffness: 20 },
                   opacity: { duration: 0.7 },
                   ease: "easeIn",
                   duration: 0.1,
@@ -389,8 +383,7 @@ function HomePage() {
                     ease: "easeIn",
                     duration: 0.1,
                   }}
-                >
-                </motion.div>
+                ></motion.div>
               </Link>
             </Card.Body>
           </Card>
@@ -398,11 +391,11 @@ function HomePage() {
           <Card className="topbrandcard">
             <a href="/AccSE">
               <motion.div
-                initial={{ x: 100, opacity: 0 }}
+                initial={{ x: -50, opacity: 0.2 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{
-                  delay: 0.3,
-                  x: { type: "spring", stiffness: 60 },
+                  delay: 0.9,
+                  x: { type: "spring", stiffness: 10 },
                   opacity: { duration: 0.7 },
                   ease: "easeIn",
                   duration: 0.1,
@@ -419,14 +412,14 @@ function HomePage() {
             </a>
             <Card.Body>
               <motion.div
-                initial={{ x: -20, opacity: 0 }}
+                 initial={{ x: -50, opacity: 0.2 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{
-                  delay: 0.4,
-                  x: { type: "spring", stiffness: 60 },
+                  delay: 0.1,
+                  x: { type: "spring", stiffness: 5 },
                   opacity: { duration: 0.7 },
                   ease: "easeIn",
-                  duration: 0.1,
+                  duration: 0.9,
                 }}
               >
                 <Card.Title>Access Special Edition Disc Break</Card.Title>
@@ -443,51 +436,49 @@ function HomePage() {
                   ease: "easeIn",
                   duration: 0.1,
                 }}
-              >
-        
-              </motion.div>
+              ></motion.div>
             </Card.Body>
           </Card>
 
           <Card className="topbrandcard">
             <a href="/AccDrum">
-               <motion.div
-                initial={{ x: 100, opacity: 0 }}
+              <motion.div
+                initial={{ x: -50, opacity: 0.2 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{
-                  delay: 0.3,
-                  x: { type: "spring", stiffness: 60 },
+                  delay: 0.8,
+                  x: { type: "spring", stiffness: 20 },
                   opacity: { duration: 0.7 },
                   ease: "easeIn",
                   duration: 0.1,
                 }}
               >
-              <Card.Img
-                variant="top"
-                id="newaccimagespot"
-                src={Accessdrumblue}
-                fluid
-                style={{ cursor: "pointer" }}
-              />
+                <Card.Img
+                  variant="top"
+                  id="newaccimagespot"
+                  src={Accessdrumblue}
+                  fluid
+                  style={{ cursor: "pointer" }}
+                />
               </motion.div>
             </a>
             <Card.Body>
               <motion.div
-                initial={{ x: -20, opacity: 0 }}
+                initial={{ x: -50, opacity: 0.2 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{
-                  delay: 0.4,
-                  x: { type: "spring", stiffness: 60 },
-                  opacity: { duration: 0.7 },
+                  delay: 0.2,
+                  x: { type: "spring", stiffness: 30},
+                  opacity: { duration: 0.4 },
                   ease: "easeIn",
-                  duration: 0.1,
+                  duration: 0.2,
                 }}
               >
-              <Card.Title>Access Drum Break Edition</Card.Title>
-              <p>Rs 1,05,000/-</p>
+                <Card.Title>Access Drum Break Edition</Card.Title>
+                <p>Rs 1,05,000/-</p>
               </motion.div>
 
-                <motion.div
+              <motion.div
                 initial={{ y: 50, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{
@@ -497,45 +488,47 @@ function HomePage() {
                   ease: "easeIn",
                   duration: 0.1,
                 }}
-              >
-        
-              </motion.div>
+              ></motion.div>
             </Card.Body>
           </Card>
 
           <Card className="topbrandcard">
             <a href="/BurgmanEx">
-               <motion.div
-                initial={{ x: 100, opacity: 0 }}
+              <motion.div
+                 initial={{ x: -50, opacity: 0.2 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{
-                  delay: 0.3,
-                  x: { type: "spring", stiffness: 60 },
+                  delay: 0.8,
+                  x: { type: "spring", stiffness: 20 },
                   opacity: { duration: 0.7 },
                   ease: "easeIn",
                   duration: 0.1,
                 }}
               >
-              <Card.Img variant="top" id="newaccimagespot" src={burgmanbrown} />
+                <Card.Img
+                  variant="top"
+                  id="newaccimagespot"
+                  src={burgmanbrown}
+                />
               </motion.div>
             </a>
             <Card.Body>
-               <motion.div
-                initial={{ x: -20, opacity: 0 }}
+              <motion.div
+                initial={{ x: -50, opacity: 0.2 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{
-                  delay: 0.4,
-                  x: { type: "spring", stiffness: 60 },
+                  delay: 0.8,
+                  x: { type: "spring", stiffness: 20 },
                   opacity: { duration: 0.7 },
                   ease: "easeIn",
                   duration: 0.1,
                 }}
               >
-              <Card.Title>Burgman Ex Bleutooth Top Edition</Card.Title>
-              <p>Rs 1,52,000/-</p>
+                <Card.Title>Burgman Ex Bleutooth Top Edition</Card.Title>
+                <p>Rs 1,52,000/-</p>
               </motion.div>
 
-                <motion.div
+              <motion.div
                 initial={{ y: 50, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{
@@ -545,49 +538,47 @@ function HomePage() {
                   ease: "easeIn",
                   duration: 0.1,
                 }}
-              >
-            
-              </motion.div>
+              ></motion.div>
             </Card.Body>
           </Card>
 
           <Card className="topbrandcard">
             <a href="/BurgBT">
-             <motion.div
-                initial={{ x: 100, opacity: 0 }}
+              <motion.div
+                initial={{ x: -50, opacity: 0.2 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{
-                  delay: 0.3,
-                  x: { type: "spring", stiffness: 60 },
+                  delay: 0.8,
+                  x: { type: "spring", stiffness: 20 },
                   opacity: { duration: 0.7 },
                   ease: "easeIn",
                   duration: 0.1,
                 }}
               >
-              <Card.Img
-                variant="top"
-                id="newaccimagespot"
-                src={burgmangreenbt}
-              />
+                <Card.Img
+                  variant="top"
+                  id="newaccimagespot"
+                  src={burgmangreenbt}
+                />
               </motion.div>
             </a>
             <Card.Body>
-                <motion.div
-                initial={{ x: -20, opacity: 0 }}
+              <motion.div
+                initial={{ x: -50, opacity: 0.2 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{
-                  delay: 0.4,
-                  x: { type: "spring", stiffness: 60 },
+                  delay: 0.8,
+                  x: { type: "spring", stiffness: 20 },
                   opacity: { duration: 0.7 },
                   ease: "easeIn",
                   duration: 0.1,
                 }}
               >
-              <Card.Title>Burgman Bleutooth Edition</Card.Title>
-              <p>Rs 1,35,000/-</p>
+                <Card.Title>Burgman Bleutooth Edition</Card.Title>
+                <p>Rs 1,35,000/-</p>
               </motion.div>
 
-                  <motion.div
+              <motion.div
                 initial={{ y: 50, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{
@@ -597,26 +588,24 @@ function HomePage() {
                   ease: "easeIn",
                   duration: 0.1,
                 }}
-              >
-                
-              </motion.div>
+              ></motion.div>
             </Card.Body>
           </Card>
         </Carousel2>
-         <motion.div
-                initial={{ x: -30, opacity: 0 }}
-                whileInView={{ x: 0, opacity: 1 }}
-                transition={{
-                  delay: 0.3,
-                  x: { type: "spring", stiffness: 60 },
-                  opacity: { duration: 0.7 },
-                  ease: "easeIn",
-                  duration: 0.1,
-                }}
-              >
-        <Button className="mt-4 mb-4" variant="outline-primary">
-          More
-        </Button>
+        <motion.div
+          initial={{ x: -30, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{
+            delay: 0.3,
+            x: { type: "spring", stiffness: 60 },
+            opacity: { duration: 0.7 },
+            ease: "easeIn",
+            duration: 0.1,
+          }}
+        >
+          <Button className="mt-4 mb-4" variant="outline-primary">
+            More
+          </Button>
         </motion.div>
       </div>
 
@@ -639,9 +628,7 @@ function HomePage() {
             <Card.Body>
               <Card.Title>Yamaha Aerox 155</Card.Title>
               <p>Rs 1,25,000/-</p>
-              <Link to="/AccessBTBlue">
-                
-              </Link>
+              <Link to="/AccessBTBlue"></Link>
             </Card.Body>
           </Card>
 
@@ -658,7 +645,6 @@ function HomePage() {
             <Card.Body>
               <Card.Title>Access Special Edition Disc Break</Card.Title>
               <p>Rs 1,20,000/-</p>
-             
             </Card.Body>
           </Card>
 
@@ -675,7 +661,6 @@ function HomePage() {
             <Card.Body>
               <Card.Title>Access Drum Break Edition</Card.Title>
               <p>Rs 1,05,000/-</p>
-             
             </Card.Body>
           </Card>
 
@@ -684,7 +669,6 @@ function HomePage() {
             <Card.Body>
               <Card.Title>Burgman Ex Bleutooth Top Edition</Card.Title>
               <p>Rs 1,52,000/-</p>
-              
             </Card.Body>
           </Card>
 
@@ -693,7 +677,6 @@ function HomePage() {
             <Card.Body>
               <Card.Title>Burgman Bleutooth Edition</Card.Title>
               <p>Rs 1,35,000/-</p>
-             
             </Card.Body>
           </Card>
 
@@ -706,7 +689,6 @@ function HomePage() {
             <Card.Body>
               <Card.Title>Burgman Non Bleutooth Edition</Card.Title>
               <p>Rs 1,30,000/-</p>
-              
             </Card.Body>
           </Card>
         </Carousel2>
@@ -716,16 +698,29 @@ function HomePage() {
       </div>
 
       {/* Banner SECTION*/}
-      <div className="mt-2 mb-3 cardgrove">
-        <Image src={bannerburgmanimg} className="bannerfirstsection" />
-        <Image src={bannerblkburgman} className="bannerfirstsection" />
-        <Image src={banneravenis} className="bannerfirstsection" />
-      </div>
+       <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 0.9,
+                delay: 0.7,
+                ease: [0, 0.4, 0.2, 1.01],
+              }}
+       >
+      <Row xs={12} md={8}
+     className="p-4"
+      >
+     
+             <Image src={banneracessimg} />
+
+      </Row>
+    </motion.div>
+     
 
       {/* brandlogo SECTION*/}
       <div className="bg-light burgmanbikesection cardgrove">
-        <motion.h1 
-         initial={{ y: -20, opacity: 0 }}
+        <motion.h1
+          initial={{ y: -20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{
             delay: 0.4,
@@ -734,160 +729,163 @@ function HomePage() {
             ease: "easeIn",
             duration: 0.1,
           }}
-        className="ms-2 mt-2 mb-2">Browse Bikes Brand</motion.h1>
+          className="ms-2 mt-2 mb-2"
+        >
+          Browse Bikes Brand
+        </motion.h1>
 
-  <motion.div
-                initial={{ x: 10, opacity: 0 }}
-                whileInView={{ x: 0, opacity: 1 }}
-                transition={{
-                  delay: 0.8,
-                  x: { type: "spring", stiffness: 60 },
-                  opacity: { duration: 0.7 },
-                  ease: "easeIn",
-                  duration: 0.1,
-                }}
-              >
-        <Table striped="columns" className="logotable " border={"3px"}>
-          <tbody className="cardgrove">
-            <tr>
-              <td style={{ width: "20px" }}>
-                <a href="/AccessBT">
-                  <Image src={suzukilogo} className="brandlogocenter" />
-                </a>
-              </td>
-              <td style={{ width: "20px" }}>
-                {" "}
-                <a href="/AccessBTBlue">
-                  <Image src={tvslogo} className="brandlogocenter" />
-                </a>
-              </td>
-              <td style={{ width: "20px" }}>
-                {" "}
-                <a href="/AccessBTBlue">
-                  <Image src={royalelogo} className="brandlogocenter" />
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td style={{ width: "20px" }}>
-                <a href="/AccessBTBlue">
-                  <Image src={honda} className="brandlogocenter" />
-                </a>
-              </td>
-              <td style={{ width: "20px" }}>
-                {" "}
-                <a href="/AccessBTBlue">
-                  <Image src={hero} className="brandlogocenter" />
-                </a>
-              </td>
-              <td style={{ width: "20px" }}>
-                {" "}
-                <a href="/AccessBTBlue">
-                  <Image src={kawasaki} className="brandlogocenter" />
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td style={{ width: "20px" }}>
-                <a href="/AccessBTBlue">
-                  <Image src={yamaha} className="brandlogocenter" />
-                </a>
-              </td>
-              <td style={{ width: "20px" }}>
-                {" "}
-                <a href="/AccessBTBlue">
-                  <Image src={vespa} className="brandlogocenter" />
-                </a>
-              </td>
-              <td style={{ width: "20px" }}>
-                {" "}
-                <a href="/AccessBTBlue">
-                  <Image src={ktm} className="brandlogocenter" />
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <td colSpan={5}>
-                <Button
-                  onClick={() => setOpen(!open)}
-                  aria-controls="example-collapse-text"
-                  aria-expanded={open}
-                  variant="outline-dark"
-                  className="btnbrandlogo mb-2 mt-2"
-                >
-                  Veiw more
-                </Button>
-                <Collapse in={open}>
-                  <Table striped="columns">
-                    <tbody border="3px" className="cardgrove">
-                      <tr>
-                        <td style={{ width: "20px" }}>
-                          <a href="/AccessBTBlue">
-                            <Image src={tripuh} className="brandlogocenter" />
-                          </a>
-                        </td>
-                        <td style={{ width: "20px" }}>
-                          {" "}
-                          <a href="/AccessBTBlue">
-                            <Image src={bmw} className="brandlogocenter" />
-                          </a>
-                        </td>
-                        <td style={{ width: "20px" }}>
-                          {" "}
-                          <a href="/AccessBTBlue">
-                            <Image src={R15} className="brandlogocenter" />
-                          </a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style={{ width: "20px" }}>
-                          <a href="/AccessBTBlue">
-                            <Image src={bajaj} className="brandlogocenter" />
-                          </a>
-                        </td>
-                        <td style={{ width: "20px" }}>
-                          {" "}
-                          <a href="/AccessBTBlue">
-                            <Image
-                              src={harleydavidson}
-                              className="brandlogocenter"
-                            />
-                          </a>
-                        </td>
-                        <td style={{ width: "20px" }}>
-                          {" "}
-                          <a href="/AccessBTBlue">
-                            <Image src={bajaj} className="brandlogocenter" />
-                          </a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style={{ width: "20px" }}>
-                          <a href="/AccessBTBlue">
-                            <Image src={bajaj} className="brandlogocenter" />
-                          </a>
-                        </td>
-                        <td style={{ width: "20px" }}>
-                          {" "}
-                          <a href="/AccessBTBlue">
-                            <Image src={bajaj} className="brandlogocenter" />
-                          </a>
-                        </td>
-                        <td style={{ width: "20px" }}>
-                          {" "}
-                          <a href="/AccessBTBlue">
-                            <Image src={bajaj} className="brandlogocenter" />
-                          </a>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </Table>
-                </Collapse>
-              </td>
-            </tr>
-          </tbody>
-        </Table>
-        </motion.div> 
+        <motion.div
+          initial={{ x: 10, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{
+            delay: 0.8,
+            x: { type: "spring", stiffness: 60 },
+            opacity: { duration: 0.7 },
+            ease: "easeIn",
+            duration: 0.1,
+          }}
+        >
+          <Table striped="columns" className="logotable " border={"3px"}>
+            <tbody className="cardgrove">
+              <tr>
+                <td style={{ width: "20px" }}>
+                  <a href="/AccessBT">
+                    <Image src={suzukilogo} className="brandlogocenter" />
+                  </a>
+                </td>
+                <td style={{ width: "20px" }}>
+                  {" "}
+                  <a href="/AccessBTBlue">
+                    <Image src={tvslogo} className="brandlogocenter" />
+                  </a>
+                </td>
+                <td style={{ width: "20px" }}>
+                  {" "}
+                  <a href="/AccessBTBlue">
+                    <Image src={royalelogo} className="brandlogocenter" />
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td style={{ width: "20px" }}>
+                  <a href="/AccessBTBlue">
+                    <Image src={honda} className="brandlogocenter" />
+                  </a>
+                </td>
+                <td style={{ width: "20px" }}>
+                  {" "}
+                  <a href="/AccessBTBlue">
+                    <Image src={hero} className="brandlogocenter" />
+                  </a>
+                </td>
+                <td style={{ width: "20px" }}>
+                  {" "}
+                  <a href="/AccessBTBlue">
+                    <Image src={kawasaki} className="brandlogocenter" />
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td style={{ width: "20px" }}>
+                  <a href="/AccessBTBlue">
+                    <Image src={yamaha} className="brandlogocenter" />
+                  </a>
+                </td>
+                <td style={{ width: "20px" }}>
+                  {" "}
+                  <a href="/AccessBTBlue">
+                    <Image src={vespa} className="brandlogocenter" />
+                  </a>
+                </td>
+                <td style={{ width: "20px" }}>
+                  {" "}
+                  <a href="/AccessBTBlue">
+                    <Image src={ktm} className="brandlogocenter" />
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td colSpan={5}>
+                  <Button
+                    onClick={() => setOpen(!open)}
+                    aria-controls="example-collapse-text"
+                    aria-expanded={open}
+                    variant="outline-dark"
+                    className="btnbrandlogo mb-2 mt-2"
+                  >
+                    Veiw more
+                  </Button>
+                  <Collapse in={open}>
+                    <Table striped="columns">
+                      <tbody border="3px" className="cardgrove">
+                        <tr>
+                          <td style={{ width: "20px" }}>
+                            <a href="/AccessBTBlue">
+                              <Image src={tripuh} className="brandlogocenter" />
+                            </a>
+                          </td>
+                          <td style={{ width: "20px" }}>
+                            {" "}
+                            <a href="/AccessBTBlue">
+                              <Image src={bmw} className="brandlogocenter" />
+                            </a>
+                          </td>
+                          <td style={{ width: "20px" }}>
+                            {" "}
+                            <a href="/AccessBTBlue">
+                              <Image src={R15} className="brandlogocenter" />
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style={{ width: "20px" }}>
+                            <a href="/AccessBTBlue">
+                              <Image src={bajaj} className="brandlogocenter" />
+                            </a>
+                          </td>
+                          <td style={{ width: "20px" }}>
+                            {" "}
+                            <a href="/AccessBTBlue">
+                              <Image
+                                src={harleydavidson}
+                                className="brandlogocenter"
+                              />
+                            </a>
+                          </td>
+                          <td style={{ width: "20px" }}>
+                            {" "}
+                            <a href="/AccessBTBlue">
+                              <Image src={bajaj} className="brandlogocenter" />
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style={{ width: "20px" }}>
+                            <a href="/AccessBTBlue">
+                              <Image src={bajaj} className="brandlogocenter" />
+                            </a>
+                          </td>
+                          <td style={{ width: "20px" }}>
+                            {" "}
+                            <a href="/AccessBTBlue">
+                              <Image src={bajaj} className="brandlogocenter" />
+                            </a>
+                          </td>
+                          <td style={{ width: "20px" }}>
+                            {" "}
+                            <a href="/AccessBTBlue">
+                              <Image src={bajaj} className="brandlogocenter" />
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </Table>
+                  </Collapse>
+                </td>
+              </tr>
+            </tbody>
+          </Table>
+        </motion.div>
       </div>
 
       {/* SPORTS BIKE SECTION*/}
@@ -915,7 +913,6 @@ function HomePage() {
             <Card.Body>
               <Card.Title>Access Bleutooth Edition Disc Break</Card.Title>
               <p>Rs 1,25,000/-</p>
-             
             </Card.Body>
           </Card>
 
@@ -932,7 +929,6 @@ function HomePage() {
             <Card.Body>
               <Card.Title>Access Special Edition Disc Break</Card.Title>
               <p>Rs 1,20,000/-</p>
-              
             </Card.Body>
           </Card>
 
@@ -949,7 +945,6 @@ function HomePage() {
             <Card.Body>
               <Card.Title>Access Drum Break Edition</Card.Title>
               <p>Rs 1,05,000/-</p>
-              
             </Card.Body>
           </Card>
 
@@ -958,7 +953,6 @@ function HomePage() {
             <Card.Body>
               <Card.Title>Burgman Ex Bleutooth Top Edition</Card.Title>
               <p>Rs 1,52,000/-</p>
-              
             </Card.Body>
           </Card>
 
@@ -967,7 +961,6 @@ function HomePage() {
             <Card.Body>
               <Card.Title>Burgman Bleutooth Edition</Card.Title>
               <p>Rs 1,35,000/-</p>
-             
             </Card.Body>
           </Card>
 
@@ -980,7 +973,6 @@ function HomePage() {
             <Card.Body>
               <Card.Title>Burgman Non Bleutooth Edition</Card.Title>
               <p>Rs 1,30,000/-</p>
-              
             </Card.Body>
           </Card>
         </Carousel2>
@@ -989,21 +981,21 @@ function HomePage() {
         </Button>
       </div>
 
-  <ReactPlayer
-          url={avenisvideo}
-          playing={true}
-          loop={true}
-          controls={false}
-          muted={true}
-          progressInterval={8000}
-          className="react-player homevideo "
-          auotplay
-        />
+      <ReactPlayer
+        url={avenisvideo}
+        playing={true}
+        loop={true}
+        controls={false}
+        muted={true}
+        progressInterval={8000}
+        className="react-player homevideo "
+        auotplay
+      />
 
       {/* testimonial*/}
       <div className="bg-light testimonialsection cardgrove">
-        <motion.h1 
-         initial={{ y: 40, opacity: 0 }}
+        <motion.h1
+          initial={{ y: 40, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{
             delay: 0.4,
@@ -1012,23 +1004,26 @@ function HomePage() {
             ease: "easeIn",
             duration: 0.1,
           }}
-        className="text-center mb-4 mt-4 reviewfont">
+          className="text-center mb-4 mt-4 reviewfont"
+        >
           <span style={{ color: "#ffdb0f" }}>******</span>CUSTOMER REVIEW
           <span style={{ color: "#ffdb0f" }}>******</span>
         </motion.h1>
 
         <Carousel2 responsive={responsive}>
-          <motion.Card 
-           initial={{ x: 40, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{
-            delay: 0.4,
-            x: { type: "spring", stiffness: 60 },
-            opacity: { duration: 0.4 },
-            ease: "easeIn",
-            duration: 0.1,
-          }}
-          className="Reveiwcard " id="newaccimagespot">
+          <motion.Card
+            initial={{ x: 40, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{
+              delay: 0.4,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 0.4 },
+              ease: "easeIn",
+              duration: 0.1,
+            }}
+            className="Reveiwcard "
+            id="newaccimagespot"
+          >
             <Card.Img
               variant="top"
               className="reviewimages"
@@ -1120,17 +1115,18 @@ function HomePage() {
       {/*HAPPY CUSTOMERS*/}
       <div className="bg-light burgmanbikesection cardgrove">
         <div>
-          <motion.h1 
-               initial={{ y: 40, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{
-            delay: 0.4,
-            x: { type: "spring", stiffness: 60 },
-            opacity: { duration: 0.4 },
-            ease: "easeIn",
-            duration: 0.1,
-          }}
-          className="text-center mb-5 mt-2 reviewfont">
+          <motion.h1
+            initial={{ y: 40, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              delay: 0.4,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 0.4 },
+              ease: "easeIn",
+              duration: 0.1,
+            }}
+            className="text-center mb-5 mt-2 reviewfont"
+          >
             <span style={{ color: "#ffdb0f" }}>******</span>HAPPY CUSTOMERS
             <span style={{ color: "#ffdb0f" }}>******</span>
             <br></br>
@@ -1142,201 +1138,199 @@ function HomePage() {
           <Row className="">
             <Col lg={4} xs={12} md={8} className="mb-2">
               {" "}
-              <Card 
-              className="">
+              <Card className="">
                 <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{
-                duration: 0.9,
-                delay: 0.4,
-                ease: [0, 0.40, 0.2, 1.01],
-            }}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{
+                    duration: 0.9,
+                    delay: 0.4,
+                    ease: [0, 0.4, 0.2, 1.01],
+                  }}
                 >
-<Card.Img
-                  variant="top"
-                  className="cardgrove"
-                  src={happycs5}
-                  fluid
-                  style={{ height: "370px" }}
-                />
-                </motion.div>
-                
-              </Card>
-            </Col>
-            <Col lg={4} xs={12} md={8} className="mb-2">
-              {" "}
-              <Card className="">
-                     <motion.div
-                       initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{
-                duration: 0.9,
-                delay: 0.4,
-                ease: [0, 0.40, 0.2, 1.01],
-            }}
-                >
-                <Card.Img
-                  variant="top"
-                  className="cardgrove"
-                  src={happycs5}
-                  fluid
-                  style={{ height: "370px" }}
-                />
+                  <Card.Img
+                    variant="top"
+                    className="cardgrove"
+                    src={happycs5}
+                    fluid
+                    style={{ height: "370px" }}
+                  />
                 </motion.div>
               </Card>
             </Col>
             <Col lg={4} xs={12} md={8} className="mb-2">
               {" "}
               <Card className="">
-                        <motion.div
-               initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{
-                duration: 0.9,
-                delay: 0.4,
-                ease: [0, 0.40, 0.2, 1.01],
-            }}
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{
+                    duration: 0.9,
+                    delay: 0.4,
+                    ease: [0, 0.4, 0.2, 1.01],
+                  }}
                 >
-                <Card.Img
-                  variant="top"
-                  className="cardgrove"
-                  src={happycs1}
-                  fluid
-                  style={{ height: "370px" }}
-                />
+                  <Card.Img
+                    variant="top"
+                    className="cardgrove"
+                    src={happycs5}
+                    fluid
+                    style={{ height: "370px" }}
+                  />
                 </motion.div>
               </Card>
             </Col>
             <Col lg={4} xs={12} md={8} className="mb-2">
               {" "}
               <Card className="">
-                        <motion.div
-           initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{
-                duration: 0.9,
-                delay: 0.4,
-                ease: [0, 0.40, 0.2, 1.01],
-            }}
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{
+                    duration: 0.9,
+                    delay: 0.4,
+                    ease: [0, 0.4, 0.2, 1.01],
+                  }}
                 >
-                <Card.Img
-                  variant="top"
-                  className="cardgrove"
-                  src={happycs2}
-                  fluid
-                  style={{ height: "370px" }}
-                />
+                  <Card.Img
+                    variant="top"
+                    className="cardgrove"
+                    src={happycs1}
+                    fluid
+                    style={{ height: "370px" }}
+                  />
                 </motion.div>
               </Card>
             </Col>
             <Col lg={4} xs={12} md={8} className="mb-2">
               {" "}
               <Card className="">
-                            <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{
-                duration: 0.9,
-                delay: 0.4,
-                ease: [0, 0.40, 0.2, 1.01],
-            }}
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{
+                    duration: 0.9,
+                    delay: 0.4,
+                    ease: [0, 0.4, 0.2, 1.01],
+                  }}
                 >
-                <Card.Img
-                  variant="top"
-                  className="cardgrove"
-                  src={happycs3}
-                  fluid
-                  style={{ height: "370px" }}
-                />
+                  <Card.Img
+                    variant="top"
+                    className="cardgrove"
+                    src={happycs2}
+                    fluid
+                    style={{ height: "370px" }}
+                  />
                 </motion.div>
               </Card>
             </Col>
             <Col lg={4} xs={12} md={8} className="mb-2">
               {" "}
               <Card className="">
-                            <motion.div
-             initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{
-                duration: 0.9,
-                delay: 0.4,
-                ease: [0, 0.40, 0.2, 1.01],
-            }}
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{
+                    duration: 0.9,
+                    delay: 0.4,
+                    ease: [0, 0.4, 0.2, 1.01],
+                  }}
                 >
-                <Card.Img
-                  variant="top"
-                  className="cardgrove"
-                  src={happycs4}
-                  fluid
-                  style={{ height: "370px" }}
-                />
+                  <Card.Img
+                    variant="top"
+                    className="cardgrove"
+                    src={happycs3}
+                    fluid
+                    style={{ height: "370px" }}
+                  />
                 </motion.div>
               </Card>
             </Col>
             <Col lg={4} xs={12} md={8} className="mb-2">
               {" "}
               <Card className="">
-                            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{
-                duration: 0.9,
-                delay: 0.4,
-                ease: [0, 0.40, 0.2, 1.01],
-            }}
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{
+                    duration: 0.9,
+                    delay: 0.4,
+                    ease: [0, 0.4, 0.2, 1.01],
+                  }}
                 >
-                <Card.Img
-                  variant="top"
-                  className="cardgrove"
-                  src={happycs6}
-                  fluid
-                  style={{ height: "370px" }}
-                />
+                  <Card.Img
+                    variant="top"
+                    className="cardgrove"
+                    src={happycs4}
+                    fluid
+                    style={{ height: "370px" }}
+                  />
                 </motion.div>
               </Card>
             </Col>
             <Col lg={4} xs={12} md={8} className="mb-2">
               {" "}
               <Card className="">
-                            <motion.div
-             initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{
-                duration: 0.9,
-                delay: 0.4,
-                ease: [0, 0.40, 0.2, 1.01],
-            }}
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{
+                    duration: 0.9,
+                    delay: 0.4,
+                    ease: [0, 0.4, 0.2, 1.01],
+                  }}
                 >
-                <Card.Img
-                  variant="top"
-                  className="cardgrove"
-                  src={happycs7}
-                  fluid
-                  style={{ height: "370px" }}
-                />
+                  <Card.Img
+                    variant="top"
+                    className="cardgrove"
+                    src={happycs6}
+                    fluid
+                    style={{ height: "370px" }}
+                  />
                 </motion.div>
               </Card>
             </Col>
             <Col lg={4} xs={12} md={8} className="mb-2">
               {" "}
               <Card className="">
-                              <motion.div
-             initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{
-                duration: 0.9,
-                delay: 0.4,
-                ease: [0, 0.40, 0.2, 1.01],
-            }}
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{
+                    duration: 0.9,
+                    delay: 0.4,
+                    ease: [0, 0.4, 0.2, 1.01],
+                  }}
                 >
-                <Card.Img
-                  variant="top"
-                  className="cardgrove"
-                  src={happycs8}
-                  fluid
-                  style={{ height: "370px" }}
-                />
+                  <Card.Img
+                    variant="top"
+                    className="cardgrove"
+                    src={happycs7}
+                    fluid
+                    style={{ height: "370px" }}
+                  />
+                </motion.div>
+              </Card>
+            </Col>
+            <Col lg={4} xs={12} md={8} className="mb-2">
+              {" "}
+              <Card className="">
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{
+                    duration: 0.9,
+                    delay: 0.4,
+                    ease: [0, 0.4, 0.2, 1.01],
+                  }}
+                >
+                  <Card.Img
+                    variant="top"
+                    className="cardgrove"
+                    src={happycs8}
+                    fluid
+                    style={{ height: "370px" }}
+                  />
                 </motion.div>
               </Card>
             </Col>
@@ -1344,16 +1338,16 @@ function HomePage() {
         </Container>
       </div>
 
-        <ReactPlayer
-          url={burgmanbannervideo}
-          playing={true}
-          loop={true}
-          controls={false}
-          muted={true}
-          progressInterval={8000}
-          className="react-player homevideo "
-          auotplay
-        />
+      <ReactPlayer
+        url={burgmanbannervideo}
+        playing={true}
+        loop={true}
+        controls={false}
+        muted={true}
+        progressInterval={8000}
+        className="react-player homevideo "
+        auotplay
+      />
 
       <div className="p-3">
         <h2 className="text-light">Suzuki Access 125 FAQs</h2>

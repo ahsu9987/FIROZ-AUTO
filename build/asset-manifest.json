@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.bb4e26c4.css",
-    "main.js": "/static/js/main.f08a086b.js",
+    "main.css": "/static/css/main.6d493804.css",
+    "main.js": "/static/js/main.9d08a99b.js",
     "reactPlayerYouTube.js": "/static/js/reactPlayerYouTube.e9c2c1cc.chunk.js",
     "reactPlayerSoundCloud.js": "/static/js/reactPlayerSoundCloud.a2d55c7d.chunk.js",
     "reactPlayerVimeo.js": "/static/js/reactPlayerVimeo.aa2da3dd.chunk.js",
@@ -66,6 +66,7 @@
     "static/media/burgmanexbrown.png": "/static/media/burgmanexbrown.74a4b530886f7db021df.png",
     "static/media/AccDrumWhite.png": "/static/media/AccDrumWhite.60ec4410eab0e8b80757.png",
     "static/media/gixxersfsilverred.png": "/static/media/gixxersfsilverred.3c23ff423a4fe19d94d1.png",
+    "static/media/bannerimgaccess.jpeg": "/static/media/bannerimgaccess.efa52b4f4dd4978d1ce8.jpeg",
     "static/media/Avenisblk.png": "/static/media/Avenisblk.65c53a1eaec74290da22.png",
     "static/media/burgmanbtblkred.png": "/static/media/burgmanbtblkred.81c3d828a9db67f80d46.png",
     "static/media/burgmangray.png": "/static/media/burgmangray.ea227d095af3d6bfd433.png",
@@ -84,16 +85,12 @@
     "static/media/accwhite.png": "/static/media/accwhite.7fb6964d3f3bb275049b.png",
     "static/media/aeroxwhitenew.jpeg": "/static/media/aeroxwhitenew.e1e41af3f3a06b63d710.jpeg",
     "static/media/aeroxgray.jpeg": "/static/media/aeroxgray.41e53ae73da1405914bf.jpeg",
-    "static/media/banneravenis.jpeg": "/static/media/banneravenis.431ff1e0305e4a13481e.jpeg",
-    "static/media/bannerburgmanimg.jpg": "/static/media/bannerburgmanimg.f5fb7a7a5604f428e7a8.jpg",
     "static/media/Avenisbllknew.png": "/static/media/Avenisbllknew.8b075caa88e08e5b48fe.png",
     "static/media/accblack.png": "/static/media/accblack.872e947b881306474137.png",
     "static/media/burgmannonbtblk.png": "/static/media/burgmannonbtblk.aaf602637cb31cf865f0.png",
     "static/media/gixxernakedblk.png": "/static/media/gixxernakedblk.9a34e244c11d0af591fd.png",
     "static/media/burgmanwhite.png": "/static/media/burgmanwhite.410b6de11934e265e55c.png",
-    "static/media/firozlogo.png": "/static/media/firozlogo.ab09483b3925c407fb07.png",
     "static/media/aeroxblk.jpeg": "/static/media/aeroxblk.fa584d0139495dcbf3ce.jpeg",
-    "static/media/bannerblkburgman.jpeg": "/static/media/bannerblkburgman.93aab64749d55aad5e7e.jpeg",
     "static/media/happycsm6.jpeg": "/static/media/happycsm6.707c7a2fa85c19d16b7c.jpeg",
     "static/media/happycsm4.jpeg": "/static/media/happycsm4.37743c7277753daa7ddd.jpeg",
     "static/media/happycsm5.jpeg": "/static/media/happycsm5.1cf892d515cf4039919b.jpeg",
@@ -112,14 +109,15 @@
     "static/media/review4.png": "/static/media/review4.b725fd1e5b19b2764414.png",
     "static/media/review6.png": "/static/media/review6.1148743ca04810bea090.png",
     "static/media/review5.png": "/static/media/review5.12dda6ddaf46417cc8fe.png",
+    "static/media/logofirozauto.jpeg": "/static/media/logofirozauto.907ad36b0811750563fb.jpeg",
     "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/R15.png": "/static/media/R15.55886a3b12c7567639c9.png",
     "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/bmwlogo.png": "/static/media/bmwlogo.f616d036b5fa7bbf0920.png",
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
-    "main.bb4e26c4.css.map": "/static/css/main.bb4e26c4.css.map",
-    "main.f08a086b.js.map": "/static/js/main.f08a086b.js.map",
+    "main.6d493804.css.map": "/static/css/main.6d493804.css.map",
+    "main.9d08a99b.js.map": "/static/js/main.9d08a99b.js.map",
     "reactPlayerYouTube.e9c2c1cc.chunk.js.map": "/static/js/reactPlayerYouTube.e9c2c1cc.chunk.js.map",
     "reactPlayerSoundCloud.a2d55c7d.chunk.js.map": "/static/js/reactPlayerSoundCloud.a2d55c7d.chunk.js.map",
     "reactPlayerVimeo.aa2da3dd.chunk.js.map": "/static/js/reactPlayerVimeo.aa2da3dd.chunk.js.map",
@@ -137,7 +135,7 @@
     "453.cc726cfe.chunk.js.map": "/static/js/453.cc726cfe.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb4e26c4.css",
-    "static/js/main.f08a086b.js"
+    "static/css/main.6d493804.css",
+    "static/js/main.9d08a99b.js"
   ]
 }

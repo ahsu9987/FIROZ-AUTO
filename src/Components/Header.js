@@ -1,10 +1,8 @@
-// import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import Form from "react-bootstrap/Form";
 import { NavLink } from "react-router-dom/cjs/react-router-dom";
-import logo from "../Pages/HomeAllimages/Alllogo/firozlogo.png";
+import logo from "../Pages/HomeAllimages/Alllogo/logofirozauto.jpeg";
 import Image from "react-bootstrap/Image";
 
 function Header() {
@@ -35,16 +33,6 @@ function Header() {
               <NavLink to="" className="me-3 topnavlink">
                 NEW
               </NavLink>
-              <Form className="d-flex">
-                <Form.Control
-                  type="search"
-                  placeholder="Search..."
-                  className="me-2"
-                  aria-label="Search"
-                />
-
-                {/* <Button variant="outline-dark">Search</Button> */}
-              </Form>
             </Nav>
           </Navbar.Collapse>
         </Container>

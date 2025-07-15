@@ -18,6 +18,8 @@
     margin-top: 70px;
 }
 .logofiroz{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     width: 60%;
     height: 60vh;
     padding-left: 50px;
@@ -50,10 +52,6 @@ width: 85%;
 }
 .logotable{
     width: 100%!important;
-}
-.bannerfirstsection{
-    width: 33%;
-    height: 390px;
 }
 .btnbrandlogo{
     padding-left: 630px;
@@ -151,10 +149,7 @@ input[type=submit]:hover {
   font-weight: bold;
   pointer-events: none;
 }
-.cardgrove{
-    border-color: #000;
-    border-style: groove;
-}
+
 .reachcolor{
  background: linear-gradient(90deg, #82f369 0%, #91cfff 40%, #ffaacc 100%);
 color: transparent;
@@ -190,7 +185,7 @@ text-fill-color: transparent;
         height: 63vh;
           display: block;
   margin: 0 auto;
-  width: 90%;
+  width: 80%;
      padding-left: 0px;
     }
     .navtxt{
@@ -211,10 +206,7 @@ text-fill-color: transparent;
     .tabledata{
             padding-left: 2px;
     }
-    .bannerfirstsection{
-        width: 33%;
-        height: 150px;
-    }
+   
     .brandlogocenter{
         display: block;
         margin-left: auto;
