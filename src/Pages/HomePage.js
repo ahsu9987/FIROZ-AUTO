@@ -63,7 +63,7 @@ import NewAeroxwhite from "./AllCollectionPages/Aerox/images/aeroxwhitenew.jpeg"
 import MyForm from "./MyForm";
 import { motion } from "framer-motion";
 import burgmanbannervideo from "../assets/burgmanbannervideo.mp4";
-// import { fadeIn } from "../MyAnimation";
+import AllAccessimg from "./AllCollectionPages/Accesspage/AllAccessimg";
 
 function HomePage() {
   const responsive = {
@@ -92,16 +92,18 @@ function HomePage() {
   return (
     <>
       {/* HOMEVIDEO*/}
-      <ReactPlayer
-        url={myvideo}
-        playing={true}
-        loop={true}
-        controls={false}
-        muted={true}
-        progressInterval={8000}
-        className="react-player homevideo "
-        auotplay
-      />
+      <div>
+        <ReactPlayer
+          url={myvideo}
+          playing={true}
+          loop={true}
+          controls={false}
+          muted={true}
+          progressInterval={8000}
+          className="react-player homevideo "
+          auotplay
+        />
+      </div>
 
       {/* ABOUT US */}
       <div>
@@ -334,19 +336,23 @@ function HomePage() {
         </motion.h2>
 
         <Carousel2 responsive={responsive}>
+
           <Card className="topbrandcard ">
-            <Link to="/AccessBT">
+            <a href="/AccessBT">
+
+            
               <motion.div
                 initial={{ x: 100, opacity: 0.1 }}
-                whileInView={{ x: 0.100, opacity: 1}}
+                whileInView={{ x: 0.1, opacity: 1 }}
                 transition={{
                   delay: 0.9,
-                  x: { type: "spring", stiffness: 15},
+                  x: { type: "spring", stiffness: 15 },
                   opacity: { duration: 0.9 },
                   ease: "easeIn",
                   duration: 0.1,
                 }}
               >
+
                 <Card.Img
                   variant="top"
                   id="newaccimagespot"
@@ -354,8 +360,10 @@ function HomePage() {
                   fluid
                   style={{ cursor: "pointer" }}
                 />
+
               </motion.div>
-            </Link>
+                                          </a>
+
 
             <Card.Body>
               <motion.div
@@ -372,241 +380,70 @@ function HomePage() {
                 <Card.Title>Access Bleutooth Edition Disc Break</Card.Title>
                 <p>Rs 1,25,000/-</p>
               </motion.div>
-              <Link to="/AccessBT">
-                <motion.div
-                  initial={{ y: 50, opacity: 0 }}
-                  whileInView={{ y: 0, opacity: 1 }}
-                  transition={{
-                    delay: 0.4,
-                    x: { type: "spring", stiffness: 60 },
-                    opacity: { duration: 0.7 },
-                    ease: "easeIn",
-                    duration: 0.1,
-                  }}
-                ></motion.div>
-              </Link>
             </Card.Body>
           </Card>
 
+
           <Card className="topbrandcard">
             <a href="/AccSE">
-              <motion.div
-                initial={{ x: -50, opacity: 0.2 }}
-                whileInView={{ x: 0, opacity: 1 }}
-                transition={{
-                  delay: 0.9,
-                  x: { type: "spring", stiffness: 10 },
-                  opacity: { duration: 0.7 },
-                  ease: "easeIn",
-                  duration: 0.1,
-                }}
-              >
-                <Card.Img
-                  variant="top"
-                  id="newaccimagespot"
-                  src={Accesblack}
-                  fluid
-                  style={{ cursor: "pointer" }}
-                />
-              </motion.div>
+              <Card.Img
+                variant="top"
+                id="newaccimagespot"
+                src={Accesblack}
+                fluid
+                style={{ cursor: "pointer" }}
+              />
             </a>
             <Card.Body>
-              <motion.div
-                 initial={{ x: -50, opacity: 0.2 }}
-                whileInView={{ x: 0, opacity: 1 }}
-                transition={{
-                  delay: 0.1,
-                  x: { type: "spring", stiffness: 5 },
-                  opacity: { duration: 0.7 },
-                  ease: "easeIn",
-                  duration: 0.9,
-                }}
-              >
-                <Card.Title>Access Special Edition Disc Break</Card.Title>
-                <p>Rs 1,20,000/-</p>
-              </motion.div>
-
-              <motion.div
-                initial={{ y: 50, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                transition={{
-                  delay: 0.4,
-                  x: { type: "spring", stiffness: 60 },
-                  opacity: { duration: 0.7 },
-                  ease: "easeIn",
-                  duration: 0.1,
-                }}
-              ></motion.div>
+              <Card.Title>Access Special Edition Disc Break</Card.Title>
+              <p>Rs 1,20,000/-</p>
             </Card.Body>
           </Card>
 
           <Card className="topbrandcard">
             <a href="/AccDrum">
-              <motion.div
-                initial={{ x: -50, opacity: 0.2 }}
-                whileInView={{ x: 0, opacity: 1 }}
-                transition={{
-                  delay: 0.8,
-                  x: { type: "spring", stiffness: 20 },
-                  opacity: { duration: 0.7 },
-                  ease: "easeIn",
-                  duration: 0.1,
-                }}
-              >
-                <Card.Img
-                  variant="top"
-                  id="newaccimagespot"
-                  src={Accessdrumblue}
-                  fluid
-                  style={{ cursor: "pointer" }}
-                />
-              </motion.div>
+              <Card.Img
+                variant="top"
+                id="newaccimagespot"
+                src={Accessdrumblue}
+                fluid
+                style={{ cursor: "pointer" }}
+              />
             </a>
             <Card.Body>
-              <motion.div
-                initial={{ x: -50, opacity: 0.2 }}
-                whileInView={{ x: 0, opacity: 1 }}
-                transition={{
-                  delay: 0.2,
-                  x: { type: "spring", stiffness: 30},
-                  opacity: { duration: 0.4 },
-                  ease: "easeIn",
-                  duration: 0.2,
-                }}
-              >
-                <Card.Title>Access Drum Break Edition</Card.Title>
-                <p>Rs 1,05,000/-</p>
-              </motion.div>
-
-              <motion.div
-                initial={{ y: 50, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                transition={{
-                  delay: 0.4,
-                  x: { type: "spring", stiffness: 60 },
-                  opacity: { duration: 0.7 },
-                  ease: "easeIn",
-                  duration: 0.1,
-                }}
-              ></motion.div>
+              <Card.Title>Access Drum Break Edition</Card.Title>
+              <p>Rs 1,05,000/-</p>
             </Card.Body>
           </Card>
 
           <Card className="topbrandcard">
             <a href="/BurgmanEx">
-              <motion.div
-                 initial={{ x: -50, opacity: 0.2 }}
-                whileInView={{ x: 0, opacity: 1 }}
-                transition={{
-                  delay: 0.8,
-                  x: { type: "spring", stiffness: 20 },
-                  opacity: { duration: 0.7 },
-                  ease: "easeIn",
-                  duration: 0.1,
-                }}
-              >
-                <Card.Img
-                  variant="top"
-                  id="newaccimagespot"
-                  src={burgmanbrown}
-                />
-              </motion.div>
+              <Card.Img variant="top" id="newaccimagespot" src={burgmanbrown} />
             </a>
             <Card.Body>
-              <motion.div
-                initial={{ x: -50, opacity: 0.2 }}
-                whileInView={{ x: 0, opacity: 1 }}
-                transition={{
-                  delay: 0.8,
-                  x: { type: "spring", stiffness: 20 },
-                  opacity: { duration: 0.7 },
-                  ease: "easeIn",
-                  duration: 0.1,
-                }}
-              >
-                <Card.Title>Burgman Ex Bleutooth Top Edition</Card.Title>
-                <p>Rs 1,52,000/-</p>
-              </motion.div>
-
-              <motion.div
-                initial={{ y: 50, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                transition={{
-                  delay: 0.4,
-                  x: { type: "spring", stiffness: 60 },
-                  opacity: { duration: 0.7 },
-                  ease: "easeIn",
-                  duration: 0.1,
-                }}
-              ></motion.div>
+              <Card.Title>Burgman Ex Bleutooth Top Edition</Card.Title>
+              <p>Rs 1,52,000/-</p>
             </Card.Body>
           </Card>
 
           <Card className="topbrandcard">
             <a href="/BurgBT">
-              <motion.div
-                initial={{ x: -50, opacity: 0.2 }}
-                whileInView={{ x: 0, opacity: 1 }}
-                transition={{
-                  delay: 0.8,
-                  x: { type: "spring", stiffness: 20 },
-                  opacity: { duration: 0.7 },
-                  ease: "easeIn",
-                  duration: 0.1,
-                }}
-              >
-                <Card.Img
-                  variant="top"
-                  id="newaccimagespot"
-                  src={burgmangreenbt}
-                />
-              </motion.div>
+              <Card.Img
+                variant="top"
+                id="newaccimagespot"
+                src={burgmangreenbt}
+              />
             </a>
             <Card.Body>
-              <motion.div
-                initial={{ x: -50, opacity: 0.2 }}
-                whileInView={{ x: 0, opacity: 1 }}
-                transition={{
-                  delay: 0.8,
-                  x: { type: "spring", stiffness: 20 },
-                  opacity: { duration: 0.7 },
-                  ease: "easeIn",
-                  duration: 0.1,
-                }}
-              >
-                <Card.Title>Burgman Bleutooth Edition</Card.Title>
-                <p>Rs 1,35,000/-</p>
-              </motion.div>
-
-              <motion.div
-                initial={{ y: 50, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                transition={{
-                  delay: 0.4,
-                  x: { type: "spring", stiffness: 60 },
-                  opacity: { duration: 0.7 },
-                  ease: "easeIn",
-                  duration: 0.1,
-                }}
-              ></motion.div>
+              <Card.Title>Burgman Bleutooth Edition</Card.Title>
+              <p>Rs 1,35,000/-</p>
             </Card.Body>
           </Card>
         </Carousel2>
-        <motion.div
-          initial={{ x: -30, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{
-            delay: 0.3,
-            x: { type: "spring", stiffness: 60 },
-            opacity: { duration: 0.7 },
-            ease: "easeIn",
-            duration: 0.1,
-          }}
-        >
-          <Button className="mt-4 mb-4" variant="outline-primary">
-            More
-          </Button>
-        </motion.div>
+
+        <Button className="mt-4 mb-4" variant="outline-primary">
+          More
+        </Button>
       </div>
 
       {/* SPORTS BIKE SECTION*/}
@@ -698,24 +535,19 @@ function HomePage() {
       </div>
 
       {/* Banner SECTION*/}
-       <motion.div
+      <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{
-                duration: 0.9,
-                delay: 0.7,
-                ease: [0, 0.4, 0.2, 1.01],
-              }}
-       >
-      <Row xs={12} md={8}
-     className="p-4"
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.9,
+          delay: 0.7,
+          ease: [0, 0.4, 0.2, 1.01],
+        }}
       >
-     
-             <Image src={banneracessimg} />
-
-      </Row>
-    </motion.div>
-     
+        <Row xs={12} md={8} className="p-4">
+          <Image src={banneracessimg} />
+        </Row>
+      </motion.div>
 
       {/* brandlogo SECTION*/}
       <div className="bg-light burgmanbikesection cardgrove">
@@ -1012,7 +844,7 @@ function HomePage() {
 
         <Carousel2 responsive={responsive}>
           <motion.Card
-            initial={{ x: 40, opacity: 0 }}
+            initial={{ x: -40, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{
               delay: 0.4,
@@ -1405,6 +1237,8 @@ function HomePage() {
       </div>
 
       <MyForm />
+
+      <AllAccessimg />
     </>
   );
 }

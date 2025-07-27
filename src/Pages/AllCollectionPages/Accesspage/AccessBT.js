@@ -29,6 +29,8 @@ import HeatProtector from "../Accesspage/images/HeatProtector.png";
 import frontwheel from "../Accesspage/images/frontwheel.png";
 import frontalloywheel from "../Accesspage/images/frontalloywheel.png";
 import CloseFuel from "../Accesspage/images/CloseFuelLid.png";
+import AllAccimg from "../Accesspage/AllAccessimg";
+
 
 const swatches = [
   { color: "#2596be", name: "MAT AQUA SILVER", image: img1 },
@@ -58,8 +60,9 @@ const responsive = {
   },
 };
 
-const AccessBT = () => {
+const AccessBT = (props) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+
 
   return (
     <>
@@ -210,7 +213,11 @@ const AccessBT = () => {
                   </tr>
                 </tbody>
               </Table>
+                          <AllAccimg/>
+
             </div>
+
+
             <Button
               variant="outline-success"
               className="mt-4"
@@ -222,6 +229,8 @@ const AccessBT = () => {
           </Col>
         </Row>
       </div>
+
+      
 
       <Accordion defaultActiveKey="0">
         <Accordion.Item className="bg-dark">
@@ -513,6 +522,8 @@ const AccessBT = () => {
           More
         </Button>
       </div>
+
+      
     </>
   );
 };

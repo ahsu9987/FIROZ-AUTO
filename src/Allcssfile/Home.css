@@ -149,7 +149,6 @@ input[type=submit]:hover {
   font-weight: bold;
   pointer-events: none;
 }
-
 .reachcolor{
  background: linear-gradient(90deg, #82f369 0%, #91cfff 40%, #ffaacc 100%);
 color: transparent;
@@ -158,8 +157,6 @@ background-clip: text;
 -webkit-text-fill-color: transparent;
 text-fill-color: transparent;
 }
-
-
 @media only screen and (max-width: 768px){
     .headerlogo{
         height: 70px; 

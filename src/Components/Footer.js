@@ -14,8 +14,7 @@ function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300 pt-12">
       <Container className="mb-5 mt-5">
-        <Row className="text-light">
-          <motion.h1
+         <motion.h1
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{
@@ -27,7 +26,27 @@ function Footer() {
           >
             Reach out to us on
           </motion.h1>
-          <Col xs={3}>
+        <motion.div 
+         initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 0.9,
+                delay: 0.7,
+                ease: [0, 0.4, 0.2, 1.01],
+              }}
+        >
+<Row className="text-light"
+           initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 0.9,
+                delay: 0.7,
+                ease: [0, 0.4, 0.2, 1.01],
+              }}
+        >
+         
+          <Col xs={3}
+          >
             <Image src={whatsaplogo} alt="Logo" className="footerlogo" />
           </Col>
           <Col xs={3}>
@@ -43,6 +62,8 @@ function Footer() {
             <Image src={calllogo} alt="Logo" className="footerlogo" />
           </Col>
         </Row>
+        </motion.div>
+        
       </Container>
       <div className="container mx-auto px-4">
         {/* ---------- Top section ---------- */}
@@ -68,7 +89,7 @@ function Footer() {
         </div>
 
         {/* ---------- Bottom section ---------- */}
-        <div className="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-secondary">
+        <div className="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-secondary mb-3">
           © 2025 Firoz Auto. All rights reserved.
         </div>
       </div>
