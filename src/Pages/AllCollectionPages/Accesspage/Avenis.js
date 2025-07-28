@@ -15,19 +15,8 @@ import burgmanexbrown from "../Accesspage/images/burgmanexbrown.png";
 import Accdrum from "../Accesspage/images/AccessDrummatblue.png";
 import Gixxersfblue from "../GixxerSF&Naked/images/Gixxersfblue.png";
 import Gixxernakedblk from "../GixxerSF&Naked/images/gixxernakedblk.png";
-import Container from "react-bootstrap/Container";
-import avenismeter from "../Accesspage/images/avenismeter.png";
-import keyignition from "../Accesspage/images/KeyIgnition.png";
-import Accordion from "react-bootstrap/Accordion";
-import avenisfrontwheel from "../Accesspage/images/avenisFrontAlloyWheel.png";
-import AvenisAlloywheel from "../Accesspage/images/avenisFrontWheel.png";
-import AvenisUnderseatStorage from "../Accesspage/images/avenisUnderseatstorage.png";
-import AvenisSideStand from "../Accesspage/images/avenisidestand.png";
-import AvenisFrontLamp from "../Accesspage/images/AvenisDaytimeLamp.png";
-import AvenisKickstart from "../Accesspage/images/Kickstarter.png";
-import AvenisKillswitc from "../Accesspage/images/KillSwitch.png";
-import accspecial from "../Accesspage/images/accwhite.png"
-
+import accspecial from "../Accesspage/images/accwhite.png";
+import AllAccimg from "./AllAccessimg";
 
 const swatches = [
   { color: "#28282B", name: "Glossy Sparkle Black", image: img1 },
@@ -85,7 +74,11 @@ const Avenis = () => {
                     className={`swatch ${
                       currentIndex === index ? "selected" : ""
                     }`}
-                    style={{ backgroundColor: swatch.color , border: "groove",borderColor:"black"  }}
+                    style={{
+                      backgroundColor: swatch.color,
+                      border: "groove",
+                      borderColor: "black",
+                    }}
                     onClick={() => setCurrentIndex(index)}
                   >
                     {currentIndex === index && (
@@ -98,16 +91,22 @@ const Avenis = () => {
           </Col>
 
           <Col xs={12} md={4} lg={4} className="p-3">
-            <h1 className="mt-2 text-light">Suzuki Avenis 125 Bleutooth Edition</h1>
+            <h1 className="mt-2 text-light">
+              Suzuki Avenis 125 Bleutooth Edition
+            </h1>
             <p className="text-light">
-              The Suzuki Avenis 125 is a modern sporty scooter that has been developed to take on the TVS Ntorq 125.    <br></br>
-              It gets aggressive styling, good number of features and an engine that is known to offer excellent refinement and performance.<br></br>
-              But the scooter is priced on the higher side. <br></br>{" "}
-              BLUETOOTH® ENABLED DIGITAL CONSOLE
+              The Suzuki Avenis 125 is a modern sporty scooter that has been
+              developed to take on the TVS Ntorq 125. <br></br>
+              It gets aggressive styling, good number of features and an engine
+              that is known to offer excellent refinement and performance.
+              <br></br>
+              But the scooter is priced on the higher side. <br></br> BLUETOOTH®
+              ENABLED DIGITAL CONSOLE
             </p>
             <h3 className="text-light mt-3 mb-3">SPECIFICATION:-</h3>
             <div className="tabledata">
-              <Table striped bordered style={{ border: "groove" }} >
+              <Table striped bordered style={{ border: "groove" }}                 className="mb-5"
+>
                 <tbody>
                   <tr>
                     <td>[Power & Performance]</td>
@@ -211,145 +210,13 @@ const Avenis = () => {
                 </tbody>
               </Table>
             </div>
-            <Button
-              variant="outline-success"
-              className="mt-4"
-              href="https://web.whatsapp.com/"
-                            style={{ border: "groove" }}
-            >
-              BOOK NOW
-            </Button>
+            <AllAccimg />
           </Col>
         </Row>
       </div>
 
-      <Accordion defaultActiveKey="0">
-        <Accordion.Item className="bg-dark">
-          <Accordion.Header>ALL PARTS IMAGES</Accordion.Header>
-          <Accordion.Body>
-            <Container>
-              <Row>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center  text-light">Avenis meter BT</p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={avenismeter}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer",border: "groove"  }}
-                  />
-                </Col>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center  text-light mt-3">
-                    key-ignition
-                  </p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={keyignition}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer",border: "groove"  }}
-                  />
-                </Col>
-              </Row>
-
-              <Row>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center  text-light mt-3">Avenis front-wheel</p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={avenisfrontwheel}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer",border: "groove"  }}
-                  />
-                </Col>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center  text-light mt-3">Avenis front Alloy-wheel</p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={AvenisAlloywheel}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer",border: "groove"  }}
-                  />
-                </Col>
-              </Row>
-
-              <Row>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center  text-light mt-3">Avenis UnderseatStorage</p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={AvenisUnderseatStorage}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer",border: "groove"  }}
-                  />
-                </Col>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center  text-light mt-3">Avenis SideStand</p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={AvenisSideStand}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer",border: "groove"  }}
-                  />
-                </Col>
-              </Row>
-
-              <Row>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center  text-light mt-3">Avenis FrontLamp</p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={AvenisFrontLamp}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer",border: "groove"  }}
-                  />
-                </Col>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center  text-light mt-3">Avenis Kickstart</p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={AvenisKickstart}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer",border: "groove"  }}
-                  />
-                </Col>
-              </Row>
-
-              <Row>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center  text-light mt-3">Avenis Killswitc</p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={AvenisKillswitc}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer",border: "groove"  }}
-                  />
-                </Col>
-              </Row>
-            </Container>
-          </Accordion.Body>
-        </Accordion.Item>
-      </Accordion>
-
       {/* ACCESS & BURGMAN BIKE SECTION SPOTLIGHT*/}
-      <div className="bg-light burgmanbikesection cardgrove">
+      <div className="bg-light burgmanbikesection cardgrove mt-3" >
         <h2 className="mb-4 mt-3"> RELATED SUZUKI BIKES OF 2025</h2>
 
         <Carousel2 responsive={responsive} className="card-container">
@@ -368,32 +235,24 @@ const Avenis = () => {
             <Card.Body>
               <Card.Title>Access Drum Break Edition</Card.Title>
               <p>Rs 1,05,000/-</p>
-              <Link to="/AccDrum">
-                <Button variant="outline-info" className="veiwmorebutton">
-                  View More
-                </Button>
-              </Link>
+             
             </Card.Body>
           </Card>
 
-           <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12  ">
-              <Link to="/BurgmanEx">
-            <Card.Img variant="top" id="newaccimagespot" src={burgmanexbrown} />
+          <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12  ">
+            <Link to="/BurgmanEx">
+              <Card.Img
+                variant="top"
+                id="newaccimagespot"
+                src={burgmanexbrown}
+              />
             </Link>
             <Card.Body>
               <Card.Title>Burgman Ex Bleutooth Top Edition</Card.Title>
               <p>Rs 1,52,000/-</p>
-              <Button
-                variant="outline-secondary"
-                className="veiwmorebutton"
-                href="/BurgmanEx"
-              >
-                View More
-              </Button>
+              
             </Card.Body>
           </Card>
-
-         
 
           <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12 ">
             <a href="/AccessBT">
@@ -408,13 +267,7 @@ const Avenis = () => {
             <Card.Body>
               <Card.Title>Access Bleutooth Edition Disc Break</Card.Title>
               <p>Rs 1,20,000/-</p>
-              <Button
-                variant="outline-dark"
-                className="veiwmorebutton"
-                href="/AccessBT"
-              >
-                View More
-              </Button>
+             
             </Card.Body>
           </Card>
 
@@ -431,13 +284,7 @@ const Avenis = () => {
             <Card.Body>
               <Card.Title>Avenis Disc Break Bleutooth Edition</Card.Title>
               <p>Rs 1,10,000/-</p>
-              <Button
-                variant="outline-primary"
-                className="veiwmorebutton"
-                href="/Avenis"
-              >
-                View More
-              </Button>
+             
             </Card.Body>
           </Card>
 
@@ -446,13 +293,7 @@ const Avenis = () => {
             <Card.Body>
               <Card.Title>Gixxer-SF Bleutooth Edition</Card.Title>
               <p>Rs 2,25,000/-</p>
-              <Button
-                variant="outline-success"
-                className="veiwmorebutton"
-                href="/NewBike"
-              >
-                View More
-              </Button>
+             
             </Card.Body>
           </Card>
 
@@ -461,13 +302,7 @@ const Avenis = () => {
             <Card.Body>
               <Card.Title>Gixxer Naked Bleutooth Edition</Card.Title>
               <p>Rs 2,20,000/-</p>
-              <Button
-                variant="outline-dark"
-                className="veiwmorebutton"
-                href="/NewBike"
-              >
-                View More
-              </Button>
+             
             </Card.Body>
           </Card>
         </Carousel2>

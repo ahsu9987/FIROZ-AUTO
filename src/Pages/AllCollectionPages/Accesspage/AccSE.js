@@ -15,20 +15,7 @@ import burgmanexbrown from "../Accesspage/images/burgmanexbrown.png";
 import Avenisimg from "../Accesspage/images/Avenisbllknew.png";
 import Gixxersfblue from "../GixxerSF&Naked/images/Gixxersfblue.png";
 import Gixxernakedblk from "../GixxerSF&Naked/images/gixxernakedblk.png";
-import Container from "react-bootstrap/Container";
-import TFTMETER from "../Accesspage/images/TFT Meter.png";
-import Normalmeter from "../Accesspage/images/Normalmeter.png";
-import Accordion from "react-bootstrap/Accordion";
-import starterbtn from "../Accesspage/images/rightsidestarter.png";
-import HazardLights from "../Accesspage/images/HazardLights.png";
-import usbcharger from "../Accesspage/images/usbcharger.png";
-import FrontHook from "../Accesspage/images/FrontHook.png";
-import GloveBox from "../Accesspage/images/GloveBox.png";
-import UnderseatStorage from "../Accesspage/images/UnderseatStorage.png";
-import HeatProtector from "../Accesspage/images/HeatProtector.png";
-import frontwheel from "../Accesspage/images/frontwheel.png";
-import frontalloywheel from "../Accesspage/images/frontalloywheel.png";
-import CloseFuel from "../Accesspage/images/CloseFuelLid.png";
+import AllAccimg from "./AllAccessimg";
 
 const swatches = [
   { color: "#2596be", name: "MAT AQUA SILVER", image: img1 },
@@ -113,7 +100,12 @@ const AccSE = () => {
             </p>
             <h3 className="text-light mt-3 mb-3">SPECIFICATION:-</h3>
             <div className="tabledata">
-              <Table striped bordered style={{ border: "groove" }}>
+              <Table
+                striped
+                bordered
+                style={{ border: "groove" }}
+                className="mb-5"
+              >
                 <tbody>
                   <tr>
                     <td>[Power & Performance]</td>
@@ -217,195 +209,14 @@ const AccSE = () => {
                 </tbody>
               </Table>
             </div>
-            <Button
-              variant="outline-success"
-              className="mt-4"
-              href="https://web.whatsapp.com/"
-              style={{ border: "groove" }}
-            >
-              BOOK NOW
-            </Button>
           </Col>
         </Row>
       </div>
 
-      <Accordion defaultActiveKey="0">
-        <Accordion.Item className="bg-dark">
-          <Accordion.Header>ALL PARTS IMAGES</Accordion.Header>
-          <Accordion.Body>
-            <Container>
-              <Row>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center text-light">
-                    TFT Right Front Three Quarter
-                  </p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={TFTMETER}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer", border: "groove" }}
-                  />
-                </Col>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center  text-light mt-3">
-                    TFT Touchscreen Instrument Cluster
-                  </p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={Normalmeter}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer", border: "groove" }}
-                  />
-                </Col>
-              </Row>
-
-              <Row>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center  text-light mt-3">
-                    Right Side Throttle Grip
-                  </p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={starterbtn}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer", border: "groove" }}
-                  />
-                </Col>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center  text-light mt-3">
-                    Hazard Lights Switch
-                  </p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={HazardLights}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer", border: "groove" }}
-                  />
-                </Col>
-              </Row>
-
-              <Row>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center  text-light mt-3">
-                    USB Charging Port
-                  </p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={usbcharger}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer", border: "groove" }}
-                  />
-                </Col>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center  text-light mt-3">
-                    Front Luggage Hook
-                  </p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={FrontHook}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer", border: "groove" }}
-                  />
-                </Col>
-              </Row>
-
-              <Row>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center  text-light mt-3">Glove Box</p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={GloveBox}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer", border: "groove" }}
-                  />
-                </Col>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center  text-light mt-3">
-                    Underseat Storage
-                  </p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={UnderseatStorage}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer", border: "groove" }}
-                  />
-                </Col>
-              </Row>
-
-              <Row>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center  text-light mt-3">HeatProtector</p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={HeatProtector}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer", border: "groove" }}
-                  />
-                </Col>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center  text-light mt-3">front wheel</p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={frontwheel}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer", border: "groove" }}
-                  />
-                </Col>
-              </Row>
-
-              <Row>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center  text-light mt-3">
-                    Front Alloy Wheel
-                  </p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={frontalloywheel}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer", border: "groove" }}
-                  />
-                </Col>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center  text-light mt-3">Close Fuel Lid</p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={CloseFuel}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer", border: "groove" }}
-                  />
-                </Col>
-              </Row>
-            </Container>
-          </Accordion.Body>
-        </Accordion.Item>
-      </Accordion>
+      <AllAccimg />
 
       {/* ACCESS & BURGMAN BIKE SECTION SPOTLIGHT*/}
-      <div className="bg-light burgmanbikesection cardgrove">
+      <div className="bg-light burgmanbikesection cardgrove mt-5">
         <h2 className="mb-4 mt-3"> RELATED SUZUKI BIKES OF 2025</h2>
 
         <Carousel2 responsive={responsive} className="card-container ">
@@ -424,11 +235,6 @@ const AccSE = () => {
             <Card.Body>
               <Card.Title>Access Drum Break Edition</Card.Title>
               <p>Rs 1,05,000/-</p>
-              <Link to="/AccDrum">
-                <Button variant="outline-info" className="veiwmorebutton">
-                  View More
-                </Button>
-              </Link>
             </Card.Body>
           </Card>
 
@@ -445,13 +251,6 @@ const AccSE = () => {
             <Card.Body>
               <Card.Title>Avenis Disc Break Bleutooth Edition</Card.Title>
               <p>Rs 1,10,000/-</p>
-              <Button
-                variant="outline-primary"
-                className="veiwmorebutton"
-                href="/Avenis"
-              >
-                View More
-              </Button>
             </Card.Body>
           </Card>
 
@@ -468,13 +267,6 @@ const AccSE = () => {
             <Card.Body>
               <Card.Title>Access Bleutooth Edition Disc Break</Card.Title>
               <p>Rs 1,20,000/-</p>
-              <Button
-                variant="outline-dark"
-                className="veiwmorebutton"
-                href="/AccessBT"
-              >
-                View More
-              </Button>
             </Card.Body>
           </Card>
 
@@ -489,13 +281,6 @@ const AccSE = () => {
             <Card.Body>
               <Card.Title>Burgman Ex Bleutooth Top Edition</Card.Title>
               <p>Rs 1,52,000/-</p>
-              <Button
-                variant="outline-secondary"
-                className="veiwmorebutton"
-                href="/BurgmanEx"
-              >
-                View More
-              </Button>
             </Card.Body>
           </Card>
 
@@ -506,13 +291,6 @@ const AccSE = () => {
             <Card.Body>
               <Card.Title>Gixxer-SF Bleutooth Edition</Card.Title>
               <p>Rs 2,25,000/-</p>
-              <Button
-                variant="outline-success"
-                className="veiwmorebutton"
-                href="/gixxersf"
-              >
-                View More
-              </Button>
             </Card.Body>
           </Card>
 
@@ -527,13 +305,6 @@ const AccSE = () => {
             <Card.Body>
               <Card.Title>Gixxer Naked Bleutooth Edition</Card.Title>
               <p>Rs 2,20,000/-</p>
-              <Button
-                variant="outline-dark"
-                className="veiwmorebutton"
-                href="/gixxernaked"
-              >
-                View More
-              </Button>
             </Card.Body>
           </Card>
         </Carousel2>

@@ -63,7 +63,6 @@ import NewAeroxwhite from "./AllCollectionPages/Aerox/images/aeroxwhitenew.jpeg"
 import MyForm from "./MyForm";
 import { motion } from "framer-motion";
 import burgmanbannervideo from "../assets/burgmanbannervideo.mp4";
-import AllAccessimg from "./AllCollectionPages/Accesspage/AllAccessimg";
 
 function HomePage() {
   const responsive = {
@@ -318,7 +317,7 @@ function HomePage() {
         </Carousel.Item>
       </Carousel>
 
-      {/* ACCESS & BURGMAN BIKE SECTION SPOTLIGHT*/}
+      {/* ACCESS & TRENDING SPOTLIGHT*/}
       <div className="bg-light burgmanbikesection">
         <motion.h2
           initial={{ y: -20, opacity: 0.9 }}
@@ -1238,7 +1237,6 @@ function HomePage() {
 
       <MyForm />
 
-      <AllAccessimg />
     </>
   );
 }

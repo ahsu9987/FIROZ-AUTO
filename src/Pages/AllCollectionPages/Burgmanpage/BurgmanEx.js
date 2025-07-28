@@ -13,19 +13,9 @@ import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import Accdrum from "../Accesspage/images/AccessDrummatblue.png";
 import Gixxersfblue from "../GixxerSF&Naked/images/Gixxersfblue.png";
 import Gixxernakedblk from "../GixxerSF&Naked/images/gixxernakedblk.png";
-import Container from "react-bootstrap/Container";
-import burgmanexmeter from "../Accesspage/images/burgmanexmeter.png";
-import keyignition from "../Accesspage/images/KeyIgnition.png";
-import Accordion from "react-bootstrap/Accordion";
-import FrontDashboard from "../Burgmanpage/images/burgmanexdashboard.png";
-import FrontWheel from "../Burgmanpage/images/burgmanexFront View.png";
-import UnderseatStorage from "../Burgmanpage/images/burgmanunderstorage.png";
-import FrontPocket from "../Burgmanpage/images/burgmanfrontpocket.png";
-import FrontFootVeiw from "../Burgmanpage/images/burgmanfrontfoot.png";
-import AvenisKickstart from "../Accesspage/images/Kickstarter.png";
-import AvenisKillswitc from "../Accesspage/images/KillSwitch.png";
 import accspecial from "../Accesspage/images/accwhite.png";
 import Avenisblknew from "../Accesspage/images/Avenisbllknew.png";
+import AllBurgmanImage from "./AllBurgmanImage";
 
 const swatches = [
   { color: "#112239", name: "New Metallic Royal MatBlue", image: img1 },
@@ -118,7 +108,12 @@ const BurgmanEx = () => {
             </p>
             <h3 className="text-light mt-3 mb-3">SPECIFICATION:-</h3>
             <div className="tabledata">
-              <Table striped bordered style={{ border: "groove" }}>
+              <Table
+                striped
+                bordered
+                style={{ border: "groove" }}
+                className="mb-5"
+              >
                 <tbody>
                   <tr>
                     <td>[Power & Performance]</td>
@@ -222,145 +217,13 @@ const BurgmanEx = () => {
                 </tbody>
               </Table>
             </div>
-            <Button
-              variant="outline-success"
-              className="mt-4"
-              href="https://web.whatsapp.com/"
-              style={{ border: "groove" }}
-            >
-              BOOK NOW
-            </Button>
+            <AllBurgmanImage />
           </Col>
         </Row>
       </div>
 
-      <Accordion defaultActiveKey="0">
-        <Accordion.Item className="bg-dark">
-          <Accordion.Header>ALL PARTS IMAGES</Accordion.Header>
-          <Accordion.Body>
-            <Container>
-              <Row>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center text-light">Digital meter BT</p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={burgmanexmeter}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer", border: "groove" }}
-                  />
-                </Col>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center text-light mt-3">key-ignition</p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={keyignition}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer", border: "groove" }}
-                  />
-                </Col>
-              </Row>
-
-              <Row>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center text-light mt-3">Front Dashboard</p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={FrontDashboard}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer", border: "groove" }}
-                  />
-                </Col>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center text-light mt-3">Front Wheel</p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={FrontWheel}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer", border: "groove" }}
-                  />
-                </Col>
-              </Row>
-
-              <Row>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center text-light mt-3">
-                    UnderseatStorage
-                  </p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={UnderseatStorage}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer", border: "groove" }}
-                  />
-                </Col>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center text-light mt-3">Front Pocket</p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={FrontPocket}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer", border: "groove" }}
-                  />
-                </Col>
-              </Row>
-
-              <Row>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center text-light mt-3">Front Foot Veiw</p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={FrontFootVeiw}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer", border: "groove" }}
-                  />
-                </Col>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center text-light mt-3">Kickstart</p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={AvenisKickstart}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer", border: "groove" }}
-                  />
-                </Col>
-              </Row>
-
-              <Row>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center text-light mt-3">KillSwitch</p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={AvenisKillswitc}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer", border: "groove" }}
-                  />
-                </Col>
-              </Row>
-            </Container>
-          </Accordion.Body>
-        </Accordion.Item>
-      </Accordion>
-
       {/* ACCESS & BURGMAN BIKE SECTION SPOTLIGHT*/}
-      <div className="bg-light burgmanbikesection cardgrove">
+      <div className="bg-light burgmanbikesection cardgrove mt-3">
         <h2 className="mb-4 mt-3"> RELATED SUZUKI BIKES OF 2025</h2>
 
         <Carousel2 responsive={responsive} className="card-container">
@@ -379,11 +242,6 @@ const BurgmanEx = () => {
             <Card.Body>
               <Card.Title>Access Drum Break Edition</Card.Title>
               <p>Rs 1,05,000/-</p>
-              <Link to="/AccDrum">
-                <Button variant="outline-info" className="veiwmorebutton">
-                  View More
-                </Button>
-              </Link>
             </Card.Body>
           </Card>
 
@@ -400,13 +258,6 @@ const BurgmanEx = () => {
             <Card.Body>
               <Card.Title>Avenis Disc Break Bleutooth Edition</Card.Title>
               <p>Rs 1,10,000/-</p>
-              <Button
-                variant="outline-primary"
-                className="veiwmorebutton"
-                href="/Avenis"
-              >
-                View More
-              </Button>
             </Card.Body>
           </Card>
 
@@ -423,13 +274,6 @@ const BurgmanEx = () => {
             <Card.Body>
               <Card.Title>Access Bleutooth Edition Disc Break</Card.Title>
               <p>Rs 1,20,000/-</p>
-              <Button
-                variant="outline-dark"
-                className="veiwmorebutton"
-                href="/AccessBT"
-              >
-                View More
-              </Button>
             </Card.Body>
           </Card>
 
@@ -440,13 +284,6 @@ const BurgmanEx = () => {
             <Card.Body>
               <Card.Title>Gixxer-SF Bleutooth Edition</Card.Title>
               <p>Rs 2,25,000/-</p>
-              <Button
-                variant="outline-success"
-                className="veiwmorebutton"
-                href="/gixxersf"
-              >
-                View More
-              </Button>
             </Card.Body>
           </Card>
 
@@ -461,13 +298,6 @@ const BurgmanEx = () => {
             <Card.Body>
               <Card.Title>Gixxer Naked Bleutooth Edition</Card.Title>
               <p>Rs 2,20,000/-</p>
-              <Button
-                variant="outline-dark"
-                className="veiwmorebutton"
-                href="/gixxernaked"
-              >
-                View More
-              </Button>
             </Card.Body>
           </Card>
         </Carousel2>

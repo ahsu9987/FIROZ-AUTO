@@ -1,30 +1,24 @@
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import React from "react";
-// import Carousel from 'react-bootstrap/Carousel';
 import Image from "react-bootstrap/Image";
 import Carousel2 from "react-multi-carousel";
-import accwhitetft from "../Accesspage/images/accesswhitebttft.jpeg";
-import accmatbluetft from "../Accesspage/images/accmatbluetft.jpeg";
-import accblktft from "../Accesspage/images/accblktft.jpeg";
-import accicegreentft from "../Accesspage/images/accicegreentft.jpeg";
-import accbluetft from "../Accesspage/images/accessbluetft.jpeg";
-import accwhite from "../Accesspage/images/accwhitetft.jpeg";
-import tftmeter from "../Accesspage/images/TFT Meter.png";
-import normalbtmeter from "../Accesspage/images/Normalmeter.png";
-import starterbtn from "../Accesspage/images/rightsidestarter.png";
-import HazardLights from "../Accesspage/images/HazardLights.png";
+import Burgmanexblue from "../Accesspage/images/BurgmanExnewMatblue.png";
+import burgmanexbrown from "../Accesspage/images/burgmanexbrown.png";
+import burgmanexblk from "../Accesspage/images/burgmanexblk.png";
+import burgmanmeter from "../Accesspage/images/burgmanexmeter.png";
+import burgmanexfrontwheel from "../Burgmanpage/images/burgmanexFront View.png";
+import burgmanexdashboard from "../Burgmanpage/images/burgmanexdashboard.png";
+import burgmanfrontpocket from "../Burgmanpage/images/burgmanfrontpocket.png";
+import burgmanfoot from "../Burgmanpage/images/burgmanfrontfoot.png";
 import usbcharger from "../Accesspage/images/usbcharger.png";
 import FrontHook from "../Accesspage/images/FrontHook.png";
-import GloveBox from "../Accesspage/images/GloveBox.png";
-import UnderseatStorage from "../Accesspage/images/UnderseatStorage.png";
-import HeatProtector from "../Accesspage/images/HeatProtector.png";
-import frontwheel from "../Accesspage/images/frontwheel.png";
-import frontalloywheel from "../Accesspage/images/frontalloywheel.png";
-import CloseFuel from "../Accesspage/images/CloseFuelLid.png";
+import BurgmanCylenser from "../Burgmanpage/images/burgmanexcylenser.png";
+import UnderseatStorage from "../Burgmanpage/images/burgmanunderstorage.png";
+import burgmanhandle from "../Burgmanpage/images/burgmanhandle.png";
 
-export const AllAccessimg = () => {
-  function AllAccessimg(props) {
+export const AllBurgmanImage = () => {
+  function AllBurgmanImage(props) {
     const responsive = {
       superLargeDesktop: {
         breakpoint: { max: 4000, min: 1024 },
@@ -55,103 +49,88 @@ export const AllAccessimg = () => {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            Access Images
+            Burgman Images
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Carousel2 responsive={responsive}>
             <Image
               variant="top"
-              src={accwhitetft}
+              src={Burgmanexblue}
               fluid
               style={{ cursor: "pointer" }}
             />
 
             <Image
               variant="top"
-              src={accmatbluetft}
+              src={burgmanexbrown}
               fluid
               style={{ cursor: "pointer" }}
             />
 
             <Image
               variant="top"
-              src={accblktft}
+              src={burgmanexblk}
               fluid
               style={{ cursor: "pointer" }}
             />
 
-            <Image
-              variant="top"
-              src={accicegreentft}
-              fluid
-              style={{ cursor: "pointer" }}
-            />
+           
 
-            <Image
-              variant="top"
-              src={accbluetft}
-              fluid
-              style={{ cursor: "pointer" }}
-            />
+           
 
-            <Image
-              variant="top"
-              src={accwhite}
-              fluid
-              style={{ cursor: "pointer" }}
-            />
+           
 
             <div>
               <Image
-                variant="top"
-                src={tftmeter}
-                fluid
-                style={{ cursor: "pointer" }}
-              />
+              variant="top"
+              src={burgmanmeter}
+              fluid
+              style={{ cursor: "pointer" }}
+            />
               <p
                 style={{ fontSize: "1rem", fontWeight: "bold" }}
                 className="text-center mt-3 text-danger"
               >
-                TFT Right Front Three Quarter
+                Digital Connectivity meter
               </p>
             </div>
 
             <div>
               <Image
-                variant="top"
-                src={normalbtmeter}
-                fluid
-                style={{ cursor: "pointer" }}
-              />
+              variant="top"
+              src={burgmanexfrontwheel}
+              fluid
+              style={{ cursor: "pointer" }}
+            />
               <p
                 style={{ fontSize: "1rem", fontWeight: "bold" }}
                 className="text-center mt-3 text-danger"
               >
-                Touchscreen Instrument Cluster
+                Front Wheel
               </p>
             </div>
 
             <div>
-              <Image
-                variant="top"
-                src={starterbtn}
-                fluid
-                style={{ cursor: "pointer" }}
-              />
+               <Image
+              variant="top"
+              src={burgmanexdashboard}
+              fluid
+              style={{ cursor: "pointer" }}
+            />
               <p
                 style={{ fontSize: "1rem", fontWeight: "bold" }}
                 className="text-center mt-3 text-danger"
               >
                 {" "}
-                Right Side Throttle Grip
+                Front premium Dashboard
               </p>
             </div>
 
             <div>
               <Image
                 variant="top"
-                src={HazardLights}
+                src={burgmanfoot}
                 fluid
                 style={{ cursor: "pointer" }}
               />
@@ -160,7 +139,7 @@ export const AllAccessimg = () => {
                 className="text-center mt-3 text-danger"
               >
                 {" "}
-                Hazard Lights Switch
+                Front Foot Section
               </p>
             </div>
 
@@ -199,7 +178,7 @@ export const AllAccessimg = () => {
             <div>
               <Image
                 variant="top"
-                src={GloveBox}
+                src={burgmanfrontpocket}
                 fluid
                 style={{ cursor: "pointer" }}
               />
@@ -208,7 +187,7 @@ export const AllAccessimg = () => {
                 className="text-center mt-3 text-danger"
               >
                 {" "}
-                Glove Box
+                Front Store Pocket
               </p>
             </div>
 
@@ -231,7 +210,7 @@ export const AllAccessimg = () => {
             <div>
               <Image
                 variant="top"
-                src={HeatProtector}
+                src={BurgmanCylenser}
                 fluid
                 style={{ cursor: "pointer" }}
               />
@@ -240,14 +219,14 @@ export const AllAccessimg = () => {
                 className="text-center mt-3 text-danger"
               >
                 {" "}
-                HeatProtector
+                Classic Cylenser
               </p>
             </div>
 
             <div>
               <Image
                 variant="top"
-                src={frontwheel}
+                src={burgmanhandle}
                 fluid
                 style={{ cursor: "pointer" }}
               />
@@ -256,41 +235,12 @@ export const AllAccessimg = () => {
                 className="text-center mt-3 text-danger"
               >
                 {" "}
-                front wheel
+                front Handle Veiw
               </p>
             </div>
 
-            <div>
-              <Image
-                variant="top"
-                src={frontalloywheel}
-                fluid
-                style={{ cursor: "pointer" }}
-              />
-                      <p
-                style={{ fontSize: "1rem", fontWeight: "bold" }}
-                className="text-center mt-3 text-danger"
-              >
-                {" "}
-                Front Alloy Wheel
-              </p>
-            </div>
+      
 
-            <div>
-              <Image
-                variant="top"
-                src={CloseFuel}
-                fluid
-                style={{ cursor: "pointer" }}
-              />
-                     <p
-                style={{ fontSize: "1rem", fontWeight: "bold" }}
-                className="text-center mt-3 text-danger"
-              >
-                {" "}
-                Close Fuel Flape
-              </p>
-            </div>
           </Carousel2>
         </Modal.Body>
         <Modal.Footer>
@@ -314,9 +264,9 @@ export const AllAccessimg = () => {
         </Button>
       </div>
 
-      <AllAccessimg show={modalShow} onHide={() => setModalShow(false)} />
+      <AllBurgmanImage show={modalShow} onHide={() => setModalShow(false)} />
     </>
   );
 };
 
-export default AllAccessimg;
+export default AllBurgmanImage;

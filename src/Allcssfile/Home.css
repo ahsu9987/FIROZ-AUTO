@@ -100,9 +100,7 @@ input[type=submit]:hover {
 }
 
 .product-container {
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  font-family: Arial, sans-serif;
+  margin-top: 27px;
 }
 
 .product-header {
@@ -231,9 +229,6 @@ text-fill-color: transparent;
         height: 300px;
         width: 330px;
     }
-.product-container {
-    border-radius:0%;
-}
 .product-header {
   margin-bottom: 50px;
   margin-top: 20px;
