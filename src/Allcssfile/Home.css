@@ -165,9 +165,7 @@ text-fill-color: transparent;
   margin-right: 0;
   width: 80px;
 }
-    .topnavlink{
-        margin-top: 0px;
-    }
+    
     .carsoulimg{
         height: 290px;
         width: 100%;
@@ -234,8 +232,8 @@ text-fill-color: transparent;
         width: 330px;
     }
 .product-header {
-  margin-bottom: 50px;
-  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-top: 50px;
   margin-left: 10px;
   justify-content:flex-start;
 }

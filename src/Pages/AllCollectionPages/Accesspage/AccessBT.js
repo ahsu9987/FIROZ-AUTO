@@ -52,9 +52,15 @@ const AccessBT = (props) => {
     <>
       <div className=" mt-5 ">
         <Row className="p-2 ">
-          <Col className="ms-1 bg-white" xs={12} md={4} lg={7}>
+          <Col
+            className=""
+            xs={12}
+            md={4}
+            lg={7}
+            style={{ backgroundColor: "black" }}
+          >
             <div className="product-container">
-              <div className="product-header">
+              <div className="product-header text-light">
                 <span>{`${currentIndex + 1}/${swatches.length}`}</span>
                 <span className="color-name">
                   {swatches[currentIndex].name}
@@ -215,11 +221,13 @@ const AccessBT = (props) => {
       </div>
 
       {/* ACCESS & BURGMAN BIKE SECTION SPOTLIGHT*/}
-      <div className="bg-light burgmanbikesection cardgrove">
-        <h2 className="mb-4 mt-3"> RELATED SUZUKI BIKES OF 2025</h2>
+      <div className="burgmanbikesection cardgrove">
+        <h2 className="mb-4 mt-3 text-light"     style={{ fontFamily: "Bahnschrift SemiBold" }}
+
+> RELATED SUZUKI BIKES OF 2025</h2>
 
         <Carousel2 responsive={responsive} className="card-container ">
-          <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12 ">
+          <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12" style={{ backgroundColor: "#000" }}>
             <Link to="/AccDrum">
               <Card.Img
                 variant="top"
@@ -232,29 +240,27 @@ const AccessBT = (props) => {
             </Link>
 
             <Card.Body>
-              <Card.Title>Access Drum Break Edition</Card.Title>
-              <p>Rs 1,05,000/-</p>
+              <Card.Title className="text-light" style={{ fontFamily: "Bahnschrift SemiBold" }}>Access Drum Break Edition</Card.Title>
               <Link to="/AccDrum"></Link>
             </Card.Body>
           </Card>
 
-          <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12 ">
+          <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12 "  style={{ backgroundColor: "#000" }}>
             <a href="/Avenis">
               <Card.Img
                 variant="top"
                 id="newaccimagespot"
                 src={Avenisimg}
                 fluid
-                style={{ cursor: "pointer" }}
+                style={{ backgroundColor: "black" , cursor: "pointer" }}
               />
             </a>
             <Card.Body>
-              <Card.Title>Avenis Disc Break Bleutooth Edition</Card.Title>
-              <p>Rs 1,10,000/-</p>
+              <Card.Title className="text-light"  style={{ fontFamily: "Bahnschrift SemiBold" }}>Avenis Disc Break Bleutooth Edition</Card.Title>
             </Card.Body>
           </Card>
 
-          <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12 ">
+          <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12 " style={{ backgroundColor: "#000" }}>
             <a href="/AccSE">
               <Card.Img
                 variant="top"
@@ -265,12 +271,11 @@ const AccessBT = (props) => {
               />
             </a>
             <Card.Body>
-              <Card.Title>Access Special Edition Disc Break</Card.Title>
-              <p>Rs 1,20,000/-</p>
+              <Card.Title className="text-light"  style={{ fontFamily: "Bahnschrift SemiBold" }}>Access Special Edition Disc Break</Card.Title>
             </Card.Body>
           </Card>
 
-          <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12  ">
+          <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12  " style={{ backgroundColor: "#000" }}>
             <a href="/BurgmanEx">
               <Card.Img
                 variant="top"
@@ -279,22 +284,20 @@ const AccessBT = (props) => {
               />
             </a>
             <Card.Body>
-              <Card.Title>Burgman Ex Bleutooth Top Edition</Card.Title>
-              <p>Rs 1,52,000/-</p>
+              <Card.Title className="text-light" style={{ fontFamily: "Bahnschrift SemiBold" }}>Burgman Ex Bleutooth Top Edition</Card.Title>
             </Card.Body>
           </Card>
 
-          <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12 ">
+          <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12 " style={{ backgroundColor: "#000" }}>
             <a href="/gixxersf">
               <Card.Img variant="top" id="newaccimagespot" src={Gixxersfblue} />
             </a>
             <Card.Body>
-              <Card.Title>Gixxer-SF Bleutooth Edition</Card.Title>
-              <p>Rs 2,25,000/-</p>
+              <Card.Title className="text-light" style={{ fontFamily: "Bahnschrift SemiBold" }}>Gixxer-SF Bleutooth Edition</Card.Title>
             </Card.Body>
           </Card>
 
-          <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12 ">
+          <Card className="col-xs-12 col-sm-6 col-md-4 col-lg-12 " style={{ backgroundColor: "#000" }}>
             <a href="/gixxernaked">
               <Card.Img
                 variant="top"
@@ -303,8 +306,7 @@ const AccessBT = (props) => {
               />
             </a>
             <Card.Body>
-              <Card.Title>Gixxer Naked Bleutooth Edition</Card.Title>
-              <p>Rs 2,20,000/-</p>
+              <Card.Title className="text-light" style={{ fontFamily: "Bahnschrift SemiBold" }}>Gixxer Naked Bleutooth Edition</Card.Title>
             </Card.Body>
           </Card>
         </Carousel2>

@@ -109,7 +109,7 @@ function HomePage() {
         <Row>
           <Col xs={12} md={8} lg={6} className="text-light p-4 ">
             <motion.h2
-              style={{ fontFamily: "            Franklin Gothic Medium" }}
+              style={{ fontFamily: "Franklin Gothic Medium" }}
               initial={{ x: -100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{

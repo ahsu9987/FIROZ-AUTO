@@ -47,7 +47,9 @@ function Footer() {
          
           <Col xs={3}
           >
+            <a href="whatsapp:contact=7678094646@s.whatsapp.com&message=I'd like to chat with you">
             <Image src={whatsaplogo} alt="Logo" className="footerlogo" />
+            </a>
           </Col>
           <Col xs={3}>
             {" "}
@@ -59,7 +61,9 @@ function Footer() {
           </Col>
           <Col xs={3}>
             {" "}
-            <Image src={calllogo} alt="Logo" className="footerlogo" />
+            <a href="tel:767-809-4646">
+            <Image src={calllogo} alt="Logo 767-809-4646" className="footerlogo" />
+            </a>
           </Col>
         </Row>
         </motion.div>
@@ -83,8 +87,8 @@ function Footer() {
             className="reachcolor text-xl font-semibold text-white mb-4">
               Contact
             </motion.h2>
-            <p className="text-sm">Phone: +91 76780 94646 / +91‑843352‑5372</p>
-            <p className="text-sm mb-4">Email: support@firozauto.com</p>
+            <p className="text-sm">Phone:<a href="tel:767-809-4646" className="text-success"  style={{textDecorationLine:"none"}}>+91-76780 94646</a> / <a href="tel:843-352-5372" className="text-success"  style={{textDecorationLine:"none"}}>+91‑8433525372</a></p>
+            <p className="text-sm mb-4"  >Email:-<a href="mailto:firozautorides@gmail.com" style={{textDecorationLine:"none"}}><span   className="text-info" >firozautorides@gmail.com</span></a> </p>
           </div>
         </div>
 
@@ -96,5 +100,4 @@ function Footer() {
     </footer>
   );
 }
-
 export default Footer;
