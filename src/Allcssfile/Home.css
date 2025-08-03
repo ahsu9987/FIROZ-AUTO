@@ -6,6 +6,7 @@
 }
 .headerlogo{
     height: 40px;
+    border-radius: 60px;
 }
 .topnavlink:hover{
     color: blue;
@@ -21,8 +22,7 @@
     margin-top: 70px;
 }
 .logofiroz{
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+  border-radius: 150px;
     width: 60%;
     height: 60vh;
     padding-left: 50px;
@@ -162,8 +162,8 @@ text-fill-color: transparent;
         height: 70px; 
           display: block;
   margin-left: auto;
-  margin-right: 0;
-  width: 80px;
+  margin-right: 25px;
+  width: 70px;
 }
     
     .carsoulimg{
@@ -179,11 +179,13 @@ text-fill-color: transparent;
         margin-top: 3px;
     }
     .logofiroz{
-        height: 63vh;
+        height: 45vh;
           display: block;
   margin: 0 auto;
-  width: 80%;
+  width: 60%;
      padding-left: 0px;
+     border: 3px dotted whitesmoke;
+     border-color: whitesmoke;
     }
     .navtxt{
         font-size: small;

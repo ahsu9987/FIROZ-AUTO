@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.237f97de.css",
-    "main.js": "/static/js/main.8d5c9a22.js",
+    "main.css": "/static/css/main.badd9ac4.css",
+    "main.js": "/static/js/main.715ba6c1.js",
     "reactPlayerYouTube.js": "/static/js/reactPlayerYouTube.e9c2c1cc.chunk.js",
     "reactPlayerSoundCloud.js": "/static/js/reactPlayerSoundCloud.a2d55c7d.chunk.js",
     "reactPlayerVimeo.js": "/static/js/reactPlayerVimeo.aa2da3dd.chunk.js",
@@ -97,6 +97,7 @@
     "static/media/happycsm7.jpeg": "/static/media/happycsm7.0e6ebc0f5dee7583007d.jpeg",
     "static/media/accwhitetft.jpeg": "/static/media/accwhitetft.cc296e4a14b5680fb250.jpeg",
     "static/media/happycsm1.jpeg": "/static/media/happycsm1.6c58458cf21ad8c09564.jpeg",
+    "static/media/logofirozauto.png": "/static/media/logofirozauto.31d28fc7523ade82e2f6.png",
     "static/media/accicegreentft.jpeg": "/static/media/accicegreentft.1bb16cc78694806f0433.jpeg",
     "static/media/happycsm3.jpeg": "/static/media/happycsm3.3e53ae0034eeac7c0261.jpeg",
     "static/media/review3.png": "/static/media/review3.c0175b06335fdbe9bcca.png",
@@ -108,15 +109,14 @@
     "static/media/review4.png": "/static/media/review4.b725fd1e5b19b2764414.png",
     "static/media/review6.png": "/static/media/review6.1148743ca04810bea090.png",
     "static/media/review5.png": "/static/media/review5.12dda6ddaf46417cc8fe.png",
-    "static/media/logofirozauto.jpeg": "/static/media/logofirozauto.907ad36b0811750563fb.jpeg",
     "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/R15.png": "/static/media/R15.55886a3b12c7567639c9.png",
     "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/bmwlogo.png": "/static/media/bmwlogo.f616d036b5fa7bbf0920.png",
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
-    "main.237f97de.css.map": "/static/css/main.237f97de.css.map",
-    "main.8d5c9a22.js.map": "/static/js/main.8d5c9a22.js.map",
+    "main.badd9ac4.css.map": "/static/css/main.badd9ac4.css.map",
+    "main.715ba6c1.js.map": "/static/js/main.715ba6c1.js.map",
     "reactPlayerYouTube.e9c2c1cc.chunk.js.map": "/static/js/reactPlayerYouTube.e9c2c1cc.chunk.js.map",
     "reactPlayerSoundCloud.a2d55c7d.chunk.js.map": "/static/js/reactPlayerSoundCloud.a2d55c7d.chunk.js.map",
     "reactPlayerVimeo.aa2da3dd.chunk.js.map": "/static/js/reactPlayerVimeo.aa2da3dd.chunk.js.map",
@@ -134,7 +134,7 @@
     "453.cc726cfe.chunk.js.map": "/static/js/453.cc726cfe.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.237f97de.css",
-    "static/js/main.8d5c9a22.js"
+    "static/css/main.badd9ac4.css",
+    "static/js/main.715ba6c1.js"
   ]
 }
