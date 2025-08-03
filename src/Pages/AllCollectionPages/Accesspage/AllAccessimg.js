@@ -155,7 +155,7 @@ export const AllAccessimg = () => {
                 fluid
                 style={{ cursor: "pointer" }}
               />
-                <p
+              <p
                 style={{ fontSize: "1rem", fontWeight: "bold" }}
                 className="text-center mt-3 text-danger"
               >
@@ -171,7 +171,7 @@ export const AllAccessimg = () => {
                 fluid
                 style={{ cursor: "pointer" }}
               />
-                  <p
+              <p
                 style={{ fontSize: "1rem", fontWeight: "bold" }}
                 className="text-center mt-3 text-danger"
               >
@@ -187,7 +187,7 @@ export const AllAccessimg = () => {
                 fluid
                 style={{ cursor: "pointer" }}
               />
-                  <p
+              <p
                 style={{ fontSize: "1rem", fontWeight: "bold" }}
                 className="text-center mt-3 text-danger"
               >
@@ -203,7 +203,7 @@ export const AllAccessimg = () => {
                 fluid
                 style={{ cursor: "pointer" }}
               />
-                    <p
+              <p
                 style={{ fontSize: "1rem", fontWeight: "bold" }}
                 className="text-center mt-3 text-danger"
               >
@@ -219,7 +219,7 @@ export const AllAccessimg = () => {
                 fluid
                 style={{ cursor: "pointer" }}
               />
-                    <p
+              <p
                 style={{ fontSize: "1rem", fontWeight: "bold" }}
                 className="text-center mt-3 text-danger"
               >
@@ -235,7 +235,7 @@ export const AllAccessimg = () => {
                 fluid
                 style={{ cursor: "pointer" }}
               />
-                  <p
+              <p
                 style={{ fontSize: "1rem", fontWeight: "bold" }}
                 className="text-center mt-3 text-danger"
               >
@@ -251,7 +251,7 @@ export const AllAccessimg = () => {
                 fluid
                 style={{ cursor: "pointer" }}
               />
-                      <p
+              <p
                 style={{ fontSize: "1rem", fontWeight: "bold" }}
                 className="text-center mt-3 text-danger"
               >
@@ -267,7 +267,7 @@ export const AllAccessimg = () => {
                 fluid
                 style={{ cursor: "pointer" }}
               />
-                      <p
+              <p
                 style={{ fontSize: "1rem", fontWeight: "bold" }}
                 className="text-center mt-3 text-danger"
               >
@@ -283,7 +283,7 @@ export const AllAccessimg = () => {
                 fluid
                 style={{ cursor: "pointer" }}
               />
-                     <p
+              <p
                 style={{ fontSize: "1rem", fontWeight: "bold" }}
                 className="text-center mt-3 text-danger"
               >

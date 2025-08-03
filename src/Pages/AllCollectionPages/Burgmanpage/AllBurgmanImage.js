@@ -75,19 +75,13 @@ export const AllBurgmanImage = () => {
               style={{ cursor: "pointer" }}
             />
 
-           
-
-           
-
-           
-
             <div>
               <Image
-              variant="top"
-              src={burgmanmeter}
-              fluid
-              style={{ cursor: "pointer" }}
-            />
+                variant="top"
+                src={burgmanmeter}
+                fluid
+                style={{ cursor: "pointer" }}
+              />
               <p
                 style={{ fontSize: "1rem", fontWeight: "bold" }}
                 className="text-center mt-3 text-danger"
@@ -98,11 +92,11 @@ export const AllBurgmanImage = () => {
 
             <div>
               <Image
-              variant="top"
-              src={burgmanexfrontwheel}
-              fluid
-              style={{ cursor: "pointer" }}
-            />
+                variant="top"
+                src={burgmanexfrontwheel}
+                fluid
+                style={{ cursor: "pointer" }}
+              />
               <p
                 style={{ fontSize: "1rem", fontWeight: "bold" }}
                 className="text-center mt-3 text-danger"
@@ -112,12 +106,12 @@ export const AllBurgmanImage = () => {
             </div>
 
             <div>
-               <Image
-              variant="top"
-              src={burgmanexdashboard}
-              fluid
-              style={{ cursor: "pointer" }}
-            />
+              <Image
+                variant="top"
+                src={burgmanexdashboard}
+                fluid
+                style={{ cursor: "pointer" }}
+              />
               <p
                 style={{ fontSize: "1rem", fontWeight: "bold" }}
                 className="text-center mt-3 text-danger"
@@ -134,7 +128,7 @@ export const AllBurgmanImage = () => {
                 fluid
                 style={{ cursor: "pointer" }}
               />
-                <p
+              <p
                 style={{ fontSize: "1rem", fontWeight: "bold" }}
                 className="text-center mt-3 text-danger"
               >
@@ -150,7 +144,7 @@ export const AllBurgmanImage = () => {
                 fluid
                 style={{ cursor: "pointer" }}
               />
-                  <p
+              <p
                 style={{ fontSize: "1rem", fontWeight: "bold" }}
                 className="text-center mt-3 text-danger"
               >
@@ -166,7 +160,7 @@ export const AllBurgmanImage = () => {
                 fluid
                 style={{ cursor: "pointer" }}
               />
-                  <p
+              <p
                 style={{ fontSize: "1rem", fontWeight: "bold" }}
                 className="text-center mt-3 text-danger"
               >
@@ -182,7 +176,7 @@ export const AllBurgmanImage = () => {
                 fluid
                 style={{ cursor: "pointer" }}
               />
-                    <p
+              <p
                 style={{ fontSize: "1rem", fontWeight: "bold" }}
                 className="text-center mt-3 text-danger"
               >
@@ -198,7 +192,7 @@ export const AllBurgmanImage = () => {
                 fluid
                 style={{ cursor: "pointer" }}
               />
-                    <p
+              <p
                 style={{ fontSize: "1rem", fontWeight: "bold" }}
                 className="text-center mt-3 text-danger"
               >
@@ -214,7 +208,7 @@ export const AllBurgmanImage = () => {
                 fluid
                 style={{ cursor: "pointer" }}
               />
-                  <p
+              <p
                 style={{ fontSize: "1rem", fontWeight: "bold" }}
                 className="text-center mt-3 text-danger"
               >
@@ -230,17 +224,14 @@ export const AllBurgmanImage = () => {
                 fluid
                 style={{ cursor: "pointer" }}
               />
-                      <p
+              <p
                 style={{ fontSize: "1rem", fontWeight: "bold" }}
                 className="text-center mt-3 text-danger"
               >
                 {" "}
-                front Handle Veiw
+                front Handle Veiwgit
               </p>
             </div>
-
-      
-
           </Carousel2>
         </Modal.Body>
         <Modal.Footer>

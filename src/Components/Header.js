@@ -10,8 +10,8 @@ function Header() {
     <>
       <Navbar
         expand="lg"
-        style={{ backgroundColor: "lightgray", opacity: "0.8" }}
         fixed="top"
+         style={{backgroundColor:"white"}}
       >
         <Container>
           <Navbar.Toggle />

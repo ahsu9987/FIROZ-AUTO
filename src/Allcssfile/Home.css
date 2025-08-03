@@ -14,6 +14,9 @@
     height: 530px;
     width: 80%;
 }
+  .allcols{
+              background-color: #000;
+    }
 .Htxt{
     margin-top: 70px;
 }
@@ -39,7 +42,9 @@ width: 85%;
     margin: 70px;
     padding: 20px;
     border-radius: 20px;
-    border-style: groove;
+    border-style:groove;
+    background-color: #000;
+    border-color: whitesmoke;
 }
 .homevideo{
     width: 100%!important;
@@ -49,9 +54,6 @@ width: 85%;
 .react-player video{
     width: 100%!important;
     height: 100%!important;
-}
-.logotable{
-    width: 100%!important;
 }
 .btnbrandlogo{
     padding-left: 630px;
@@ -172,7 +174,9 @@ text-fill-color: transparent;
     }
     .allcol{
         height: 280px;
+        background-color: #000;
     }
+  
     .Htxt{
         margin-top: 3px;
     }

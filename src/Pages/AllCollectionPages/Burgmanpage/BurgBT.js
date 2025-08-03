@@ -17,18 +17,8 @@ import Accdrum from "../Accesspage/images/AccessDrummatblue.png";
 import Avenisblknew from "../Accesspage/images/Avenisbllknew.png";
 import Gixxersfblue from "../GixxerSF&Naked/images/Gixxersfblue.png";
 import Gixxernakedblk from "../GixxerSF&Naked/images/gixxernakedblk.png";
-import Container from "react-bootstrap/Container";
-import burgmanexmeter from "../Accesspage/images/burgmanexmeter.png";
-import keyignition from "../Accesspage/images/KeyIgnition.png";
-import Accordion from "react-bootstrap/Accordion";
-import underseat from "../Burgmanpage/images/burgmanunderstorage.png";
-import FrontFootVeiw from "../Burgmanpage/images/burgmanfrontfoot.png";
-import FrontPocket from "../Burgmanpage/images/burgmanfrontpocket.png";
-import FrontDiscBreak from "../Burgmanpage/images/burgmandiscbreakwheel.png";
-import Cylenser from "../Burgmanpage/images/burgmanexcylenser.png";
-import AvenisKickstart from "../Accesspage/images/Kickstarter.png";
-import AvenisKillswitc from "../Accesspage/images/KillSwitch.png";
 import accspecial from "../Accesspage/images/accwhite.png";
+import Allburgmanimg from "./AllBurgmanImage";
 
 const swatches = [
   { color: "#1b390b", name: "Pearl Matte Shadow Green", image: img1 },
@@ -119,7 +109,12 @@ const BurgBT = () => {
             </p>
             <h3 className="text-light mt-3 mb-3">SPECIFICATION:-</h3>
             <div className="tabledata">
-              <Table striped bordered style={{ border: "groove" }}>
+              <Table
+                striped
+                bordered
+                style={{ border: "groove" }}
+                className="mb-5"
+              >
                 <tbody>
                   <tr>
                     <td>[Power & Performance]</td>
@@ -222,143 +217,11 @@ const BurgBT = () => {
                   </tr>
                 </tbody>
               </Table>
+              <Allburgmanimg />
             </div>
-            <Button
-              variant="outline-success"
-              className="mt-4"
-              href="https://web.whatsapp.com/"
-              style={{ border: "groove" }}
-            >
-              BOOK NOW
-            </Button>
           </Col>
         </Row>
       </div>
-
-      <Accordion defaultActiveKey="0">
-        <Accordion.Item className="bg-dark">
-          <Accordion.Header>ALL PARTS IMAGES</Accordion.Header>
-          <Accordion.Body>
-            <Container>
-              <Row>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center text-light">Digital meter BT</p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={burgmanexmeter}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer", border: "groove" }}
-                  />
-                </Col>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center text-light mt-3">key-ignition</p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={keyignition}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer", border: "groove" }}
-                  />
-                </Col>
-              </Row>
-
-              <Row>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center text-light mt-3">
-                    Underseat Storage
-                  </p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={underseat}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer", border: "groove" }}
-                  />
-                </Col>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center text-light mt-3">Front FootVeiw</p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={FrontFootVeiw}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer", border: "groove" }}
-                  />
-                </Col>
-              </Row>
-
-              <Row>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center text-light mt-3">FrontPocket</p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={FrontPocket}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer", border: "groove" }}
-                  />
-                </Col>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center text-light mt-3">Front DiscBreak</p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={FrontDiscBreak}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer", border: "groove" }}
-                  />
-                </Col>
-              </Row>
-
-              <Row>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center text-light mt-3">Cylenser</p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={Cylenser}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer", border: "groove" }}
-                  />
-                </Col>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center text-light mt-3">Kickstart</p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={AvenisKickstart}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer", border: "groove" }}
-                  />
-                </Col>
-              </Row>
-
-              <Row>
-                <Col lg={6} xs={12} md={4}>
-                  <p className="text-center text-light mt-3">KillSwitch</p>
-                  <Card.Img
-                    variant="top"
-                    id="newaccimagespot"
-                    src={AvenisKillswitc}
-                    roundedCircle
-                    fluid
-                    style={{ cursor: "pointer", border: "groove" }}
-                  />
-                </Col>
-              </Row>
-            </Container>
-          </Accordion.Body>
-        </Accordion.Item>
-      </Accordion>
 
       {/* ACCESS & BURGMAN BIKE SECTION SPOTLIGHT*/}
       <div className="bg-light burgmanbikesection cardgrove">

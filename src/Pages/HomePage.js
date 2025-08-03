@@ -91,7 +91,7 @@ function HomePage() {
   return (
     <>
       {/* HOMEVIDEO*/}
-      <div>
+      <div style={{marginTop:"85px"}}>
         <ReactPlayer
           url={myvideo}
           playing={true}
@@ -109,6 +109,7 @@ function HomePage() {
         <Row>
           <Col xs={12} md={8} lg={6} className="text-light p-4 ">
             <motion.h2
+              style={{ fontFamily: "            Franklin Gothic Medium" }}
               initial={{ x: -100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{
@@ -122,6 +123,7 @@ function HomePage() {
               ABOUT US
             </motion.h2>
             <motion.h5
+              style={{ fontFamily: "Bahnschrift SemiBold" }}
               initial={{ x: -100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{
@@ -132,7 +134,15 @@ function HomePage() {
                 duration: 1,
               }}
             >
-              WELCOME TO FIROZ AUTORIDES SAFE RIDE
+              WELCOME TO{" "}
+              <span style={{ fontFamily: "Arial Black" }}>FIROZ</span>{" "}
+              <span
+                className="text-danger"
+                style={{ fontFamily: "Arial Black" }}
+              >
+                AUTORIDES
+              </span>{" "}
+              SAFE RIDE
             </motion.h5>
             <motion.p
               initial={{ x: -100, opacity: 0 }}
@@ -145,21 +155,68 @@ function HomePage() {
                 duration: 1,
               }}
               className="txt-bold"
+              style={{ fontFamily: "Bahnschrift SemiBold" }}
             >
-              Welcome to Firoz AutoRides, your trusted destination for brand new
-              two-wheelers. Established in 2018, Firoz AutoRides has quickly
-              become a leading name in the two-wheeler Multi Brand Dealer,
-              renowned for our commitment to quality, customer satisfaction, and
-              innovation. <br></br>
+              Welcome to
+              <span style={{ fontFamily: "Arial Black" }}> Firoz</span>
+              <span
+                className="text-danger "
+                style={{ fontFamily: "Arial Black" }}
+              >
+                AutoRides
+              </span>
+              , your trusted destination for brand new two-wheelers. Established
+              in
+              <span
+                className="text-warning"
+                style={{ fontFamily: "Arial Black" }}
+              >
+                2018
+              </span>
+              ,<span style={{ fontFamily: "Arial Black" }}> Firoz</span>
+              <span
+                className="text-danger "
+                style={{ fontFamily: "Arial Black" }}
+              >
+                AutoRides
+              </span>
+              , has quickly become a leading name in the{" "}
+              <span style={{ fontFamily: "Arial Black" }}>two-</span>
+              <span className="text-info" style={{ fontFamily: "Arial Black" }}>
+                wheeler
+              </span>{" "}
+              Multi Brand Dealer, renowned for our commitment to quality,
+              customer satisfaction, and innovation. <br></br>
               Since our inception, we have been dedicated to providing our
-              customers with the best selection of two-wheelers, ranging from
-              scooters to motorcycles. Our journey began with a simple mission:
-              to make high-quality two-wheelers accessible to everyone, ensuring
-              a smooth, safe, and enjoyable ride for our customers.<br></br>
-              Experience the difference at Firoz AutoRides. Visit our showroom
-              and explore our wide range of brand new two-wheelers. Our friendly
-              and knowledgeable staff are here to help you make the right choice
-              and ensure you have an unforgettable riding experience.
+              customers with the best selection of{" "}
+              <span style={{ fontFamily: "Arial Black" }}>two-</span>
+              <span className="text-info" style={{ fontFamily: "Arial Black" }}>
+                wheelers
+              </span>
+              , ranging from scooters to motorcycles. Our journey began with a
+              simple mission: to make high-quality{" "}
+              <span style={{ fontFamily: "Arial Black" }}>two-</span>
+              <span className="text-info" style={{ fontFamily: "Arial Black" }}>
+                wheelers
+              </span>{" "}
+              accessible to everyone, ensuring a smooth, safe, and enjoyable
+              ride for our customers.<br></br>
+              Experience the difference at{" "}
+              <span style={{ fontFamily: "Arial Black" }}> Firoz</span>
+              <span
+                className="text-danger "
+                style={{ fontFamily: "Arial Black" }}
+              >
+                AutoRides
+              </span>
+              ,. Visit our showroom and explore our wide range of brand new{" "}
+              <span style={{ fontFamily: "Arial Black" }}>two-</span>
+              <span className="text-info" style={{ fontFamily: "Arial Black" }}>
+                wheelers
+              </span>
+              . Our friendly and knowledgeable staff are here to help you make
+              the right choice and ensure you have an unforgettable riding
+              experience.
             </motion.p>
           </Col>
 
@@ -183,21 +240,35 @@ function HomePage() {
 
       <Carousel>
         <Carousel.Item interval={300}>
-          <Row className="">
-            <Col xs={12} md={8} lg={7} className="bg-light  allcol">
+          <Row>
+            <Col xs={12} md={8} lg={7} className="  allcol">
               <Image src={NewAccicemat} className="carsoulimg p-5 " />
             </Col>
-            <Col xs={12} md={4} lg={5} className="bg-light p-5">
-              <h1 className="Htxt text-info">
+            <Col xs={12} md={4} lg={5} className="allcols p-5">
+              <h1
+                className="Htxt text-info"
+                style={{ fontFamily: "Arial Black" }}
+              >
                 THE NEW COLOUR<br></br>ACCESS ICE-GREEN BT
               </h1>
-              <p className=" text-dark">
+              <p
+                className="text-light"
+                style={{ fontFamily: "Bahnschrift SemiBold" }}
+              >
                 E20 COMPLIANT / LED HEADLAMP / LED POSITION LIGHTS /<br></br>
                 SIDE STAND INTERLOCK / PREMIUM CHROME EXTERNAL FUEL LID/{" "}
                 <br></br> BLUETOOTH® ENABLED DIGITAL CONSOLE
               </p>
-              <h3 className=" text-dark">SPECIFICATION:-</h3>
-              <p className=" text-dark">
+              <h3
+                className="text-light"
+                style={{ fontFamily: "Bahnschrift SemiBold" }}
+              >
+                SPECIFICATION:-
+              </h3>
+              <p
+                className="text-light"
+                style={{ fontFamily: "Bahnschrift SemiBold" }}
+              >
                 Engine Type:- 4- Stroke, 1-Cylinder, Air Cooled <br></br>Fuel
                 Tank Capacity 5 L <br></br>Starter System Kick and Electric
               </p>
@@ -210,20 +281,31 @@ function HomePage() {
 
         <Carousel.Item interval={300}>
           <Row>
-            <Col xs={12} md={8} lg={7} className="bg-light  allcol ">
+            <Col xs={12} md={8} lg={7} className="  allcol ">
               <Image className="carsoulimg p-5" src={NewAccmatblk} />
             </Col>
-            <Col xs={12} md={4} lg={5} className="bg-light p-5">
-              <h1 className=" Htxt">
+            <Col xs={12} md={4} lg={5} className="allcols p-5">
+              <h1 className=" Htxt" style={{ fontFamily: "Arial Black" }}>
                 THE NEW COLOUR<br></br>ACCESS MAT-BLACK
               </h1>
-              <p className=" text-dark">
+              <p
+                className="text-light"
+                style={{ fontFamily: "Bahnschrift SemiBold" }}
+              >
                 E20 COMPLIANT / LED HEADLAMP / LED POSITION LIGHTS /<br></br>
                 SIDE STAND INTERLOCK / PREMIUM CHROME EXTERNAL FUEL LID/{" "}
                 <br></br> BLUETOOTH® ENABLED DIGITAL CONSOLE
               </p>
-              <h3 className=" text-dark">SPECIFICATION:-</h3>
-              <p className=" text-dark">
+              <h3
+                className="text-light"
+                style={{ fontFamily: "Bahnschrift SemiBold" }}
+              >
+                SPECIFICATION:-
+              </h3>
+              <p
+                className="text-light"
+                style={{ fontFamily: "Bahnschrift SemiBold" }}
+              >
                 Engine Type:- 4- Stroke, 1-Cylinder, Air Cooled <br></br>Fuel
                 Tank Capacity 5 L <br></br>Starter System Kick and Electric
               </p>
@@ -236,20 +318,34 @@ function HomePage() {
 
         <Carousel.Item interval={300}>
           <Row>
-            <Col xs={12} md={8} lg={7} className="bg-light allcol">
+            <Col xs={12} md={8} lg={7} className=" allcol">
               <Image className="carsoulimg p-5" src={burgmanbrown} />
             </Col>
-            <Col xs={12} md={4} lg={5} className="bg-light p-5">
-              <h1 className=" Htxt" style={{ color: "#5c371d" }}>
+            <Col xs={12} md={4} lg={5} className="allcols p-5">
+              <h1
+                className=" Htxt"
+                style={{ color: "#5c371d", fontFamily: "Arial Black" }}
+              >
                 THE NEW COLOUR<br></br>BURGMAN BROWN-EX
               </h1>
-              <p className=" text-dark">
+              <p
+                className="text-light"
+                style={{ fontFamily: "Bahnschrift SemiBold" }}
+              >
                 E20 COMPLIANT / LED HEADLAMP / LED POSITION LIGHTS /<br></br>
                 SIDE STAND INTERLOCK / PREMIUM CHROME EXTERNAL FUEL LID/{" "}
                 <br></br> BLUETOOTH® ENABLED DIGITAL CONSOLE
               </p>
-              <h3 className=" text-dark">SPECIFICATION:-</h3>
-              <p className=" text-dark">
+              <h3
+                className="text-light"
+                style={{ fontFamily: "Bahnschrift SemiBold" }}
+              >
+                SPECIFICATION:-
+              </h3>
+              <p
+                className="text-light"
+                style={{ fontFamily: "Bahnschrift SemiBold" }}
+              >
                 Engine Type:- 4- Stroke, 1-Cylinder, Air Cooled <br></br>Fuel
                 Tank Capacity 5 L <br></br>Starter System Kick and Electric
               </p>
@@ -266,20 +362,34 @@ function HomePage() {
 
         <Carousel.Item interval={300}>
           <Row>
-            <Col xs={12} md={8} lg={7} className="bg-light  allcol">
+            <Col xs={12} md={8} lg={7} className="  allcol">
               <Image className="carsoulimg p-5" src={burgmanmatblue} />
             </Col>
-            <Col xs={12} md={4} lg={5} className="bg-light p-5">
-              <h1 className="Htxt" style={{ color: "#2c6fbb" }}>
+            <Col xs={12} md={4} lg={5} className="allcols p-5">
+              <h1
+                className="Htxt"
+                style={{ color: "#2c6fbb", fontFamily: "Arial Black" }}
+              >
                 THE NEW COLOUR<br></br>BURGMAN MAT-BLUE
               </h1>
-              <p className=" text-dark">
+              <p
+                className="text-light"
+                style={{ fontFamily: "Bahnschrift SemiBold" }}
+              >
                 E20 COMPLIANT / LED HEADLAMP / LED POSITION LIGHTS /<br></br>
                 SIDE STAND INTERLOCK / PREMIUM CHROME EXTERNAL FUEL LID/{" "}
                 <br></br> BLUETOOTH® ENABLED DIGITAL CONSOLE
               </p>
-              <h3 className=" text-dark">SPECIFICATION:-</h3>
-              <p className=" text-dark">
+              <h3
+                className="text-light"
+                style={{ fontFamily: "Bahnschrift SemiBold" }}
+              >
+                SPECIFICATION:-
+              </h3>
+              <p
+                className="text-light"
+                style={{ fontFamily: "Bahnschrift SemiBold" }}
+              >
                 Engine Type:- 4- Stroke, 1-Cylinder, Air Cooled <br></br>Fuel
                 Tank Capacity 5 L <br></br>Starter System Kick and Electric
               </p>
@@ -292,20 +402,34 @@ function HomePage() {
 
         <Carousel.Item interval={100}>
           <Row>
-            <Col xs={12} md={8} lg={7} className="bg-light  allcol">
+            <Col xs={12} md={8} lg={7} className="  allcol">
               <Image className="carsoulimg p-5" src={burgmanwhite} />
             </Col>
-            <Col xs={12} md={4} lg={5} className="bg-light p-5">
-              <h1 className="Htxt text-dark">
+            <Col xs={12} md={4} lg={5} className=" p-5 allcols">
+              <h1
+                className="Htxt text-dark"
+                style={{ fontFamily: "Arial Black" }}
+              >
                 THE NEW COLOUR<br></br>BURGMAN WHITE
               </h1>
-              <p className=" text-dark">
+              <p
+                className=" text-light"
+                style={{ fontFamily: "Bahnschrift SemiBold" }}
+              >
                 E20 COMPLIANT / LED HEADLAMP / LED POSITION LIGHTS /<br></br>
                 SIDE STAND INTERLOCK / PREMIUM CHROME EXTERNAL FUEL LID/{" "}
                 <br></br> BLUETOOTH® ENABLED DIGITAL CONSOLE
               </p>
-              <h3 className=" text-dark">SPECIFICATION:-</h3>
-              <p className=" text-dark">
+              <h3
+                className="text-light"
+                style={{ fontFamily: "Bahnschrift SemiBold" }}
+              >
+                SPECIFICATION:-
+              </h3>
+              <p
+                className="text-light"
+                style={{ fontFamily: "Bahnschrift SemiBold" }}
+              >
                 Engine Type:- 4- Stroke, 1-Cylinder, Air Cooled <br></br>Fuel
                 Tank Capacity 5 L <br></br>Starter System Kick and Electric
               </p>
@@ -318,7 +442,7 @@ function HomePage() {
       </Carousel>
 
       {/* ACCESS & TRENDING SPOTLIGHT*/}
-      <div className="bg-light burgmanbikesection">
+      <div className=" burgmanbikesection mb-5">
         <motion.h2
           initial={{ y: -20, opacity: 0.9 }}
           whileInView={{ y: 0, opacity: 1 }}
@@ -329,17 +453,15 @@ function HomePage() {
             ease: "easeIn",
             duration: 0.1,
           }}
-          className="mb-4 mt-3"
+          className="mb-4 mt-3 text-light"
+          style={{ fontFamily: "Bahnschrift SemiBold" }}
         >
           TRENDING BIKES OF 2025
         </motion.h2>
 
         <Carousel2 responsive={responsive}>
-
-          <Card className="topbrandcard ">
+          <Card className="topbrandcard" style={{ backgroundColor: "#000" }}>
             <a href="/AccessBT">
-
-            
               <motion.div
                 initial={{ x: 100, opacity: 0.1 }}
                 whileInView={{ x: 0.1, opacity: 1 }}
@@ -351,7 +473,6 @@ function HomePage() {
                   duration: 0.1,
                 }}
               >
-
                 <Card.Img
                   variant="top"
                   id="newaccimagespot"
@@ -359,10 +480,8 @@ function HomePage() {
                   fluid
                   style={{ cursor: "pointer" }}
                 />
-
               </motion.div>
-                                          </a>
-
+            </a>
 
             <Card.Body>
               <motion.div
@@ -376,14 +495,17 @@ function HomePage() {
                   duration: 0.1,
                 }}
               >
-                <Card.Title>Access Bleutooth Edition Disc Break</Card.Title>
-                <p>Rs 1,25,000/-</p>
+                <Card.Title
+                  className="text-light"
+                  style={{ fontFamily: "Bahnschrift SemiBold" }}
+                >
+                  Access Bleutooth Edition Disc Break
+                </Card.Title>
               </motion.div>
             </Card.Body>
           </Card>
 
-
-          <Card className="topbrandcard">
+          <Card className="topbrandcard" style={{ backgroundColor: "#000" }}>
             <a href="/AccSE">
               <Card.Img
                 variant="top"
@@ -394,12 +516,16 @@ function HomePage() {
               />
             </a>
             <Card.Body>
-              <Card.Title>Access Special Edition Disc Break</Card.Title>
-              <p>Rs 1,20,000/-</p>
+              <Card.Title
+                className="text-light"
+                style={{ fontFamily: "Bahnschrift SemiBold" }}
+              >
+                Access Special Edition Disc Break
+              </Card.Title>
             </Card.Body>
           </Card>
 
-          <Card className="topbrandcard">
+          <Card className="topbrandcard" style={{ backgroundColor: "#000" }}>
             <a href="/AccDrum">
               <Card.Img
                 variant="top"
@@ -410,22 +536,30 @@ function HomePage() {
               />
             </a>
             <Card.Body>
-              <Card.Title>Access Drum Break Edition</Card.Title>
-              <p>Rs 1,05,000/-</p>
+              <Card.Title
+                className="text-light"
+                style={{ fontFamily: "Bahnschrift SemiBold" }}
+              >
+                Access Drum Break Edition
+              </Card.Title>
             </Card.Body>
           </Card>
 
-          <Card className="topbrandcard">
+          <Card className="topbrandcard" style={{ backgroundColor: "#000" }}>
             <a href="/BurgmanEx">
               <Card.Img variant="top" id="newaccimagespot" src={burgmanbrown} />
             </a>
             <Card.Body>
-              <Card.Title>Burgman Ex Bleutooth Top Edition</Card.Title>
-              <p>Rs 1,52,000/-</p>
+              <Card.Title
+                className="text-light"
+                style={{ fontFamily: "Bahnschrift SemiBold" }}
+              >
+                Burgman Ex Bleutooth Top Edition
+              </Card.Title>
             </Card.Body>
           </Card>
 
-          <Card className="topbrandcard">
+          <Card className="topbrandcard" style={{ backgroundColor: "#000" }}>
             <a href="/BurgBT">
               <Card.Img
                 variant="top"
@@ -434,23 +568,32 @@ function HomePage() {
               />
             </a>
             <Card.Body>
-              <Card.Title>Burgman Bleutooth Edition</Card.Title>
-              <p>Rs 1,35,000/-</p>
+              <Card.Title
+                className="text-light"
+                style={{ fontFamily: "Bahnschrift SemiBold" }}
+              >
+                Burgman Bleutooth Edition
+              </Card.Title>
             </Card.Body>
           </Card>
         </Carousel2>
 
-        <Button className="mt-4 mb-4" variant="outline-primary">
+        <Button className="mb-2 ms-2" variant="outline-danger">
           More
         </Button>
       </div>
 
       {/* SPORTS BIKE SECTION*/}
-      <div className="bg-light burgmanbikesection">
-        <h2 className="mb-4 mt-3">GET OFFERS ON POPULAR BIKES IN SPOTLIGHT</h2>
+      <div className=" burgmanbikesection">
+        <h2
+          className="mb-4 mt-3 text-light"
+          style={{ fontFamily: "Bahnschrift SemiBold" }}
+        >
+          GET OFFERS ON POPULAR BIKES IN SPOTLIGHT
+        </h2>
 
         <Carousel2 responsive={responsive}>
-          <Card className="topbrandcard ">
+          <Card className="topbrandcard " style={{ backgroundColor: "#000" }}>
             <Link to="/Aerox">
               <Card.Img
                 variant="top"
@@ -462,13 +605,18 @@ function HomePage() {
             </Link>
 
             <Card.Body>
-              <Card.Title>Yamaha Aerox 155</Card.Title>
-              <p>Rs 1,25,000/-</p>
+              <Card.Title
+                className="text-light"
+                style={{ fontFamily: "Bahnschrift SemiBold" }}
+              >
+                Yamaha Aerox 155
+              </Card.Title>
+
               <Link to="/AccessBTBlue"></Link>
             </Card.Body>
           </Card>
 
-          <Card className="topbrandcard">
+          <Card className="topbrandcard" style={{ backgroundColor: "#000" }}>
             <a href="/AccessBTBlue">
               <Card.Img
                 variant="top"
@@ -479,12 +627,16 @@ function HomePage() {
               />
             </a>
             <Card.Body>
-              <Card.Title>Access Special Edition Disc Break</Card.Title>
-              <p>Rs 1,20,000/-</p>
+              <Card.Title
+                className="text-light"
+                style={{ fontFamily: "Bahnschrift SemiBold" }}
+              >
+                Access Special Edition Disc Break
+              </Card.Title>
             </Card.Body>
           </Card>
 
-          <Card className="topbrandcard">
+          <Card className="topbrandcard" style={{ backgroundColor: "#000" }}>
             <a href="/AccessBTBlue">
               <Card.Img
                 variant="top"
@@ -495,40 +647,56 @@ function HomePage() {
               />
             </a>
             <Card.Body>
-              <Card.Title>Access Drum Break Edition</Card.Title>
-              <p>Rs 1,05,000/-</p>
+              <Card.Title
+                className="text-light"
+                style={{ fontFamily: "Bahnschrift SemiBold" }}
+              >
+                Access Drum Break Edition
+              </Card.Title>
             </Card.Body>
           </Card>
 
-          <Card className="topbrandcard">
+          <Card className="topbrandcard" style={{ backgroundColor: "#000" }}>
             <Card.Img variant="top" id="newaccimagespot" src={burgmanbrown} />
             <Card.Body>
-              <Card.Title>Burgman Ex Bleutooth Top Edition</Card.Title>
-              <p>Rs 1,52,000/-</p>
+              <Card.Title
+                className="text-light"
+                style={{ fontFamily: "Bahnschrift SemiBold" }}
+              >
+                Burgman Ex Bleutooth Top Edition
+              </Card.Title>
             </Card.Body>
           </Card>
 
-          <Card className="topbrandcard">
+          <Card className="topbrandcard" style={{ backgroundColor: "#000" }}>
             <Card.Img variant="top" id="newaccimagespot" src={burgmangreenbt} />
             <Card.Body>
-              <Card.Title>Burgman Bleutooth Edition</Card.Title>
-              <p>Rs 1,35,000/-</p>
+              <Card.Title
+                className="text-light"
+                style={{ fontFamily: "Bahnschrift SemiBold" }}
+              >
+                Burgman Bleutooth Edition
+              </Card.Title>
             </Card.Body>
           </Card>
 
-          <Card className="topbrandcard">
+          <Card className="topbrandcard" style={{ backgroundColor: "#000" }}>
             <Card.Img
               variant="top"
               id="newaccimagespot"
               src={burgmannonbtblk}
             />
             <Card.Body>
-              <Card.Title>Burgman Non Bleutooth Edition</Card.Title>
-              <p>Rs 1,30,000/-</p>
+              <Card.Title
+                className="text-light"
+                style={{ fontFamily: "Bahnschrift SemiBold" }}
+              >
+                Burgman Non Bleutooth Edition
+              </Card.Title>
             </Card.Body>
           </Card>
         </Carousel2>
-        <Button className="mt-4 mb-4" variant="outline-primary">
+        <Button className="mb-2 ms-2" variant="outline-danger">
           More
         </Button>
       </div>
@@ -549,7 +717,7 @@ function HomePage() {
       </motion.div>
 
       {/* brandlogo SECTION*/}
-      <div className="bg-light burgmanbikesection cardgrove">
+      <div className="burgmanbikesection mb-5">
         <motion.h1
           initial={{ y: -20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
@@ -560,7 +728,8 @@ function HomePage() {
             ease: "easeIn",
             duration: 0.1,
           }}
-          className="ms-2 mt-2 mb-2"
+          className="ms-2 mt-2 mb-3 text-light"                 style={{ fontFamily: "Bahnschrift SemiBold" }}
+
         >
           Browse Bikes Brand
         </motion.h1>
@@ -576,21 +745,21 @@ function HomePage() {
             duration: 0.1,
           }}
         >
-          <Table striped="columns" className="logotable " border={"3px"}>
-            <tbody className="cardgrove">
+          <Table striped="columns" className="logotable" border={"2px"}>
+            <tbody className="cardgrove" style={{ backgroundColor: "#000" }}>
               <tr>
-                <td style={{ width: "20px" }}>
+                <td style={{ width: "20px", backgroundColor: "#000" }}>
                   <a href="/AccessBT">
                     <Image src={suzukilogo} className="brandlogocenter" />
                   </a>
                 </td>
-                <td style={{ width: "20px" }}>
+                <td style={{ width: "20px", backgroundColor: "#000" }}>
                   {" "}
                   <a href="/AccessBTBlue">
                     <Image src={tvslogo} className="brandlogocenter" />
                   </a>
                 </td>
-                <td style={{ width: "20px" }}>
+                <td style={{ width: "20px", backgroundColor: "#000" }}>
                   {" "}
                   <a href="/AccessBTBlue">
                     <Image src={royalelogo} className="brandlogocenter" />
@@ -598,18 +767,18 @@ function HomePage() {
                 </td>
               </tr>
               <tr>
-                <td style={{ width: "20px" }}>
+                <td style={{ width: "20px", backgroundColor: "#000" }}>
                   <a href="/AccessBTBlue">
                     <Image src={honda} className="brandlogocenter" />
                   </a>
                 </td>
-                <td style={{ width: "20px" }}>
+                <td style={{ width: "20px", backgroundColor: "#000" }}>
                   {" "}
                   <a href="/AccessBTBlue">
                     <Image src={hero} className="brandlogocenter" />
                   </a>
                 </td>
-                <td style={{ width: "20px" }}>
+                <td style={{ width: "20px", backgroundColor: "#000" }}>
                   {" "}
                   <a href="/AccessBTBlue">
                     <Image src={kawasaki} className="brandlogocenter" />
@@ -617,18 +786,18 @@ function HomePage() {
                 </td>
               </tr>
               <tr>
-                <td style={{ width: "20px" }}>
+                <td style={{ width: "20px", backgroundColor: "#000" }}>
                   <a href="/AccessBTBlue">
                     <Image src={yamaha} className="brandlogocenter" />
                   </a>
                 </td>
-                <td style={{ width: "20px" }}>
+                <td style={{ width: "20px", backgroundColor: "#000" }}>
                   {" "}
                   <a href="/AccessBTBlue">
                     <Image src={vespa} className="brandlogocenter" />
                   </a>
                 </td>
-                <td style={{ width: "20px" }}>
+                <td style={{ width: "20px", backgroundColor: "#000" }}>
                   {" "}
                   <a href="/AccessBTBlue">
                     <Image src={ktm} className="brandlogocenter" />
@@ -641,27 +810,36 @@ function HomePage() {
                     onClick={() => setOpen(!open)}
                     aria-controls="example-collapse-text"
                     aria-expanded={open}
-                    variant="outline-dark"
-                    className="btnbrandlogo mb-2 mt-2"
+                    variant="outline-danger"
+                    className="btnbrandlogo mt-2 mb-2 ms-2"
                   >
                     Veiw more
                   </Button>
                   <Collapse in={open}>
                     <Table striped="columns">
-                      <tbody border="3px" className="cardgrove">
+                      <tbody
+                        className="cardgrove"
+                        style={{ backgroundColor: "#000" }}
+                      >
                         <tr>
-                          <td style={{ width: "20px" }}>
+                          <td
+                            style={{ width: "20px", backgroundColor: "#000" }}
+                          >
                             <a href="/AccessBTBlue">
                               <Image src={tripuh} className="brandlogocenter" />
                             </a>
                           </td>
-                          <td style={{ width: "20px" }}>
+                          <td
+                            style={{ width: "20px", backgroundColor: "#000" }}
+                          >
                             {" "}
                             <a href="/AccessBTBlue">
                               <Image src={bmw} className="brandlogocenter" />
                             </a>
                           </td>
-                          <td style={{ width: "20px" }}>
+                          <td
+                            style={{ width: "20px", backgroundColor: "#000" }}
+                          >
                             {" "}
                             <a href="/AccessBTBlue">
                               <Image src={R15} className="brandlogocenter" />
@@ -669,12 +847,16 @@ function HomePage() {
                           </td>
                         </tr>
                         <tr>
-                          <td style={{ width: "20px" }}>
+                          <td
+                            style={{ width: "20px", backgroundColor: "#000" }}
+                          >
                             <a href="/AccessBTBlue">
                               <Image src={bajaj} className="brandlogocenter" />
                             </a>
                           </td>
-                          <td style={{ width: "20px" }}>
+                          <td
+                            style={{ width: "20px", backgroundColor: "#000" }}
+                          >
                             {" "}
                             <a href="/AccessBTBlue">
                               <Image
@@ -683,7 +865,9 @@ function HomePage() {
                               />
                             </a>
                           </td>
-                          <td style={{ width: "20px" }}>
+                          <td
+                            style={{ width: "20px", backgroundColor: "#000" }}
+                          >
                             {" "}
                             <a href="/AccessBTBlue">
                               <Image src={bajaj} className="brandlogocenter" />
@@ -691,18 +875,24 @@ function HomePage() {
                           </td>
                         </tr>
                         <tr>
-                          <td style={{ width: "20px" }}>
+                          <td
+                            style={{ width: "20px", backgroundColor: "#000" }}
+                          >
                             <a href="/AccessBTBlue">
                               <Image src={bajaj} className="brandlogocenter" />
                             </a>
                           </td>
-                          <td style={{ width: "20px" }}>
+                          <td
+                            style={{ width: "20px", backgroundColor: "#000" }}
+                          >
                             {" "}
                             <a href="/AccessBTBlue">
                               <Image src={bajaj} className="brandlogocenter" />
                             </a>
                           </td>
-                          <td style={{ width: "20px" }}>
+                          <td
+                            style={{ width: "20px", backgroundColor: "#000" }}
+                          >
                             {" "}
                             <a href="/AccessBTBlue">
                               <Image src={bajaj} className="brandlogocenter" />
@@ -720,34 +910,39 @@ function HomePage() {
       </div>
 
       {/* SPORTS BIKE SECTION*/}
-      <div className="bg-light burgmanbikesection cardgrove">
-        <h2 className="mb-4 mt-3">GET OFFERS ON POPULAR BIKES IN SPOTLIGHT</h2>
-        {/* <Nav id="nav1" className="  my-3 my-lg-0   navtxt" navbarScroll>
-          <Nav.Link href="">HOME</Nav.Link>
-          <Nav.Link href="ch2">NEWBIKES</Nav.Link>
-          <Nav.Link href="#action1">NEWS</Nav.Link>
-          <Nav.Link href="#action2">NEW1</Nav.Link>
-        </Nav> */}
+      <div className=" burgmanbikesection">
+        <h2
+          className="mb-4 mt-3 text-light"
+          style={{ fontFamily: "Bahnschrift SemiBold" }}
+        >
+          GET OFFERS ON POPULAR BIKES IN SPOTLIGHT
+        </h2>
 
         <Carousel2 responsive={responsive}>
-          <Card className="topbrandcard ">
-            <Link to="/AccessBTBlue">
+          <Card className="topbrandcard " style={{ backgroundColor: "#000" }}>
+            <Link to="/Aerox">
               <Card.Img
                 variant="top"
                 id="newaccimagespot"
-                src={NewAccicemat}
+                src={NewAeroxwhite}
                 fluid
                 style={{ cursor: "pointer" }}
               />
             </Link>
 
             <Card.Body>
-              <Card.Title>Access Bleutooth Edition Disc Break</Card.Title>
-              <p>Rs 1,25,000/-</p>
+              <Card.Title
+                className="text-light"
+                style={{ fontFamily: "Bahnschrift SemiBold" }}
+              >
+                Yamaha Aerox 155
+              </Card.Title>
+
+              <Link to="/AccessBTBlue"></Link>
             </Card.Body>
           </Card>
 
-          <Card className="topbrandcard">
+          <Card className="topbrandcard" style={{ backgroundColor: "#000" }}>
             <a href="/AccessBTBlue">
               <Card.Img
                 variant="top"
@@ -758,12 +953,16 @@ function HomePage() {
               />
             </a>
             <Card.Body>
-              <Card.Title>Access Special Edition Disc Break</Card.Title>
-              <p>Rs 1,20,000/-</p>
+              <Card.Title
+                className="text-light"
+                style={{ fontFamily: "Bahnschrift SemiBold" }}
+              >
+                Access Special Edition Disc Break
+              </Card.Title>
             </Card.Body>
           </Card>
 
-          <Card className="topbrandcard">
+          <Card className="topbrandcard" style={{ backgroundColor: "#000" }}>
             <a href="/AccessBTBlue">
               <Card.Img
                 variant="top"
@@ -774,40 +973,56 @@ function HomePage() {
               />
             </a>
             <Card.Body>
-              <Card.Title>Access Drum Break Edition</Card.Title>
-              <p>Rs 1,05,000/-</p>
+              <Card.Title
+                className="text-light"
+                style={{ fontFamily: "Bahnschrift SemiBold" }}
+              >
+                Access Drum Break Edition
+              </Card.Title>
             </Card.Body>
           </Card>
 
-          <Card className="topbrandcard">
+          <Card className="topbrandcard" style={{ backgroundColor: "#000" }}>
             <Card.Img variant="top" id="newaccimagespot" src={burgmanbrown} />
             <Card.Body>
-              <Card.Title>Burgman Ex Bleutooth Top Edition</Card.Title>
-              <p>Rs 1,52,000/-</p>
+              <Card.Title
+                className="text-light"
+                style={{ fontFamily: "Bahnschrift SemiBold" }}
+              >
+                Burgman Ex Bleutooth Top Edition
+              </Card.Title>
             </Card.Body>
           </Card>
 
-          <Card className="topbrandcard">
+          <Card className="topbrandcard" style={{ backgroundColor: "#000" }}>
             <Card.Img variant="top" id="newaccimagespot" src={burgmangreenbt} />
             <Card.Body>
-              <Card.Title>Burgman Bleutooth Edition</Card.Title>
-              <p>Rs 1,35,000/-</p>
+              <Card.Title
+                className="text-light"
+                style={{ fontFamily: "Bahnschrift SemiBold" }}
+              >
+                Burgman Bleutooth Edition
+              </Card.Title>
             </Card.Body>
           </Card>
 
-          <Card className="topbrandcard">
+          <Card className="topbrandcard" style={{ backgroundColor: "#000" }}>
             <Card.Img
               variant="top"
               id="newaccimagespot"
               src={burgmannonbtblk}
             />
             <Card.Body>
-              <Card.Title>Burgman Non Bleutooth Edition</Card.Title>
-              <p>Rs 1,30,000/-</p>
+              <Card.Title
+                className="text-light"
+                style={{ fontFamily: "Bahnschrift SemiBold" }}
+              >
+                Burgman Non Bleutooth Edition
+              </Card.Title>
             </Card.Body>
           </Card>
         </Carousel2>
-        <Button className="mt-4 mb-4" variant="outline-primary">
+        <Button className="mb-2 ms-2" variant="outline-danger">
           More
         </Button>
       </div>
@@ -819,12 +1034,15 @@ function HomePage() {
         controls={false}
         muted={true}
         progressInterval={8000}
-        className="react-player homevideo "
+        className="react-player homevideo  "
         auotplay
       />
 
       {/* testimonial*/}
-      <div className="bg-light testimonialsection cardgrove">
+      <div
+        className=" testimonialsection cardgrove mb-5 mt-5"
+        style={{ backgroundColor: "black" }}
+      >
         <motion.h1
           initial={{ y: 40, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
@@ -837,7 +1055,9 @@ function HomePage() {
           }}
           className="text-center mb-4 mt-4 reviewfont"
         >
-          <span style={{ color: "#ffdb0f" }}>******</span>CUSTOMER REVIEW
+          <span style={{ color: "#ffdb0f" }}>******</span>
+          <span style={{ color: "white" }}>CUSTOMER</span>{" "}
+          <span style={{ color: "red" }}>REVIEW</span>
           <span style={{ color: "#ffdb0f" }}>******</span>
         </motion.h1>
 
@@ -944,7 +1164,7 @@ function HomePage() {
       </div>
 
       {/*HAPPY CUSTOMERS*/}
-      <div className="bg-light burgmanbikesection cardgrove">
+      <div className=" burgmanbikesection cardgrove mb-5">
         <div>
           <motion.h1
             initial={{ y: 40, opacity: 0 }}
@@ -956,18 +1176,20 @@ function HomePage() {
               ease: "easeIn",
               duration: 0.1,
             }}
-            className="text-center mb-5 mt-2 reviewfont"
+            className="text-center mb-5 mt-2 reviewfont text-light"
           >
             <span style={{ color: "#ffdb0f" }}>******</span>HAPPY CUSTOMERS
             <span style={{ color: "#ffdb0f" }}>******</span>
             <br></br>
-            <p style={{ fontSize: "15px" }}>Firoz AutoRides</p>
+            <p style={{ fontSize: "15px" }}>
+              Firoz<span style={{ color: "red" }}>AutoRides</span>
+            </p>
           </motion.h1>
         </div>
 
         <Container>
           <Row className="">
-            <Col lg={4} xs={12} md={8} className="mb-2">
+            <Col lg={4} xs={12} md={8} className="mb-3">
               {" "}
               <Card className="">
                 <motion.div
@@ -989,7 +1211,7 @@ function HomePage() {
                 </motion.div>
               </Card>
             </Col>
-            <Col lg={4} xs={12} md={8} className="mb-2">
+            <Col lg={4} xs={12} md={8} className="mb-3">
               {" "}
               <Card className="">
                 <motion.div
@@ -1011,7 +1233,7 @@ function HomePage() {
                 </motion.div>
               </Card>
             </Col>
-            <Col lg={4} xs={12} md={8} className="mb-2">
+            <Col lg={4} xs={12} md={8} className="mb-3">
               {" "}
               <Card className="">
                 <motion.div
@@ -1033,138 +1255,153 @@ function HomePage() {
                 </motion.div>
               </Card>
             </Col>
-            <Col lg={4} xs={12} md={8} className="mb-2">
-              {" "}
-              <Card className="">
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{
-                    duration: 0.9,
-                    delay: 0.4,
-                    ease: [0, 0.4, 0.2, 1.01],
-                  }}
-                >
-                  <Card.Img
-                    variant="top"
-                    className="cardgrove"
-                    src={happycs2}
-                    fluid
-                    style={{ height: "370px" }}
-                  />
-                </motion.div>
-              </Card>
-            </Col>
-            <Col lg={4} xs={12} md={8} className="mb-2">
-              {" "}
-              <Card className="">
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{
-                    duration: 0.9,
-                    delay: 0.4,
-                    ease: [0, 0.4, 0.2, 1.01],
-                  }}
-                >
-                  <Card.Img
-                    variant="top"
-                    className="cardgrove"
-                    src={happycs3}
-                    fluid
-                    style={{ height: "370px" }}
-                  />
-                </motion.div>
-              </Card>
-            </Col>
-            <Col lg={4} xs={12} md={8} className="mb-2">
-              {" "}
-              <Card className="">
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{
-                    duration: 0.9,
-                    delay: 0.4,
-                    ease: [0, 0.4, 0.2, 1.01],
-                  }}
-                >
-                  <Card.Img
-                    variant="top"
-                    className="cardgrove"
-                    src={happycs4}
-                    fluid
-                    style={{ height: "370px" }}
-                  />
-                </motion.div>
-              </Card>
-            </Col>
-            <Col lg={4} xs={12} md={8} className="mb-2">
-              {" "}
-              <Card className="">
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{
-                    duration: 0.9,
-                    delay: 0.4,
-                    ease: [0, 0.4, 0.2, 1.01],
-                  }}
-                >
-                  <Card.Img
-                    variant="top"
-                    className="cardgrove"
-                    src={happycs6}
-                    fluid
-                    style={{ height: "370px" }}
-                  />
-                </motion.div>
-              </Card>
-            </Col>
-            <Col lg={4} xs={12} md={8} className="mb-2">
-              {" "}
-              <Card className="">
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{
-                    duration: 0.9,
-                    delay: 0.4,
-                    ease: [0, 0.4, 0.2, 1.01],
-                  }}
-                >
-                  <Card.Img
-                    variant="top"
-                    className="cardgrove"
-                    src={happycs7}
-                    fluid
-                    style={{ height: "370px" }}
-                  />
-                </motion.div>
-              </Card>
-            </Col>
-            <Col lg={4} xs={12} md={8} className="mb-2">
-              {" "}
-              <Card className="">
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{
-                    duration: 0.9,
-                    delay: 0.4,
-                    ease: [0, 0.4, 0.2, 1.01],
-                  }}
-                >
-                  <Card.Img
-                    variant="top"
-                    className="cardgrove"
-                    src={happycs8}
-                    fluid
-                    style={{ height: "370px" }}
-                  />
-                </motion.div>
-              </Card>
-            </Col>
+
+            <Button
+              onClick={() => setOpen(!open)}
+              aria-controls="example-collapse-text"
+              aria-expanded={open}
+              variant="outline-light"
+              className="btnbrandlogo mb-2 mt-2"
+            >
+              Veiw more Images
+            </Button>
+
+            <Collapse in={open}>
+              <Table striped="columns">
+                <Col lg={4} xs={12} md={8} className="mb-2">
+                  {" "}
+                  <Card className="">
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0.9 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      transition={{
+                        duration: 0.9,
+                        delay: 0.4,
+                        ease: [0, 0.4, 0.2, 1.01],
+                      }}
+                    >
+                      <Card.Img
+                        variant="top"
+                        className="cardgrove"
+                        src={happycs2}
+                        fluid
+                        style={{ height: "370px" }}
+                      />
+                    </motion.div>
+                  </Card>
+                </Col>
+                <Col lg={4} xs={12} md={8} className="mb-2">
+                  {" "}
+                  <Card className="">
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0.9 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      transition={{
+                        duration: 0.9,
+                        delay: 0.4,
+                        ease: [0, 0.4, 0.2, 1.01],
+                      }}
+                    >
+                      <Card.Img
+                        variant="top"
+                        className="cardgrove"
+                        src={happycs3}
+                        fluid
+                        style={{ height: "370px" }}
+                      />
+                    </motion.div>
+                  </Card>
+                </Col>
+                <Col lg={4} xs={12} md={8} className="mb-2">
+                  {" "}
+                  <Card className="">
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0.9 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      transition={{
+                        duration: 0.9,
+                        delay: 0.4,
+                        ease: [0, 0.4, 0.2, 1.01],
+                      }}
+                    >
+                      <Card.Img
+                        variant="top"
+                        className="cardgrove"
+                        src={happycs4}
+                        fluid
+                        style={{ height: "370px" }}
+                      />
+                    </motion.div>
+                  </Card>
+                </Col>
+                <Col lg={4} xs={12} md={8} className="mb-2">
+                  {" "}
+                  <Card className="">
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0.9 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      transition={{
+                        duration: 0.9,
+                        delay: 0.4,
+                        ease: [0, 0.4, 0.2, 1.01],
+                      }}
+                    >
+                      <Card.Img
+                        variant="top"
+                        className="cardgrove"
+                        src={happycs6}
+                        fluid
+                        style={{ height: "370px" }}
+                      />
+                    </motion.div>
+                  </Card>
+                </Col>
+                <Col lg={4} xs={12} md={8} className="mb-2">
+                  {" "}
+                  <Card className="">
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0.9 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      transition={{
+                        duration: 0.9,
+                        delay: 0.4,
+                        ease: [0, 0.4, 0.2, 1.01],
+                      }}
+                    >
+                      <Card.Img
+                        variant="top"
+                        className="cardgrove"
+                        src={happycs7}
+                        fluid
+                        style={{ height: "370px" }}
+                      />
+                    </motion.div>
+                  </Card>
+                </Col>
+                <Col lg={4} xs={12} md={8} className="mb-2">
+                  {" "}
+                  <Card className="">
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0.9 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      transition={{
+                        duration: 0.9,
+                        delay: 0.4,
+                        ease: [0, 0.4, 0.2, 1.01],
+                      }}
+                    >
+                      <Card.Img
+                        variant="top"
+                        className="cardgrove"
+                        src={happycs8}
+                        fluid
+                        style={{ height: "370px" }}
+                      />
+                    </motion.div>
+                  </Card>
+                </Col>
+              </Table>
+            </Collapse>
           </Row>
         </Container>
       </div>
@@ -1180,7 +1417,7 @@ function HomePage() {
         auotplay
       />
 
-      <div className="p-3">
+      <div className="p-3 mt-5">
         <h2 className="text-light">Suzuki Access 125 FAQs</h2>
         <Accordion defaultActiveKey="0" className="cardgrove">
           <Accordion.Item eventKey="0" className="bg-info">
@@ -1236,7 +1473,6 @@ function HomePage() {
       </div>
 
       <MyForm />
-
     </>
   );
 }

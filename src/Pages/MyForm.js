@@ -53,10 +53,11 @@ export const MyForm = () => {
   return (
     <>
       <Container className="bg-light mt-3 mb-3 p-3 cardgrove">
-        <h1>GET IN TOUCH</h1>
-        <Row >
-          <Col xs={12} md={8} lg={4}  className="bg-dark rounded p-3  " >
-            <form id="messageForm" ref={form} onSubmit={sendEmail}>p-2
+        <h1 style={{ fontFamily: "Bahnschrift SemiBold" }}>GET IN TOUCH</h1>
+        <Row>
+          <Col xs={12} md={8} lg={4} className="bg-dark rounded p-3  ">
+            <form id="messageForm" ref={form} onSubmit={sendEmail}>
+              p-2
               <input type="text" name="form_name" placeholder="Your name.." />
               <input
                 type="email"
@@ -90,7 +91,7 @@ export const MyForm = () => {
                 type="submit"
                 variant="primary"
                 onClick={() => setModalShow(true)}
-                className="mb-3 mt-3"
+                className="mb-2    mt-3"
               >
                 send
               </Button>
